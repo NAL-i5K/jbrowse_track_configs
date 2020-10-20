@@ -1,0 +1,441 @@
+.jbrowse .stop-codon-read-through,
+.jbrowse .plus-stop-codon-read-through,
+.jbrowse .minus-stop-codon-read-through,
+.jbrowse .red-100pct,
+.jbrowse .plus-red-100pct,
+.jbrowse .minus-red-100pct  {
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    height: 100%;
+    top: 0%;
+}
+
+.jbrowse .gold-80pct, 
+.jbrowse .plus-gold-80pct, 
+.jbrowse .minus-gold-80pct  {
+    margin-top: 0%;
+    background-color: #FFD700;
+    height: 80%;
+}
+
+.jbrowse .goldenrod-60pct, 
+.jbrowse .plus-goldenrod-60pct, 
+.jbrowse .minus-goldenrod-60pct {
+    height: 60%;
+    top: 20%;
+    background-color: #DAA520;
+}
+
+.jbrowse .blast-match_part,
+.jbrowse .plus-blast-match_part,
+.jbrowse .minus-blast-match_part {
+    height: 6px;
+    margin-top: 0px;
+    background-color: blue;
+}
+
+
+.jbrowse .blast-hit-20pct  {
+    background-color: blue;
+    min-width: 1px;
+    width: 100%;
+    height: 20%;
+    top: 40%;
+}
+
+
+.jbrowse .minus-lnc_RNA .neat-UTR,
+.jbrowse .plus-lnc_RNA .neat-UTR,
+.jbrowse .lnc_RNA .neat-UTR{
+    height: 12px;
+    margin-top: 0px;
+    background-color: #262dff;
+    border: 0px solid #555 !important;
+  }
+
+.jbrowse .minus-sno_RNA .neat-UTR,
+.jbrowse .plus-sno_RNA .neat-UTR,
+.jbrowse .sno_RNA .neat-UTR{
+    border: 0px solid #555 !important;
+    height: 12px;
+    margin-top: 2px;
+    color: #7cedff;
+    background-color: #7cedff !important;
+  }
+
+.jbrowse .minus-rRNA .neat-UTR,
+.jbrowse .plus-rRNA .neat-UTR,
+.jbrowse .rRNA .neat-UTR{
+    height: 12px;
+    margin-top: 2px;
+    color: 00000;
+    background-color: #fff200 !important;
+    border: 0px solid #555 !important;
+  }
+
+.jbrowse .minus-snRNA .neat-UTR,
+.jbrowse .plus-snRNA .neat-UTR,
+.jbrowse .snRNA .neat-UTR{
+    height: 12px;
+    margin-top: 2px;
+    color: 00000;
+    background-color: #80a823 !important;
+    border: 0px solid #555 !important;
+  }
+
+.jbrowse .minus-tRNA .neat-UTR,
+.jbrowse .plus-tRNA .neat-UTR,
+.jbrowse .tRNA .neat-UTR{
+    height: 12px;
+    margin-top: 0px;
+    color: 00000;
+    background-color: #ef7902;
+    border: 0px solid #555 !important;
+  }
+
+
+.jbrowse .mRNA .neat-UTR,
+.jbrowse .plus-mRNA .neat-UTR,
+.jbrowse .minus-mRNA .neat-UTR{
+    height: 10px;
+    margin-top: 0px;
+    background-color: #BBBBBB;
+    border: 0px solid #555 !important;
+}
+.jbrowse .gnomon_CDS,
+.jbrowse .plus-gnomon_CDS,
+.jbrowse .minus-gnomon_CDS {
+    height: 12px;
+    margin-top: 0px;
+    background-color: #FFAA11;
+    border: 0px solid #555 !important;
+}
+
+.jbrowse .gnomon_UTR,
+.jbrowse .plus-gnomon_UTR,
+.jbrowse .minus-gnomon_UTR {
+    background-color: #ccc !important;
+    border: 0px solid #555 !important;
+}
+
+.jbrowse .jamp_CDS,
+.jbrowse .plus-jamp_CDS,
+.jbrowse .minus-jamp_CDS {
+    height: 12px;
+    margin-top: 0px;
+    background-color: #993399;
+}
+
+.jbrowse .blastn,
+.jbrowse .plus-blastn,
+.jbrowse .minus-blastn {
+    height: 60%;
+    top: 20%;
+    background-color: #996633;
+}
+
+.jbrowse .est2genome,
+.jbrowse .plus-est2genome,
+.jbrowse .minus-est2genome {
+    height: 60%;
+    top: 20%;
+    background-color: #FFC966;
+}
+
+
+.jbrowse .protein_domains,
+.jbrowse .plus-protein_domains,
+.jbrowse .minus-protein_domains {
+    height: 60%;
+    top: 20%;
+    background-color: #9D336B;
+}
+
+
+.jbrowse .ogs-cds, 
+.jbrowse .plus-ogs-cds, 
+.jbrowse .minus-ogs-cds  {
+    background-color: #FFD700;
+    height: 12px;
+    margin-top: 0px;
+}
+
+.jbrowse .ogs-utr, 
+.jbrowse .plus-ogs-utr, 
+.jbrowse .minus-ogs-cds  {
+    background-color: #cccccc;
+    height: 12px;
+    margin-top: 0px;
+}
+
+.jbrowse .junction-cds, 
+.jbrowse .plus-junction-cds, 
+.jbrowse .minus-junction-cds  {
+    background-color: #A921AD;
+    height: 12px;
+    margin-top: 0px;
+}
+
+.jbrowse .primary_gene_set-cds, 
+.jbrowse .plus-primary_gene_set-cds, 
+.jbrowse .minus-primary_gene_set-cds  {
+    background-color: #21D61F;
+    height: 12px;
+    margin-top: 0px;
+}
+}
+
+.jbrowse .deprecated_gene_set-cds, 
+.jbrowse .plus-deprecated_gene_set-cds, 
+.jbrowse .minus-deprecated_gene_set-cds  {
+    height: 12px;
+    margin-top: 0px;
+    background-color: #927447;
+}
+
+.jbrowse .transcriptome-cds,
+.jbrowse .plus-transcriptome-cds,
+.jbrowse .minus-transcriptome-cds  {
+    background-color: #00BFFF;
+    height: 12px;
+    margin-top: 0px;
+}
+
+.jbrowse .transcriptome-match_part,
+.jbrowse .plus-transcriptome-match_part,
+.jbrowse .minus-transcriptome-match_part {
+    background-color: #00BFFF;
+    height: 8px;
+    margin-top: 0px;
+}
+
+.jbrowse .blastx, 
+.jbrowse .plus-blastx, 
+.jbrowse .minus-blastx {
+    height: 12px;
+    background-color: #A0522D;
+}
+
+.jbrowse .protein2genome,
+.jbrowse .plus-protein2genome, 
+.jbrowse .minus-protein2genome {
+    height: 12px;
+    background-color: #FFA500;
+}
+.jbrowse .repeat, 
+.jbrowse .plus-repeat, 
+.jbrowse .minus-repeat {
+    height: 12px;
+    background-color: #FF0000;
+}
+
+
+.jbrowse .est_gff,
+.jbrowse .plus-est_gff,
+.jbrowse .minus-est_gff,
+.jbrowse .est-gff,
+.jbrowse .plus-est-gff,
+.jbrowse .minus-est-gff,
+.jbrowse .est,
+.jbrowse .plus-est, 
+.jbrowse .minus-est {
+    height: 12px;
+    background-color: #00bfff;
+}
+
+
+.jbrowse .cegma,
+.jbrowse .plus-cegma,
+.jbrowse .minus-cegma {
+    height: 12px;
+    background-color: #99CC00
+}
+
+.jbrowse .alt_gene_set-cds,
+.jbrowse .plus-alt_gene_set-cds,
+.jbrowse .minus-alt_gene_set-cds {
+background-color: #DA70D6 ;
+height: 12px;
+}
+
+.jbrowse .alt_gene_set-utr,
+.jbrowse .plus-alt_gene_set-utr,
+.jbrowse .minus-alt_gene_set-utr {
+height: 12px;
+background-color: #8B008B;
+}
+
+.jbrowse .snap,
+.jbrowse .plus-snap,
+.jbrowse .minus-snap {
+height: 12px;
+background-color: #99FFCC;
+}
+
+.jbrowse .snap_UTR,
+.jbrowse .plus-snap_UTR,
+.jbrowse .minus-snap_UTR {
+height: 12px;
+background-color: #00CC66;
+}
+
+.jbrowse .snap_CDS,
+.jbrowse .plus-snap_CDS,
+.jbrowse .minus-snap_CDS {
+height: 12px;
+background-color: #99FFCC;
+}
+
+.jbrowse .augustus,
+.jbrowse .plus-augustus,
+.jbrowse .minus-augustus {
+height: 12px;
+background-color: #FFCCFF;
+}
+
+.jbrowse .augustus_UTR,
+.jbrowse .plus-augustus_UTR,
+.jbrowse .minus-augustus_UTR {
+height: 12px;
+background-color: #FF00FF;
+}
+
+.jbrowse .augustus_CDS,
+.jbrowse .plus-augustus_CDS,
+.jbrowse .minus-augustus_CDS {
+height: 12px;
+background-color: #FFCCFF;
+}
+
+.jbrowse .fgenesh,
+.jbrowse .plus-fgenesh,
+.jbrowse .minus-fgenesh {
+height: 12px;
+background-color: #990099;
+}
+
+.jbrowse .fgenesh_UTR,
+.jbrowse .plus-fgenesh_UTR,
+.jbrowse .minus-fgenesh_UTR {
+height: 12px;
+background-color: #D699D6;
+}
+
+.jbrowse .fgenesh_CDS,
+.jbrowse .plus-fgenesh_CDS,
+.jbrowse .minus-fgenesh_CDS {
+height: 12px;
+background-color: #990099;
+}
+
+.jbrowse .genemark,
+.jbrowse .plus-genemark,
+.jbrowse .minus-genemark {
+height: 12px;
+background-color: #679B68;
+}
+
+.jbrowse .genemark_UTR,
+.jbrowse .plus-genemark_UTR,
+.jbrowse .minus-genemark_UTR {
+height: 12px;
+background-color: #527C53;
+}
+
+.jbrowse .genemark_CDS,
+.jbrowse .plus-genemark_CDS,
+.jbrowse .minus-genemark_CDS {
+height: 12px;
+background-color: #679B68;
+}
+
+.jbrowse .gnomon_UTR,
+.jbrowse .plus-gnomon_UTR,
+.jbrowse .minus-gnomon_UTR {
+height: 12px;
+background-color: #DB4E00;
+}
+
+.jbrowse .gnomon_CDS,
+.jbrowse .plus-gnomon_CDS,
+.jbrowse .minus-gnomon_CDS {
+height: 12px;
+background-color: #FFAA11;
+}
+
+.jbrowse .jamp,
+.jbrowse .plus-jamp,
+.jbrowse .minus-jamp {
+height: 12px;
+background-color: #993399;
+}
+
+.jbrowse .jamp_UTR,
+.jbrowse .plus-jamp_UTR,
+.jbrowse .minus-jamp_UTR {
+height: 12px;
+background-color: #CCCCFF;
+}
+
+.jbrowse .jamp_CDS,
+.jbrowse .plus-jamp_CDS,
+.jbrowse .minus-jamp_CDS {
+height: 12px;
+background-color: #993399;
+}
+
+.jbrowse .blastn,
+.jbrowse .plus-blastn,
+.jbrowse .minus-blastn {
+height: 12px;
+background-color: #996633;
+}
+
+.jbrowse .est2genome,
+.jbrowse .plus-est2genome,
+.jbrowse .minus-est2genome {
+height: 12px;
+background-color: #FFC966;
+}
+
+
+.jbrowse .protein_domains,
+.jbrowse .plus-protein_domains,
+.jbrowse .minus-protein_domains {
+height: 12px;
+background-color: #9D336B;
+}
+
+.jbrowse .generic_NCBI-cds, 
+.jbrowse .plus-ogs-cds, 
+.jbrowse .jbrowse .minus-ogs-cds {
+background-color: #444444;
+height: 12px;
+}
+
+.jbrowse .generic_NCBI-utr, 
+.jbrowse .plus-ogs-utr,
+.jbrowse .five_prime_utr, 
+.jbrowse .plus-five_prime_utr, 
+.jbrowse .minus-five_prime_utr,
+.jbrowse .three_prime_utr, 
+.jbrowse .plus-three_prime_utr, 
+.jbrowse .minus-three_prime_utr,
+.jbrowse .plus-primary_gene_set-utr,
+.jbrowse .minus-primary_gene_set-utr,
+.jbrowse .primary_gene_set-utr,
+.jbrowse .utr,
+.jbrowse .plus-utr,
+.jbrowse .minus-utr,
+.jbrowse .minus-ogs-utr {
+height: 12px;
+background-color: #cccccc;
+}
+
+
+.jbrowse .pseudogene, 
+.jbrowse .plus-pseudogene,
+.jbrowse .minus-pseudogene {
+height: 12px;
+background-color: #cd20f0;
+}
