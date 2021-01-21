@@ -1,7 +1,12 @@
 {
-   "css" : "data/custom.css",
-   "formatVersion" : 1,
+   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
    "share_link" : 0,
+   "plugins" : [
+      {
+         "location" : "./plugins/WebApollo",
+         "name" : "WebApollo"
+      }
+   ],
    "tracks" : [
       {
          "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
@@ -116,7 +121,7 @@
             "arrowheadClass" : "trellis-arrowhead"
          },
          "key" : "NCBI Predicted lncRNA, Annotation Release 100",
-         "trackType" : "WebApollo/View/Track/DraggableNeatHTMLFeatures",
+         "trackType" : null,
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json",
          "compress" : 0,
@@ -213,13 +218,14 @@
          "type" : "JBrowse/View/Track/Wiggle/Density",
          "bicolor_pivot" : "0.5",
          "key" : "GC Content",
+         "scoreType": "avgScore",
          "autoscale" : "local",
          "metadata" : {
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
             "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
             "Track contact" : "The i5k workspace@NAL"
          },
-         "category" : "0. Reference Assembly"
+         "category" : "Reference Assembly"
       }
    ],
    "names" : {

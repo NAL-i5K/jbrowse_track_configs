@@ -1,5 +1,4 @@
 {
-   "css":"data/custom.css",
    "formatVersion" : 1,
    "names" : {
       "type" : "Hash",
@@ -48,7 +47,7 @@
       {
          "autoscale" : "local",
          "bicolor_pivot" : "zero",
-         "category" : "0. Reference Assembly",
+         "category" : "Reference Assembly",
          "key" : "Gaps in assembly",
          "label" : "Gaps in assembly",
          "metadata" : {
@@ -67,8 +66,10 @@
       {
          "autoscale" : "local",
          "bicolor_pivot" : "0.5",
-         "category" : "0. Reference Assembly",
+         "category" : "Reference Assembly",
          "key" : "GC Content",
+         "scoreType": "avgScore",
+         "scoreType": "avgScore",
          "label" : "GC Content",
          "metadata" : {
             "Track contact" : "The i5k workspace@NAL",

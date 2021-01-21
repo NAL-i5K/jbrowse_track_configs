@@ -1,1152 +1,67 @@
 {
-   "css" : "data/custom.css";
    "share_link" : 0,
+   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
    "tracks" : [
       {
-         "seqType" : "dna",
-         "key" : "Reference sequence",
-         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
          "chunkSize" : 20000,
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
          "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
-         "label" : "DNA",
+         "category" : "Reference sequence",
          "type" : "SequenceTrack",
-         "category" : "Reference sequence"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "augustus"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "Augustus gene predictions",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/augustus_masked/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from the Augustus gene prediction software as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/1. Gene Sets/Supplementary Gene Predictions",
-         "type" : "FeatureTrack",
-         "label" : "augustus_masked"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Annelida",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Annelida/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "blastx_Annelida",
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Annelida proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Arthropoda",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Arthropoda/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Arthropoda proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "label" : "blastx_Arthropoda",
-         "type" : "FeatureTrack"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Atelocerata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Atelocerata/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "blastx_Atelocerata",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Atelocerata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Cephalochordata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Cephalochordata/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Cephalochordata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "type" : "FeatureTrack",
-         "label" : "blastx_Cephalochordata"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Chelicerata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Chelicerata/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "blastx_Chelicerata",
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Chelicerata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Cnidaria",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Cnidaria/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Cnidaria proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "label" : "blastx_Cnidaria",
-         "type" : "FeatureTrack"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Craniata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Craniata/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "blastx_Craniata",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Craniata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Crustacea",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Crustacea/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Crustacea proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "type" : "FeatureTrack",
-         "label" : "blastx_Crustacea"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Echinodermata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Echinodermata/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "blastx_Echinodermata",
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Echinodermata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Mollusca",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Mollusca/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Mollusca proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "label" : "blastx_Mollusca",
-         "type" : "FeatureTrack"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Nemata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Nemata/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "blastx_Nemata",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Nemata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Nematomorpha",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Nematomorpha/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Nematomorpha proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "type" : "FeatureTrack",
-         "label" : "blastx_Nematomorpha"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Onychophora",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Onychophora/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "blastx_Onychophora",
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Onychophora proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Parazoa",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Parazoa/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Parazoa proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "label" : "blastx_Parazoa",
-         "type" : "FeatureTrack"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Placozoa",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Placozoa/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "blastx_Placozoa",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Placozoa proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Platyhelminthes",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Platyhelminthes/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Platyhelminthes proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "type" : "FeatureTrack",
-         "label" : "blastx_Platyhelminthes"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Priapulida",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Priapulida/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "blastx_Priapulida",
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Priapulida proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Tardigrada",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Tardigrada/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Tardigrada proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "label" : "blastx_Tardigrada",
-         "type" : "FeatureTrack"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_Tunicata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_Tunicata/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "blastx_Tunicata",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of Tunicata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx_UNCATEGORISED",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/blastx_UNCATEGORISED/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Blastx alignments of UNCATEGORISED proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "type" : "FeatureTrack",
-         "label" : "blastx_UNCATEGORISED"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "cegma"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "Cegma",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/Cegma/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "Cegma",
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from CEGMA alignments as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "est_gff"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "ESTs_cufflinks",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/ESTs_cufflinks/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from EST alignments resulting from the Cufflinks software as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/4. Transcriptome/Assembly",
-         "type" : "FeatureTrack",
-         "label" : "ESTs_cufflinks"
-      },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "primary_gene_set-cds",
-               "UTR" : "primary_gene_set-utr"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "APLA-v0.5.3-Models",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/agrpla_current_models/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "agrpla_current_models",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Consensus gene models from the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/1. Gene Sets/Primary Gene Sets: Protein Coding"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Annelida",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Annelida/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Annelida proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "type" : "FeatureTrack",
-         "label" : "protein2genome_Annelida"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Arthropoda",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Arthropoda/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "protein2genome_Arthropoda",
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Arthropoda proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Atelocerata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Atelocerata/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Atelocerata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "label" : "protein2genome_Atelocerata",
-         "type" : "FeatureTrack"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Cephalochordata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Cephalochordata/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "protein2genome_Cephalochordata",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Cephalochordata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Chelicerata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Chelicerata/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Chelicerata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "type" : "FeatureTrack",
-         "label" : "protein2genome_Chelicerata"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Cnidaria",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Cnidaria/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "protein2genome_Cnidaria",
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Cnidaria proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Craniata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Craniata/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Craniata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "label" : "protein2genome_Craniata",
-         "type" : "FeatureTrack"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Crustacea",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Crustacea/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "protein2genome_Crustacea",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Crustacea proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Echinodermata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Echinodermata/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Echinodermata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "type" : "FeatureTrack",
-         "label" : "protein2genome_Echinodermata"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Mollusca",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Mollusca/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "protein2genome_Mollusca",
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Mollusca proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Nemata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Nemata/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Nemata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "label" : "protein2genome_Nemata",
-         "type" : "FeatureTrack"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Nematomorpha",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Nematomorpha/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "protein2genome_Nematomorpha",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Nematomorpha proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Onychophora",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Onychophora/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Onychophora proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "type" : "FeatureTrack",
-         "label" : "protein2genome_Onychophora"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Parazoa",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Parazoa/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "protein2genome_Parazoa",
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Parazoa proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Placozoa",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Placozoa/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Placozoa proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "label" : "protein2genome_Placozoa",
-         "type" : "FeatureTrack"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Platyhelminthes",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Platyhelminthes/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "protein2genome_Platyhelminthes",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Platyhelminthes proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Priapulida",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Priapulida/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Priapulida proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "type" : "FeatureTrack",
-         "label" : "protein2genome_Priapulida"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Tardigrada",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Tardigrada/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "protein2genome_Tardigrada",
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Tardigrada proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_Tunicata",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_Tunicata/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of Tunicata proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "label" : "protein2genome_Tunicata",
-         "type" : "FeatureTrack"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome_UNCATEGORISED",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/protein2genome_UNCATEGORISED/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "protein2genome_UNCATEGORISED",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Protein2genome alignments of a set of UNCATEGORISED proteins as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "repeat"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "repeatmasker",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/repeatmasker/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from RepeatMasker as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "category" : "BCM_v0.5.3/2. Evidence/Repeats",
-         "type" : "FeatureTrack",
-         "label" : "repeatmasker"
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "repeat"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "repeatrunner",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/repeatrunner/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "repeatrunner",
-         "category" : "BCM_v0.5.3/2. Evidence/Repeats",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from Repeatrunner as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "snap"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "SNAP gene predictions",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/snap_masked/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "BCM_v0.5.3/1. Gene Sets/Supplementary Gene Predictions",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Data provider" : "Daniel Hughes, Baylor College of Medicine",
-            "Track legend" : "Results from the SNAP gene prediction software as part of the MAKER automated annotation pipeline.",
-            "Data description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed."
-         },
-         "label" : "snap_masked",
-         "type" : "FeatureTrack"
+         "label" : "DNA",
+         "key" : "Reference sequence"
       },
       {
          "autocomplete" : "none",
          "style" : {
-            "className" : "annot",
             "renderClassName" : "annot-render",
+            "className" : "annot",
             "subfeatureClasses" : {
-               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
                "wholeCDS" : null,
+               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
                "exon" : "container-100pct",
                "CDS" : "annot-CDS",
-               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
-               "UTR" : "annot-UTR"
+               "UTR" : "annot-UTR",
+               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site"
             },
-            "arrowheadClass" : "annot-arrowhead",
             "alternateClasses" : {
                "transposable_element" : {
-                  "renderClassName" : "blue-ibeam-render",
-                  "className" : "blue-ibeam"
+                  "className" : "blue-ibeam",
+                  "renderClassName" : "blue-ibeam-render"
                },
                "pseudogene" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "light-purple-80pct"
+                  "className" : "light-purple-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
                "snRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
                "rRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
                "snoRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
                "repeat_region" : {
                   "className" : "magenta-80pct"
                },
                "ncRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
                "miRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
                "tRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
                }
             },
+            "arrowheadClass" : "annot-arrowhead",
             "uniqueIdField" : "id",
             "centerSubFeature" : {
                "non_canonical_three_prime_splice_site" : false,
@@ -1163,6 +78,1090 @@
       },
       {
          "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "primary_gene_set-cds",
+               "UTR" : "primary_gene_set-utr"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "APLA_v0.5.3-Models",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/agrpla_current_models/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/1. Gene Sets/Primary Gene Sets: Protein Coding",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Consensus gene models from the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "agrpla_current_models"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "augustus"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "augustus_masked",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/augustus_masked/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/1. Gene Sets/Supplementary Gene Predictions",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from the Augustus gene prediction software as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "augustus_masked"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Annelida",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Annelida/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Annelida proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Annelida"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Arthropoda",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Arthropoda/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Arthropoda proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Arthropoda"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Atelocerata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Atelocerata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Atelocerata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Atelocerata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Cephalochordata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Cephalochordata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Cephalochordata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Cephalochordata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Chelicerata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Chelicerata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Chelicerata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Chelicerata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Cnidaria",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Cnidaria/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Cnidaria proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Cnidaria"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Craniata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Craniata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Craniata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Craniata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Crustacea",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Crustacea/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Crustacea proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Crustacea"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Echinodermata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Echinodermata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Echinodermata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Echinodermata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Mollusca",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Mollusca/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Mollusca proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Mollusca"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Nemata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Nemata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Nemata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Nemata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Nematomorpha",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Nematomorpha/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Nematomorpha proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Nematomorpha"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Onychophora",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Onychophora/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Onychophora proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Onychophora"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Parazoa",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Parazoa/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Parazoa proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Parazoa"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Placozoa",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Placozoa/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Placozoa proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Placozoa"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Platyhelminthes",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Platyhelminthes/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Platyhelminthes proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Platyhelminthes"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Priapulida",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Priapulida/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Priapulida proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Priapulida"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Tardigrada",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Tardigrada/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Tardigrada proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Tardigrada"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_Tunicata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_Tunicata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of Tunicata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_Tunicata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "blastx_UNCATEGORISED",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/blastx_UNCATEGORISED/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx alignments of a set of UNCATEGORISED proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "blastx_UNCATEGORISED"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "cegma"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "cegma",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/cegma/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Other",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from CEGMA alignments as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "cegma"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "est"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "est_gff:cufflinks_i5k",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/est_gff:cufflinks_i5k/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/4. Transcriptome/Assembly",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from EST alignments resulting from the Cufflinks software as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "est_gff:cufflinks_i5k"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Annelida",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Annelida/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Annelida proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Annelida"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Arthropoda",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Arthropoda/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Arthropoda proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Arthropoda"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Atelocerata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Atelocerata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Atelocerata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Atelocerata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Cephalochordata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Cephalochordata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Cephalochordata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Cephalochordata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Chelicerata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Chelicerata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Chelicerata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Chelicerata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Cnidaria",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Cnidaria/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Cnidaria proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Cnidaria"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Craniata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Craniata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Craniata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Craniata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Crustacea",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Crustacea/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Crustacea proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Crustacea"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Echinodermata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Echinodermata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Echinodermata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Echinodermata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Mollusca",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Mollusca/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Mollusca proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Mollusca"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Nemata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Nemata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Nemata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Nemata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Nematomorpha",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Nematomorpha/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Nematomorpha proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Nematomorpha"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Onychophora",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Onychophora/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Onychophora proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Onychophora"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Parazoa",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Parazoa/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Parazoa proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Parazoa"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Placozoa",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Placozoa/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Placozoa proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Placozoa"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Platyhelminthes",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Platyhelminthes/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Platyhelminthes proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Platyhelminthes"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Priapulida",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Priapulida/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Priapulida proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Priapulida"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Tardigrada",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Tardigrada/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Tardigrada proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Tardigrada"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_Tunicata",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_Tunicata/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of Tunicata proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_Tunicata"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "protein2genome_UNCATEGORISED",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/protein2genome_UNCATEGORISED/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/3. Mapped Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome alignments of a set of UNCATEGORISED proteins as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "protein2genome_UNCATEGORISED"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "repeat"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "repeatmasker",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/repeatmasker/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/2. Evidence/Repeats",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from RepeatMasker as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "repeatmasker"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "repeat"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "repeatrunner",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/repeatrunner/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/2. Evidence/Repeats",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Repeatrunner as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "repeatrunner"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "snap"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "snap_masked",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/snap_masked/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "BCM_v0.5.3/1. Gene Sets/Supplementary Gene Predictions",
+         "metadata" : {
+            "Analysis description" : "The MAKER automated annotation software was run using RNA-Seq, protein homology from a wide taxonomic range, and CEGMA proteins as external evidence. Additional post-processing of the gene predictions was performed.",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from the SNAP gene prediction software as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Daniel Hughes, Baylor College of Medicine"
+         },
+         "type" : "FeatureTrack",
+         "label" : "snap_masked"
+      },
+      {
+         "style" : {
             "pos_color" : "black",
             "neg_color" : "white"
          },
@@ -1170,38 +1169,168 @@
          "autoscale" : "local",
          "key" : "Gaps in assembly",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/GCA_000699045.1_Apla_1.0_genomic.fna.gaps.bigwig",
-
-"category" : "0. Reference Assembly",
-"metadata" : {
+         "urlTemplate" : "bigwig/Aplan.scaffolds.50.fa.gaps.bigwig",
+         "category" : "Reference Assembly",
+         "label" : "Gaps in assembly",
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "metadata" : {
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
             "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
             "Track contact" : "The i5k workspace@NAL"
-},
-         "label" : "Gaps in assembly",
-         "type" : "JBrowse/View/Track/Wiggle/Density"
+         }
       },
       {
+         "style" : {
+            "neg_color" : "rgba(255,255,0,50)",
+            "pos_color" : "rgba(0,0,255,50)"
+         },
+         "bicolor_pivot" : "0.5",
+         "key" : "GC Content",
+         "scoreType": "avgScore",
+         "autoscale" : "local",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/GCA_000699045.1_Apla_1.0_genomic.fna.gc.bigwig",
-
-"category" : "0. Reference Assembly",
-"metadata" : {
+         "urlTemplate" : "bigwig/Aplan.scaffolds.50.fa.gc.bigwig",
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "category" : "Reference Assembly",
+         "label" : "GC Content",
+         "metadata" : {
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
             "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
             "Track contact" : "The i5k workspace@NAL"
-         },
+         }
+      },
+      {
          "style" : {
-            "neg_color" : "rgba(255,255,0,50)",
-            "pos_color" : "rgba(0,0,255,50)",
-            "bg_color": "rgba(230,230,230,0.6)",
-            "clip_marker_color": "black"
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "primary_gene_set-cds",
+               "UTR" : "primary_gene_set-utr"
+            },
+            "arrowheadClass" : "trellis-arrowhead",
+            "description" : "product,note, description"
          },
-         "label" : "GC Content",
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "bicolor_pivot" : "0.5",
-         "key" : "GC Content",
-         "autoscale" : "local"
+         "key" : "NCBI Predicted protein coding genes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Agrilus_planipennis_Annotation_Release_100/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "2. NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
+         "label" : "Agrilus_planipennis_Annotation_Release_100",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/699/045/GCF_000699045.1_Apla_1.0/GCF_000699045.1_Apla_1.0_genomic.gff.gz",
+            "Data provider" : "NCBI",
+            "Note" : "Some genes may have non-coding transcripts",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Agrilus_planipennis/README_CURRENT_RELEASE"
+         }
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted pseudogenes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json",
+         "compress" : 0,
+         "label" : "NCBI_Annotation_Release_100_Pseudogene",
+         "category" : "2. NCBI Annotation Release 100/1. Gene Sets/Pseudogenes",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/699/045/GCF_000699045.1_Apla_1.0/GCF_000699045.1_Apla_1.0_genomic.gff.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Agrilus_planipennis/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted tRNAs, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/699/045/GCF_000699045.1_Apla_1.0/GCF_000699045.1_Apla_1.0_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Agrilus_planipennis/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "2. NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+         "label" : "NCBI_Annotation_Release_100_tRNA"
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "cDNA match evidence from NCBI Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "2. NCBI Annotation Release 100/2. Evidence",
+         "label" : "NCBI_Annotation_Release_100_cDNA_match",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/699/045/GCF_000699045.1_Apla_1.0/GCF_000699045.1_Apla_1.0_genomic.gff.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Agrilus_planipennis/README_CURRENT_RELEASE"
+         }
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead",
+            "description" : "product,note, description"
+         },
+         "key" : "NCBI Predicted lncRNA, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/699/045/GCF_000699045.1_Apla_1.0/GCF_000699045.1_Apla_1.0_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Agrilus_planipennis/README_CURRENT_RELEASE"
+         },
+         "label" : "NCBI_Annotation_Release_100_lncRNA",
+         "category" : "2. NCBI Annotation Release 100/1. Gene Sets/Noncoding"
+      }
+   ],
+   "plugins" : [
+      {
+         "location" : "./plugins/WebApollo",
+         "name" : "WebApollo"
       }
    ],
    "names" : {
@@ -1209,6 +1338,6 @@
       "type" : "Hash"
    },
    "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
-   "alwaysOnTracks" : "DNA,Annotations",
-   "formatVersion" : 1
+   "formatVersion" : 1,
+   "alwaysOnTracks" : "DNA,Annotations"
 }

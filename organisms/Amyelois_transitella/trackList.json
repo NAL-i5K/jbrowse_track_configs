@@ -1,5 +1,5 @@
 {
-   "css" : "data/contrib_styles.css",
+   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
    "share_link" : 0,
    "tracks" : [
       {
@@ -113,7 +113,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "urlTemplate" : "bigwig/680683_ref_ASM118610v1_chrUn_refseq_IDS.fa.gaps.bigwig",
          "type" : "JBrowse/View/Track/Wiggle/Density",
-         "category" : "0. Reference Assembly",
+         "category" : "Reference Assembly",
          "metadata" : {
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
             "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
@@ -129,10 +129,11 @@
          "bicolor_pivot" : "0.5",
          "autoscale" : "local",
          "key" : "GC Content",
+         "scoreType": "avgScore",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "urlTemplate" : "bigwig/680683_ref_ASM118610v1_chrUn_refseq_IDS.fa.gc.bigwig",
          "type" : "JBrowse/View/Track/Wiggle/Density",
-         "category" : "0. Reference Assembly",
+         "category" : "Reference Assembly",
          "metadata" : {
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
             "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
@@ -341,6 +342,7 @@
          "label" : "Xanthotoxin-exposed gut",
          "type" : "WebApollo/View/Track/DraggableAlignments",
          "key" : "Xanthotoxin-exposed gut",
+	 "chunkSizeLimit": "100,000,000",
 "category" : "Transcriptome/Mapped Reads",
 "metadata": {
 "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)",

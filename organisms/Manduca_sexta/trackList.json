@@ -1,0 +1,515 @@
+{
+   "alwaysOnTracks" : "DNA,Annotations",
+   "css" : "data/contrib_styles.css",
+   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
+   "formatVersion" : 1,
+   "names" : {
+      "type" : "Hash",
+      "url" : "names/"
+   },
+   "plugins" : [
+      {
+         "location" : "./plugins/WebApollo",
+         "name" : "WebApollo"
+      }
+   ],
+   "share_link" : 0,
+   "tracks" : [
+      {
+         "category" : "Reference sequence",
+         "chunkSize" : 20000,
+         "key" : "Reference sequence",
+         "label" : "DNA",
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "type" : "SequenceTrack",
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
+      },
+      {
+         "autocomplete" : "none",
+         "compress" : 0,
+         "key" : "User-created Annotations",
+         "label" : "Annotations",
+         "phase" : 0,
+         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
+         "style" : {
+            "alternateClasses" : {
+               "miRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "ncRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "pseudogene" : {
+                  "className" : "light-purple-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "rRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "repeat_region" : {
+                  "className" : "magenta-80pct"
+               },
+               "snRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "snoRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "tRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "transposable_element" : {
+                  "className" : "blue-ibeam",
+                  "renderClassName" : "blue-ibeam-render"
+               }
+            },
+            "arrowheadClass" : "annot-arrowhead",
+            "centerSubFeature" : {
+               "non_canonical_five_prime_splice_site" : false,
+               "non_canonical_three_prime_splice_site" : false
+            },
+            "className" : "annot",
+            "renderClassName" : "annot-render",
+            "subfeatureClasses" : {
+               "CDS" : "annot-CDS",
+               "UTR" : "annot-UTR",
+               "exon" : "container-100pct",
+               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
+               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
+               "wholeCDS" : null
+            },
+            "uniqueIdField" : "id"
+         },
+         "subfeatures" : 1,
+         "type" : "WebApollo/View/Track/AnnotTrack"
+      },
+      {
+         "category" : "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+         "compress" : 0,
+         "key" : "augustus",
+         "label" : "augustus",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "Augustus results as part of the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Augustus gene models from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "augustus"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/augustus/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+         "compress" : 0,
+         "key" : "augustus_masked",
+         "label" : "augustus_masked",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "Augustus results as part of the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Augustus gene models from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "augustus"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/augustus_masked/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/3. Mapped DNA/Supplementary: Blastn",
+         "compress" : 0,
+         "key" : "blastn",
+         "label" : "blastn",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "Blastn results as part of the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Blastn results from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastn"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/blastn/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/3. Mapped Proteins/Supplementary: BlastX",
+         "compress" : 0,
+         "key" : "blastx",
+         "label" : "blastx",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "Blastx results as part of the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Blastx results from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/blastx/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/3. Mapped DNA/est2genome",
+         "compress" : 0,
+         "key" : "est2genome",
+         "label" : "est2genome",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "est2genome results as part of the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "est2genome results from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "est2genome"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/est2genome/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/4. Transcriptome/Assembly",
+         "compress" : 0,
+         "key" : "est_gff:cufflinks",
+         "label" : "est_gff:cufflinks",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "Mapped cufflinks results as part of the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Mapped cufflinks results from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "est"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/est_gff:cufflinks/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/3. Mapped Proteins/Protein2genome",
+         "compress" : 0,
+         "key" : "protein2genome",
+         "label" : "protein2genome",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "protein2genome results as part of the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "protein2genome results from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/protein2genome/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/2. Evidence/Repeats",
+         "compress" : 0,
+         "key" : "repeatmasker",
+         "label" : "repeatmasker",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "Repeatmasker results as part of the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Repeatmasker results from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "repeat"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/repeatmasker/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/2. Evidence/Repeats",
+         "compress" : 0,
+         "key" : "repeatrunner",
+         "label" : "repeatrunner",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "Repeatrunner results as part of the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Repeatrunner results from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "repeat"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/repeatrunner/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+         "compress" : 0,
+         "key" : "snap",
+         "label" : "snap",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "Snap results as part of the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Snap results from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "snap"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/snap/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+         "compress" : 0,
+         "key" : "snap_masked",
+         "label" : "snap_masked",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "Snap results as part of the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Snap results from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "snap"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/snap_masked/{refseq}/trackData.json"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "Reference Assembly",
+         "key" : "Gaps in assembly",
+         "label" : "Gaps in assembly",
+         "metadata" : {
+            "Track contact" : "The i5k workspace@NAL",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "neg_color" : "white",
+            "pos_color" : "black"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "urlTemplate" : "bigwig/ms_scaffolds_NALmod.fa.gaps.bigwig"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "0.5",
+         "category" : "Reference Assembly",
+         "key" : "GC Content",
+         "label" : "GC Content",
+         "metadata" : {
+            "Track contact" : "The i5k workspace@NAL",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "neg_color" : "rgba(255,255,0,50)",
+            "pos_color" : "rgba(0,0,255,50)"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "urlTemplate" : "bigwig/ms_scaffolds_NALmod.fa.gc.bigwig"
+      },
+      {
+         "category" : "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+         "compress" : 0,
+         "key" : "maker",
+         "label" : "maker",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "Results from the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "CDS" : "alt_gene_set-cds",
+               "UTR" : "alt_gene_set-utr",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/maker/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+         "compress" : 0,
+         "key" : "model_gff:maker.gff",
+         "label" : "model_gff:maker.gff",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "Model-gff results from the MAKER 2.25 pipeline",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Model-gff results from the MAKER 2.25 pipeline"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "container-10px",
+            "subfeatureClasses" : {
+               "match_part" : "darkblue-80pct"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/model_gff:maker.gff/{refseq}/trackData.json"
+      },
+      {
+         "category" : "OGS2.0/1. Gene Sets/Official Gene Set",
+         "compress" : 0,
+         "key" : "OGSv2.0 Gene",
+         "label" : "mansex_current_models",
+         "metadata" : {
+            "Analysis contact" : "Michael Kanost, Kansas State University",
+            "Analysis description" : "MAKER 2.25 was used for initial set of gene predictions. These were used for manual annotation using Web Apollo by a community of experts. The resulting manual annotations, the MAKER results, and de novo assemblies of RNA seq data (Trinity and Oases) were used to produce  gene predictions using the PASA2 program. (OGS2.0)",
+            "Publication status" : "Published, please cite https://doi.org/10.1016/j.ibmb.2016.07.005",
+            "Track legend" : "Consensus gene models from the PASA2 program"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
+            "description" : "product, note, description",
+            "subfeatureClasses" : {
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : "HTMLFeatures",
+         "type" : "HTMLFeatures",
+         "urlTemplate" : "tracks/mansex_current_models/{refseq}/trackData.json"
+      },
+      {
+         "category" : "RNA-Seq/Mapped Reads",
+         "key" : "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28",
+         "label" : "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659998'>SRR2659998</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963201'>SRR10963201</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR368953'>ERR368953</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963222'>SRR10963222</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577015'>SRR1577015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1576993'>SRR1576993</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085616'>SRR11085616</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963225'>SRR10963225</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577022'>SRR1577022</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963200'>SRR10963200</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "urlTemplate" : "analyses/Manduca-sexta-RNA-Seq_2020-10-28_v1.0/Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28.bam"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "RNA-Seq/Coverage Plots",
+         "key" : "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_coverage",
+         "label" : "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_coverage",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659998'>SRR2659998</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963201'>SRR10963201</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR368953'>ERR368953</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963222'>SRR10963222</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577015'>SRR1577015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1576993'>SRR1576993</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085616'>SRR11085616</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963225'>SRR10963225</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577022'>SRR1577022</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963200'>SRR10963200</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "urlTemplate" : "analyses/Manduca-sexta-RNA-Seq_2020-10-28_v1.0/Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28.bigwig"
+      },
+      {
+         "category" : "RNA-Seq/Splice junctions",
+         "compress" : 0,
+         "key" : "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_junctions",
+         "label" : "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_junctions",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659998'>SRR2659998</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963201'>SRR10963201</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR368953'>ERR368953</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963222'>SRR10963222</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577015'>SRR1577015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1576993'>SRR1576993</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085616'>SRR11085616</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963225'>SRR10963225</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577022'>SRR1577022</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963200'>SRR10963200</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "feature"
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_junctions/{refseq}/trackData.json"
+      }
+   ]
+}

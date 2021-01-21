@@ -1,0 +1,432 @@
+{
+   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
+   "share_link" : 0,
+   "plugins" : [
+      {
+         "location" : "./plugins/WebApollo",
+         "name" : "WebApollo"
+      }
+   ],
+   "tracks" : [
+      {
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "chunkSize" : 20000,
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "label" : "DNA",
+         "type" : "SequenceTrack",
+         "category" : "Reference sequence",
+         "key" : "Reference sequence"
+      },
+      {
+         "autocomplete" : "none",
+         "style" : {
+            "className" : "annot",
+            "renderClassName" : "annot-render",
+            "subfeatureClasses" : {
+               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "annot-CDS",
+               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
+               "UTR" : "annot-UTR"
+            },
+            "arrowheadClass" : "annot-arrowhead",
+            "alternateClasses" : {
+               "transposable_element" : {
+                  "renderClassName" : "blue-ibeam-render",
+                  "className" : "blue-ibeam"
+               },
+               "pseudogene" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "light-purple-80pct"
+               },
+               "snRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "rRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "snoRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "repeat_region" : {
+                  "className" : "magenta-80pct"
+               },
+               "ncRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "miRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "tRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               }
+            },
+            "uniqueIdField" : "id",
+            "centerSubFeature" : {
+               "non_canonical_three_prime_splice_site" : false,
+               "non_canonical_five_prime_splice_site" : false
+            }
+         },
+         "key" : "User-created Annotations",
+         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
+         "phase" : 0,
+         "compress" : 0,
+         "label" : "Annotations",
+         "type" : "WebApollo/View/Track/AnnotTrack",
+         "subfeatures" : 1
+      },
+      {
+         "style" : {
+            "pos_color" : "black",
+            "neg_color" : "white"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Gaps in assembly",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/64838_ref_ASM80636v1_chrUn_refseq_IDS.fa.gaps.bigwig",
+         "label" : "Gaps in assembly",
+         "category" : "Reference Assembly",
+         "metadata" : {
+            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track contact" : "The i5k workspace@NAL"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/Density"
+      },
+      {
+         "style" : {
+            "neg_color" : "rgba(255,255,0,50)",
+            "pos_color" : "rgba(0,0,255,50)"
+         },
+         "bicolor_pivot" : "0.5",
+         "key" : "GC Content",
+         "scoreType": "avgScore",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/64838_ref_ASM80636v1_chrUn_refseq_IDS.fa.gc.bigwig",
+         "category" : "Reference Assembly",
+         "label" : "GC Content",
+         "metadata" : {
+            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track contact" : "The i5k workspace@NAL"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/Density"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted protein coding genes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/RefSeq_Protein_Coding/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Fopius_arisanus/GFF/ref_ASM80636v1_scaffolds.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Fopius_arisanus/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Protein Coding",
+         "label" : "RefSeq_Protein_Coding"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted low-quality protein coding genes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/RefSeq_Low_Quality_Protein_Coding/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Protein Coding",
+         "label" : "RefSeq_Low_Quality_Protein_Coding",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Fopius_arisanus/GFF/ref_ASM80636v1_scaffolds.gff3.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Fopius_arisanus/README_CURRENT_RELEASE"
+         }
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted noncoding RNA, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/RefSeq_Noncoding_RNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Fopius_arisanus/GFF/ref_ASM80636v1_scaffolds.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Fopius_arisanus/README_CURRENT_RELEASE"
+         },
+         "label" : "RefSeq_Noncoding_RNA",
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Protein Coding"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted pseudogenes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/RefSeq_Psuedogene/{refseq}/trackData.json",
+         "compress" : 0,
+         "label" : "RefSeq_Psuedogene",
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Pseudogenes",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Fopius_arisanus/GFF/ref_ASM80636v1_scaffolds.gff3.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Fopius_arisanus/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/sgeib/Fari_i5k/male_accepted_hits_refSeq_IDs.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "TopHat v2.0.13",
+            "Publication status" : "Published. Calla et al. Transcriptome of the egg parasitoid Fopius arisanus: an important biocontrol tool for Tephritid fruit fly suppression, Gigascience,  2015, 4:36   doi:10.1186/s13742-015-0075-4 (http://www.gigasciencejournal.com/content/4/1/36)",
+            "File provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Other notes" : "See publication and NCBI Bioproject for sample details",
+            "NCBI SRA accession #" : "SRA: SRX689037",
+            "Geographical location of specimen collection" : "Fari Lab colony Bdor adapted, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "Date completed" : "12/2/15",
+            "Sex " : "Male",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/259572",
+            "Strain" : "Fari_Bdor",
+            "Tissues included" : "Pooled Adult Male ",
+            "Sequencing platform and version" : "Illumina HiSeq2000, 2x100 bp PE"
+         },
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "Fari_RNAseq_male",
+         "key" : "Fari_RNAseq_male"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/sgeib/Fari_i5k/female_accepted_hits_refSeq_IDs.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "TopHat v2.0.13",
+            "Publication status" : "Published. Calla et al. Transcriptome of the egg parasitoid Fopius arisanus: an important biocontrol tool for Tephritid fruit fly suppression, Gigascience,  2015, 4:36   doi:10.1186/s13742-015-0075-4 (http://www.gigasciencejournal.com/content/4/1/36)",
+            "File provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Other notes" : "See publication and NCBI Bioproject for sample details",
+            "NCBI SRA accession #" : "SRA: SRX689041",
+            "Geographical location of specimen collection" : "Fari Lab colony Bdor adapted, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "Date completed" : "12/2/15",
+            "Sex " : "Female ",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/259573",
+            "Strain" : "Fari_Bdor",
+            "Tissues included" : "Pooled Adult Female",
+            "Sequencing platform and version" : "Illumina HiSeq2000, 2x100 bp PE"
+         },
+         "label" : "Fari_RNAseq_female",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "Fari_RNAseq_female"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/sgeib/Fari_i5k/pupae_accepted_hits_refSeq_IDs.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "TopHat v2.0.13",
+            "Publication status" : "Published. Calla et al. Transcriptome of the egg parasitoid Fopius arisanus: an important biocontrol tool for Tephritid fruit fly suppression, Gigascience,  2015, 4:36   doi:10.1186/s13742-015-0075-4 (http://www.gigasciencejournal.com/content/4/1/36)",
+            "File provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Other notes" : "See publication and NCBI Bioproject for sample details",
+            "NCBI SRA accession #" : "SRA: SRX689038",
+            "Geographical location of specimen collection" : "Fari Lab colony Bdor adapted, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "Date completed" : "12/2/15",
+            "Sex " : "Pool",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/259571",
+            "Strain" : "Fari_Bdor",
+            "Tissues included" : "Pooled Pupae",
+            "Sequencing platform and version" : "Illumina HiSeq2000, 2x100 bp PE"
+         },
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "Fari_RNAseq_pupae",
+         "key" : "Fari_RNAseq_pupae"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/sgeib/Fari_i5k/larvae_accepted_hits_refSeq_IDs.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "TopHat v2.0.13",
+            "Publication status" : "Published. Calla et al. Transcriptome of the egg parasitoid Fopius arisanus: an important biocontrol tool for Tephritid fruit fly suppression, Gigascience,  2015, 4:36   doi:10.1186/s13742-015-0075-4 (http://www.gigasciencejournal.com/content/4/1/36)",
+            "File provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Other notes" : "See publication and NCBI Bioproject for sample details",
+            "NCBI SRA accession #" : "SRA: SRX689040",
+            "Geographical location of specimen collection" : "Fari Lab colony Bdor adapted, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "Date completed" : "12/2/15",
+            "Sex " : "Pool",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/259570",
+            "Strain" : "Fari_Bdor",
+            "Tissues included" : "Pooled Larvae",
+            "Sequencing platform and version" : "Illumina HiSeq2000, 2x100 bp PE"
+         },
+         "label" : "Fari_RNAseq_larvae",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "Fari_RNAseq_larvae"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Fari_RNAseq_female (Coverage Plot)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/sgeib/Fari_i5k/female_accepted_hits_refSeq_IDs.bigwig",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Geographical location of specimen collection":"Fari Lab colony Bdor adapted, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+	"Tissues included":"Pooled Adult Female",
+	"Sex ":"Female ",
+	"Strain":"Fari_Bdor",
+	"Other notes":"See publication and NCBI Bioproject for sample details",
+	"NCBI SRA accession #":"SRA: SRX689041",
+	"Sequencing platform and version":"Illumina HiSeq2000, 2x100 bp PE",
+	"Data source URL":"http://www.ncbi.nlm.nih.gov/bioproject/259573",
+	"Publication status":"Published. Calla et al. Transcriptome of the egg parasitoid Fopius arisanus: an important biocontrol tool for Tephritid fruit fly suppression, Gigascience,  2015, 4:36   doi:10.1186/s13742-015-0075-4 (http://www.gigasciencejournal.com/content/4/1/36)",
+	"File provider":"Scott Geib, USDA-ARS-PBARC",
+	"Analysis method":"TopHat v2.0.13",
+	"Date completed":"12/2/15"
+},
+         "label" : "Fari_RNAseq_female (Coverage Plot)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Fari_RNAseq_male (Coverage Plot)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/sgeib/Fari_i5k/male_accepted_hits_refSeq_IDs.bigwig",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Geographical location of specimen collection":"Fari Lab colony Bdor adapted, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+	"Tissues included":"Pooled Adult Male ",
+	"Sex ":"Male",
+	"Strain":"Fari_Bdor",
+	"Other notes":"See publication and NCBI Bioproject for sample details",
+	"NCBI SRA accession #":"SRA: SRX689037",
+	"Sequencing platform and version":"Illumina HiSeq2000, 2x100 bp PE",
+	"Data source URL":"http://www.ncbi.nlm.nih.gov/bioproject/259572",
+	"Publication status":"Published. Calla et al. Transcriptome of the egg parasitoid Fopius arisanus: an important biocontrol tool for Tephritid fruit fly suppression, Gigascience,  2015, 4:36   doi:10.1186/s13742-015-0075-4 (http://www.gigasciencejournal.com/content/4/1/36)",
+	"File provider":"Scott Geib, USDA-ARS-PBARC",
+	"Analysis method":"TopHat v2.0.13",
+	"Date completed":"12/2/15"
+},
+         "label" : "Fari_RNAseq_male (Coverage Plot)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Fari_RNAseq_larvae (Coverage Plot)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/sgeib/Fari_i5k/larvae_accepted_hits_refSeq_IDs.bigwig",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Geographical location of specimen collection":"Fari Lab colony Bdor adapted, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+	"Tissues included":"Pooled Larvae",
+	"Sex ":"Pool",
+	"Strain":"Fari_Bdor",
+	"Other notes":"See publication and NCBI Bioproject for sample details",
+	"NCBI SRA accession #":"SRA: SRX689040",
+	"Sequencing platform and version":"Illumina HiSeq2000, 2x100 bp PE",
+	"Data source URL":"http://www.ncbi.nlm.nih.gov/bioproject/259570",
+	"Publication status":"Published. Calla et al. Transcriptome of the egg parasitoid Fopius arisanus: an important biocontrol tool for Tephritid fruit fly suppression, Gigascience,  2015, 4:36   doi:10.1186/s13742-015-0075-4 (http://www.gigasciencejournal.com/content/4/1/36)",
+	"File provider":"Scott Geib, USDA-ARS-PBARC",
+	"Analysis method":"TopHat v2.0.13",
+	"Date completed":"12/2/15"
+},
+         "label" : "Fari_RNAseq_larvae (Coverage Plot)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/sgeib/Fari_i5k/pupae_accepted_hits_refSeq_IDs.bigwig",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Geographical location of specimen collection":"Fari Lab colony Bdor adapted, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+	"Tissues included":"Pooled Pupae",
+	"Sex ":"Pool",
+	"Strain":"Fari_Bdor",
+	"Other notes":"See publication and NCBI Bioproject for sample details",
+	"NCBI SRA accession #":"SRA: SRX689038",
+	"Sequencing platform and version":"Illumina HiSeq2000, 2x100 bp PE",
+	"Data source URL":"http://www.ncbi.nlm.nih.gov/bioproject/259571",
+	"Publication status":"Published. Calla et al. Transcriptome of the egg parasitoid Fopius arisanus: an important biocontrol tool for Tephritid fruit fly suppression, Gigascience,  2015, 4:36   doi:10.1186/s13742-015-0075-4 (http://www.gigasciencejournal.com/content/4/1/36)",
+	"File provider":"Scott Geib, USDA-ARS-PBARC",
+	"Analysis method":"TopHat v2.0.13",
+	"Date completed":"12/2/15"
+},
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "label" : "Fari_RNAseq_pupae (Coverage Plot)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "bicolor_pivot" : "zero",
+         "key" : "Fari_RNAseq_pupae (Coverage Plot)",
+         "autoscale" : "local"
+      }
+   ],
+   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
+   "alwaysOnTracks" : "DNA,Annotations",
+   "formatVersion" : 1
+}
