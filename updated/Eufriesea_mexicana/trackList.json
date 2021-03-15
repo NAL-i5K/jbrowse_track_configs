@@ -1,0 +1,153 @@
+{
+   "formatVersion" : 1,
+   "names" : {
+      "type" : "Hash",
+      "url" : "names/"
+   },
+   "tracks" : [
+      {
+         "category" : "NCBI Annotation Release 100",
+         "compress" : 0,
+         "key" : "NCBI_Annotation_Release_100_Pseudogene",
+         "label" : "NCBI_Annotation_Release_100_Pseudogene",
+         "metadata" : {
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Eufriesea_mexicana/README_CURRENT_RELEASE",
+            "Data provider" : "NCBI",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/483/705/GCF_001483705.1_ASM148370v1/GCF_001483705.1_ASM148370v1_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "container-16px",
+            "description" : "product, note, description",
+            "subfeatureClasses" : {
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : "HTMLFeatures",
+         "type" : "HTMLFeatures",
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+      },
+      {
+         "category" : "NCBI Annotation Release 100",
+         "compress" : 0,
+         "key" : "NCBI_Annotation_Release_100_Gene",
+         "label" : "NCBI_Annotation_Release_100_Gene",
+         "menuTemplate" : [
+             {
+                "label" : "View details",
+             },
+             {
+              "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
+              "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
+              "iconClass" : "dijitIconDatabase",
+              "action": "newWindow",
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}",
+              },
+        ],
+         "metadata" : {
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Eufriesea_mexicana/README_CURRENT_RELEASE",
+            "Data provider" : "NCBI",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/483/705/GCF_001483705.1_ASM148370v1/GCF_001483705.1_ASM148370v1_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
+            "description" : "product, note, description",
+            "subfeatureClasses" : {
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : "HTMLFeatures",
+         "type" : "HTMLFeatures",
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Gene/{refseq}/trackData.json"
+      },
+      {
+         "category" : "Reference sequence",
+         "faiUrlTemplate" : "seq/GCF_001483705.1_ASM148370v1_genomic.fna.fai",
+         "key" : "Reference sequence",
+         "label" : "DNA",
+         "seqType" : "dna",
+         "storeClass" : "JBrowse/Store/Sequence/IndexedFasta",
+         "type" : "SequenceTrack",
+         "urlTemplate" : "seq/GCF_001483705.1_ASM148370v1_genomic.fna",
+         "useAsRefSeqStore" : 1
+      },
+      {
+         "category" : "Reference sequence",
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "key" : "Gaps in assembly",
+         "label" : "Gaps in assembly",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "neg_color" : "white",
+            "pos_color" : "black"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "urlTemplate" : "bigwig/GCF_001483705.1_ASM148370v1_genomic.fna.gaps.bigwig"
+      },
+      {
+         "category" : "Reference sequence",
+         "autoscale" : "local",
+         "bicolor_pivot" : "0.5",
+         "key" : "GC Content",
+         "label" : "GC Content",
+         "scoreType" : "avgScore",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "neg_color" : "rgba(255,255,0,50)",
+            "pos_color" : "rgba(0,0,255,50)"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "urlTemplate" : "bigwig/GCF_001483705.1_ASM148370v1_genomic.fna.gc.bigwig"
+      },
+      {
+         "category" : "Eufriesea_mexicana_v1.2",
+         "compress" : 0,
+         "key" : "Eufriesea_mexicana_v1.2",
+         "label" : "Eufriesea_mexicana_v1.2",
+         "menuTemplate" : [
+             {
+                "label" : "View details",
+             },
+             {
+              "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
+              "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
+              "iconClass" : "dijitIconDatabase",
+              "action": "newWindow",
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}",
+              },
+        ],
+         "metadata" : {
+            "Data description" : "https://www.ncbi.nlm.nih.gov/pubmed/25977371",
+            "Data provider" : "BeeBase",
+            "Data source" : "BeeBase",
+            "Method" : "https://www.ncbi.nlm.nih.gov/pubmed/25977371"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "CDS" : "ogs-cds",
+               "UTR" : "ogs-utr",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/Eufriesea_mexicana_v1.2/{refseq}/trackData.json"
+      }
+   ]
+}

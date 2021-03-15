@@ -1,0 +1,1 @@
+mkdir Saccharomyces_eubayanus; cp /app/data/other_species/saceub/SEUB3.0/jbrowse/data/trackList.json Saccharomyces_eubayanus/
