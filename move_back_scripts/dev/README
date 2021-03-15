@@ -1,0 +1,11 @@
+#create the list of endpoints:
+# from within the psql shell
+ select common_name, directory from organism ORDER by common_name;
+
+# remove the leading and trailing lines
+nano organism_list.txt
+
+# remove extra whitespace from the file
+perl -pi -e "s/ +/ /g" organism_list.txt2
+
+
