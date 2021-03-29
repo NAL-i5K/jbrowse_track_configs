@@ -1805,12 +1805,6 @@
          "category" : "Athalia rosae OGSv1.0/1. Gene Sets/Other features"
       }
    ],
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
    "names" : {
       "url" : "names/",
       "type" : "Hash"

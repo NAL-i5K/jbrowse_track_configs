@@ -2,12 +2,6 @@
    "defaultTracks":"Contamination,cimlec_current_models",
    "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
    "share_link" : 0,
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
    "tracks" : [
       {
          "storeClass" : "JBrowse/Store/Sequence/StaticChunked",

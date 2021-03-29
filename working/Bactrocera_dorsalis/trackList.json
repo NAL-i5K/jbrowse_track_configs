@@ -570,12 +570,6 @@
          "key" : "Punador_pupae"
       }
    ],
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
    "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
    "formatVersion" : 1,
    "alwaysOnTracks" : "DNA,Annotations"

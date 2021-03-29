@@ -93,6 +93,16 @@
     border: 0px solid #555 !important;
   }
 
+.jbrowse .minus-misc_RNA .neat-UTR,
+.jbrowse .plus-misc_RNA .neat-UTR,
+.jbrowse .misc_RNA .neat-UTR{
+    height: 12px;
+    margin-top: 0px;
+    color: 00000;
+    background-color: #409fff;
+    border: 0px solid #555 !important;
+  }
+
 
 .jbrowse .mRNA .neat-UTR,
 .jbrowse .plus-mRNA .neat-UTR,

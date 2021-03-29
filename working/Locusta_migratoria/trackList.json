@@ -1,12 +1,6 @@
 {
    "css" : "data/contrib_styles.css",
    "share_link" : 0,
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
    "tracks" : [
       {
          "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
