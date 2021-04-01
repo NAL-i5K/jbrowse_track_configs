@@ -378,12 +378,6 @@
          "category" : "Dufourea novaeangliae v1.1/1. Gene Sets/Protein Coding"
       }
    ],
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
    "names" : {
       "url" : "names/",
       "type" : "Hash"

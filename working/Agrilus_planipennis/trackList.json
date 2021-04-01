@@ -1328,12 +1328,6 @@
          "category" : "2. NCBI Annotation Release 100/1. Gene Sets/Noncoding"
       }
    ],
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
    "names" : {
       "url" : "names/",
       "type" : "Hash"

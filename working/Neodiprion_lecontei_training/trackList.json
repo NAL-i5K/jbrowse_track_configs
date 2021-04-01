@@ -673,12 +673,6 @@
          "type" : "FeatureTrack"
       }
    ],
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
    "names" : {
       "url" : "names/",
       "type" : "Hash"

@@ -1,12 +1,6 @@
 {
    "share_link" : 0,
    "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
    "tracks" : [
       {
          "seqType" : "dna",
