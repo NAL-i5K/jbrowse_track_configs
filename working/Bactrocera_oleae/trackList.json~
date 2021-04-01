@@ -155,7 +155,6 @@
          "key" : "cDNA match evidence from NCBI Annotation Release 100",
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "trackType" : null,
-         "className" : "{type}",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
          "compress" : 0,
          "metadata" : {

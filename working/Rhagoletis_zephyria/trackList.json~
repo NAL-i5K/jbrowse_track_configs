@@ -82,36 +82,49 @@
          "type" : "WebApollo/View/Track/AnnotTrack",
          "subfeatures" : 1
       },
-            {
+      {
          "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "primary_gene_set-cds",
-               "UTR" : "primary_gene_set-utr"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
+            "pos_color" : "black",
+            "neg_color" : "white"
          },
-         "key" : "NCBI Predicted protein-coding genes, Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/aettum_current_models/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Gaps in assembly",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/GCF_001687245.1_Rhagoletis_zephyria_1.0_genomic_RefSeqIDs.fna.gaps.bigwig",
+         "category" : "Reference Assembly",
+         "label" : "Gaps in assembly",
+         "type" : "JBrowse/View/Track/Wiggle/Density",
          "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data provider" : "NCBI",
-            "Note" : "Some genes may have non-coding transcripts",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE"
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
+            "Track contact" : "The i5k workspace@NAL"
+         }
+      },
+      {
+         "style" : {
+            "neg_color" : "rgba(255,255,0,50)",
+            "pos_color" : "rgba(0,0,255,50)"
          },
-         "label" : "aettum_current_models",
-         "type" : "FeatureTrack"
+         "bicolor_pivot" : "0.5",
+         "key" : "GC Content",
+         "scoreType": "avgScore",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/GCF_001687245.1_Rhagoletis_zephyria_1.0_genomic_RefSeqIDs.fna.gc.bigwig",
+         "category" : "Reference Assembly",
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "metadata" : {
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
+            "Track contact" : "The i5k workspace@NAL"
+         },
+         "label" : "GC Content"
       },
       {
          "style" : {
             "className" : "container-16px",
+            "description": "product,note,description",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -121,23 +134,24 @@
             "arrowheadClass" : "trellis-arrowhead"
          },
          "key" : "NCBI Predicted lncRNA, Annotation Release 100",
-         "trackType" : null,
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
          "urlTemplate" : "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json",
          "compress" : 0,
          "type" : "FeatureTrack",
-         "label" : "NCBI_Annotation_Release_100_lncRNA",
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
          "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001687245.1_Rhagoletis_zephyria_1.0/GCF_001687245.1_Rhagoletis_zephyria_1.0_genomic.gff.gz",
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
             "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE"
-         }
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Rhagoletis_zephyria/README_CURRENT_RELEASE"
+         },
+         "label" : "NCBI_Annotation_Release_100_lncRNA",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding"
       },
       {
          "style" : {
             "className" : "container-16px",
+            "description": "product,note,description",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -147,23 +161,24 @@
             "arrowheadClass" : "trellis-arrowhead"
          },
          "key" : "NCBI Predicted pseudogenes, Annotation Release 100",
-         "trackType" : null,
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
          "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json",
          "compress" : 0,
+         "label" : "NCBI_Annotation_Release_100_Pseudogene",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Pseudogenes",
          "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001687245.1_Rhagoletis_zephyria_1.0/GCF_001687245.1_Rhagoletis_zephyria_1.0_genomic.gff.gz",
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
             "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE"
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Rhagoletis_zephyria/README_CURRENT_RELEASE"
          },
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Pseudogenes",
-         "type" : "FeatureTrack",
-         "label" : "NCBI_Annotation_Release_100_Pseudogene"
+         "type" : "FeatureTrack"
       },
       {
          "style" : {
             "className" : "container-16px",
+            "description": "product,note,description",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -173,19 +188,19 @@
             "arrowheadClass" : "trellis-arrowhead"
          },
          "key" : "NCBI Predicted tRNAs, Annotation Release 100",
-         "trackType" : null,
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
          "urlTemplate" : "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json",
          "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "NCBI_Annotation_Release_100_tRNA",
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
          "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001687245.1_Rhagoletis_zephyria_1.0/GCF_001687245.1_Rhagoletis_zephyria_1.0_genomic.gff.gz",
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
             "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE"
-         }
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Rhagoletis_zephyria/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+         "label" : "NCBI_Annotation_Release_100_tRNA"
       },
       {
          "style" : {
@@ -193,40 +208,47 @@
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "cDNA match evidence from NCBI Annotation Release 100",
-         "trackType" : null,
-         "className" : "{type}",
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
          "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
          "compress" : 0,
          "category" : "NCBI Annotation Release 100/2. Evidence",
+         "label" : "NCBI_Annotation_Release_100_cDNA_match",
+         "type" : "FeatureTrack",
          "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001687245.1_Rhagoletis_zephyria_1.0/GCF_001687245.1_Rhagoletis_zephyria_1.0_genomic.gff.gz",
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
             "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE"
-         },
-         "label" : "NCBI_Annotation_Release_100_cDNA_match",
-         "type" : "FeatureTrack"
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Rhagoletis_zephyria/README_CURRENT_RELEASE"
+         }
       },
       {
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/GCF_001937115.1_Atum_1.0_genomic_RefSeqIDs.fna.gc.bigwig",
          "style" : {
-            "neg_color" : "rgba(255,255,0,50)",
-            "pos_color" : "rgba(0,0,255,50)"
+            "className" : "container-16px",
+	    "description": "product,note,description",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "primary_gene_set-cds",
+               "UTR" : "primary_gene_set-utr"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
          },
-         "label" : "GC Content",
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "bicolor_pivot" : "0.5",
-         "key" : "GC Content",
-         "scoreType": "avgScore",
-         "autoscale" : "local",
+         "key" : "NCBI Predicted protein coding genes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/rhazep_current_models/{refseq}/trackData.json",
+         "compress" : 0,
+         "label" : "rhazep_current_models",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
          "metadata" : {
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
-            "Track contact" : "The i5k workspace@NAL"
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001687245.1_Rhagoletis_zephyria_1.0/GCF_001687245.1_Rhagoletis_zephyria_1.0_genomic.gff.gz",
+            "Data provider" : "NCBI",
+            "Note" : "Some genes may have non-coding transcripts",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Rhagoletis_zephyria/README_CURRENT_RELEASE"
          },
-         "category" : "Reference Assembly"
+         "type" : "FeatureTrack"
       }
    ],
    "names" : {
