@@ -1,5 +1,5 @@
 {
-   "css" : "data/contrib_styles.css",
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "share_link" : 0,
    "tracks" : [
       {

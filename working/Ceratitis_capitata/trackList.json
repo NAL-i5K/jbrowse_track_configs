@@ -1,6 +1,6 @@
 {
    "share_link" : 0,
-   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "tracks" : [
       {
          "chunkSize" : 20000,

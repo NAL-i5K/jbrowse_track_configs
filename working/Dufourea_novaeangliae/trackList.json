@@ -1,6 +1,6 @@
 {
    "share_link" : 0,
-   "css" : "data/contrib_styles.css",
+   "css" : "data/main.css",
    "tracks" : [
       {
          "chunkSize" : 20000,

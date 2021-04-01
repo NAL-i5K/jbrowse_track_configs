@@ -1,6 +1,6 @@
 {
    "defaultTracks":"Contamination,cimlec_current_models",
-   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "share_link" : 0,
    "tracks" : [
       {
