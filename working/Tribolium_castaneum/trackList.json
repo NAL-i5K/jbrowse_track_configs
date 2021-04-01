@@ -389,6 +389,7 @@
          "category" : "NCBI Annotation Release 103/2. Evidence",
          "label" : "NCBI_Annotation_Release_103_cDNA_match",
          "type" : "FeatureTrack",
+         "className" : "{type}",
          "metadata" : {
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
             "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_000002335.3_Tcas5.2/GCF_000002335.3_Tcas5.2_genomic.gff.gz",

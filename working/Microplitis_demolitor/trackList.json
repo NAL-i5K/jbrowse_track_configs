@@ -150,6 +150,7 @@
       {
          "category" : "NCBI Annotation Release 101/2. Evidence",
          "compress" : 0,
+         "className" : "{type}",
          "key" : "cDNA match evidence from NCBI Annotation Release 101",
          "label" : "NCBI_Annotation_Release_101_cDNA_match",
          "metadata" : {

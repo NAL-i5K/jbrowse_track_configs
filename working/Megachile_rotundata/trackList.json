@@ -251,6 +251,7 @@
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "cDNA match evidence from NCBI Annotation Release 101",
+         "className" : "{type}",
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "trackType" : null,
          "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json",
