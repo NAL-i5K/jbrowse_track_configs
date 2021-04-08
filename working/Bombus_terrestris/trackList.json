@@ -1,4 +1,5 @@
 {
+    "css" : "./plugins/NAL_CSS/css/main.css",
     "formatVersion": 1,
     "names": {
         "type": "Hash",
@@ -66,6 +67,7 @@
             "autoscale": "local",
             "bicolor_pivot": "0.5",
             "category": "Reference Assembly",
+	    "scoreType" : "avgScore",
             "key": "GC Content",
             "label": "GC Content",
             "metadata": {

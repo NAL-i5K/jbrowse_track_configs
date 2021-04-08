@@ -242,7 +242,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -268,7 +268,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -1159,7 +1159,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "protein2genome",
                "wholeCDS" : null,
@@ -1217,7 +1217,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "protein2genome",
                "wholeCDS" : null,

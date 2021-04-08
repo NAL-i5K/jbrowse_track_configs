@@ -1283,6 +1283,7 @@
          "bicolor_pivot" : "0.5",
          "autoscale" : "local",
          "key" : "GC Content",
+	 "scoreType" : "avgScore",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "urlTemplate" : "bigwig/Agla_Btl03082013.genome_GC.bigwig",
          "type" : "JBrowse/View/Track/Wiggle/Density",
