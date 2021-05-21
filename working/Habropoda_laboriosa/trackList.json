@@ -78,7 +78,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -142,7 +142,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "arrowheadClass" : "trellis-arrowhead"
          },
          "key" : "GenBank Annotations, pseudogenes",

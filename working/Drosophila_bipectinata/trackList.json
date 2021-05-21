@@ -99,7 +99,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "webapollo-arrowhead",
-            "className" : "container-10px"
+            "className" : "{type}"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -146,8 +146,8 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "description": "product, note, description",
-		"arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+	    "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
                "UTR" : "gnomon_UTR",

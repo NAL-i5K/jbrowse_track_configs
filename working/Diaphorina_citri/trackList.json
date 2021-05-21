@@ -1,6 +1,7 @@
 {
    "tracks" : [
       {
+	 "css" : "./plugins/NAL_CSS/css/main.css",
          "seqType" : "dna",
          "key" : "Reference sequence",
          "useAsRefSeqStore" : 1,
@@ -36,6 +37,7 @@
             "pos_color" : "rgba(0,0,255,50)"
          },
          "bicolor_pivot" : "0.5",
+	 "scoreType" : "avgScore",
          "autoscale" : "local",
          "key" : "GC Content",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
@@ -212,7 +214,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -238,7 +240,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -264,7 +266,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -290,7 +292,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -339,7 +341,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blast-match_part",
                "wholeCDS" : null
@@ -363,7 +365,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blast-match_part",
                "wholeCDS" : null
@@ -387,7 +389,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blast-match_part",
                "wholeCDS" : null
@@ -411,7 +413,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blast-match_part",
                "wholeCDS" : null
@@ -461,7 +463,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blast-match_part",
                "wholeCDS" : null
@@ -485,7 +487,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "Whole insect expressed protein tags (ePSTs) for peptides from mass spectrometry (MS) proteomics data",
@@ -506,7 +508,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "Whole insect reverse-translated peptides (RTPs) from mass spectrometry (MS) proteomics data",
@@ -525,7 +527,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "S9 expressed protein tags (ePSTs) for peptides from mass spectrometry (MS) proteomics data",
@@ -544,7 +546,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "S9 reverse-translated peptides (RTPs) from mass spectrometry (MS) proteomics data",

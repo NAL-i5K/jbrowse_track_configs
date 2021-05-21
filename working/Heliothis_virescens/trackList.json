@@ -103,6 +103,7 @@
          "urlTemplate" : "bigwig/GCA_002382865.1_K63_refined_pacbio_genomic.fna.gaps.bigwig"
       },
       {
+	 "scoreType" : "avgScore",
          "autoscale" : "local",
          "bicolor_pivot" : "0.5",
          "category" : "Reference Assembly",
@@ -433,7 +434,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
+            "className" : "{type}"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -455,7 +456,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
+            "className" : "{type}"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -477,7 +478,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
+            "className" : "{type}"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -499,7 +500,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
+            "className" : "{type}"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -521,7 +522,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
+            "className" : "{type}"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -543,7 +544,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
+            "className" : "{type}"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -565,7 +566,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
+            "className" : "{type}"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -587,7 +588,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
+            "className" : "{type}"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -607,7 +608,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "id, description",
             "label" : "Dbxref,name",
             "subfeatureClasses" : {

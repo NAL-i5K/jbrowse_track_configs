@@ -1,5 +1,6 @@
 {
    "formatVersion" : 1,
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "names" : {
       "type" : "Hash",
       "url" : "names/"
@@ -35,6 +36,7 @@
          "urlTemplate" : "bigwig/GCA_000697945.4_Focc_3.0_genomic.fna.gaps.bigwig"
       },
       {
+	 "scoreType" : "avgScore",
          "autoscale" : "local",
          "bicolor_pivot" : "0.5",
          "category" : "Reference Assembly",
@@ -215,7 +217,7 @@
          },
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",

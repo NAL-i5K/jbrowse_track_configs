@@ -1,4 +1,5 @@
 {
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "formatVersion" : 1,
    "names" : {
       "type" : "Hash",
@@ -35,6 +36,7 @@
          "urlTemplate" : "bigwig/GCA_000696795.3_Hhal_1.1_genomic.fna.gaps.bigwig"
       },
       {
+	 "scoreType" : "avgScore",
          "autoscale" : "local",
          "bicolor_pivot" : "0.5",
          "category" : "Reference Assembly",

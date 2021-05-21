@@ -174,7 +174,7 @@
          "style" : {
             "description": "product, note, description",
 		"arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
                "UTR" : "gnomon_UTR",

@@ -78,7 +78,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -144,6 +144,7 @@
          "type" : "JBrowse/View/Track/Wiggle/Density",
          "bicolor_pivot" : "0.5",
          "key" : "GC Content",
+	 "scoreType": "avgScore",
          "category" : "Reference Assembly",
          "metadata" : {
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",

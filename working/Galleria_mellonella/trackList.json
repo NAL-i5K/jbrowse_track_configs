@@ -1,4 +1,5 @@
 {
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "formatVersion" : 1,
    "names" : {
       "type" : "Hash",
@@ -35,6 +36,7 @@
          "urlTemplate" : "bigwig/GCF_003640425.2_ASM364042v2_genomic.fna.gaps.bigwig"
       },
       {
+	 "scoreType" : "avgScore",
          "autoscale" : "local",
          "bicolor_pivot" : "0.5",
          "category" : "Reference Assembly",
@@ -113,7 +115,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
