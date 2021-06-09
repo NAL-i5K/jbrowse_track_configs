@@ -1,4 +1,5 @@
 {
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "tracks" : [
       {
          "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
@@ -35,7 +36,8 @@
             "neg_color" : "rgba(255,255,0,50)"
          },
          "bicolor_pivot" : "0.5",
-         "key" : "GC Content",
+         "scoreType": "avgScore",
+	 "key" : "GC Content",
          "autoscale" : "local",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "urlTemplate" : "bigwig/GCF_010583005.1_Obru_v1_genomic.fna.gc.bigwig",
@@ -50,7 +52,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -391,7 +393,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -423,7 +425,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -455,7 +457,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -487,7 +489,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -519,7 +521,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -551,7 +553,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -583,7 +585,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -615,7 +617,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",

@@ -1,4 +1,5 @@
 {
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "formatVersion" : 1,
    "names" : {
       "type" : "Hash",
@@ -109,7 +110,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",

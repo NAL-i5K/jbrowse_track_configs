@@ -1,4 +1,5 @@
 {
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "tracks" : [
       {
          "seqType" : "dna",
@@ -63,6 +64,7 @@
          },
          "bicolor_pivot" : "0.5",
          "autoscale" : "local",
+	 "scoreType": "avgScore",
          "key" : "GC Content",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "urlTemplate" : "bigwig/GCA_001263575.2_Nlec1.1_genomic.fna.gc.bigwig",

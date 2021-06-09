@@ -78,7 +78,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -471,7 +471,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "darkblue-80pct"
             },
@@ -495,7 +495,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -521,7 +521,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "darkblue-80pct"
             },
@@ -544,7 +544,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -570,7 +570,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -596,7 +596,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -622,7 +622,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -648,7 +648,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",

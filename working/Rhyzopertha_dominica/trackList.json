@@ -1,4 +1,5 @@
 {
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "formatVersion" : 1,
    "names" : {
       "type" : "Hash",
@@ -38,6 +39,7 @@
          "autoscale" : "local",
          "bicolor_pivot" : "0.5",
          "category" : "Reference Assembly",
+	 "scoreType": "avgScore",
          "key" : "GC Content",
          "label" : "GC Content",
          "metadata" : {
@@ -406,7 +408,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "note, Ontology_term, Dbxref",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",

@@ -97,7 +97,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "CDS" : "primary_gene_set-cds",
                "UTR" : "primary_gene_set-utr",
@@ -131,6 +131,7 @@
       {
          "autoscale" : "local",
          "bicolor_pivot" : "0.5",
+	 "scoreType": "avgScore",
          "category" : "Reference Assembly",
          "key" : "GC Content",
          "label" : "GC Content",
@@ -162,7 +163,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
+            "className" : "{type}"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -182,7 +183,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
                "UTR" : "gnomon_UTR",
@@ -208,7 +209,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
                "UTR" : "gnomon_UTR",
@@ -234,7 +235,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
                "UTR" : "gnomon_UTR",
@@ -260,7 +261,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
                "UTR" : "gnomon_UTR",
@@ -660,7 +661,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "renderClassName" : "genemark"
          },
          "trackType" : null,
@@ -682,7 +683,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "renderClassName" : "genemark"
          },
          "trackType" : null,

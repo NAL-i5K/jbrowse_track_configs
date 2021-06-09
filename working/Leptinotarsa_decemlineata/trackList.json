@@ -118,7 +118,7 @@
          "key" : "NCBI Predicted rRNAs, Annotation Release 100",
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "trackType" : null,
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_$version_rRNA/{refseq}/trackData.json",
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_rRNA/{refseq}/trackData.json",
          "compress" : 0,
          "label" : "NCBI_Annotation_Release_100_rRNA",
          "metadata" : {
