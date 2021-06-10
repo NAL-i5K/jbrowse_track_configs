@@ -1,6 +1,6 @@
 {
    "formatVersion" : 1,
-   "css" : "./plugins/NAL_CSS/css/main.css" ,
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "names" : {
       "type" : "Hash",
       "url" : "names/"

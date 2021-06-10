@@ -1,6 +1,6 @@
 {
    "alwaysOnTracks" : "DNA,Annotations",
-   "css" : "data/custom.css",
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
    "formatVersion" : 1,
    "names" : {
