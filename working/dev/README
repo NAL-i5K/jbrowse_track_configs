@@ -1,0 +1,77 @@
+# added  -----COMPLETE
+# "scoreType" : "avgScore", to the onttau training instances
+
+# perl -pi -e "s/         \"storeClass\" \: \"JBrowse\/Store\/SeqFeature\/BigWig\"\,\n/         \"storeClass\" \: \"JBrowse\/Store\/SeqFeature\/BigWig\",\n         \"scoreType\" : \"avgScore\",\n/g" 2*_-_Onthophagus_taurus_training/trackList.json less 20_-_Onthophagus_taurus_training/trackList.json 
+
+# These are the files that need to have ColorByType tracks.  These will need to be replaced with the new track type
+# grep -c  ColorByType ./*/*|grep -v ":0"
+# ./Apis_mellifera/trackList.json:2
+# ./Bombus_impatiens/trackList.json:3
+# ./Bombus_terrestris/trackList.json:3
+# ./Cephus_cinctus/trackList.json:4
+# ./Chelonus_insularis/trackList.json:2
+# ./Contarinia_nasturtii/trackList.json:2
+# ./Diachasma_alloeum/trackList.json:2
+# ./Ephemera_danica/trackList.json:2
+# ./Eufriesea_mexicana/trackList.json:2
+# ./Frankliniella_occidentalis/trackList.json:2
+# ./Galleria_mellonella/trackList.json:2
+# ./Halyomorpha_halys/trackList.json:2
+# ./Hyalella_azteca/trackList.json:2
+# ./Laodelphax_striatellus/trackList.json:2
+# ./Manduca_sexta/trackList.json:2
+# ./Neodiprion_lecontei/trackList.json:4
+# ./Nylanderia_fulva/trackList.json:2
+# ./Odontomachus_brunneus/trackList.json:2
+# ./Osmia_lignaria/trackList.json:2
+# ./Varroa_destructor/trackList.json:2
+# ./Varroa_jacobsoni/trackList.json:2
+
+# Also need to make sure the css has been update=d
+
+
+# Also found that the cDNA_match tracks are showing up as transparent boxes. solution is to set "classname" : "{type}"
+(base) ARSMDBE22209004:working chrislocal$ grep "cDNA_match" ./*/trackList.json
+./Aethina_tumida/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+./Aethina_tumida/trackList.json:         "label" : "NCBI_Annotation_Release_100_cDNA_match",
+./Agrilus_planipennis/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+./Agrilus_planipennis/trackList.json:         "label" : "NCBI_Annotation_Release_100_cDNA_match",
+./Amyelois_transitella/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+./Amyelois_transitella/trackList.json:         "label" : "NCBI_Annotation_Release_100_cDNA_match",
+./Bactrocera_oleae/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+./Bactrocera_oleae/trackList.json:         "label" : "NCBI_Annotation_Release_100_cDNA_match"
+./Bactrocera_oleae/trackList.json:               "cDNA_match" : "jamp_match"
+./Bemisia_tabaci/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+./Bemisia_tabaci/trackList.json:         "label" : "NCBI_Annotation_Release_100_cDNA_match"
+./Drosophila_biarmipes/trackList.json:         "label" : "NCBI_Annotation_Release_101_cDNA_match",
+./Drosophila_biarmipes/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+./Drosophila_bipectinata/trackList.json:         "label" : "NCBI_Annotation_Release_101_cDNA_match",
+./Drosophila_bipectinata/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+./Drosophila_elegans/trackList.json:         "label" : "NCBI_Annotation_Release_101_cDNA_match",
+./Drosophila_elegans/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+./Drosophila_eugracilis/trackList.json:         "label" : "NCBI_Annotation_Release_101_cDNA_match",
+./Drosophila_eugracilis/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+./Drosophila_ficusphila/trackList.json:         "label" : "NCBI_Annotation_Release_101_cDNA_match",
+./Drosophila_ficusphila/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+./Drosophila_kikkawai/trackList.json:         "label" : "NCBI_Annotation_Release_101_cDNA_match",
+./Drosophila_kikkawai/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+./Drosophila_rhopaloa/trackList.json:         "label" : "NCBI_Annotation_Release_101_cDNA_match",
+./Drosophila_rhopaloa/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+./Drosophila_takahashii/trackList.json:         "label" : "NCBI_Annotation_Release_101_cDNA_match",
+./Drosophila_takahashii/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+./Dufourea_novaeangliae/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+./Dufourea_novaeangliae/trackList.json:         "label" : "NCBI_Annotation_Release_100_cDNA_match",
+./Leptinotarsa_decemlineata/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+./Leptinotarsa_decemlineata/trackList.json:         "label" : "NCBI_Annotation_Release_100_cDNA_match",
+./Megachile_rotundata/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json",
+./Megachile_rotundata/trackList.json:         "label" : "NCBI_Annotation_Release_101_cDNA_match",
+./Microplitis_demolitor/trackList.json:         "label" : "NCBI_Annotation_Release_101_cDNA_match",
+./Microplitis_demolitor/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+./Neodiprion_lecontei_training/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+./Neodiprion_lecontei_training/trackList.json:         "label" : "NCBI_Annotation_Release_100_cDNA_match"
+./Nicrophorus_vespilloides/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+./Nicrophorus_vespilloides/trackList.json:         "label" : "NCBI_Annotation_Release_100_cDNA_match",
+./Rhagoletis_zephyria/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+./Rhagoletis_zephyria/trackList.json:         "label" : "NCBI_Annotation_Release_100_cDNA_match",
+./Tribolium_castaneum/trackList.json:         "urlTemplate" : "tracks/NCBI_Annotation_Release_103_cDNA_match/{refseq}/trackData.json",
+./Tribolium_castaneum/trackList.json:         "label" : "NCBI_Annotation_Release_103_cDNA_match",

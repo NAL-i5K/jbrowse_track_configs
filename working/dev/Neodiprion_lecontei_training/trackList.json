@@ -1,0 +1,683 @@
+{
+   "css" : "./plugins/NAL_CSS/css/main.css",
+   "share_link" : 0,
+   "tracks" : [
+      {
+         "chunkSize" : 20000,
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "category" : "Reference sequence",
+         "type" : "SequenceTrack",
+         "label" : "DNA",
+         "key" : "Reference sequence"
+      },
+      {
+         "autocomplete" : "none",
+         "style" : {
+            "renderClassName" : "annot-render",
+            "className" : "annot",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
+               "exon" : "container-100pct",
+               "CDS" : "annot-CDS",
+               "UTR" : "annot-UTR",
+               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site"
+            },
+            "alternateClasses" : {
+               "transposable_element" : {
+                  "className" : "blue-ibeam",
+                  "renderClassName" : "blue-ibeam-render"
+               },
+               "pseudogene" : {
+                  "className" : "light-purple-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "snRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "rRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "snoRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "repeat_region" : {
+                  "className" : "magenta-80pct"
+               },
+               "tRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "ncRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "miRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               }
+            },
+            "arrowheadClass" : "annot-arrowhead",
+            "uniqueIdField" : "id",
+            "centerSubFeature" : {
+               "non_canonical_three_prime_splice_site" : false,
+               "non_canonical_five_prime_splice_site" : false
+            }
+         },
+         "key" : "User-created Annotations",
+         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
+         "phase" : 0,
+         "compress" : 0,
+         "label" : "Annotations",
+         "type" : "WebApollo/View/Track/AnnotTrack",
+         "subfeatures" : 1
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "primary_gene_set-cds",
+               "UTR" : "primary_gene_set-utr"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "Nlec Maker predictions, version 1",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/neolec_current_models/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "neolec_current_models",
+         "category" : "N.lecontei Maker predictions v1/1. Gene Sets/Protein Coding",
+         "metadata" : {
+            "Analysis method" : "Maker v2.31.8",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Analysis provider" : "Scott Geib, USDA-ARS Pacific Basin Agricultural Research Center"
+         }
+      },
+      {
+         "style" : {
+            "neg_color" : "white",
+            "pos_color" : "black"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Gaps in assembly",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/Nlec_v1_NCBI_scaffolds_GenBankIDs.fasta.gaps.bigwig",
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "label" : "Gaps in assembly",
+         "category" : "Reference Assembly",
+         "metadata" : {
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
+            "Track contact" : "The i5k workspace@NAL"
+         }
+      },
+      {
+         "style" : {
+            "pos_color" : "rgba(0,0,255,50)",
+            "neg_color" : "rgba(255,255,0,50)"
+         },
+         "bicolor_pivot" : "0.5",
+         "autoscale" : "local",
+         "key" : "GC Content",
+         "scoreType": "avgScore",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/Nlec_v1_NCBI_scaffolds_GenBankIDs.fasta.gc.bigwig",
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "label" : "GC Content",
+         "metadata" : {
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
+            "Track contact" : "The i5k workspace@NAL"
+         },
+         "category" : "Reference Assembly"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AFB.Aligned.sortedByCoord.out_GenBankIds.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "female",
+            "Other notes" : "pooled adult female body tissue from eight wild-caught insects",
+            "NCBI SRA accession #" : "SRR2970129",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled adult female body",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "Adult female body RNA-seq",
+         "key" : "Adult female body RNA-seq"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_EB.Aligned.sortedByCoord.out_GenBankIds.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "pooled",
+            "Other notes" : "pooled eonymph body tissue from eight insects reared for one generation in the lab",
+            "NCBI SRA accession #" : "SRR2970134",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled eonymph body",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "label" : "Eonymph body RNA-seq",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "Eonymph body RNA-seq"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_FLB.Aligned.sortedByCoord.out_GenBankIds.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "pooled",
+            "Other notes" : "pooled larval body tissue from eight insects reared for one generation in the lab",
+            "NCBI SRA accession #" : "SRR2970133",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled feeding larva body",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "Larval body RNA-seq",
+         "key" : "Larval body RNA-seq"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AMB.Aligned.sortedByCoord.out_GenBankIds.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "female",
+            "Other notes" : "pooled adult male body tissue from eight wild-caught insects",
+            "NCBI SRA accession #" : "SRR2970131",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled adult male body",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "label" : "Adult male body RNA-seq",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "Adult male body RNA-seq"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AMH.Aligned.sortedByCoord.out_GenBankIds.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "female",
+            "Other notes" : "pooled adult male head tissue from eight wild-caught insects",
+            "NCBI SRA accession #" : "SRR2970130",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled adult male head",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "Adult male head RNA-seq",
+         "key" : "Adult male head RNA-seq"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AFH.Aligned.sortedByCoord.out_GenBankIds.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "female",
+            "Other notes" : "pooled adult female head tissue from eight wild-caught insects",
+            "NCBI SRA accession #" : "SRR2970128",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled adult female head",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "label" : "Adult female head RNA-seq",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "Adult female head RNA-seq"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_FLH.Aligned.sortedByCoord.out_GenBankIds.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "pooled",
+            "Other notes" : "pooled larval head tissue from eight insects reared for one generation in the lab",
+            "NCBI SRA accession #" : "SRR2970132",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled feeding larva head",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "Larval head RNA-seq",
+         "key" : "Larval head RNA-seq"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Larval body RNA-seq (Coverage Plot)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_FLB.Aligned.sortedByCoord.out_GenBankIds.bigwig",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "pooled",
+            "Other notes" : "pooled larval body tissue from eight insects reared for one generation in the lab",
+            "NCBI SRA accession #" : "SRR2970133",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled feeding larva body",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "label" : "Larval body RNA-seq (Coverage Plot)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Adult female body RNA-seq (Coverage Plot)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AFB.Aligned.sortedByCoord.out_GenBankIds.bigwig",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "female",
+            "Other notes" : "pooled adult female body tissue from eight wild-caught insects",
+            "NCBI SRA accession #" : "SRR2970129",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled adult female body",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "label" : "Adult female body RNA-seq (Coverage Plot)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Eonymph body RNA-seq (Coverage Plot)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_EB.Aligned.sortedByCoord.out_GenBankIds.bigwig",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "pooled",
+            "Other notes" : "pooled eonymph body tissue from eight insects reared for one generation in the lab",
+            "NCBI SRA accession #" : "SRR2970134",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled eonymph body",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "label" : "Eonymph body RNA-seq (Coverage Plot)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Adult female head RNA-seq (Coverage Plot)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AFH.Aligned.sortedByCoord.out_GenBankIds.bigwig",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "female",
+            "Other notes" : "pooled adult female head tissue from eight wild-caught insects",
+            "NCBI SRA accession #" : "SRR2970128",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled adult female head",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "label" : "Adult female head RNA-seq (Coverage Plot)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Adult male body RNA-seq (Coverage Plot)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AMB.Aligned.sortedByCoord.out_GenBankIds.bigwig",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "female",
+            "Other notes" : "pooled adult male body tissue from eight wild-caught insects",
+            "NCBI SRA accession #" : "SRR2970131",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled adult male body",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "label" : "Adult male body RNA-seq (Coverage Plot)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Larval head RNA-seq (Coverage Plot)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_FLH.Aligned.sortedByCoord.out_GenBankIds.bigwig",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "pooled",
+            "Other notes" : "pooled larval head tissue from eight insects reared for one generation in the lab",
+            "NCBI SRA accession #" : "SRR2970132",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled feeding larva head",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "label" : "Larval head RNA-seq (Coverage Plot)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Adult male head RNA-seq (Coverage Plot)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AMH.Aligned.sortedByCoord.out_GenBankIds.bigwig",
+         "label" : "Adult male head RNA-seq (Coverage Plot)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "metadata" : {
+            "Analysis method" : "STAR v2.4.0j",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "File provider" : "Kim Vertacnik, University of Kentucky",
+            "Sex" : "female",
+            "Other notes" : "pooled adult male head tissue from eight wild-caught insects",
+            "NCBI SRA accession #" : "SRR2970130",
+            "Geographical location of specimen collection" : "USA, Lexington KY, 37.983767, -84.510784",
+            "Other methods" : "Trimmomatic v0.32 used for adaptor trimming and quality filtering",
+            "Strain" : "RB017",
+            "Tissues included" : "pooled adult male head",
+            "Sequencing platform and version" : "Illumina HiSeq 2000"
+         },
+         "category" : "Transcriptome/Coverage Plots (BigWig)"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "darkblue-80pct"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "cDNA match evidence from NCBI Annotation Release 100",
+         "className" : "{type}",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/GFF/ref_Nlec1.0_top_level.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "NCBI-RefSeq Annotation Release 100/2. Evidence",
+         "label" : "NCBI_Annotation_Release_100_cDNA_match"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted lncRNA, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Noncoding",
+         "label" : "NCBI_Annotation_Release_100_lncRNA",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/GFF/ref_Nlec1.0_top_level.gff3.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/README_CURRENT_RELEASE"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "darkblue-80pct"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Match evidence from NCBI Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_match/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/GFF/ref_Nlec1.0_top_level.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/README_CURRENT_RELEASE"
+         },
+         "label" : "NCBI_Annotation_Release_100_match",
+         "category" : "NCBI-RefSeq Annotation Release 100/2. Evidence"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted miscRNA, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_misc_RNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "label" : "NCBI_Annotation_Release_100_misc_RNA",
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Noncoding",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/GFF/ref_Nlec1.0_top_level.gff3.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted protein coding genes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Protein_Coding_high_quality/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/GFF/ref_Nlec1.0_top_level.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Protein Coding",
+         "label" : "NCBI_Annotation_Release_100_Protein_Coding_high_quality"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted pseudogenes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Noncoding",
+         "label" : "NCBI_Annotation_Release_100_Pseudogene",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/GFF/ref_Nlec1.0_top_level.gff3.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/README_CURRENT_RELEASE"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted tRNAs, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/GFF/ref_Nlec1.0_top_level.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/README_CURRENT_RELEASE"
+         },
+         "label" : "NCBI_Annotation_Release_100_tRNA",
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Noncoding"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted low-quality protein coding genes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Protein_Coding_low_quality/{refseq}/trackData.json",
+         "compress" : 0,
+         "label" : "NCBI_Annotation_Release_100_Protein_Coding_low_quality",
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Protein Coding",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/GFF/ref_Nlec1.0_top_level.gff3.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nih.gov/genomes/Neodiprion_lecontei/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack"
+      }
+   ],
+   "names" : {
+      "url" : "names/",
+      "type" : "Hash"
+   },
+   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
+   "formatVersion" : 1,
+   "alwaysOnTracks" : "DNA,Annotations"
+}

@@ -1,0 +1,1253 @@
+{
+   "share_link" : 0,
+   "css" : "./plugins/NAL_CSS/css/main.css",
+   "tracks" : [
+      {
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "chunkSize" : 20000,
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "label" : "DNA",
+         "type" : "SequenceTrack",
+         "category" : "Reference sequence",
+         "key" : "Reference sequence"
+      },
+      {
+         "autocomplete" : "none",
+         "style" : {
+            "className" : "annot",
+            "renderClassName" : "annot-render",
+            "subfeatureClasses" : {
+               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "annot-CDS",
+               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
+               "UTR" : "annot-UTR"
+            },
+            "arrowheadClass" : "annot-arrowhead",
+            "alternateClasses" : {
+               "transposable_element" : {
+                  "renderClassName" : "blue-ibeam-render",
+                  "className" : "blue-ibeam"
+               },
+               "pseudogene" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "light-purple-80pct"
+               },
+               "snRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "rRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "snoRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "repeat_region" : {
+                  "className" : "magenta-80pct"
+               },
+               "tRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "ncRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "miRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               }
+            },
+            "uniqueIdField" : "id",
+            "centerSubFeature" : {
+               "non_canonical_three_prime_splice_site" : false,
+               "non_canonical_five_prime_splice_site" : false
+            }
+         },
+         "key" : "User-created Annotations",
+         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
+         "phase" : 0,
+         "compress" : 0,
+         "label" : "Annotations",
+         "type" : "WebApollo/View/Track/AnnotTrack",
+         "subfeatures" : 1
+      },
+      {
+         "style" : {
+            "pos_color" : "black",
+            "neg_color" : "white"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Gaps in assembly",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/104688_ref_gapfilled_joined_lt9474.gt500.covgt10_chrMT_and_UN_refseq_IDs.gaps.bigwig",
+         "label" : "Gaps in assembly",
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "category" : "Reference Assembly",
+         "metadata" : {
+            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track contact" : "The i5k workspace@NAL"
+         }
+      },
+      {
+         "style" : {
+            "neg_color" : "rgba(255,255,0,50)",
+            "pos_color" : "rgba(0,0,255,50)"
+         },
+         "bicolor_pivot" : "0.5",
+         "key" : "GC Content",
+         "scoreType": "avgScore",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/104688_ref_gapfilled_joined_lt9474.gt500.covgt10_chrMT_and_UN_refseq_IDs.gc.bigwig",
+         "label" : "GC Content",
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "metadata" : {
+            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track contact" : "The i5k workspace@NAL"
+         },
+         "category" : "Reference Assembly"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "primary_gene_set-cds",
+               "UTR" : "primary_gene_set-utr"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted protein coding genes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/bacole_current_models/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "bacole_current_models",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Amyelois_transitella/GFF/ref_ASM118610v1_scaffolds.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Amyelois_transitella/README_CURRENT_RELEASE"
+         }
+      },
+      {
+         "style" : {
+            "className" : "container-10px",
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "cDNA match evidence from NCBI Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "className" : "{type}",
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/GFF/ref_gapfilled_joined_lt9474.gt500.covgt10_scaffolds.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "NCBI Annotation Release 100/2. Evidence",
+         "label" : "NCBI_Annotation_Release_100_cDNA_match"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted lncRNA, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+         "label" : "NCBI_Annotation_Release_100_lncRNA",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/GFF/ref_gapfilled_joined_lt9474.gt500.covgt10_scaffolds.gff3.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/README_CURRENT_RELEASE"
+         }
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted low-quality protein coding genes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Protein_Coding_low_quality/{refseq}/trackData.json",
+         "compress" : 0,
+         "label" : "NCBI_Annotation_Release_100_Protein_Coding_low_quality",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/GFF/ref_gapfilled_joined_lt9474.gt500.covgt10_scaffolds.gff3.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted miscRNA, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_misc_RNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/GFF/ref_gapfilled_joined_lt9474.gt500.covgt10_scaffolds.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+         "label" : "NCBI_Annotation_Release_100_misc_RNA"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted protein coding genes, mtDNA, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Protein_Coding_mtDNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
+         "label" : "NCBI_Annotation_Release_100_Protein_Coding_mtDNA",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/GFF/ref_gapfilled_joined_lt9474.gt500.covgt10_scaffolds.gff3.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/README_CURRENT_RELEASE"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted pseudogenes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/GFF/ref_gapfilled_joined_lt9474.gt500.covgt10_scaffolds.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/README_CURRENT_RELEASE"
+         },
+         "label" : "NCBI_Annotation_Release_100_Pseudogene",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Pseudogenes"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted rRNAs, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_rRNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "label" : "NCBI_Annotation_Release_100_rRNA",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "fftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/GFF/ref_gapfilled_joined_lt9474.gt500.covgt10_scaffolds.gff3.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted tRNAs, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Data source" : "fftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/GFF/ref_gapfilled_joined_lt9474.gt500.covgt10_scaffolds.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_oleae/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+         "label" : "NCBI_Annotation_Release_100_tRNA"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF",
+            "neg_color" : "#0086B3"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Male heads",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.001.Index_13.Bo_Heads_Male_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Male heads",
+         "metadata" : {
+            "Descriptive track name" : "Male heads",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "male",
+            "Tissues included" : "Head",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Heads of ovipositing females",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.001.Index_15.Bo_Heads_Ovip_Female_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Heads of ovipositing females",
+         "metadata" : {
+            "Descriptive track name" : "Heads of ovipositing females",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "female",
+            "Tissues included" : "Head",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF",
+            "neg_color" : "#0086B3"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Female ovipositors",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.001.Index_18.Bo_ovipositor_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Female ovipositors",
+         "metadata" : {
+            "Descriptive track name" : "Female ovipositors",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "female",
+            "Tissues included" : "Ovipositor",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Female heads",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.001.Index_6.Bo_Heads_Female_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Female heads",
+         "metadata" : {
+            "Descriptive track name" : "Female heads",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "female",
+            "Tissues included" : "Head",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF",
+            "neg_color" : "#0086B3"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Legs of ovipositing female",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.001.Index_7.Bo_Legs_ovip_Female_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Legs of ovipositing female",
+         "metadata" : {
+            "Descriptive track name" : "Legs of ovipositing female",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "female",
+            "Tissues included" : "Tarsi",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Testes and Male Accessory Glands",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.002.Index_12.SexOrgans_male_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Testes and Male Accessory Glands",
+         "metadata" : {
+            "Descriptive track name" : "Male testes and MAGs",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "male",
+            "Tissues included" : "Testes and Male Accessory Glands",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF",
+            "neg_color" : "#0086B3"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Heads of females mated to males exposed to pinene",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.002.Index_14.Bo_Ypin_Fem_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Heads of females mated to males exposed to pinene",
+         "metadata" : {
+            "Descriptive track name" : "Heads of females mated to males exposed to pinene",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "female",
+            "Tissues included" : "Head",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Heads of females mated to males not exposed to pinene",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.002.Index_16.Bo_Npin_Fem_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Heads of females mated to males not exposed to pinene",
+         "metadata" : {
+            "Descriptive track name" : "Heads of females mated to males not exposed to pinene",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "female",
+            "Tissues included" : "Head",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF",
+            "neg_color" : "#0086B3"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Heads of mature virgin females",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.002.Index_4.Bo_Cpin_Fem_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Heads of mature virgin females",
+         "metadata" : {
+            "Descriptive track name" : "Heads of mature virgin females",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "female",
+            "Tissues included" : "Head",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Male testes after mating",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.002.Index_5.Testes_after_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Male testes after mating",
+         "metadata" : {
+            "Descriptive track name" : "Male testes after mating",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "male",
+            "Tissues included" : "Testes",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF",
+            "neg_color" : "#0086B3"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Mixed stages larvae",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.003.Index_1.Bo_larva_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Mixed stages larvae",
+         "metadata" : {
+            "Descriptive track name" : "Mixed stages larvae",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "mixed",
+            "Tissues included" : "Pooled Larvae",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Mixed stages eggs",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.003.Index_19.Bo_egg_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Mixed stages eggs",
+         "metadata" : {
+            "Descriptive track name" : "Mixed stages eggs",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "mixed",
+            "Tissues included" : "Pooled Eggs",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF",
+            "neg_color" : "#0086B3"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Mixed stages pupae",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.003.Index_3.Bo_pupa_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Mixed stages pupae",
+         "metadata" : {
+            "Descriptive track name" : "Mixed stages pupae",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "mixed",
+            "Tissues included" : "Pooled Pupae",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Thorax mix of immature males and females",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.003.Index_8.Bo_Thorx_Mix_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Thorax mix of immature males and females",
+         "metadata" : {
+            "Descriptive track name" : "Thorax mix of immature males and females",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "mixed",
+            "Tissues included" : "Pooled Thorax",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF",
+            "neg_color" : "#0086B3"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Mix of adult males and females; both immature and mature",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.003.Index_9.Bo_adult_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Mix of adult males and females; both immature and mature",
+         "metadata" : {
+            "Descriptive track name" : "Mix of adult males and females, both immature and mature",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "haig.djambazian@mail.mcgill.ca; McGill University and Genome Quebec Innovation Center",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Geographical location of specimen collection" : "Greece",
+            "Date completed" : "1/1/16",
+            "Strain" : "Democritus",
+            "Sex of sample" : "mixed",
+            "Tissues included" : "Pooled Whole Adults",
+            "Sequencing platform and version" : "Hiseq pe100"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Adult_testis",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.SRR826665_vs_B.oleae.gmap.concordant_uniq.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Adult_testis",
+         "metadata" : {
+            "Descriptive track name" : "Adult_testis",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "Beatriz Vicoso; UC Berkeley",
+            "File type" : "bigwig",
+            "Publication Status" : "yes",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Other notes" : "Dev: 4 day adult",
+            "NCBI SRA accession #" : "SRR826665",
+            "Date completed" : "2/15/16",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/sra/?term=SRR826665",
+            "Sex of sample" : "male",
+            "Tissues included" : "Testis",
+            "Sequencing platform and version" : "Illumina Genome Analyzer"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF",
+            "neg_color" : "#0086B3"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Adult_ovary",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.SRR826666_vs_B.oleae.gmap.concordant_uniq.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Adult_ovary",
+         "metadata" : {
+            "Descriptive track name" : "Adult_ovary",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "Beatriz Vicoso; UC Berkeley",
+            "File type" : "bigwig",
+            "Publication Status" : "yes",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Other notes" : "Dev: 4 day adult",
+            "NCBI SRA accession #" : "SRR826666",
+            "Date completed" : "2/15/16",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/sra/?term=SRR826666",
+            "Sex of sample" : "female",
+            "Tissues included" : "Ovary",
+            "Sequencing platform and version" : "Illumina Genome Analyzer"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Egg_female",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.SRR826667_vs_B.oleae.gmap.unpaired_uniq.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Egg_female",
+         "metadata" : {
+            "Descriptive track name" : "Egg_female",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "Beatriz Vicoso; UC Berkeley",
+            "File type" : "bigwig",
+            "Publication Status" : "yes",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Other notes" : "dev: embryo S5",
+            "NCBI SRA accession #" : "SRR826667",
+            "Date completed" : "2/15/16",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/sra/?term=SRR826667",
+            "Sex of sample" : "female",
+            "Tissues included" : "Embryo",
+            "Sequencing platform and version" : "Illumina Genome Analyzer"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF",
+            "neg_color" : "#0086B3"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Egg_male",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.SRR826668_vs_B.oleae.gmap.unpaired_uniq.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Egg_male",
+         "metadata" : {
+            "Descriptive track name" : "Egg_male",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "Beatriz Vicoso; UC Berkeley",
+            "File type" : "bigwig",
+            "Publication Status" : "yes",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Other notes" : "dev: embryo S5",
+            "NCBI SRA accession #" : "SRR826668",
+            "Date completed" : "2/15/16",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/sra/?term=SRR826668",
+            "Sex of sample" : "male",
+            "Tissues included" : "Embryo",
+            "Sequencing platform and version" : "Illumina Genome Analyzer"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Compiled RNASeq coverage",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/alexie-haig-annotation-data/evidence/master_bamfile.bam.coverage_refseq_ids.bw",
+         "category" : "Transcriptome/Coverage Plots (BigWig)",
+         "label" : "Compiled RNASeq coverage",
+         "metadata" : {
+            "Descriptive track name" : "Compiled RNASeq coverage",
+            "Analysis method" : "GSNAP v2014-12-28",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "File type" : "bigwig",
+            "Publication Status" : "Unpublished - released under Creative License Attribution",
+            "Other methods used" : "JustPreprocessMyReads",
+            "Other notes" : "merged track of all of the RNAseq shown here",
+            "Date completed" : "2/15/16",
+            "Sex of sample" : "all",
+            "Tissues included" : "all"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "renderClassName" : "protein_domains",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "cDNA_match" : "jamp_match"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "JAMg transcripts de-novo alignments",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/JAMg transcripts de-novo alignments/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Descriptive track name" : "JAMg transcripts de-novo alignments",
+            "Analysis method" : "JAMg v2015-03-01",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "File type" : "GFF3",
+            "Date completed" : "1/3/16",
+            "Publication Status" : "Unpublished - released under Creative License Attribution"
+         },
+         "type" : "FeatureTrack",
+         "category" : "JAMg/3. Other features",
+         "label" : "JAMg transcripts de-novo alignments"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "jamp_CDS",
+               "UTR" : "jamp_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "JAMg OGS v1",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/JAMg OGS v1/{refseq}/trackData.json",
+         "compress" : 0,
+         "label" : "JAMg OGS v1",
+         "category" : "JAMg/1. Gene Sets",
+         "metadata" : {
+            "Analysis method" : "JAMg v2015-03-01",
+            "Descriptive track name" : "JAMg transcripts de-novo alignments",
+            "Other notes" : "GFF3 version of BED file",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "File type" : "GFF3",
+            "Date completed" : "1/3/16",
+            "Publication Status" : "Unpublished- released under Creative License Attribution"
+         },
+         "type" : "FeatureTrack"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "alt_gene_set-cds",
+               "UTR" : "alt_gene_set-utr"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "Uniref50 alignments",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Uniref50 alignments/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Analysis method" : "JAMg v2015-03-01",
+            "Descriptive track name" : "Uniref50 alignments",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "Date completed" : "1/3/16",
+            "File type" : "GFF3",
+            "Publication Status" : "Unpublished - released under Creative License Attribution"
+         },
+         "type" : "FeatureTrack",
+         "category" : "JAMg/3. Other features",
+         "label" : "Uniref50 alignments"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "Protein Domains via Hidden Markov Model (Uniprot)",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Protein Domains via Hidden Markov Model (Uniprot)/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "JAMg/3. Other features",
+         "label" : "Protein Domains via Hidden Markov Model (Uniprot)",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Analysis method" : "JAMg v2015-03-01",
+            "Descriptive track name" : "Protein Domains via Hidden Markov Model (Uniprot)",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "Date completed" : "1/3/16",
+            "File type" : "GFF3",
+            "Publication Status" : "Unpublished - released under Creative License Attribution"
+         }
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "genemark_CDS",
+               "UTR" : "genemark_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "Genemark prediction",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Genemark prediction/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Descriptive track name" : "Genemark prediction",
+            "Analysis method" : "GeneMark-ES Suite 4.21",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "File type" : "GFF3",
+            "Date completed" : "1/3/16",
+            "Publication Status" : "Unpublished - released under Creative License Attribution"
+         },
+         "type" : "FeatureTrack",
+         "category" : "JAMg/2. JAMg de-novo models",
+         "label" : "Genemark prediction"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "three_prime_cis_splice_site" : "goldenrod-60pct",
+               "three_prime_utr" : "transcriptome-utr",
+               "CDS" : "transcriptome-cds",
+               "UTR" : "transcriptome-utr",
+               "five_prime_utr" : "transcriptome-utr",
+               "exon" : "container-100pct",
+               "five_prime_cis_splice_site" : "goldenrod-60pct"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "JAMg golden transcriptome genes",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/JAMg golden transcriptome genes/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "JAMg/3. Other features",
+         "label" : "JAMg golden transcriptome genes",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Analysis method" : "JAMg v2015-03-01",
+            "Descriptive track name" : "JAMg golden transcriptome genes",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "Date completed" : "1/3/16",
+            "File type" : "GFF3",
+            "Publication Status" : "Unpublished - released under Creative License Attribution"
+         }
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "match_part" : "repeat",
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "Novel repeats (RepeatScout)",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Novel repeats (RepeatScout)/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Analysis method" : "RepeatScout-1.0.5",
+            "Descriptive track name" : "Novel repeats (RepeatScout)",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "Date completed" : "1/3/16",
+            "File type" : "GFF3",
+            " Publication Status" : "Unpublished - released under Creative License Attribution"
+         },
+         "label" : "Novel repeats (RepeatScout)",
+         "category" : "JAMg/3. Other features"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "match_part" : "repeat",
+               "exon" : "container-100pct"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "Simple repeats",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Simple repeats/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Analysis method" : "RepeatMasker-open-4-0-6",
+            "Descriptive track name" : "Simple repeats",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "Date completed" : "1/3/16",
+            "File type" : "GFF3",
+            "Publication Status" : "Unpublished - released under Creative License Attribution"
+         },
+         "label" : "Simple repeats",
+         "category" : "JAMg/3. Other features"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "match_part" : "repeat",
+               "exon" : "container-100pct"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "Known Insecta Repeats",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Known Insecta Repeats/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Analysis method" : "RepeatMasker-open-4-0-6",
+            "Descriptive track name" : "Known Insecta Repeats",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "Date completed" : "1/3/16",
+            "File type" : "GFF3",
+            "Publication Status" : "Unpublished - released under Creative License Attribution"
+         },
+         "label" : "Known Insecta Repeats",
+         "category" : "JAMg/3. Other features"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome",
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "tRNAScan predictions (mtDNA eukaryotic)",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/tRNAScan predictions (mtDNA eukaryotic)/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Descriptive track name" : "tRNAScan predictions (mtDNA eukaryotic)",
+            "Analysis method" : "TRNAscan-SE-1.3.1",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "File type" : "GFF3",
+            "Date completed" : "1/3/16",
+            "Publication Status" : "Unpublished - released under Creative License Attribution"
+         },
+         "label" : "tRNAScan predictions (mtDNA eukaryotic)",
+         "category" : "JAMg/3. Other features"
+      },
+      {
+         "style" : {
+            "className" : "container-16px",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome",
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "tRNAScan predictions (general eukaryotic)",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/tRNAScan predictions (general eukaryotic)/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "JAMg/3. Other features",
+         "label" : "tRNAScan predictions (general eukaryotic)",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Descriptive track name" : "tRNAScan predictions (general eukaryotic)",
+            "Analysis method" : "TRNAscan-SE-1.3.1",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "File type" : "GFF3",
+            "Date completed" : "1/3/16",
+            "Publication Status" : "Unpublished - released under Creative License Attribution"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome",
+               "wholeCDS" : null,
+               "exon" : "container-100pct"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "tRNA aragorn predictions (mtDNA eukaryotic)",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/tRNA aragorn predictions (mtDNA eukaryotic)/{refseq}/trackData.json",
+         "compress" : 0,
+         "label" : "tRNA aragorn predictions (mtDNA eukaryotic)",
+         "category" : "JAMg/3. Other features",
+         "metadata" : {
+            "Descriptive track name" : "tRNA aragorn predictions (mtDNA eukaryotic)",
+            "Analysis method" : "aragorn1.2.36/",
+            "File provider" : "Alexie Papanicolaou; Hawkesbury Institute for the Environment",
+            "File type" : "GFF3",
+            "Date completed" : "1/3/16",
+            "Publication Status" : "Unpublished - released under Creative License Attribution"
+         },
+         "type" : "FeatureTrack"
+      }
+   ],
+   "names" : {
+      "url" : "names/",
+      "type" : "Hash"
+   },
+   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
+   "alwaysOnTracks" : "DNA,Annotations",
+   "formatVersion" : 1
+}
