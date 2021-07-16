@@ -930,7 +930,7 @@
                "iconClass" : "dijitIconDatabase",
                "label" : "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
                "title" : "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-               "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+               "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
             }
          ],
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
@@ -975,7 +975,7 @@
                "iconClass" : "dijitIconDatabase",
                "label" : "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
                "title" : "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-               "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+               "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
             }
          ],
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
