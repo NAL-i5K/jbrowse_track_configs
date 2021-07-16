@@ -1,0 +1,717 @@
+{
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "seqType": "dna",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_010583005.1_Obru_v1_genomic.fna.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_010583005.1_Obru_v1_genomic.fna.gc.bigwig"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Pseudogene",
+      "label": "NCBI_Annotation_Release_100_Pseudogene",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Odontomachus_brunneus/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/010/583/005/GCF_010583005.1_Obru_v1/GCF_010583005.1_Obru_v1_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02",
+      "label": "Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "SRR6984027,SRR6984020,SRR6984034,SRR6984030,SRR6984019,SRR6984018,SRR6984056,SRR6984023,SRR6984021,SRR6984036",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-02_v1.0/Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02_coverage",
+      "label": "Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02_coverage",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "SRR6984027,SRR6984020,SRR6984034,SRR6984030,SRR6984019,SRR6984018,SRR6984056,SRR6984023,SRR6984021,SRR6984036",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-02_v1.0/Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02_junctions",
+      "label": "Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02_junctions",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "SRR6984027,SRR6984020,SRR6984034,SRR6984030,SRR6984019,SRR6984018,SRR6984056,SRR6984023,SRR6984021,SRR6984036",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Junction reads generated by Hisat2 aligner and regtools"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "className": "feature",
+        "description": "score"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02_junctions/{refseq}/trackData.json"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Male",
+      "label": "Male",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10).The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984018, SRR6984012, SRR6984056",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)",
+        "development stage": "Adult male"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_male_2nd_passAligned.sortedByCoord.out.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Male, coverage",
+      "label": "Male, coverage",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984018, SRR6984012, SRR6984056",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage.",
+        "development stage": "Adult Male"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_male_2nd_passAligned.sortedByCoord.out.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Larva",
+      "label": "Larva",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10).The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984019, SRR6984036, SRR6984027",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)",
+        "development stage": "Larva"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_larva_2nd_passAligned.sortedByCoord.out.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Larva, coverage",
+      "label": "Larva, coverage",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984019, SRR6984036, SRR6984027",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage.",
+        "development stage": "Larva"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_larva_2nd_passAligned.sortedByCoord.out.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Egg",
+      "label": "Egg",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10).The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984010, SRR6984024, SRR6984030",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)",
+        "development stage": "Egg"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_egg_2nd_passAligned.sortedByCoord.out.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Egg, coverage",
+      "label": "Egg, coverage",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984010, SRR6984024, SRR6984030",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage.",
+        "development stage": "Egg"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_egg_2nd_passAligned.sortedByCoord.out.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Reproductive Adult Worker",
+      "label": "Reproductive Adult Worker",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10).The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984022, SRR6984034, SRR6984031",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)",
+        "development stage": "Reproductive Adult Worker"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_RAW_2nd_passAligned.sortedByCoord.out.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Reproductive Adult Worker, coverage",
+      "label": "Reproductive Adult Worker, coverage",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984022, SRR6984034, SRR6984031",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage.",
+        "development stage": "Reproductive Adult Worker"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_RAW_2nd_passAligned.sortedByCoord.out.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Non-reproductive Adult Worker",
+      "label": "Non-reproductive Adult Worker",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10).The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984021, SRR6984013, SRR6984057",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)",
+        "development stage": "Non-reproductive Adult Worker"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_NRW_2nd_passAligned.sortedByCoord.out.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Non-reproductive Adult Worker, coverage",
+      "label": "Non-reproductive Adult Worker, coverage",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984021, SRR6984013, SRR6984057",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage.",
+        "development stage": "Non-reproductive Adult Worker"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_NRW_2nd_passAligned.sortedByCoord.out.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Queen",
+      "label": "Queen",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10).The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984023, SRR6984033, SRR6984032",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)",
+        "development stage": "Queen"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_queen_2nd_passAligned.sortedByCoord.out.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Queen, coverage",
+      "label": "Queen, coverage",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984023, SRR6984033, SRR6984032",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage.",
+        "development stage": "Queen"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_queen_2nd_passAligned.sortedByCoord.out.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Pupa",
+      "label": "Pupa",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10).The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984020",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)",
+        "development stage": "Pupa"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_pupa_2nd_passAligned.sortedByCoord.out.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Pupa, coverage",
+      "label": "Pupa, coverage",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984020",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage.",
+        "development stage": "Pupa"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_pupa_2nd_passAligned.sortedByCoord.out.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Larva, junction reads",
+      "label": "Larva, junction reads",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984019, SRR6984036, SRR6984027",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Junction reads",
+        "development stage": "Larva"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "subfeatureClasses": {
+          "CDS": "junction-cds",
+          "UTR": "webapollo-UTR",
+          "exon": "container-100pct",
+          "intron": null,
+          "match_part": "darkblue-80pct",
+          "start_codon": null,
+          "stop_codon": null,
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Larva, junction reads/{refseq}/trackData.json"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Non-reproductive Adult Worker, junction reads",
+      "label": "Non-reproductive Adult Worker, junction reads",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984021, SRR6984013, SRR6984057",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Junction reads",
+        "development stage": "Non-reproductive Adult Worker"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "subfeatureClasses": {
+          "CDS": "junction-cds",
+          "UTR": "webapollo-UTR",
+          "exon": "container-100pct",
+          "intron": null,
+          "match_part": "darkblue-80pct",
+          "start_codon": null,
+          "stop_codon": null,
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Non-reproductive Adult Worker, junction reads/{refseq}/trackData.json"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Egg, junction reads",
+      "label": "Egg, junction reads",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984010, SRR6984024, SRR6984030",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Junction reads",
+        "development stage": "Egg"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "subfeatureClasses": {
+          "CDS": "junction-cds",
+          "UTR": "webapollo-UTR",
+          "exon": "container-100pct",
+          "intron": null,
+          "match_part": "darkblue-80pct",
+          "start_codon": null,
+          "stop_codon": null,
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Egg, junction reads/{refseq}/trackData.json"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Male, junction reads",
+      "label": "Male, junction reads",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984018, SRR6984012, SRR6984056",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Junction reads",
+        "development stage": "Adult Male"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "subfeatureClasses": {
+          "CDS": "junction-cds",
+          "UTR": "webapollo-UTR",
+          "exon": "container-100pct",
+          "intron": null,
+          "match_part": "darkblue-80pct",
+          "start_codon": null,
+          "stop_codon": null,
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Male, junction reads/{refseq}/trackData.json"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Queen, junction reads",
+      "label": "Queen, junction reads",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984023, SRR6984033, SRR6984032",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Junction reads",
+        "development stage": "Queen"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "subfeatureClasses": {
+          "CDS": "junction-cds",
+          "UTR": "webapollo-UTR",
+          "exon": "container-100pct",
+          "intron": null,
+          "match_part": "darkblue-80pct",
+          "start_codon": null,
+          "stop_codon": null,
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Queen, junction reads/{refseq}/trackData.json"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Pupa, junction reads",
+      "label": "Pupa, junction reads",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984020",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Junction reads",
+        "development stage": "Pupa"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "subfeatureClasses": {
+          "CDS": "junction-cds",
+          "UTR": "webapollo-UTR",
+          "exon": "container-100pct",
+          "intron": null,
+          "match_part": "darkblue-80pct",
+          "start_codon": null,
+          "stop_codon": null,
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Pupa, junction reads/{refseq}/trackData.json"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Reproductive Adult Worker, junction reads",
+      "label": "Reproductive Adult Worker, junction reads",
+      "metadata": {
+        "Analysis method": "Reads were trimmed with Trimmomatic (0.32) and aligned to the genome assembly by caste/life-stage using STAR (2.7.3a) in paired-end mode with the available NCBI genome gtf file. The reads were aligned to the genome in a second pass using all the available splice junction information from the first pass alignments. Bam files were indexed with SAMtools (1.10). The second pass splice junction output files were converted to bed files using the custom script available at: https://gist.github.com/fabiolib/ffb21853e3eb3780150074aeffc54901",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "SRR6984022, SRR6984034, SRR6984031",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Junction reads",
+        "development stage": "Reproductive Adult Worker"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "subfeatureClasses": {
+          "CDS": "junction-cds",
+          "UTR": "webapollo-UTR",
+          "exon": "container-100pct",
+          "intron": null,
+          "match_part": "darkblue-80pct",
+          "start_codon": null,
+          "stop_codon": null,
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Reproductive Adult Worker, junction reads/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Gene",
+      "label": "odobru_current_models",
+      "menuTemplate": [
+        {
+          "label": "View details"
+        },
+        {
+          "action": "newWindow",
+          "iconClass": "dijitIconDatabase",
+          "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+          "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+        }
+      ],
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Odontomachus_brunneus/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/010/583/005/GCF_010583005.1_Obru_v1/GCF_010583005.1_Obru_v1_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": "ColorByType/View/Track/ColorByTypeDraggable",
+      "type": "ColorByType/View/Track/ColorByTypeDraggable",
+      "urlTemplate": "tracks/odobru_current_models/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Gene - Color by CDS frame",
+      "label": "NCBI_Annotation_Release_100_Gene-CBT",
+      "menuTemplate": [
+        {
+          "label": "View details"
+        },
+        {
+          "action": "newWindow",
+          "iconClass": "dijitIconDatabase",
+          "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+          "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+        }
+      ],
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Odontomachus_brunneus/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/010/583/005/GCF_010583005.1_Obru_v1/GCF_010583005.1_Obru_v1_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+        "Track legend": "This track shows CDS segments colored by reading frame when the Apollo 'Color by CDS frame' option is selected in the 'View' menu"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_Gene-CBT/{refseq}/trackData.json"
+    },
+    {
+      "category": "RNA-Seq/Transcriptome Assembly",
+      "key": "GIKU00000000 Trinity Assembly",
+      "label": "GIKU00000000 Trinity Assembly",
+      "metadata": {
+        "Analysis method": "The Trinity transcriptome GIKU00000000 was aligned to the genome assembly using GMAP with default parameters",
+        "Analysis provider": "Kim Walden, University of Illinois at Urbana-Champaign",
+        "Data source": "https://www.ncbi.nlm.nih.gov/nuccore/GIKU00000000.1/",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale re-use guidelines",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/Odontomachus-brunneus-Transcriptome-assembly_GIKU00000000_2020-06-15/20200615_GMAP_Trinity_vs_NCBI_genome_out_sorted.bam"
+    }
+  ]
+}

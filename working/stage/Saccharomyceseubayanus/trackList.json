@@ -1,0 +1,84 @@
+{
+   "names" : {
+      "url" : "names/",
+      "type" : "Hash"
+   },
+   "tracks" : [
+      {
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "type" : "SequenceTrack",
+         "seqType" : "dna",
+         "key" : "Reference sequence",
+         "chunkSize" : 20000,
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "category" : "Reference sequence",
+         "label" : "DNA"
+      },
+      {
+         "key" : "NCBI_Annotation_Release_101_Gene",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "label" : "saceub_current_models",
+         "category" : "NCBI Annotation Release 101",
+         "style" : {
+            "className" : "{type}",
+            "description" : "product, note, description",
+            "arrowheadClass" : "trellis-arrowhead",
+            "subfeatureClasses" : {
+               "CDS" : "gnomon_CDS",
+               "wholeCDS" : null,
+               "UTR" : "gnomon_UTR",
+               "exon" : "container-100pct"
+            }
+         },
+         "type" : "HTMLFeatures",
+         "urlTemplate" : "tracks/saceub_current_models/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/298/625/GCF_001298625.1_SEUB3.0/GCF_001298625.1_SEUB3.0_genomic.gff.gz",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Saccharomyces_Saccharomyces/README_CURRENT_RELEASE",
+            "Data provider" : "NCBI",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+         },
+         "trackType" : "HTMLFeatures"
+      },
+      {
+         "label" : "Gaps in assembly",
+         "bicolor_pivot" : "zero",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "key" : "Gaps in assembly",
+         "autoscale" : "local",
+         "urlTemplate" : "bigwig/GCF_001298625.1_SEUB3.0_genomic.fna.gaps.bigwig",
+	"category" : "Reference Assembly",
+		"metadata" : {
+		"Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+		"Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
+		"Track contact" : "The i5k workspace@NAL"
+		},
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "style" : {
+            "pos_color" : "black",
+            "neg_color" : "white"
+         }
+      },
+      {
+         "style" : {
+            "neg_color" : "rgba(255,255,0,50)",
+            "pos_color" : "rgba(0,0,255,50)"
+         },
+         "urlTemplate" : "bigwig/GCF_001298625.1_SEUB3.0_genomic.fna.gc.bigwig",
+	"category" : "Reference Assembly",
+		"metadata" : {
+		"Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+		"Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
+		"Track contact" : "The i5k workspace@NAL"
+		},
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "autoscale" : "local",
+         "key" : "GC Content",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "bicolor_pivot" : "0.5",
+         "label" : "GC Content"
+      }
+   ],
+   "formatVersion" : 1
+}

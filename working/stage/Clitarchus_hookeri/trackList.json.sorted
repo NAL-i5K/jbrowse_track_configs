@@ -1,0 +1,142 @@
+{
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "faiUrlTemplate": "seq/GCA_002778355.1_ASM277835v1_genomic_over_1000.fna.fai",
+      "key": "Reference sequence",
+      "label": "DNA",
+      "seqType": "dna",
+      "storeClass": "JBrowse/Store/Sequence/IndexedFasta",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/GCA_002778355.1_ASM277835v1_genomic_over_1000.fna",
+      "useAsRefSeqStore": 1
+    },
+    {
+      "category": "1. Clitarchus hookeri Maker annotations/1. Gene Sets/Protein Coding",
+      "compress": 0,
+      "key": "Clitarchus hookeri Maker annotations",
+      "label": "clihoo_current_models",
+      "metadata": {
+        "Data description": "https://doi.org/10.1186/s12864-017-4245-x",
+        "Data provider": "Chen Wu, Plant and Food New Zealand",
+        "Data source": "https://i5k.nal.usda.gov/annotations/739260/",
+        "Method": "https://i5k.nal.usda.gov/annotations/739260/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "subfeatureClasses": {
+          "CDS": "primary_gene_set-cds",
+          "UTR": "primary_gene_set-utr",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/clihoo_current_models/{refseq}/trackData.json"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly - only scaffolds over 1000 bp",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCA_002778355.1_ASM277835v1_genomic_over_1000.fna.gap.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly - only scaffolds over 1000 bp",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCA_002778355.1_ASM277835v1_genomic_over_1000.fna.gc"
+    },
+    {
+      "category": "2. Transcriptome",
+      "compress": 0,
+      "key": "Ovariolar Tips RNA-Seq, Cufflinks analysis",
+      "label": "OvariolarTips_Cufflinks",
+      "metadata": {
+        "Data provider": "Chen Wu, Plant and Food Research, NZ",
+        "Data source": "PRJNA429033",
+        "Geographic location": "Herekino (35 9.373 S, 173 17.155 E), Bream Head (35 50.479 S, 174 34.485 E), Lake Karapiro (37 56.445 S, 175 35.672 E), Cape Kidnappers (39 40.000 S, 177 46.000 E), Okuti Valley (43 47.390 S, 172 50.248 E)",
+        "Method": "https://i5k.nal.usda.gov/node/739289",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use",
+        "Sequencing method": "Illumina HiSeq2000",
+        "Tissues/Life stage": "Adult ovariolar tips"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "subfeatureClasses": {
+          "CDS": "primary_gene_set-cds",
+          "UTR": "primary_gene_set-utr",
+          "exon": "transcriptome-cds",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/OvariolarTips_Cufflinks/{refseq}/trackData.json"
+    },
+    {
+      "category": "2. Transcriptome",
+      "compress": 0,
+      "key": "Ovary and Testis RNA-Seq, Cufflinks analysis",
+      "label": "OvaryAndTestis_Cufflinks_Cufflinks",
+      "metadata": {
+        "Data provider": "Chen Wu, Plant and Food Research, NZ",
+        "Data source": "SRX3055387; SRX3055384; SRX3055383; SRX3055382; SRX3055381; SRX3055380",
+        "Geographic location": "37°0.111 S, 174° 55.039 E",
+        "Method": "https://i5k.nal.usda.gov/node/739288/",
+        "Publication status": "Published - please cite https://doi.org/10.1186/s12864-017-4245-x",
+        "Sequencing method": "Illumina HiSeq2000",
+        "Tissues/Life stage": "Adult ovary and testis"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "container-16px",
+        "subfeatureClasses": {
+          "CDS": "primary_gene_set-cds",
+          "UTR": "primary_gene_set-utr",
+          "exon": "transcriptome-cds",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/OvaryAndTestis_Cufflinks_Cufflinks/{refseq}/trackData.json"
+    }
+  ]
+}
