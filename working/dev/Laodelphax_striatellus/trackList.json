@@ -75,18 +75,18 @@
          "compress" : 0,
          "key" : "laostr_OGSv1.2 gene",
          "label" : "laostr_current_models",
-         "fmtDetailValue_Id": "function (id, feature) {  var name2 = id.replace(/\-R./, '');  if(feature.get('type')=='mRNA') {    return '<a target=_blank href=https://i5k.nal.usda.gov/'+name2+'>'+id+'</a>';} else { return id;}}",
+         "fmtDetailValue_Id": "function (id, feature) {  var name2 = id.replace(/-R./, '');  if(feature.get('type')=='mRNA') {    return '<a target=_blank href=https://i5k.nal.usda.gov/'+name2+'>'+id+'</a>';} else { return id;}}",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
-              "label": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/\-R./, '')}",
-              "title": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/\-R./, '')}",
+              "label": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/-R./, '')}",
+              "title": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/-R./, '')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id').replace(/\-R./, '')}",
-              },
+              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id').replace(/-R./, '')}"
+              }
         ],
          "metadata" : {
             "Data provider" : "Junjie Zhu, Chinese Academy of Sciences",

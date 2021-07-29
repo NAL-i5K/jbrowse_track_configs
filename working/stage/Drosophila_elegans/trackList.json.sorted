@@ -31,7 +31,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "description": "product, note, description",
         "subfeatureClasses": {
           "CDS": "primary_gene_set-cds",
@@ -97,7 +97,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px"
+        "className": "{type}"
       },
       "trackType": null,
       "type": "FeatureTrack",
@@ -117,7 +117,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "description": "product, note, description",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
@@ -144,7 +144,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "description": "product, note, description",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
@@ -171,7 +171,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "description": "product, note, description",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",

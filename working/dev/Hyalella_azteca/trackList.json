@@ -75,8 +75,8 @@
          "trackType" : "HTMLFeatures",
          "type" : "HTMLFeatures",
          "urlTemplate" : "tracks/hyaazt_current_models/{refseq}/trackData.json",
-	 "fmtDetailValue_Id": "function (id, feature) {  var name2 = id.replace(/\-R./, '');  if(feature.get('type')=='mRNA') {    return '<a target=_blank href=https://i5k.nal.usda.gov/'+name2+'>'+id+'</a>';} else { return id;}}", 
-	 "menuTemplate" : [ { "label" : "View details", }, { "label": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/\-R./, '')}", "title": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/\-R./, '')}", "iconClass" : "dijitIconDatabase", "action": "newWindow", "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id').replace(/\-R./, '')}", }, ],
+	 "fmtDetailValue_Id": "function (id, feature) {  var name2 = id.replace(/-R./, '');  if(feature.get('type')=='mRNA') {    return '<a target=_blank href=https://i5k.nal.usda.gov/'+name2+'>'+id+'</a>';} else { return id;}}", 
+	 "menuTemplate" : [ { "label" : "View details" }, { "label": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/-R./, '')}", "title": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/-R./, '')}", "iconClass" : "dijitIconDatabase", "action": "newWindow", "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id').replace(/-R./, '')}" } ],
          "metadata" : {
                     "Data source" : "https://data.nal.usda.gov/dataset/hyalella-azteca-official-gene-set-v12",
                     "Materials and Methods" : "The Hyalella azteca Official Gene Set v1.0, originally generated from assembly Hyalella azteca Genome Assembly 1.0 (10.15482/USDA.ADC/1415994) was lifted over to Hazt_2.0 using the NCBI's remap service, the CrossMap software (http://crossmap.sourceforge.net/), and remap_gff3 (https://github.com/NAL-i5K/remap-gff3). This resulted in the unreleased OGSv1.1. OGSv1.1 received additional QA/QC during NCBI submission, generating Hyalella azteca OGSv1.2.",

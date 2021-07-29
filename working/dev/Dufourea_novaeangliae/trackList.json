@@ -95,15 +95,15 @@
          "label" : "dufnov_current_models",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}",
-              },
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}"
+              }
         ],
          "metadata" : {
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
@@ -173,15 +173,15 @@
          "category" : "NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}",
-              },
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}"
+              }
         ],
          "metadata" : {
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
@@ -238,15 +238,15 @@
          "type" : "FeatureTrack",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}",
-              },
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}"
+              }
         ],
          "metadata" : {
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
@@ -321,15 +321,15 @@
          "type" : "FeatureTrack",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}",
-              },
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}"
+              }
         ],
          "metadata" : {
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
@@ -359,15 +359,15 @@
          "type" : "FeatureTrack",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
               "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}",
-              },
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}"
+              }
         ],
          "metadata" : {
             "Other notes" : "Gff3 file transformed to RefSeq coordinates by NAL",

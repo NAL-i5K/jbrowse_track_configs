@@ -102,7 +102,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "augustus"
         }
@@ -125,7 +125,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "blastn"
         }
@@ -148,7 +148,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "blastx"
         }
@@ -171,7 +171,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "est2genome"
         }
@@ -194,7 +194,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "protein2genome"
         }
@@ -217,7 +217,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "repeat"
         }
@@ -240,7 +240,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "repeat"
         }
@@ -263,7 +263,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "snap"
         }
@@ -325,7 +325,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "alt_gene_set-cds",
           "UTR": "alt_gene_set-utr",
@@ -351,7 +351,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "ogs-cds",
           "UTR": "ogs-utr",

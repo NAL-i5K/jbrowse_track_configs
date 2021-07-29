@@ -138,7 +138,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -164,7 +164,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -190,7 +190,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -216,7 +216,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -242,7 +242,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "primary_gene_set-cds",
           "UTR": "primary_gene_set-utr",

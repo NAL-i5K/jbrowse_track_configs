@@ -79,7 +79,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "description": "product, note, description",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
@@ -106,7 +106,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "description": "product, note, description",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",

@@ -63,15 +63,15 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
               "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}",
-              },
+              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+              }
         ],
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
@@ -88,7 +88,7 @@
 	 "Data source" : "https://data.nal.usda.gov/dataset/nylanderia-fulva-annotations-ogsv10",
 	 "Materials and Methods" : "The Nylanderia fulva OGSv1.0 is the Official Gene Set of genome assembly TAMU_Nfulva_1.0 (https://www.ncbi.nlm.nih.gov/assembly/GCF_005281655.1/). It is a merge of NCBI Nylanderia fulva Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Nylanderia_fulva/100/) and semi-automated predictions of odorant receptors.",
 	 "Publication status" : "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use", 
-	 "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster",
+	 "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster"
 	 },	 
          "trackType" : "HTMLFeatures",
          "type" : "HTMLFeatures",
@@ -115,7 +115,7 @@
          "Data source" : "https://data.nal.usda.gov/dataset/nylanderia-fulva-annotations-ogsv10",
          "Materials and Methods" : "The Nylanderia fulva OGSv1.0 is the Official Gene Set of genome assembly TAMU_Nfulva_1.0 (https://www.ncbi.nlm.nih.gov/assembly/GCF_005281655.1/). It is a merge of NCBI Nylanderia fulva Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Nylanderia_fulva/100/) and semi-automated predictions of odorant receptors.",
          "Publication status" : "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use",
-         "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster",
+         "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster"
          },
          "trackType" : "HTMLFeatures",
          "type" : "HTMLFeatures",

@@ -103,7 +103,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "label": "DBXref, name,id",
         "subfeatureClasses": {
           "CDS": "ogs-cds",
@@ -169,7 +169,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -195,7 +195,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -221,7 +221,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -247,7 +247,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -273,7 +273,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -299,7 +299,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -325,7 +325,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -351,7 +351,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -377,7 +377,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -403,7 +403,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px"
+        "className": "{type}"
       },
       "trackType": null,
       "type": "FeatureTrack",
@@ -423,7 +423,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",

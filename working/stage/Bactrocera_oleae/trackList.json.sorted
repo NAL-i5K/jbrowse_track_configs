@@ -142,7 +142,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "primary_gene_set-cds",
           "UTR": "primary_gene_set-utr",
@@ -168,7 +168,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px"
+        "className": "{type}"
       },
       "trackType": null,
       "type": "FeatureTrack",
@@ -188,7 +188,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -214,7 +214,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -240,7 +240,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -266,7 +266,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -292,7 +292,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -318,7 +318,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -344,7 +344,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -934,7 +934,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "renderClassName": "protein_domains",
         "subfeatureClasses": {
           "cDNA_match": "jamp_match",
@@ -963,7 +963,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "jamp_CDS",
           "UTR": "jamp_UTR",
@@ -991,7 +991,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "alt_gene_set-cds",
           "UTR": "alt_gene_set-utr",
@@ -1019,7 +1019,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "protein2genome"
         }
@@ -1044,7 +1044,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "genemark_CDS",
           "UTR": "genemark_UTR",
@@ -1072,7 +1072,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "transcriptome-cds",
           "UTR": "transcriptome-utr",
@@ -1104,7 +1104,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -1133,7 +1133,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "exon": "container-100pct",
           "match_part": "repeat"
@@ -1159,7 +1159,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "exon": "container-100pct",
           "match_part": "repeat"
@@ -1185,7 +1185,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -1214,7 +1214,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -1243,7 +1243,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "exon": "container-100pct",
           "match_part": "protein2genome",

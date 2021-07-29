@@ -68,7 +68,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "augustus"
         }
@@ -91,7 +91,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "blastn"
         }
@@ -114,7 +114,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "blastx"
         }
@@ -137,7 +137,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "est2genome"
         }
@@ -160,7 +160,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "protein2genome"
         }
@@ -183,7 +183,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "repeat"
         }
@@ -206,7 +206,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "snap"
         }
@@ -229,7 +229,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -255,7 +255,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -281,7 +281,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",
           "UTR": "gnomon_UTR",
@@ -307,7 +307,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "primary_gene_set-cds",
           "UTR": "primary_gene_set-utr",
@@ -333,7 +333,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "repeat"
         }
@@ -356,7 +356,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "blast-match_part",
           "wholeCDS": null
@@ -380,7 +380,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "blast-match_part",
           "wholeCDS": null
@@ -404,7 +404,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "blast-match_part",
           "wholeCDS": null
@@ -428,7 +428,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "blast-match_part",
           "wholeCDS": null
@@ -452,7 +452,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "alt_gene_set-cds",
           "UTR": "alt_gene_set-utr",
@@ -478,7 +478,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "blast-match_part",
           "wholeCDS": null
@@ -503,7 +503,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-16px"
+        "className": "{type}"
       },
       "trackType": null,
       "type": "FeatureTrack",
@@ -522,7 +522,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-16px"
+        "className": "{type}"
       },
       "trackType": null,
       "type": "FeatureTrack",
@@ -541,7 +541,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-16px"
+        "className": "{type}"
       },
       "trackType": null,
       "type": "FeatureTrack",
@@ -560,7 +560,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-16px"
+        "className": "{type}"
       },
       "trackType": null,
       "type": "FeatureTrack",
@@ -582,7 +582,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "ogs-cds",
           "UTR": "ogs-utr",
@@ -609,7 +609,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "ogs-cds",
           "UTR": "ogs-utr",
@@ -636,7 +636,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "subfeatureClasses": {
           "CDS": "ogs-cds",
           "UTR": "ogs-utr",

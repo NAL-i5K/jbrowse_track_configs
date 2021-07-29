@@ -222,7 +222,7 @@
       },
       {
          "style" : {
-            "className" : "{type}x",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",

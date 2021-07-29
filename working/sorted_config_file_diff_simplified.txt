@@ -1,0 +1,1549 @@
+CHECKING UPDATED FOR FILE 10_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 11_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 12_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 13_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 14_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 15_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 16_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 17_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 18_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 19_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 1_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 20_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 21_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 22_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 23_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 24_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 25_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 26_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 27_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 28_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 29_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 2_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 30_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 31_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 32_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 33_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 34_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 35_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 36_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 37_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 38_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 39_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 3_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 40_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 4_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 5_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 6_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 7_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 8_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE 9_-_Onthophagus_taurus_training/trackList.json.sorted
+CHECKING UPDATED FOR FILE Aethina_tumida/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+193d198
+
+CHECKING UPDATED FOR FILE Agrilus_planipennis/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+1291d1296
+
+CHECKING UPDATED FOR FILE Amyelois_transitella/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+283d288
+
+CHECKING UPDATED FOR FILE Anoplophora_glabripennis/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+116c122
+<       "label": "anogla_legacy_models",
+---
+>       "label": "AGLA_v0.5.3-Models",
+136c142
+<       "urlTemplate": "tracks/anogla_current_models/{refseq}/trackData.json"
+---
+>       "urlTemplate": "tracks/AGLA_v0.5.3-Models/{refseq}/trackData.json"
+1296d1301
+
+1343c1348
+<       "urlTemplate": "tracks/OGS_v1.2/{refseq}/trackData.json"
+---
+>       "urlTemplate": "tracks/anogla_current_models/{refseq}/trackData.json"
+CHECKING UPDATED FOR FILE Apis_mellifera/trackList.json.sorted
+2d1
+
+23c22
+<       "fmtDetailValue_Id": "function(id, feature) { var name2 = id.replace(/-R./, ''); if(feature.get('type')=='mRNA') { return ''+id+' (Click for Gene page)';} else {return id}}",
+---
+>       "fmtDetailValue_Id": "function(id, feature) { var name2 = id.replace(/-R./, ''); if(feature.get('type')=='mRN:A') { return ''+id+' (Click for Gene page)';} else {return id}}",
+48c47
+CHECKING UPDATED FOR FILE Athalia_rosae/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+CHECKING UPDATED FOR FILE Bactrocera_cucurbitae/trackList.json.sorted
+
+5a6,11
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Bactrocera_dorsalis/trackList.json.sorted
+
+5a6,11
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+213c219
+
+---
+
+CHECKING UPDATED FOR FILE Bactrocera_oleae/trackList.json.sorted
+3c3
+
+---
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+153d158
+
+CHECKING UPDATED FOR FILE Bemisia_tabaci/trackList.json.sorted
+3c3
+
+---
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+166c172
+
+---
+
+CHECKING UPDATED FOR FILE Blattella_germanica/trackList.json.sorted
+3c3
+
+---
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+CHECKING UPDATED FOR FILE Bombus_impatiens/trackList.json.sorted
+2d1
+
+23c22
+<       "fmtDetailValue_Id": "function (id, feature) {  var name2 = id.replace(/-R./, '');  if(feature.get('type')=='mRNA') {    return '<a target=_blank href=https://i5k.nal.usda.gov/'+name2+'>'+id+'</a>';} else { return id;}}",
+---
+>       "fmtDetailValue_Id": "function (id, feature) {  var name2 = id.replace(/-R./, '');  if(feature.get('type')=='mRNA') {    return '<a target=_blank href=https://i5k.nal.usda.gov/'+name2+'>'+id+'</a>';} else { return id}}",
+55c54
+<         "className": "{type",
+---
+
+CHECKING UPDATED FOR FILE Bombus_terrestris/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Catajapyx_aquilonaris/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+CHECKING UPDATED FOR FILE Centruroides_sculpturatus/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+CHECKING UPDATED FOR FILE Cephus_cinctus/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Ceratitis_capitata/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+99c105
+
+CHECKING UPDATED FOR FILE Chelonus_insularis/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Cimex_lectularius/trackList.json.sorted
+
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+CHECKING UPDATED FOR FILE Clitarchus_hookeri/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Contarinia_nasturtii/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Copidosoma_floridanum/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Diachasma_alloeum/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Diaphorina_citri/trackList.json.sorted
+10d9
+<       "css": "./plugins/NAL_CSS/css/main.css",
+50d48
+
+CHECKING UPDATED FOR FILE Diaphorina_citri_legacy/trackList.json.sorted
+3d2
+
+9a9,14
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+CHECKING UPDATED FOR FILE Drosophila_biarmipes/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Drosophila_bipectinata/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Drosophila_elegans/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Drosophila_eugracilis/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Drosophila_ficusphila/trackList.json.sorted
+
+176c174
+<         "className": "{type}b",
+---
+
+CHECKING UPDATED FOR FILE Drosophila_kikkawai/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Drosophila_rhopaloa/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Drosophila_takahashii/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Dufourea_novaeangliae/trackList.json.sorted
+
+>   "css": "data/contrib_styles.css",
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Ephemera_danica/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Eufriesea_mexicana/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Euglossa_dilemma/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+36c42
+
+---
+
+CHECKING UPDATED FOR FILE Eurytemora_affinis/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Eurytemora_affinis_-_training/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Fopius_arisanus/trackList.json.sorted
+
+5a6,11
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Frankliniella_occidentalis/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Galleria_mellonella/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Gerris_buenoi/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Habropoda_laboriosa/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Halyomorpha_halys/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Heliothis_virescens/trackList.json.sorted
+
+>   "css": "data/contrib_styles.css",
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Holacanthella_duospinosa/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Homalodisca_vitripennis/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Hyalella_azteca/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Ladona_fulva/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Laodelphax_striatellus/trackList.json.sorted
+
+100c98
+<         "className": "{type",
+
+
+CHECKING UPDATED FOR FILE Lasioglossum_albipes/trackList.json.sorted
+
+>   "css": "data/contrib_styles.css",
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+112c118
+
+CHECKING UPDATED FOR FILE Latrodectus_hesperus/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Leptinotarsa_decemlineata/trackList.json.sorted
+
+136c134
+<       "urlTemplate": "tracks/NCBI_Annotation_Release_100_rRNA/{refseq}/trackData.json"
+---
+>       "urlTemplate": "tracks/NCBI_Annotation_Release_$version_rRNA/{refseq}/trackData.json"
+
+CHECKING UPDATED FOR FILE Leptinotarsa_decemlineata_training/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+>         "description": "score",
+1489c1496
+
+---
+
+CHECKING UPDATED FOR FILE Limnephilus_lunatus/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Locusta_migratoria/trackList.json.sorted
+
+>   "css": "data/contrib_styles.css",
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Loxosceles_reclusa/trackList.json.sorted
+
+5a6,11
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+CHECKING UPDATED FOR FILE Mamestra_configurata/trackList.json.sorted
+2d1
+
+CHECKING UPDATED FOR FILE Manduca_sexta/trackList.json.sorted
+2,4d1
+<   "alwaysOnTracks": "DNA,Annotations",
+
+<   "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
+10d6
+<   "share_link": 0,
+16a13
+>       "seqType": "dna",
+22c19
+<       "autocomplete": "none",
+---
+>       "category": "NCBI Annotation Release 102",
+24,205c21,22
+<       "key": "User-created Annotations",
+<       "label": "Annotations",
+<       "phase": 0,
+<       "storeClass": "WebApollo/Store/SeqFeature/ScratchPad",
+<       "style": {
+<         "alternateClasses": {
+<           "miRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "ncRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "pseudogene": {
+<             "className": "light-purple-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "rRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "repeat_region": {
+<             "className": "magenta-80pct"
+<           },
+<           "snRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "snoRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "tRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "transposable_element": {
+<             "className": "blue-ibeam",
+<             "renderClassName": "blue-ibeam-render"
+<           }
+<         },
+<         "arrowheadClass": "annot-arrowhead",
+<         "centerSubFeature": {
+<           "non_canonical_five_prime_splice_site": false,
+<           "non_canonical_three_prime_splice_site": false
+<         },
+<         "className": "annot",
+<         "renderClassName": "annot-render",
+<         "subfeatureClasses": {
+<           "CDS": "annot-CDS",
+<           "UTR": "annot-UTR",
+<           "exon": "container-100pct",
+<           "non_canonical_five_prime_splice_site": "noncanonical-splice-site",
+<           "non_canonical_three_prime_splice_site": "noncanonical-splice-site",
+<           "wholeCDS": null
+<         },
+<         "uniqueIdField": "id"
+<       },
+<       "subfeatures": 1,
+<       "type": "WebApollo/View/Track/AnnotTrack"
+<     },
+<     {
+<       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+<       "compress": 0,
+<       "key": "augustus",
+<       "label": "augustus",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "Augustus results as part of the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "Augustus gene models from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "webapollo-arrowhead",
+
+<         "subfeatureClasses": {
+<           "match_part": "augustus"
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/augustus/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+<       "compress": 0,
+<       "key": "augustus_masked",
+<       "label": "augustus_masked",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "Augustus results as part of the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "Augustus gene models from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "webapollo-arrowhead",
+
+<         "subfeatureClasses": {
+<           "match_part": "augustus"
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/augustus_masked/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/3. Mapped DNA/Supplementary: Blastn",
+<       "compress": 0,
+<       "key": "blastn",
+<       "label": "blastn",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "Blastn results as part of the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "Blastn results from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "webapollo-arrowhead",
+
+<         "subfeatureClasses": {
+<           "match_part": "blastn"
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/blastn/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/3. Mapped Proteins/Supplementary: BlastX",
+<       "compress": 0,
+<       "key": "blastx",
+<       "label": "blastx",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "Blastx results as part of the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "Blastx results from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "webapollo-arrowhead",
+
+<         "subfeatureClasses": {
+<           "match_part": "blastx"
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/blastx/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/3. Mapped DNA/est2genome",
+<       "compress": 0,
+<       "key": "est2genome",
+<       "label": "est2genome",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "est2genome results as part of the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "est2genome results from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "webapollo-arrowhead",
+
+<         "subfeatureClasses": {
+<           "match_part": "est2genome"
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/est2genome/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/4. Transcriptome/Assembly",
+<       "compress": 0,
+<       "key": "est_gff:cufflinks",
+<       "label": "est_gff:cufflinks",
+---
+>       "key": "NCBI_Annotation_Release_102_Pseudogene",
+>       "label": "NCBI_Annotation_Release_102_Pseudogene",
+207,210c24,27
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "Mapped cufflinks results as part of the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "Mapped cufflinks results from the MAKER 2.25 pipeline"
+---
+>         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Manduca_sexta/README_CURRENT_RELEASE",
+>         "Data provider": "NCBI",
+>         "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/014/839/805/GCF_014839805.1_JHU_Msex_v1.0/GCF_014839805.1_JHU_Msex_v1.0_genomic.gff.gz",
+>         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+214,330c31,33
+<         "arrowheadClass": "webapollo-arrowhead",
+
+<         "subfeatureClasses": {
+<           "match_part": "est"
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/est_gff:cufflinks/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/3. Mapped Proteins/Protein2genome",
+<       "compress": 0,
+<       "key": "protein2genome",
+<       "label": "protein2genome",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "protein2genome results as part of the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "protein2genome results from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "webapollo-arrowhead",
+
+<         "subfeatureClasses": {
+<           "match_part": "protein2genome"
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/protein2genome/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/2. Evidence/Repeats",
+<       "compress": 0,
+<       "key": "repeatmasker",
+<       "label": "repeatmasker",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "Repeatmasker results as part of the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "Repeatmasker results from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "webapollo-arrowhead",
+
+<         "subfeatureClasses": {
+<           "match_part": "repeat"
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/repeatmasker/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/2. Evidence/Repeats",
+<       "compress": 0,
+<       "key": "repeatrunner",
+<       "label": "repeatrunner",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "Repeatrunner results as part of the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "Repeatrunner results from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "webapollo-arrowhead",
+
+<         "subfeatureClasses": {
+<           "match_part": "repeat"
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/repeatrunner/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+<       "compress": 0,
+<       "key": "snap",
+<       "label": "snap",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "Snap results as part of the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "Snap results from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "webapollo-arrowhead",
+
+<         "subfeatureClasses": {
+<           "match_part": "snap"
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/snap/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+<       "compress": 0,
+<       "key": "snap_masked",
+<       "label": "snap_masked",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "Snap results as part of the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "Snap results from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "webapollo-arrowhead",
+
+---
+>         "arrowheadClass": "trellis-arrowhead",
+
+>         "description": "product, note, description",
+332c35,38
+<           "match_part": "snap"
+---
+>           "CDS": "gnomon_CDS",
+>           "UTR": "gnomon_UTR",
+>           "exon": "container-100pct",
+>           "wholeCDS": null
+335,337c41,43
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/snap_masked/{refseq}/trackData.json"
+---
+>       "trackType": "HTMLFeatures",
+>       "type": "HTMLFeatures",
+>       "urlTemplate": "tracks/NCBI_Annotation_Release_102_Pseudogene/{refseq}/trackData.json"
+356c62
+<       "urlTemplate": "bigwig/ms_scaffolds_NALmod.fa.gaps.bigwig"
+---
+>       "urlTemplate": "bigwig/GCF_014839805.1_JHU_Msex_v1.0_genomic.fna.gaps.bigwig"
+376c82
+<       "urlTemplate": "bigwig/ms_scaffolds_NALmod.fa.gc.bigwig"
+---
+>       "urlTemplate": "bigwig/GCF_014839805.1_JHU_Msex_v1.0_genomic.fna.gc.bigwig"
+379c85
+<       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+---
+>       "category": "Official Gene Set",
+381,382c87,88
+<       "key": "maker",
+<       "label": "maker",
+---
+>       "key": "OGSv2.2",
+>       "label": "OGSv2.2_Gene",
+385,434c91
+<         "Analysis description": "Results from the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "Results from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "trellis-arrowhead",
+
+<         "subfeatureClasses": {
+<           "CDS": "alt_gene_set-cds",
+<           "UTR": "alt_gene_set-utr",
+<           "exon": "container-100pct",
+<           "wholeCDS": null
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/maker/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+<       "compress": 0,
+<       "key": "model_gff:maker.gff",
+<       "label": "model_gff:maker.gff",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "Model-gff results from the MAKER 2.25 pipeline",
+<         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+<         "Track legend": "Model-gff results from the MAKER 2.25 pipeline"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "webapollo-arrowhead",
+
+<         "subfeatureClasses": {
+<           "match_part": "darkblue-80pct"
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/model_gff:maker.gff/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "OGS2.0/1. Gene Sets/Official Gene Set",
+<       "compress": 0,
+<       "key": "OGSv2.0 Gene",
+<       "label": "mansex_current_models",
+<       "metadata": {
+<         "Analysis contact": "Michael Kanost, Kansas State University",
+<         "Analysis description": "MAKER 2.25 was used for initial set of gene predictions. These were used for manual annotation using Web Apollo by a community of experts. The resulting manual annotations, the MAKER results, and de novo assemblies of RNA seq data (Trinity and Oases) were used to produce  gene predictions using the PASA2 program. (OGS2.0)",
+---
+>         "Analysis description": "MAKER 2.25 was used for initial set of gene predictions. These were used for manual annotation using Web Apollo by a community of experts. The resulting manual annotations, the MAKER results, and de novo assemblies of RNA seq data (Trinity and Oases) were used to produce  gene predictions using the PASA2 program to generate OGS2.0. OGS2.0 was then modified to meet NCBI-GenBank quality review (OGS2.1). OGS2.1 was lifted over to assembly JHU_Msex_v1.0 using the LiftOff (https://doi.org/10.1093/bioinformatics/btaa1016) and Genometools (http://genometools.org/) software. OGS2.2 has quality issues due to the liftover - the i5k Workspace@NAL recommends NCBI Annotation Release 102 for general analysis, instead.",
+436c93
+<         "Track legend": "Consensus gene models from the PASA2 program"
+---
+>         "Track legend": "Consensus gene models from the PASA2 program, lifted over to assembly JHU_Msex_v1.0."
+441c98
+
+---
+
+452c109
+<       "urlTemplate": "tracks/mansex_current_models/{refseq}/trackData.json"
+---
+>       "urlTemplate": "tracks/OGSv2.2_Gene/{refseq}/trackData.json"
+456,457c113,114
+<       "key": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28",
+<       "label": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28",
+---
+>       "key": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13",
+>       "label": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13",
+461c118
+<         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659998'>SRR2659998</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963201'>SRR10963201</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR368953'>ERR368953</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963222'>SRR10963222</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577015'>SRR1577015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1576993'>SRR1576993</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085616'>SRR11085616</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963225'>SRR10963225</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577022'>SRR1577022</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963200'>SRR10963200</a>",
+---
+>         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085711'>SRR11085711</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963231'>SRR10963231</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2660035'>SRR2660035</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085686'>SRR11085686</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3467224'>SRR3467224</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085604'>SRR11085604</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085618'>SRR11085618</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577021'>SRR1577021</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963211'>SRR10963211</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659997'>SRR2659997</a>",
+467c124
+<       "urlTemplate": "analyses/Manduca-sexta-RNA-Seq_2020-10-28_v1.0/Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28.bam"
+---
+>       "urlTemplate": "analyses/Manduca-sexta-RNA-Seq_2021-05-13_v1.0/Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13.bam"
+473,474c130,131
+<       "key": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_coverage",
+<       "label": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_coverage",
+---
+>       "key": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13_coverage",
+>       "label": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13_coverage",
+478c135
+<         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659998'>SRR2659998</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963201'>SRR10963201</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR368953'>ERR368953</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963222'>SRR10963222</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577015'>SRR1577015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1576993'>SRR1576993</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085616'>SRR11085616</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963225'>SRR10963225</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577022'>SRR1577022</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963200'>SRR10963200</a>",
+---
+>         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085711'>SRR11085711</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963231'>SRR10963231</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2660035'>SRR2660035</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085686'>SRR11085686</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3467224'>SRR3467224</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085604'>SRR11085604</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085618'>SRR11085618</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577021'>SRR1577021</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963211'>SRR10963211</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659997'>SRR2659997</a>",
+487c144
+<       "urlTemplate": "analyses/Manduca-sexta-RNA-Seq_2020-10-28_v1.0/Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28.bigwig"
+---
+>       "urlTemplate": "analyses/Manduca-sexta-RNA-Seq_2021-05-13_v1.0/Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13.bigwig"
+492,493c149,150
+<       "key": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_junctions",
+<       "label": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_junctions",
+---
+>       "key": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13_junctions",
+>       "label": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13_junctions",
+497c154
+<         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659998'>SRR2659998</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963201'>SRR10963201</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR368953'>ERR368953</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963222'>SRR10963222</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577015'>SRR1577015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1576993'>SRR1576993</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085616'>SRR11085616</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963225'>SRR10963225</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577022'>SRR1577022</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963200'>SRR10963200</a>",
+---
+>         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085711'>SRR11085711</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963231'>SRR10963231</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2660035'>SRR2660035</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085686'>SRR11085686</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3467224'>SRR3467224</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085604'>SRR11085604</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085618'>SRR11085618</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577021'>SRR1577021</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963211'>SRR10963211</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659997'>SRR2659997</a>",
+503c160,161
+<         "className": "feature"
+---
+>         "className": "feature",
+>         "description": "score"
+507c165,204
+<       "urlTemplate": "tracks/Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_junctions/{refseq}/trackData.json"
+---
+>       "urlTemplate": "tracks/Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13_junctions/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "NCBI Annotation Release 102",
+>       "compress": 0,
+>       "key": "NCBI_Annotation_Release_102_Gene",
+>       "label": "mansex_current_models",
+>       "menuTemplate": [
+>         {
+>           "label": "View details"
+>         },
+>         {
+>           "action": "newWindow",
+>           "iconClass": "dijitIconDatabase",
+>           "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+>           "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+>         }
+>       ],
+>       "metadata": {
+>         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Manduca_sexta/README_CURRENT_RELEASE",
+>         "Data provider": "NCBI",
+>         "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/014/839/805/GCF_014839805.1_JHU_Msex_v1.0/GCF_014839805.1_JHU_Msex_v1.0_genomic.gff.gz",
+>         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+
+>         "description": "product, note, description",
+>         "subfeatureClasses": {
+>           "CDS": "gnomon_CDS",
+>           "UTR": "gnomon_UTR",
+>           "exon": "container-100pct",
+>           "wholeCDS": null
+>         }
+>       },
+>       "trackType": "HTMLFeatures",
+>       "type": "HTMLFeatures",
+>       "urlTemplate": "tracks/mansex_current_models/{refseq}/trackData.json"
+CHECKING UPDATED FOR FILE Mayetiola_destructor/trackList.json.sorted
+3d2
+
+9a9,14
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Medauroidea_extradentata/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Megachile_rotundata/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+139c145
+
+
+CHECKING UPDATED FOR FILE Melipona_quadrifasciata/trackList.json.sorted
+3c3
+
+---
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+99c105
+
+---
+
+CHECKING UPDATED FOR FILE Microplitis_demolitor/trackList.json.sorted
+2,4d1
+<   "alwaysOnTracks": "DNA,Annotations",
+
+<   "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
+10d6
+<   "share_link": 0,
+16a13
+>       "seqType": "dna",
+22c19
+<       "autocomplete": "none",
+---
+>       "category": "NCBI Annotation Release 101",
+24,72c21,33
+<       "key": "User-created Annotations",
+<       "label": "Annotations",
+<       "phase": 0,
+<       "storeClass": "WebApollo/Store/SeqFeature/ScratchPad",
+<       "style": {
+<         "alternateClasses": {
+<           "miRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "ncRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "pseudogene": {
+<             "className": "light-purple-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "rRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "repeat_region": {
+<             "className": "magenta-80pct"
+<           },
+<           "snRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "snoRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "tRNA": {
+<             "className": "brightgreen-80pct",
+<             "renderClassName": "gray-center-30pct"
+<           },
+<           "transposable_element": {
+<             "className": "blue-ibeam",
+<             "renderClassName": "blue-ibeam-render"
+<           }
+<         },
+<         "arrowheadClass": "annot-arrowhead",
+<         "centerSubFeature": {
+<           "non_canonical_five_prime_splice_site": false,
+<           "non_canonical_three_prime_splice_site": false
+<         },
+<         "className": "annot",
+<         "renderClassName": "annot-render",
+---
+>       "key": "NCBI_Annotation_Release_101_Gene",
+>       "label": "NCBI_Annotation_Release_101_Gene",
+>       "metadata": {
+>         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+>         "Data provider": "NCBI",
+>         "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/572/035/GCF_000572035.2_Mdem2/GCF_000572035.2_Mdem2_genomic.gff.gz",
+>         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+
+>         "description": "product, note, description",
+74,75c35,36
+<           "CDS": "annot-CDS",
+<           "UTR": "annot-UTR",
+---
+>           "CDS": "gnomon_CDS",
+>           "UTR": "gnomon_UTR",
+77,78d37
+<           "non_canonical_five_prime_splice_site": "noncanonical-splice-site",
+<           "non_canonical_three_prime_splice_site": "noncanonical-splice-site",
+80,81c39
+<         },
+<         "uniqueIdField": "id"
+---
+>         }
+83,84c41,43
+<       "subfeatures": 1,
+<       "type": "WebApollo/View/Track/AnnotTrack"
+---
+,
+,
+>       "urlTemplate": "tracks/NCBI_Annotation_Release_101_Gene/{refseq}/trackData.json"
+87c46
+<       "category": "NCBI Annotation Release 101/1. Gene Sets/Protein Coding",
+---
+>       "category": "NCBI Annotation Release 101",
+89,90c48,49
+<       "key": "NCBI Predicted protein coding genes, Annotation Release 101",
+<       "label": "micdem_current_models",
+---
+>       "key": "NCBI_Annotation_Release_101_Pseudogene",
+>       "label": "NCBI_Annotation_Release_101_Pseudogene",
+94c53
+<         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+---
+>         "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/572/035/GCF_000572035.2_Mdem2/GCF_000572035.2_Mdem2_genomic.gff.gz",
+100c59,60
+
+---
+
+>         "description": "product, note, description",
+102,103c62,63
+<           "CDS": "primary_gene_set-cds",
+<           "UTR": "primary_gene_set-utr",
+---
+>           "CDS": "gnomon_CDS",
+>           "UTR": "gnomon_UTR",
+108,110c68,70
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/micdem_current_models/{refseq}/trackData.json"
+---
+>       "trackType": "HTMLFeatures",
+>       "type": "HTMLFeatures",
+>       "urlTemplate": "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json"
+142d101
+
+152,277c111
+<       "category": "NCBI Annotation Release 101/2. Evidence",
+
+<       "compress": 0,
+<       "key": "cDNA match evidence from NCBI Annotation Release 101",
+<       "label": "NCBI_Annotation_Release_101_cDNA_match",
+<       "metadata": {
+<         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+<         "Data provider": "NCBI",
+<         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+<         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "trellis-arrowhead",
+
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "NCBI Annotation Release 101/1. Gene Sets/Protein Coding",
+<       "compress": 0,
+<       "key": "NCBI Predicted low-quality protein coding genes, Annotation Release 101",
+<       "label": "NCBI_Annotation_Release_100_Protein_Coding_low_quality",
+<       "metadata": {
+<         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+<         "Data provider": "NCBI",
+<         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+<         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "trellis-arrowhead",
+
+<         "subfeatureClasses": {
+<           "CDS": "gnomon_CDS",
+<           "UTR": "gnomon_UTR",
+<           "exon": "container-100pct",
+<           "wholeCDS": null
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Protein_Coding_low_quality/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "NCBI Annotation Release 101/1. Gene Sets/Noncoding",
+<       "compress": 0,
+<       "key": "NCBI Predicted miscRNA, Annotation Release 100",
+<       "label": "NCBI_Annotation_Release_100_misc_RNA",
+<       "metadata": {
+<         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+<         "Data provider": "NCBI",
+<         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+<         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "trellis-arrowhead",
+
+<         "subfeatureClasses": {
+<           "CDS": "gnomon_CDS",
+<           "UTR": "gnomon_UTR",
+<           "exon": "container-100pct",
+<           "wholeCDS": null
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/NCBI_Annotation_Release_100_misc_RNA/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "NCBI Annotation Release 101/1. Gene Sets/Pseudogenes",
+<       "compress": 0,
+<       "key": "NCBI Predicted pseudogenes, Annotation Release 101",
+<       "label": "NCBI_Annotation_Release_101_Pseudogene",
+<       "metadata": {
+<         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+<         "Data provider": "NCBI",
+<         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+<         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "trellis-arrowhead",
+
+<         "subfeatureClasses": {
+<           "CDS": "gnomon_CDS",
+<           "UTR": "gnomon_UTR",
+<           "exon": "container-100pct",
+<           "wholeCDS": null
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "NCBI Annotation Release 101/1. Gene Sets/Noncoding",
+<       "compress": 0,
+<       "key": "NCBI Predicted tRNAs, Annotation Release 101",
+<       "label": "NCBI_Annotation_Release_101_tRNA",
+<       "metadata": {
+<         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+<         "Data provider": "NCBI",
+<         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+<         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "trellis-arrowhead",
+
+<         "subfeatureClasses": {
+<           "CDS": "gnomon_CDS",
+<           "UTR": "gnomon_UTR",
+<           "exon": "container-100pct",
+<           "wholeCDS": null
+<         }
+<       },
+<       "trackType": null,
+<       "type": "FeatureTrack",
+<       "urlTemplate": "tracks/NCBI_Annotation_Release_101_tRNA/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "Transcriptome/Mapped Reads",
+---
+>       "category": "RNA-Seq/Mapped Reads",
+294c128
+<       "category": "Transcriptome/Mapped Reads",
+---
+>       "category": "RNA-Seq/Mapped Reads",
+311c145
+<       "category": "Transcriptome/Mapped Reads",
+---
+>       "category": "RNA-Seq/Mapped Reads",
+328c162
+<       "category": "Transcriptome/Mapped Reads",
+---
+>       "category": "RNA-Seq/Mapped Reads",
+347c181
+<       "category": "Transcriptome/Coverage Plots (BigWig)",
+---
+>       "category": "RNA-Seq/Coverage Plots (BigWig)",
+369c203
+<       "category": "Transcriptome/Coverage Plots (BigWig)",
+---
+>       "category": "RNA-Seq/Coverage Plots (BigWig)",
+391c225
+<       "category": "Transcriptome/Coverage Plots (BigWig)",
+---
+>       "category": "RNA-Seq/Coverage Plots (BigWig)",
+413c247
+<       "category": "Transcriptome/Coverage Plots (BigWig)",
+---
+>       "category": "RNA-Seq/Coverage Plots (BigWig)",
+664c498
+
+>     },
+>     {
+>       "category": "Official Gene Set v1.0",
+>       "compress": 0,
+>       "key": "OGSv1.0 Gene",
+>       "label": "micdem_current_models",
+>       "menuTemplate": [
+>         {
+>           "label": "View details"
+>         },
+>         {
+>           "action": "newWindow",
+>           "iconClass": "dijitIconDatabase",
+>           "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+>           "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+>         }
+>       ],
+>       "metadata": {
+>         "Data description": "Microplitis demolitor OGSv1.0 is an integration of automatic gene predictions from *Microplitis demolitor* genome annotations NCBI-RefSeq's gene set NCBI Microplitis demolitor Annotation Release 101 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Microplitis_demolitor/101/), with manual annotations by the research community, performed via the Apollo manual curation software (https://zenodo.org/record/1295754#.YDgLyJNKivg), and QC'd via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit) and NCBI's table2asn_GFF software (https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/table2asn_GFF/), and merged via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit).",
+>         "Data source": "https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10",
+>         "Publication status": "Published dataset, please cite (dataset) Tims, Kelly; Poelchau, Monica; Burke, Gaelen. (unpublished). Microplitis demolitor Official Gene Set micdem_OGSv1.0. Ag Data Commons. https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10."
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+
+>         "description": "product, note, description",
+>         "subfeatureClasses": {
+>           "CDS": "gnomon_CDS",
+>           "UTR": "gnomon_UTR",
+>           "exon": "container-100pct",
+>           "wholeCDS": null
+>         }
+>       },
+>       "trackType": "HTMLFeatures",
+>       "type": "HTMLFeatures",
+>       "urlTemplate": "tracks/micdem_current_models/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "Official Gene Set v1.0",
+>       "compress": 0,
+>       "key": "OGSv1.0 Pseudogene",
+>       "label": "OGSv1.0_Pseudogene",
+>       "metadata": {
+>         "Data description": "Microplitis demolitor OGSv1.0 is an integration of automatic gene predictions from *Microplitis demolitor* genome annotations NCBI-RefSeq's gene set NCBI Microplitis demolitor Annotation Release 101 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Microplitis_demolitor/101/), with manual annotations by the research community, performed via the Apollo manual curation software (https://zenodo.org/record/1295754#.YDgLyJNKivg), and QC'd via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit) and NCBI's table2asn_GFF software (https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/table2asn_GFF/), and merged via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit).",
+>         "Data source": "https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10",
+>         "Publication status": "Published dataset, please cite (dataset) Tims, Kelly; Poelchau, Monica; Burke, Gaelen. (unpublished). Microplitis demolitor Official Gene Set micdem_OGSv1.0. Ag Data Commons. https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10."
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+
+>         "description": "product, note, description",
+>         "subfeatureClasses": {
+>           "CDS": "gnomon_CDS",
+>           "UTR": "gnomon_UTR",
+>           "exon": "container-100pct",
+>           "wholeCDS": null
+>         }
+>       },
+>       "trackType": "HTMLFeatures",
+>       "type": "HTMLFeatures",
+>       "urlTemplate": "tracks/OGSv1.0_Pseudogene/{refseq}/trackData.json"
+
+CHECKING UPDATED FOR FILE Neodiprion_lecontei/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Neodiprion_lecontei_training/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Nicrophorus_vespilloides/trackList.json.sorted
+
+5a6,11
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Nylanderia_fulva/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Odontomachus_brunneus/trackList.json.sorted
+
+134c132,133
+<         "className": "feature"
+---
+>         "className": "feature",
+>         "description": "score"
+
+CHECKING UPDATED FOR FILE Oncopeltus_fasciatus/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Oncopeltus_fasciatus_training/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Onthophagus_taurus/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Orussus_abietinus/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+99c105
+
+---
+
+CHECKING UPDATED FOR FILE Osmia_lignaria/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Pachypsylla_venusta/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Parasteatoda_tepidariorum/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Rhagoletis_zephyria/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Rhipicephalus_microplus/trackList.json.sorted
+
+5a6,11
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+CHECKING UPDATED FOR FILE Rhyzopertha_dominica/trackList.json.sorted
+
+397c396
+<         "className": "feature"
+---
+>         "className": "container-12px"
+
+CHECKING UPDATED FOR FILE Saccharomyces_eubayanus/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Tigriopus_californicus/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Tribolium_castaneum/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Trichogramma_pretiosum/trackList.json.sorted
+
+9a10,15
+>   "plugins": [
+>     {
+>       "location": "./plugins/WebApollo",
+>       "name": "WebApollo"
+>     }
+>   ],
+
+CHECKING UPDATED FOR FILE Varroa_destructor/trackList.json.sorted
+
+CHECKING UPDATED FOR FILE Varroa_jacobsoni/trackList.json.sorted
+

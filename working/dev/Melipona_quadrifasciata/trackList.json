@@ -98,7 +98,7 @@
          "metadata" : {
             "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA_001276565.1_ASM127656v1/GCA_001276565.1_ASM127656v1_genomic.gff.gz",
             "Method" : "Integration of several gene sets via GLEAN; for full methods, see the associated publication, PMID 25977371",
-            "Data provider" : "BGI and GenBank",
+            "Data provider" : "BGI and GenBank"
          }
       },
       {

@@ -1391,18 +1391,18 @@
          "compress" : 0,
          "type" : "FeatureTrack",
          "category" : "Official Gene Set/1. Protein Coding Genes",
-         "fmtDetailValue_Id": "function(id, feature) { var name2 = id.replace(/\-R./, ''); if(feature.get('type')=='mRNA') { return '<a href=\"https://i5k.nal.usda.gov/'+name2+'\" target=\"_blank\"><b>'+id+'</a> (Click for Gene page)</b>';} else {return id}}",
+         "fmtDetailValue_Id": "function(id, feature) { var name2 = id.replace(/-R./, ''); if(feature.get('type')=='mRNA') { return '<a href=\"https://i5k.nal.usda.gov/'+name2+'\" target=\"_blank\"><b>'+id+'</a> (Click for Gene page)</b>';} else {return id}}",
 	     "menuTemplate" : [
              {
-		"label" : "View details",
+		"label" : "View details"
          	},
              {
-		"label": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/\-R./, '')}",
-        	"title": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/\-R./, '')}",
+		"label": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/-R./, '')}",
+        	"title": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/-R./, '')}",
           	"iconClass" : "dijitIconDatabase",
           	"action": "newWindow",
-          	"url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id').replace(/\-R./, '')}",
-             },
+          	"url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id').replace(/-R./, '')}"
+             }
     	     ],
 
          "label" : "cimlec_current_models",
@@ -1437,3 +1437,4 @@
    "alwaysOnTracks" : "DNA,Annotations",
    "formatVersion" : 1
 }
+
