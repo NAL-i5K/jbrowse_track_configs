@@ -1,593 +1,593 @@
 {
-   "formatVersion" : 1,
-   "names" : {
-      "type" : "Hash",
-      "url" : "names/"
-   },
-   "tracks" : [
-      {
-         "category" : "Reference sequence",
-         "chunkSize" : 20000,
-         "key" : "Reference sequence",
-         "label" : "DNA",
-         "seqType" : "dna",
-         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
-         "type" : "SequenceTrack",
-         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "seqType": "dna",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "category": "NCBI Annotation Release 101",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_101_Gene",
+      "label": "NCBI_Annotation_Release_101_Gene",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/572/035/GCF_000572035.2_Mdem2/GCF_000572035.2_Mdem2_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "category" : "NCBI Annotation Release 101",
-         "compress" : 0,
-         "key" : "NCBI_Annotation_Release_101_Gene",
-         "label" : "NCBI_Annotation_Release_101_Gene",
-         "metadata" : {
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
-            "Data provider" : "NCBI",
-            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/572/035/GCF_000572035.2_Mdem2/GCF_000572035.2_Mdem2_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "{type}",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_Gene/{refseq}/trackData.json"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "category" : "NCBI Annotation Release 101",
-         "compress" : 0,
-         "key" : "NCBI_Annotation_Release_101_Pseudogene",
-         "label" : "NCBI_Annotation_Release_101_Pseudogene",
-         "metadata" : {
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
-            "Data provider" : "NCBI",
-            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/572/035/GCF_000572035.2_Mdem2/GCF_000572035.2_Mdem2_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "{type}",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json"
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_101_Gene/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 101",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_101_Pseudogene",
+      "label": "NCBI_Annotation_Release_101_Pseudogene",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/572/035/GCF_000572035.2_Mdem2/GCF_000572035.2_Mdem2_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Reference Assembly",
-         "key" : "Gaps in assembly",
-         "label" : "Gaps in assembly",
-         "metadata" : {
-            "Track contact" : "The i5k workspace@NAL",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "neg_color" : "white",
-            "pos_color" : "black"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/69319_ref_Mdem2_chrUn_refseq_IDS.fa.gaps.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "0.5",
-         "category" : "Reference Assembly",
-         "key" : "GC Content",
-         "label" : "GC Content",
-         "scoreType": "avgScore",
-         "metadata" : {
-            "Track contact" : "The i5k workspace@NAL",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "neg_color" : "rgba(255,255,0,50)",
-            "pos_color" : "rgba(0,0,255,50)"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/69319_ref_Mdem2_chrUn_refseq_IDS.fa.gc.bigwig"
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
       },
-      {
-         "category" : "RNA-Seq/Mapped Reads",
-         "key" : "Microplitis demolitor teratocytes",
-         "label" : "Microplitis demolitor teratocytes",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.0.9",
-            "Analysis parameters" : "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955076.sra_1.fastq' --file_query2 'SRR955076.sra_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
-            "Data provider" : "Gaelen Burke and Mike Strand, University of Georgia",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Source data" : "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955076/SRR955076.sra",
-            "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)",
-            "alignment summary" : "http://de.iplantcollaborative.org/dl/d/0AD340BA-F2AC-4E60-BCD3-7082201ED087/align_summary.txt"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_teratocytes_accepted_hits_refSeq_IDs.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
       },
-      {
-         "category" : "RNA-Seq/Mapped Reads",
-         "key" : "Microplitis demolitor venom_gland",
-         "label" : "Microplitis demolitor venom_gland",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.0.9",
-            "Analysis parameters" : "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955397_1.fastq' --file_query2 'SRR955397_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
-            "Data provider" : "Gaelen Burke and Mike Strand, University of Georgia",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Source data" : "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955397/SRR955397.sra",
-            "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)",
-            "alignment summary" : "http://de.iplantcollaborative.org/dl/d/7A0402D9-53BA-4ACF-8D71-F74BAAF3DF2B/align_summary.txt"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_venom_gland_accepted_hits_refSeq_IDs.bam"
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/69319_ref_Mdem2_chrUn_refseq_IDS.fa.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
       },
-      {
-         "category" : "RNA-Seq/Mapped Reads",
-         "key" : "Microplitis demolitor ovary",
-         "label" : "Microplitis demolitor ovary",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.0.9",
-            "Analysis parameters" : "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955015.sra_1.fastq' --file_query2 'SRR955015.sra_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
-            "Data provider" : "Gaelen Burke and Mike Strand, University of Georgia",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Source data" : "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955015/SRR955015.sra",
-            "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)",
-            "alignment summary" : "http://de.iplantcollaborative.org/dl/d/73DDC58C-C75F-4C1E-B1F7-7CF83E0A89BA/align_summary.txt"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_ovary_accepted_hits_refSeq_IDs.bam"
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
       },
-      {
-         "category" : "RNA-Seq/Mapped Reads",
-         "key" : "Microplitis demolitor larvae",
-         "label" : "Microplitis demolitor larvae",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.0.9",
-            "Analysis parameters" : "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955374_1.fastq' --file_query2 'SRR955374_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
-            "Data provider" : "Gaelen Burke and Mike Strand, University of Georgia",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Source data" : "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955374/SRR955374.sra",
-            "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)",
-            "alignment summary" : "http://de.iplantcollaborative.org/dl/d/25F3B191-FD45-481F-B236-022EC0B20089/align_summary.txt"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_larvae_accepted_hits_refSeq_IDs.bam"
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/69319_ref_Mdem2_chrUn_refseq_IDS.fa.gc.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Microplitis demolitor teratocytes",
+      "label": "Microplitis demolitor teratocytes",
+      "metadata": {
+        "Analysis method": "Tophat v2.0.9",
+        "Analysis parameters": "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955076.sra_1.fastq' --file_query2 'SRR955076.sra_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
+        "Data provider": "Gaelen Burke and Mike Strand, University of Georgia",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Source data": "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955076/SRR955076.sra",
+        "Track legend": "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)",
+        "alignment summary": "http://de.iplantcollaborative.org/dl/d/0AD340BA-F2AC-4E60-BCD3-7082201ED087/align_summary.txt"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "RNA-Seq/Coverage Plots (BigWig)",
-         "key" : "Microplitis demolitor ovary (Coverage Plot)",
-         "label" : "Microplitis demolitor ovary (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.0.9",
-            "Analysis parameters" : "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955015.sra_1.fastq' --file_query2 'SRR955015.sra_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
-            "Data provider" : "Gaelen Burke and Mike Strand, University of Georgia",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Source data" : "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955015/SRR955015.sra",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage.",
-            "alignment summary" : "http://de.iplantcollaborative.org/dl/d/73DDC58C-C75F-4C1E-B1F7-7CF83E0A89BA/align_summary.txt"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_ovary_accepted_hits_refSeq_IDs.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_teratocytes_accepted_hits_refSeq_IDs.bam"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Microplitis demolitor venom_gland",
+      "label": "Microplitis demolitor venom_gland",
+      "metadata": {
+        "Analysis method": "Tophat v2.0.9",
+        "Analysis parameters": "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955397_1.fastq' --file_query2 'SRR955397_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
+        "Data provider": "Gaelen Burke and Mike Strand, University of Georgia",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Source data": "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955397/SRR955397.sra",
+        "Track legend": "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)",
+        "alignment summary": "http://de.iplantcollaborative.org/dl/d/7A0402D9-53BA-4ACF-8D71-F74BAAF3DF2B/align_summary.txt"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "RNA-Seq/Coverage Plots (BigWig)",
-         "key" : "Microplitis demolitor larvae (Coverage Plot)",
-         "label" : "Microplitis demolitor larvae (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.0.9",
-            "Analysis parameters" : "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955374_1.fastq' --file_query2 'SRR955374_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
-            "Data provider" : "Gaelen Burke and Mike Strand, University of Georgia",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Source data" : "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955374/SRR955374.sra",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage.",
-            "alignment summary" : "http://de.iplantcollaborative.org/dl/d/25F3B191-FD45-481F-B236-022EC0B20089/align_summary.txt"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_larvae_accepted_hits_refSeq_IDs.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_venom_gland_accepted_hits_refSeq_IDs.bam"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Microplitis demolitor ovary",
+      "label": "Microplitis demolitor ovary",
+      "metadata": {
+        "Analysis method": "Tophat v2.0.9",
+        "Analysis parameters": "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955015.sra_1.fastq' --file_query2 'SRR955015.sra_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
+        "Data provider": "Gaelen Burke and Mike Strand, University of Georgia",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Source data": "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955015/SRR955015.sra",
+        "Track legend": "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)",
+        "alignment summary": "http://de.iplantcollaborative.org/dl/d/73DDC58C-C75F-4C1E-B1F7-7CF83E0A89BA/align_summary.txt"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "RNA-Seq/Coverage Plots (BigWig)",
-         "key" : "Microplitis demolitor venom_gland (Coverage Plot)",
-         "label" : "Microplitis demolitor venom_gland (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.0.9",
-            "Analysis parameters" : "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955397_1.fastq' --file_query2 'SRR955397_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
-            "Data provider" : "Gaelen Burke and Mike Strand, University of Georgia",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Source data" : "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955397/SRR955397.sra",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage.",
-            "alignment summary" : "http://de.iplantcollaborative.org/dl/d/7A0402D9-53BA-4ACF-8D71-F74BAAF3DF2B/align_summary.txt"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_venom_gland_accepted_hits_refSeq_IDs.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_ovary_accepted_hits_refSeq_IDs.bam"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Microplitis demolitor larvae",
+      "label": "Microplitis demolitor larvae",
+      "metadata": {
+        "Analysis method": "Tophat v2.0.9",
+        "Analysis parameters": "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955374_1.fastq' --file_query2 'SRR955374_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
+        "Data provider": "Gaelen Burke and Mike Strand, University of Georgia",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Source data": "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955374/SRR955374.sra",
+        "Track legend": "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)",
+        "alignment summary": "http://de.iplantcollaborative.org/dl/d/25F3B191-FD45-481F-B236-022EC0B20089/align_summary.txt"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "RNA-Seq/Coverage Plots (BigWig)",
-         "key" : "Microplitis demolitor teratocytes (Coverage Plot)",
-         "label" : "Microplitis demolitor teratocytes (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.0.9",
-            "Analysis parameters" : "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955076.sra_1.fastq' --file_query2 'SRR955076.sra_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
-            "Data provider" : "Gaelen Burke and Mike Strand, University of Georgia",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Source data" : "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955076/SRR955076.sra",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage.",
-            "alignment summary" : "http://de.iplantcollaborative.org/dl/d/0AD340BA-F2AC-4E60-BCD3-7082201ED087/align_summary.txt"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_teratocytes_accepted_hits_refSeq_IDs.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_larvae_accepted_hits_refSeq_IDs.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots (BigWig)",
+      "key": "Microplitis demolitor ovary (Coverage Plot)",
+      "label": "Microplitis demolitor ovary (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.0.9",
+        "Analysis parameters": "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955015.sra_1.fastq' --file_query2 'SRR955015.sra_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
+        "Data provider": "Gaelen Burke and Mike Strand, University of Georgia",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Source data": "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955015/SRR955015.sra",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage.",
+        "alignment summary": "http://de.iplantcollaborative.org/dl/d/73DDC58C-C75F-4C1E-B1F7-7CF83E0A89BA/align_summary.txt"
       },
-      {
-         "category" : "Mapped DNA/Microplitis demolitor ovary DNA",
-         "key" : "Microplitis demolitor ovary DNA, mapped reads",
-         "label" : "Microplitis demolitor ovary DNA, mapped reads",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739298/",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "https://www.ncbi.nlm.nih.gov/sra/SRR3420507",
-            "Method" : "bwa 0.7.15",
-            "Publication status" : "Published - please cite 10.1128/JVI.01388-15",
-            "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/3t4wo_sort.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "category" : "Mapped DNA/Microplitis demolitor bracovirus DNA",
-         "key" : "Microplitis demolitor bracovirus DNA, mapped reads",
-         "label" : "Microplitis demolitor bracovirus DNA, mapped reads",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739297/",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "https://www.ncbi.nlm.nih.gov/sra/SRR3420508",
-            "Method" : "bwa 0.7.15",
-            "Publication status" : "Published - please cite 10.1371/journal.pgen.1004660",
-            "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/mdbv_all_sort.bam"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_ovary_accepted_hits_refSeq_IDs.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots (BigWig)",
+      "key": "Microplitis demolitor larvae (Coverage Plot)",
+      "label": "Microplitis demolitor larvae (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.0.9",
+        "Analysis parameters": "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955374_1.fastq' --file_query2 'SRR955374_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
+        "Data provider": "Gaelen Burke and Mike Strand, University of Georgia",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Source data": "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955374/SRR955374.sra",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage.",
+        "alignment summary": "http://de.iplantcollaborative.org/dl/d/25F3B191-FD45-481F-B236-022EC0B20089/align_summary.txt"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Mapped DNA/Microplitis demolitor ovary DNA",
-         "key" : "Microplitis demolitor ovary DNA (Coverage Plot)",
-         "label" : "Microplitis demolitor ovary DNA (Coverage Plot)",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739298/",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "https://www.ncbi.nlm.nih.gov/sra/SRR3420507",
-            "Method" : "bwa 0.7.15",
-            "Publication status" : "Published - please cite 10.1128/JVI.01388-15",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/3t4wo_sort.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Mapped DNA/Microplitis demolitor bracovirus DNA",
-         "key" : "Microplitis demolitor bracovirus DNA (Coverage Plot)",
-         "label" : "Microplitis demolitor bracovirus DNA (Coverage Plot)",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739297/",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "https://www.ncbi.nlm.nih.gov/sra/SRR3420508",
-            "Method" : "bwa 0.7.15",
-            "Publication status" : "Published - please cite 10.1371/journal.pgen.1004660",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/mdbv_all_sort.bigwig"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_larvae_accepted_hits_refSeq_IDs.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots (BigWig)",
+      "key": "Microplitis demolitor venom_gland (Coverage Plot)",
+      "label": "Microplitis demolitor venom_gland (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.0.9",
+        "Analysis parameters": "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955397_1.fastq' --file_query2 'SRR955397_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
+        "Data provider": "Gaelen Burke and Mike Strand, University of Georgia",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Source data": "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955397/SRR955397.sra",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage.",
+        "alignment summary": "http://de.iplantcollaborative.org/dl/d/7A0402D9-53BA-4ACF-8D71-F74BAAF3DF2B/align_summary.txt"
       },
-      {
-         "category" : "Mapped DNA/Mapped Reads",
-         "key" : "Infected Chrysodeixis includens hemocytes",
-         "label" : "Infected Chrysodeixis includens hemocytes",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739316/",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "https://www.ncbi.nlm.nih.gov/sra/SRX1047183/",
-            "Method" : "hisat2 v2.1.0",
-            "Publication status" : "Published - please cite 10.1371/journal.pgen.1004660",
-            "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/p_hemo_sort_mdbv.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "category" : "Mapped DNA/Mapped Reads",
-         "key" : "Infected Chrysodeixis includens",
-         "label" : "Infected Chrysodeixis includens",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739318",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "SRX3766325,SRX3766326,SRX3766328,SRX3766330,SRX3766333,SRX3766334",
-            "Method" : "hisat2 v2.1.0",
-            "Publication status" : "Published - please cite 10.1016/j.virol.2016.02.023",
-            "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/p_sort_mdbv.bam"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_venom_gland_accepted_hits_refSeq_IDs.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots (BigWig)",
+      "key": "Microplitis demolitor teratocytes (Coverage Plot)",
+      "label": "Microplitis demolitor teratocytes (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.0.9",
+        "Analysis parameters": "--align_reads 'together' --mate-inner-dist '50' --file_query 'SRR955076.sra_1.fastq' --file_query2 'SRR955076.sra_2.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '69319_ref_Mdem2_chrUn.fa' --b2-sensitive  --tophat_version '2.0.9' --bowtie_version '2.1.0'",
+        "Data provider": "Gaelen Burke and Mike Strand, University of Georgia",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Source data": "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP028/SRP028964/SRR955076/SRR955076.sra",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage.",
+        "alignment summary": "http://de.iplantcollaborative.org/dl/d/0AD340BA-F2AC-4E60-BCD3-7082201ED087/align_summary.txt"
       },
-      {
-         "category" : "Mapped DNA/Mapped Reads",
-         "key" : "Infected Trichoplusia ni",
-         "label" : "Infected Trichoplusia ni",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739317/",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "SRX3766323,SRX3766324,SRX3766327,SRX3766329,SRX3766331,SRX3766332",
-            "Method" : "hisat2 v2.1.0",
-            "Publication status" : "Published - please cite 10.1016/j.virol.2016.02.023",
-            "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/t_sort_mdbv.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Mapped DNA/Coverage Plots (BigWig)",
-         "key" : "Infected Chrysodeixis includens hemocytes (Coverage Plot)",
-         "label" : "Infected Chrysodeixis includens hemocytes (Coverage Plot)",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739316/",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "https://www.ncbi.nlm.nih.gov/sra/SRX1047183/",
-            "Method" : "hisat2 v2.1.0",
-            "Publication status" : "Published - please cite 10.1371/journal.pgen.1004660",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/p_hemo_sort_mdbv.bigwig"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_teratocytes_accepted_hits_refSeq_IDs.bigwig"
+    },
+    {
+      "category": "Mapped DNA/Microplitis demolitor ovary DNA",
+      "key": "Microplitis demolitor ovary DNA, mapped reads",
+      "label": "Microplitis demolitor ovary DNA, mapped reads",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739298/",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "https://www.ncbi.nlm.nih.gov/sra/SRR3420507",
+        "Method": "bwa 0.7.15",
+        "Publication status": "Published - please cite 10.1128/JVI.01388-15",
+        "Track legend": "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Mapped DNA/Coverage Plots (BigWig)",
-         "key" : "Infected Chrysodeixis includens (Coverage Plot)",
-         "label" : "Infected Chrysodeixis includens (Coverage Plot)",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739318",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "SRX3766325,SRX3766326,SRX3766328,SRX3766330,SRX3766333,SRX3766334",
-            "Method" : "hisat2 v2.1.0",
-            "Publication status" : "Published - please cite 10.1016/j.virol.2016.02.023",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/p_sort_mdbv.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/3t4wo_sort.bam"
+    },
+    {
+      "category": "Mapped DNA/Microplitis demolitor bracovirus DNA",
+      "key": "Microplitis demolitor bracovirus DNA, mapped reads",
+      "label": "Microplitis demolitor bracovirus DNA, mapped reads",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739297/",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "https://www.ncbi.nlm.nih.gov/sra/SRR3420508",
+        "Method": "bwa 0.7.15",
+        "Publication status": "Published - please cite 10.1371/journal.pgen.1004660",
+        "Track legend": "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Mapped DNA/Coverage Plots (BigWig)",
-         "key" : "Infected Trichoplusia ni (Coverage Plot)",
-         "label" : "Infected Trichoplusia ni (Coverage Plot)",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739317",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "SRX3766323,SRX3766324,SRX3766327,SRX3766329,SRX3766331,SRX3766332",
-            "Method" : "hisat2 v2.1.0",
-            "Publication status" : "Published - please cite 10.1016/j.virol.2016.02.023",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/t_sort_mdbv.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/mdbv_all_sort.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Mapped DNA/Microplitis demolitor ovary DNA",
+      "key": "Microplitis demolitor ovary DNA (Coverage Plot)",
+      "label": "Microplitis demolitor ovary DNA (Coverage Plot)",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739298/",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "https://www.ncbi.nlm.nih.gov/sra/SRR3420507",
+        "Method": "bwa 0.7.15",
+        "Publication status": "Published - please cite 10.1128/JVI.01388-15",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
       },
-      {
-         "category" : "Mapped DNA/Microplitis demolitor ovary DNA",
-         "key" : "Microplitis demolitor ovary DNA, mapped reads (1% coverage)",
-         "label" : "Microplitis demolitor ovary DNA, mapped reads (1% coverage)",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739298/",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "https://www.ncbi.nlm.nih.gov/sra/SRR3420507",
-            "Method" : "bwa 0.7.15; Coverage reduced to 1% with GATK",
-            "Publication status" : "Published - please cite 10.1128/JVI.01388-15",
-            "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/3t4wo_sort.RG.Reordered.RCfrac.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "category" : "Mapped DNA/Microplitis demolitor bracovirus DNA",
-         "key" : "Microplitis demolitor bracovirus DNA, mapped reads (0.1% coverage)",
-         "label" : "Microplitis demolitor bracovirus DNA, mapped reads (0.1% coverage)",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739297/",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "https://www.ncbi.nlm.nih.gov/sra/SRR3420508",
-            "Method" : "bwa 0.7.15; Coverage reduced to 0.1% with GATK",
-            "Publication status" : "Published - please cite 10.1371/journal.pgen.1004660",
-            "Track legend" : "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/UGA_March_2018/mdbv_all_sort.RG.Reordered.RCfrac.bam"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/3t4wo_sort.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Mapped DNA/Microplitis demolitor bracovirus DNA",
+      "key": "Microplitis demolitor bracovirus DNA (Coverage Plot)",
+      "label": "Microplitis demolitor bracovirus DNA (Coverage Plot)",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739297/",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "https://www.ncbi.nlm.nih.gov/sra/SRR3420508",
+        "Method": "bwa 0.7.15",
+        "Publication status": "Published - please cite 10.1371/journal.pgen.1004660",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
       },
-      {
-         "category" : "Mapped DNA/Microplitis demolitor bracovirus DNA",
-         "compress" : 0,
-         "key" : "Proviral segments",
-         "label" : "proviral_segment",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739297/",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "https://www.ncbi.nlm.nih.gov/sra/SRR3420508",
-            "Method" : "bwa 0.7.15",
-            "Publication status" : "Published - please cite 10.1371/journal.pgen.1004660"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "{type}",
-            "renderClassName" : "genemark"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/proviral_segment/{refseq}/trackData.json"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "category" : "Mapped DNA/Microplitis demolitor ovary DNA",
-         "compress" : 0,
-         "key" : "Replication units",
-         "label" : "replication_unit",
-         "metadata" : {
-            "Data description" : "https://i5k.nal.usda.gov/node/739298/",
-            "Data provider" : "Gaelen Burke, University of Georgia",
-            "Data source" : "https://www.ncbi.nlm.nih.gov/sra/SRR3420507",
-            "Method" : "bwa 0.7.15",
-            "Publication status" : "Published - please cite 10.1128/JVI.01388-15"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "{type}",
-            "renderClassName" : "genemark"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/replication_unit/{refseq}/trackData.json"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/mdbv_all_sort.bigwig"
+    },
+    {
+      "category": "Mapped DNA/Mapped Reads",
+      "key": "Infected Chrysodeixis includens hemocytes",
+      "label": "Infected Chrysodeixis includens hemocytes",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739316/",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "https://www.ncbi.nlm.nih.gov/sra/SRX1047183/",
+        "Method": "hisat2 v2.1.0",
+        "Publication status": "Published - please cite 10.1371/journal.pgen.1004660",
+        "Track legend": "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
       },
-      {
-         "category" : "Official Gene Set v1.0",
-         "metadata" : {
-            "Data description" : "Microplitis demolitor OGSv1.0 is an integration of automatic gene predictions from *Microplitis demolitor* genome annotations NCBI-RefSeq's gene set NCBI Microplitis demolitor Annotation Release 101 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Microplitis_demolitor/101/), with manual annotations by the research community, performed via the Apollo manual curation software (https://zenodo.org/record/1295754#.YDgLyJNKivg), and QC'd via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit) and NCBI's table2asn_GFF software (https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/table2asn_GFF/), and merged via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit).",
-            "Data source" : "https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10",
-            "Publication status" : "Published dataset, please cite (dataset) Tims, Kelly; Poelchau, Monica; Burke, Gaelen. (unpublished). Microplitis demolitor Official Gene Set micdem_OGSv1.0. Ag Data Commons. https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10."
-         },
-         "menuTemplate" : [
-            {
-               "label" : "View details"
-            },
-            {
-             "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-             "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-             "iconClass" : "dijitIconDatabase",
-             "action": "newWindow",
-             "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
-             }
-       ],
-         "compress" : 0,
-         "key" : "OGSv1.0 Gene",
-         "label" : "micdem_current_models",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "{type}",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
-         "urlTemplate" : "tracks/micdem_current_models/{refseq}/trackData.json"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/p_hemo_sort_mdbv.bam"
+    },
+    {
+      "category": "Mapped DNA/Mapped Reads",
+      "key": "Infected Chrysodeixis includens",
+      "label": "Infected Chrysodeixis includens",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739318",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "SRX3766325,SRX3766326,SRX3766328,SRX3766330,SRX3766333,SRX3766334",
+        "Method": "hisat2 v2.1.0",
+        "Publication status": "Published - please cite 10.1016/j.virol.2016.02.023",
+        "Track legend": "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
       },
-      {
-         "category" : "Official Gene Set v1.0",
-         "metadata" : {
-            "Data description" : "Microplitis demolitor OGSv1.0 is an integration of automatic gene predictions from *Microplitis demolitor* genome annotations NCBI-RefSeq's gene set NCBI Microplitis demolitor Annotation Release 101 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Microplitis_demolitor/101/), with manual annotations by the research community, performed via the Apollo manual curation software (https://zenodo.org/record/1295754#.YDgLyJNKivg), and QC'd via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit) and NCBI's table2asn_GFF software (https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/table2asn_GFF/), and merged via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit).",
-            "Data source" : "https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10",
-            "Publication status" : "Published dataset, please cite (dataset) Tims, Kelly; Poelchau, Monica; Burke, Gaelen. (unpublished). Microplitis demolitor Official Gene Set micdem_OGSv1.0. Ag Data Commons. https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10."
-         },
-         "compress" : 0,
-         "key" : "OGSv1.0 Pseudogene",
-         "label" : "OGSv1.0_Pseudogene",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "{type}",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
-         "urlTemplate" : "tracks/OGSv1.0_Pseudogene/{refseq}/trackData.json"
-      }
-   ]
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/p_sort_mdbv.bam"
+    },
+    {
+      "category": "Mapped DNA/Mapped Reads",
+      "key": "Infected Trichoplusia ni",
+      "label": "Infected Trichoplusia ni",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739317/",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "SRX3766323,SRX3766324,SRX3766327,SRX3766329,SRX3766331,SRX3766332",
+        "Method": "hisat2 v2.1.0",
+        "Publication status": "Published - please cite 10.1016/j.virol.2016.02.023",
+        "Track legend": "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/t_sort_mdbv.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Mapped DNA/Coverage Plots (BigWig)",
+      "key": "Infected Chrysodeixis includens hemocytes (Coverage Plot)",
+      "label": "Infected Chrysodeixis includens hemocytes (Coverage Plot)",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739316/",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "https://www.ncbi.nlm.nih.gov/sra/SRX1047183/",
+        "Method": "hisat2 v2.1.0",
+        "Publication status": "Published - please cite 10.1371/journal.pgen.1004660",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/p_hemo_sort_mdbv.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Mapped DNA/Coverage Plots (BigWig)",
+      "key": "Infected Chrysodeixis includens (Coverage Plot)",
+      "label": "Infected Chrysodeixis includens (Coverage Plot)",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739318",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "SRX3766325,SRX3766326,SRX3766328,SRX3766330,SRX3766333,SRX3766334",
+        "Method": "hisat2 v2.1.0",
+        "Publication status": "Published - please cite 10.1016/j.virol.2016.02.023",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/p_sort_mdbv.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Mapped DNA/Coverage Plots (BigWig)",
+      "key": "Infected Trichoplusia ni (Coverage Plot)",
+      "label": "Infected Trichoplusia ni (Coverage Plot)",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739317",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "SRX3766323,SRX3766324,SRX3766327,SRX3766329,SRX3766331,SRX3766332",
+        "Method": "hisat2 v2.1.0",
+        "Publication status": "Published - please cite 10.1016/j.virol.2016.02.023",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/t_sort_mdbv.bigwig"
+    },
+    {
+      "category": "Mapped DNA/Microplitis demolitor ovary DNA",
+      "key": "Microplitis demolitor ovary DNA, mapped reads (1% coverage)",
+      "label": "Microplitis demolitor ovary DNA, mapped reads (1% coverage)",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739298/",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "https://www.ncbi.nlm.nih.gov/sra/SRR3420507",
+        "Method": "bwa 0.7.15; Coverage reduced to 1% with GATK",
+        "Publication status": "Published - please cite 10.1128/JVI.01388-15",
+        "Track legend": "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/3t4wo_sort.RG.Reordered.RCfrac.bam"
+    },
+    {
+      "category": "Mapped DNA/Microplitis demolitor bracovirus DNA",
+      "key": "Microplitis demolitor bracovirus DNA, mapped reads (0.1% coverage)",
+      "label": "Microplitis demolitor bracovirus DNA, mapped reads (0.1% coverage)",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739297/",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "https://www.ncbi.nlm.nih.gov/sra/SRR3420508",
+        "Method": "bwa 0.7.15; Coverage reduced to 0.1% with GATK",
+        "Publication status": "Published - please cite 10.1371/journal.pgen.1004660",
+        "Track legend": "Mapped reads are displayed so that the parts corresponding to the actual reads are colored in dark blue while the introns spanning the predicted splicing sites are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/UGA_March_2018/mdbv_all_sort.RG.Reordered.RCfrac.bam"
+    },
+    {
+      "category": "Mapped DNA/Microplitis demolitor bracovirus DNA",
+      "compress": 0,
+      "key": "Proviral segments",
+      "label": "proviral_segment",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739297/",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "https://www.ncbi.nlm.nih.gov/sra/SRR3420508",
+        "Method": "bwa 0.7.15",
+        "Publication status": "Published - please cite 10.1371/journal.pgen.1004660"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "renderClassName": "genemark"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/proviral_segment/{refseq}/trackData.json"
+    },
+    {
+      "category": "Mapped DNA/Microplitis demolitor ovary DNA",
+      "compress": 0,
+      "key": "Replication units",
+      "label": "replication_unit",
+      "metadata": {
+        "Data description": "https://i5k.nal.usda.gov/node/739298/",
+        "Data provider": "Gaelen Burke, University of Georgia",
+        "Data source": "https://www.ncbi.nlm.nih.gov/sra/SRR3420507",
+        "Method": "bwa 0.7.15",
+        "Publication status": "Published - please cite 10.1128/JVI.01388-15"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "renderClassName": "genemark"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/replication_unit/{refseq}/trackData.json"
+    },
+    {
+      "category": "Official Gene Set v1.0",
+      "compress": 0,
+      "key": "OGSv1.0 Gene",
+      "label": "micdem_current_models",
+      "menuTemplate": [
+        {
+          "label": "View details"
+        },
+        {
+          "action": "newWindow",
+          "iconClass": "dijitIconDatabase",
+          "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+          "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+        }
+      ],
+      "metadata": {
+        "Data description": "Microplitis demolitor OGSv1.0 is an integration of automatic gene predictions from *Microplitis demolitor* genome annotations NCBI-RefSeq's gene set NCBI Microplitis demolitor Annotation Release 101 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Microplitis_demolitor/101/), with manual annotations by the research community, performed via the Apollo manual curation software (https://zenodo.org/record/1295754#.YDgLyJNKivg), and QC'd via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit) and NCBI's table2asn_GFF software (https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/table2asn_GFF/), and merged via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit).",
+        "Data source": "https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10",
+        "Publication status": "Published dataset, please cite (dataset) Tims, Kelly; Poelchau, Monica; Burke, Gaelen. (unpublished). Microplitis demolitor Official Gene Set micdem_OGSv1.0. Ag Data Commons. https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
+      "urlTemplate": "tracks/micdem_current_models/{refseq}/trackData.json"
+    },
+    {
+      "category": "Official Gene Set v1.0",
+      "compress": 0,
+      "key": "OGSv1.0 Pseudogene",
+      "label": "OGSv1.0_Pseudogene",
+      "metadata": {
+        "Data description": "Microplitis demolitor OGSv1.0 is an integration of automatic gene predictions from *Microplitis demolitor* genome annotations NCBI-RefSeq's gene set NCBI Microplitis demolitor Annotation Release 101 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Microplitis_demolitor/101/), with manual annotations by the research community, performed via the Apollo manual curation software (https://zenodo.org/record/1295754#.YDgLyJNKivg), and QC'd via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit) and NCBI's table2asn_GFF software (https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/table2asn_GFF/), and merged via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit).",
+        "Data source": "https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10",
+        "Publication status": "Published dataset, please cite (dataset) Tims, Kelly; Poelchau, Monica; Burke, Gaelen. (unpublished). Microplitis demolitor Official Gene Set micdem_OGSv1.0. Ag Data Commons. https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
+      "urlTemplate": "tracks/OGSv1.0_Pseudogene/{refseq}/trackData.json"
+    }
+  ]
 }

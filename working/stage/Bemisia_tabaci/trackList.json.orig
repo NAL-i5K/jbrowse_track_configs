@@ -1,0 +1,1274 @@
+{
+   "css" : "./plugins/NAL_CSS/css/main.css",
+   "share_link" : 0,
+   "tracks" : [
+      {
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "chunkSize" : 20000,
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "label" : "DNA",
+         "type" : "SequenceTrack",
+         "category" : "Reference sequence",
+         "key" : "Reference sequence"
+      },
+      {
+         "autocomplete" : "none",
+         "style" : {
+            "className" : "annot",
+            "renderClassName" : "annot-render",
+            "subfeatureClasses" : {
+               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "annot-CDS",
+               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
+               "UTR" : "annot-UTR"
+            },
+            "arrowheadClass" : "annot-arrowhead",
+            "alternateClasses" : {
+               "transposable_element" : {
+                  "renderClassName" : "blue-ibeam-render",
+                  "className" : "blue-ibeam"
+               },
+               "pseudogene" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "light-purple-80pct"
+               },
+               "snRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "rRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "snoRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "repeat_region" : {
+                  "className" : "magenta-80pct"
+               },
+               "miRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "tRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "ncRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               }
+            },
+            "uniqueIdField" : "id",
+            "centerSubFeature" : {
+               "non_canonical_three_prime_splice_site" : false,
+               "non_canonical_five_prime_splice_site" : false
+            }
+         },
+         "key" : "User-created Annotations",
+         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
+         "phase" : 0,
+         "compress" : 0,
+         "label" : "Annotations",
+         "type" : "WebApollo/View/Track/AnnotTrack",
+         "subfeatures" : 1
+      },
+      {
+         "style" : {
+            "pos_color" : "black",
+            "neg_color" : "white"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Gaps in assembly",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/GCF_001854935.1_ASM185493v1_genomic.fna.gaps.bigwig",
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "label" : "Gaps in assembly",
+         "metadata" : {
+            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track contact" : "The i5k workspace@NAL"
+         },
+         "category" : "Reference Assembly"
+      },
+      {
+         "style" : {
+            "neg_color" : "rgba(255,255,0,50)",
+            "pos_color" : "rgba(0,0,255,50)"
+         },
+         "bicolor_pivot" : "0.5",
+         "key" : "GC Content",
+         "scoreType": "avgScore",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/GCF_001854935.1_ASM185493v1_genomic.fna.gc.bigwig",
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "label" : "GC Content",
+         "category" : "Reference Assembly",
+         "metadata" : {
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
+            "Track contact" : "The i5k workspace@NAL"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "primary_gene_set-cds",
+               "UTR" : "primary_gene_set-utr"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted protein coding genes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_protein-coding/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/854/935/GCF_001854935.1_ASM185493v1/GCF_001854935.1_ASM185493v1_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Note" : "Some genes may have non-coding transcripts",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bemisia_tabaci/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
+         "label" : "NCBI_Annotation_Release_100_protein-coding"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted pseudogenes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Pseudogenes",
+         "label" : "NCBI_Annotation_Release_100_Pseudogene",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/854/935/GCF_001854935.1_ASM185493v1/GCF_001854935.1_ASM185493v1_genomic.gff.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bemisia_tabaci/README_CURRENT_RELEASE"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : null
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted mtDNA protein coding genes, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI Predicted mtDNA protein coding genes, Annotation Release 100/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/854/935/GCF_001854935.1_ASM185493v1/GCF_001854935.1_ASM185493v1_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bemisia_tabaci/README_CURRENT_RELEASE"
+         },
+         "label" : "NCBI Predicted mtDNA protein coding genes, Annotation Release 100",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Protein Coding"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted lncRNA, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+         "label" : "NCBI_Annotation_Release_100_lncRNA",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/854/935/GCF_001854935.1_ASM185493v1/GCF_001854935.1_ASM185493v1_genomic.gff.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bemisia_tabaci/README_CURRENT_RELEASE"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted tRNAs, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/854/935/GCF_001854935.1_ASM185493v1/GCF_001854935.1_ASM185493v1_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bemisia_tabaci/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+         "label" : "NCBI_Annotation_Release_100_tRNA"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted rRNAs, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_rRNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+         "label" : "NCBI_Annotation_Release_100_rRNA",
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/854/935/GCF_001854935.1_ASM185493v1/GCF_001854935.1_ASM185493v1_genomic.gff.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bemisia_tabaci/README_CURRENT_RELEASE"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "cDNA match evidence from NCBI Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/854/935/GCF_001854935.1_ASM185493v1/GCF_001854935.1_ASM185493v1_genomic.gff.gz",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bemisia_tabaci/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "NCBI Annotation Release 100/2. Evidence",
+         "label" : "NCBI_Annotation_Release_100_cDNA_match"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "NCBI Predicted misc_RNAs, Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_misc_RNA/{refseq}/trackData.json",
+         "compress" : 0,
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/854/935/GCF_001854935.1_ASM185493v1/GCF_001854935.1_ASM185493v1_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bemisia_tabaci/README_CURRENT_RELEASE"
+         },
+         "type" : "FeatureTrack",
+         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+         "label" : "NCBI_Annotation_Release_100_misc_RNA"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Repeat_region evidence from NCBI Annotation Release 100",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_repeat_region/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "metadata" : {
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/854/935/GCF_001854935.1_ASM185493v1/GCF_001854935.1_ASM185493v1_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data provider" : "NCBI",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bemisia_tabaci/README_CURRENT_RELEASE"
+         },
+         "label" : "NCBI_Annotation_Release_100_repeat_region",
+         "category" : "NCBI Annotation Release 100/2. Evidence"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "ogs-cds",
+               "UTR" : "ogs-utr"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "Whitefly OGSv1.2",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/bemtab_current_models/{refseq}/trackData.json",
+         "compress" : 0,
+         "label" : "bemtab_current_models",
+         "category" : "Official Gene Set v1.2/1. Gene Sets/Protein Coding",
+         "metadata" : {
+            "Method" : "MAKER annotation pipeline v2",
+            "Publication status" : "Published - please cite https://doi.org/10.1186/1471-2164-15-86",
+            "Data provider" : "Kai-Shu Ling, USDA-ARS"
+         },
+         "type" : "FeatureTrack"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-25.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2506",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM7"
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "healthy_48h_rep1",
+         "key" : "healthy_48h_rep1"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-20.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2501",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM2"
+},
+         "label" : "healthy_24h_rep2",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "healthy_24h_rep2"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-38.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from nymphs and pupae",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2519",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"Nymphs and pupae",
+	"isolate":"MEAM20"
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "Nymphs_and_pupae_rep1",
+         "key" : "Nymphs_and_pupae_rep1"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-24.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2505",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM6"
+},
+         "label" : "TYLCV_24h_rep3",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "TYLCV_24h_rep3"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-35.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2516",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM17"
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "TYLCV_72h_rep2",
+         "key" : "TYLCV_72h_rep2"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-26.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2507",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM8"
+},
+         "label" : "healthy_48h_rep2",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "healthy_48h_rep2"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-33.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2514",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM15"
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "healthy_72h_rep3",
+         "key" : "healthy_72h_rep3"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-37.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from eggs",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2518",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"Eggs",
+	"isolate":"MEAM19"
+},
+         "label" : "Eggs_rep1",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "Eggs_rep1"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-22.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2503",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM4"
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "TYLCV_24h_rep1",
+         "key" : "TYLCV_24h_rep1"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-21.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2502",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM3"
+},
+         "label" : "healthy_24h_rep3",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "healthy_24h_rep3"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-32.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2513",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM14"
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "healthy_72h_rep2",
+         "key" : "healthy_72h_rep2"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-36.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2517",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM18"
+},
+         "label" : "TYLCV_72h_rep3",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "TYLCV_72h_rep3"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-29.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2510",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM11"
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "TYLCV_48h_rep2",
+         "key" : "TYLCV_48h_rep2"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-28.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2509",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM10"
+},
+         "label" : "TYLCV_48h_rep1",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "TYLCV_48h_rep1"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-34.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2515",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM16"
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "TYLCV_72h_rep1",
+         "key" : "TYLCV_72h_rep1"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-27.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2508",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM9"
+},
+         "label" : "healthy_48h_rep3",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "healthy_48h_rep3"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-30.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2511",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM12"
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "TYLCV_48h_rep3",
+         "key" : "TYLCV_48h_rep3"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-19.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2500",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM1"
+},
+         "label" : "healthy_24h_rep1",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "healthy_24h_rep1"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-23.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2504",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM5"
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "TYLCV_24h_rep2",
+         "key" : "TYLCV_24h_rep2"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-31.bam.sorted",
+
+"category" : "Transcriptome/Mapped Reads",
+"metadata" : {
+	"Track legend":"Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2512",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM13"
+},
+         "label" : "healthy_72h_rep1",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "healthy_72h_rep1"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "TYLCV_48h_rep2 (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-29.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2510",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM11"
+},
+         "label" : "TYLCV_48h_rep2 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "TYLCV_24h_rep3 (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-24.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2505",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM6"
+},
+         "label" : "TYLCV_24h_rep3 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "healthy_72h_rep3 (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-33.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2514",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM15"
+},
+         "label" : "healthy_72h_rep3 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "healthy_72h_rep1 (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-31.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2512",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM13"
+},
+         "label" : "healthy_72h_rep1 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "healthy_48h_rep2 (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-26.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2507",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM8"
+},
+         "label" : "healthy_48h_rep2 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "healthy_72h_rep2 (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-32.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2513",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM14"
+},
+         "label" : "healthy_72h_rep2 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "healthy_24h_rep3 (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-21.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2502",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM3"
+},
+         "label" : "healthy_24h_rep3 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Eggs_rep1 (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-37.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from eggs",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2518",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"Eggs",
+	"isolate":"MEAM19"
+},
+         "label" : "Eggs_rep1 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "TYLCV_48h_rep3 (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-30.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2511",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM12"
+},
+         "label" : "TYLCV_48h_rep3 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "TYLCV_24h_rep2 (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-23.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2504",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM5"
+},
+         "label" : "TYLCV_24h_rep2 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "TYLCV_48h_rep1 (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-28.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2509",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM10"
+},
+         "label" : "TYLCV_48h_rep1 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "TYLCV_72h_rep1 (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-34.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2515",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM16"
+},
+         "label" : "TYLCV_72h_rep1 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "healthy_24h_rep2 (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-20.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2501",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM2"
+},
+         "label" : "healthy_24h_rep2 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "TYLCV_72h_rep2 (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-35.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2516",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM17"
+},
+         "label" : "TYLCV_72h_rep2 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "healthy_48h_rep3 (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-27.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2508",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM9"
+},
+         "label" : "healthy_48h_rep3 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "TYLCV_72h_rep3 (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-36.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 72 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2517",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM18"
+},
+         "label" : "TYLCV_72h_rep3 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Nymphs_and_pupae_rep1 (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-38.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from nymphs and pupae",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2519",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"Nymphs and pupae",
+	"isolate":"MEAM20"
+},
+         "label" : "Nymphs_and_pupae_rep1 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "healthy_48h_rep1 (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-25.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 48 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2506",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM7"
+},
+         "label" : "healthy_48h_rep1 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "TYLCV_24h_rep1 (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-22.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on TYLCV-infected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2503",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM4"
+},
+         "label" : "TYLCV_24h_rep1 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-19.bigwig.sorted",
+
+"category" : "Transcriptome/Coverage Plots (BigWig)",
+"metadata" : {
+	"Track legend":"This track represents an RNA-Seq coverage plot.",
+	"Geographic location (latitude and longitude)":"Charleston, SC, USA",
+	"Data description":"RNA derived from adults fed on uninfected tomato cuttings for 24 h",
+	"Data source":"PRJNA312467",
+	"Data provider":"Kai-Shu Ling, USDA-ARS",
+	"Method":"Illumina HiSeq 2500",
+	"Publication status":"Published: Please cite https://doi.org/10.1186/s12915-016-0321-y",
+	"Tissues/Life stage included":"adults",
+	"isolate":"MEAM1"
+},
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "label" : "healthy_24h_rep1 (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "bicolor_pivot" : "zero",
+         "key" : "healthy_24h_rep1 (Coverage Plots)",
+         "autoscale" : "local"
+      }
+   ],
+   "names" : {
+      "url" : "names/",
+      "type" : "Hash"
+   },
+   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
+   "alwaysOnTracks" : "DNA,Annotations",
+   "formatVersion" : 1
+}
