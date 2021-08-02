@@ -24,7 +24,7 @@
 		"Publication status":"Published, please cite doi: 10.1186/s12864-017-4197-1"
 },
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",

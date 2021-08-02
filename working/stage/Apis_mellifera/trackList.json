@@ -18,7 +18,7 @@
       },
       {
          "compress" : 0,
-         "fmtDetailValue_Id" : "function(id, feature) { var name2 = id.replace(/-R./, ''); if(feature.get('type')=='mRN:A') { return ''+id+' (Click for Gene page)';} else {return id}}",
+         "fmtDetailValue_Id" : "function(id, feature) { var name2 = id.replace(/-R./, ''); if(feature.get('type')=='mRNA') { return ''+id+' (Click for Gene page)';} else {return id}}",
          "menuTemplate" : [
              {
                 "label" : "View details"
@@ -43,7 +43,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "CDS" : "primary_gene_set-cds",
                "UTR" : "primary_gene_set-utr",
@@ -52,7 +52,7 @@
             }
          },
          "trackType" : null,
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "type" : "HTMLFeatures",
          "urlTemplate" : "tracks/apimel_current_models/{refseq}/trackData.json"
       },
       {
@@ -80,6 +80,7 @@
          "category" : "Reference Assembly",
          "key" : "GC Content",
          "label" : "GC Content",
+         "scoreType": "avgScore",
          "metadata" : {
             "Track contact" : "The i5k workspace@NAL",
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
@@ -107,7 +108,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "primary_gene_set-cds",
@@ -132,7 +133,7 @@
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
          },
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "trackType" : "HTMLFeatures",
          "type" : "FeatureTrack",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_103_Gene/{refseq}/trackData.json"
       }

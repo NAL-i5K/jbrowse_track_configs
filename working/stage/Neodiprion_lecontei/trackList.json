@@ -13,7 +13,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -24,7 +24,7 @@
          },
          "key" : "neolec_OGSv1.1",
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "trackType" : "HTMLFeatures",
          "urlTemplate" : "tracks/neolec_current_models/{refseq}/trackData.json",
          "compress" : 0,
          "category" : "Official Gene Set",
@@ -34,7 +34,7 @@
             "Method" : "Maker v2.31.8, followed by CrossMap re-mapping of coordinates to new genome assembly version",
             "Data provider" : "Scott Geib, USDA-ARS Pacific Basin Agricultural Research Center"
          },
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "type" : "HTMLFeatures",
          "label" : "neolec_current_models"
       },
       {
@@ -64,6 +64,7 @@
          "bicolor_pivot" : "0.5",
          "autoscale" : "local",
          "key" : "GC Content",
+         "scoreType": "avgScore",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "urlTemplate" : "bigwig/GCA_001263575.2_Nlec1.1_genomic.fna.gc.bigwig",
          "metadata" : {
@@ -77,7 +78,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -89,7 +90,7 @@
          },
          "key" : "NCBI Annotation Release 100 Gene",
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "trackType" : "HTMLFeatures",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Gene/{refseq}/trackData.json",
          "compress" : 0,
          "label" : "NCBI_Annotation_Release_100_Gene",
@@ -100,7 +101,7 @@
             "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Neodiprion_lecontei/README_CURRENT_RELEASE"
          },
          "category" : "NCBI Annotation Release 100",
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable"
+         "type" : "HTMLFeatures"
       },
       {
          "style" : {

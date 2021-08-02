@@ -36,6 +36,7 @@
          },
          "bicolor_pivot" : "0.5",
          "key" : "GC Content",
+         "scoreType": "avgScore",
          "autoscale" : "local",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "urlTemplate" : "bigwig/GCF_010583005.1_Obru_v1_genomic.fna.gc.bigwig",
@@ -50,7 +51,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -392,7 +393,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -424,7 +425,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -456,7 +457,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -488,7 +489,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -520,7 +521,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -552,7 +553,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -584,7 +585,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "intron" : null,
                "stop_codon" : null,
@@ -616,7 +617,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -639,11 +640,11 @@
             }
          ],
          "key" : "NCBI_Annotation_Release_100_Gene",
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "trackType" : "HTMLFeatures",
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "urlTemplate" : "tracks/odobru_current_models/{refseq}/trackData.json",
          "compress" : 0,
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "type" : "HTMLFeatures",
          "category" : "NCBI Annotation Release 100",
          "label" : "odobru_current_models",
          "metadata" : {
@@ -655,7 +656,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",

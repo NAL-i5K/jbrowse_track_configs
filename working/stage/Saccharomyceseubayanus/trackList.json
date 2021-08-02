@@ -75,6 +75,7 @@
          "type" : "JBrowse/View/Track/Wiggle/Density",
          "autoscale" : "local",
          "key" : "GC Content",
+         "scoreType": "avgScore",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "bicolor_pivot" : "0.5",
          "label" : "GC Content"

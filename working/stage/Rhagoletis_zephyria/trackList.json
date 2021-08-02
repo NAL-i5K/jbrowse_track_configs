@@ -1,12 +1,6 @@
 {
-   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "share_link" : 0,
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
    "tracks" : [
       {
          "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
@@ -123,7 +117,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "description": "product,note,description",
             "subfeatureClasses" : {
                "wholeCDS" : null,
@@ -150,7 +144,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "description": "product,note,description",
             "subfeatureClasses" : {
                "wholeCDS" : null,
@@ -177,7 +171,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "description": "product,note,description",
             "subfeatureClasses" : {
                "wholeCDS" : null,
@@ -204,7 +198,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "cDNA match evidence from NCBI Annotation Release 100",
@@ -224,7 +218,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
 	    "description": "product,note,description",
             "subfeatureClasses" : {
                "wholeCDS" : null,

@@ -19,7 +19,7 @@
     {
       "category": "Apis mellifera Official Gene Set version 3.3",
       "compress": 0,
-      "fmtDetailValue_Id": "function(id, feature) { var name2 = id.replace(/-R./, ''); if(feature.get('type')=='mRN:A') { return ''+id+' (Click for Gene page)';} else {return id}}",
+      "fmtDetailValue_Id": "function(id, feature) { var name2 = id.replace(/-R./, ''); if(feature.get('type')=='mRNA') { return ''+id+' (Click for Gene page)';} else {return id}}",
       "key": "apimel_OGSv3.3 Gene",
       "label": "apimel_current_models",
       "menuTemplate": [
@@ -53,7 +53,7 @@
         }
       },
       "trackType": null,
-      "type": "ColorByType/View/Track/ColorByTypeDraggable",
+      "type": "HTMLFeatures",
       "urlTemplate": "tracks/apimel_current_models/{refseq}/trackData.json"
     },
     {
@@ -86,6 +86,7 @@
         "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
         "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
       },
+      "scoreType": "avgScore",
       "storeClass": "JBrowse/Store/SeqFeature/BigWig",
       "style": {
         "neg_color": "rgba(255,255,0,50)",
@@ -133,7 +134,7 @@
         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
-      "trackType": "ColorByType/View/Track/ColorByTypeDraggable",
+      "trackType": "HTMLFeatures",
       "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_103_Gene/{refseq}/trackData.json"
     }

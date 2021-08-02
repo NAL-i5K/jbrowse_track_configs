@@ -17,7 +17,7 @@
          "urlTemplate" : "tracks/medext_current_models/{refseq}/trackData.json",
          "compress" : 0,
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -70,6 +70,7 @@
             "pos_color" : "rgba(0,0,255,50)"
          },
          "label" : "GC Content",
+         "scoreType": "avgScore",
          "type" : "JBrowse/View/Track/Wiggle/Density",
          "bicolor_pivot" : "0.5",
          "key" : "GC Content",

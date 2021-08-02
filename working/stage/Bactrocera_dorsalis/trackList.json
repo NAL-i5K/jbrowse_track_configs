@@ -1,5 +1,5 @@
 {
-   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "share_link" : 0,
    "tracks" : [
       {
@@ -117,7 +117,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -143,7 +143,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -169,7 +169,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -195,7 +195,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -221,7 +221,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -568,12 +568,6 @@
                      },
          "category" : "Transcriptome/Mapped Reads",
          "key" : "Punador_pupae"
-      }
-   ],
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
       }
    ],
    "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",

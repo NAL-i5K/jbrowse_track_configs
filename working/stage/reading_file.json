@@ -1,12 +1,18 @@
 {
   "alwaysOnTracks": "DNA,Annotations",
-  "css": "./plugins/NAL_CSS/css/main.css",
+  "css": "./plugins/NAL_CSS/css/contrib_styles.css",
   "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
   "formatVersion": 1,
   "names": {
     "type": "Hash",
     "url": "names/"
   },
+  "plugins": [
+    {
+      "location": "./plugins/WebApollo",
+      "name": "WebApollo"
+    }
+  ],
   "share_link": 0,
   "tracks": [
     {
@@ -190,7 +196,6 @@
     },
     {
       "category": "NCBI Annotation Release 100/2. Evidence",
-      "className": "{type}",
       "compress": 0,
       "key": "cDNA match evidence from NCBI Annotation Release 100",
       "label": "NCBI_Annotation_Release_100_cDNA_match",

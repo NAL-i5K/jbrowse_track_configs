@@ -6,12 +6,6 @@
     "type": "Hash",
     "url": "names/"
   },
-  "plugins": [
-    {
-      "location": "./plugins/WebApollo",
-      "name": "WebApollo"
-    }
-  ],
   "share_link": 0,
   "tracks": [
     {

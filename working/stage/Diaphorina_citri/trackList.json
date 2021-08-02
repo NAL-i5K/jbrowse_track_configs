@@ -38,6 +38,7 @@
          "bicolor_pivot" : "0.5",
          "autoscale" : "local",
          "key" : "GC Content",
+         "scoreType": "avgScore",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "urlTemplate" : "bigwig/121845_ref_Diaci_psyllid_genome_assembly_version_1.1_chrUn.mfa.gc.bigwig",
          "metadata" : {
@@ -51,7 +52,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "augustus"
             },
@@ -74,7 +75,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blastn"
             },
@@ -97,7 +98,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blastx"
             },
@@ -120,7 +121,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "est2genome"
             },
@@ -143,7 +144,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "protein2genome"
             },
@@ -166,7 +167,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "repeat"
             },
@@ -189,7 +190,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "snap"
             },
@@ -212,7 +213,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -238,7 +239,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -264,7 +265,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -290,7 +291,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -316,7 +317,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "repeat"
             },
@@ -339,7 +340,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blast-match_part",
                "wholeCDS" : null
@@ -363,7 +364,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blast-match_part",
                "wholeCDS" : null
@@ -387,7 +388,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blast-match_part",
                "wholeCDS" : null
@@ -411,7 +412,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blast-match_part",
                "wholeCDS" : null
@@ -435,7 +436,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -461,7 +462,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blast-match_part",
                "wholeCDS" : null
@@ -485,7 +486,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "Whole insect expressed protein tags (ePSTs) for peptides from mass spectrometry (MS) proteomics data",
@@ -506,7 +507,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "Whole insect reverse-translated peptides (RTPs) from mass spectrometry (MS) proteomics data",
@@ -525,7 +526,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "S9 expressed protein tags (ePSTs) for peptides from mass spectrometry (MS) proteomics data",
@@ -544,7 +545,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "S9 reverse-translated peptides (RTPs) from mass spectrometry (MS) proteomics data",
@@ -563,7 +564,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -591,7 +592,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "pseudogenic_exon" : "ogs-utr",
                "wholeCDS" : null,
@@ -618,7 +619,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",

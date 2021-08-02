@@ -1,18 +1,12 @@
 {
   "alwaysOnTracks": "DNA,Annotations",
-  "css": "./plugins/NAL_CSS/css/contrib_styles.css",
+  "css": "./plugins/NAL_CSS/css/main.css",
   "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
   "formatVersion": 1,
   "names": {
     "type": "Hash",
     "url": "names/"
   },
-  "plugins": [
-    {
-      "location": "./plugins/WebApollo",
-      "name": "WebApollo"
-    }
-  ],
   "share_link": 0,
   "tracks": [
     {

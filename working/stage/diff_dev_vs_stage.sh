@@ -5,5 +5,5 @@ for filename in ./*/trackList.json; do
 #        ./MyProgram.exe "$filename" "Logs/$(basename "$filename" .txt)_Log$i.txt"
 #    done
     echo "processing $filename"
-    cat "$filename" |jq -S > "$filename".sorted 
+    diff  "$filename".sorted ../dev/"$filename".sorted
 done

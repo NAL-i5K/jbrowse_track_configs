@@ -69,7 +69,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "webapollo-arrowhead",
-        "className": "container-10px",
+        "className": "{type}",
         "subfeatureClasses": {
           "match_part": "protein_domains"
         }
@@ -983,7 +983,7 @@
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
         "arrowheadClass": "trellis-arrowhead",
-        "className": "container-16px",
+        "className": "{type}",
         "description": "product, note, description",
         "subfeatureClasses": {
           "CDS": "gnomon_CDS",

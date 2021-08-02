@@ -77,7 +77,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -97,7 +97,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "augustus"
             },
@@ -115,7 +115,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blastn"
             },
@@ -132,7 +132,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "blastx"
             },
@@ -149,7 +149,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "est2genome"
             },
@@ -166,7 +166,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "protein2genome"
             },
@@ -183,7 +183,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "repeat"
             },
@@ -201,7 +201,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "repeat"
             },
@@ -219,7 +219,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "snap"
             },

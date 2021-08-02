@@ -45,6 +45,7 @@
         "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
         "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
       },
+      "scoreType": "avgScore",
       "storeClass": "JBrowse/Store/SeqFeature/BigWig",
       "style": {
         "neg_color": "rgba(255,255,0,50)",
@@ -633,7 +634,7 @@
           "iconClass": "dijitIconDatabase",
           "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
           "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
         }
       ],
       "metadata": {
@@ -654,8 +655,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "ColorByType/View/Track/ColorByTypeDraggable",
-      "type": "ColorByType/View/Track/ColorByTypeDraggable",
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
       "urlTemplate": "tracks/odobru_current_models/{refseq}/trackData.json"
     },
     {
@@ -672,7 +673,7 @@
           "iconClass": "dijitIconDatabase",
           "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
           "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
         }
       ],
       "metadata": {

@@ -1,6 +1,6 @@
 {
   "alwaysOnTracks": "DNA,Annotations",
-  "css": "./plugins/NAL_CSS/css/contrib_styles.css",
+  "css": "./plugins/NAL_CSS/css/main.css",
   "defaultTracks": "Contamination,cimlec_current_models",
   "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
   "formatVersion": 1,
@@ -8,12 +8,6 @@
     "type": "Hash",
     "url": "names/"
   },
-  "plugins": [
-    {
-      "location": "./plugins/WebApollo",
-      "name": "WebApollo"
-    }
-  ],
   "share_link": 0,
   "tracks": [
     {

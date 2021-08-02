@@ -1,6 +1,6 @@
 {
    "formatVersion" : 1,
-   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "names" : {
       "type" : "Hash",
       "url" : "names/"
@@ -41,6 +41,7 @@
          "category" : "Reference Assembly",
          "key" : "GC Content",
          "label" : "GC Content",
+         "scoreType": "avgScore",
          "metadata" : {
             "Track contact" : "The i5k workspace@NAL",
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
@@ -393,7 +394,7 @@
          },
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
-            "className" : "container-12px"
+            "className" : "{type}"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -407,7 +408,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "note, Ontology_term, Dbxref",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",

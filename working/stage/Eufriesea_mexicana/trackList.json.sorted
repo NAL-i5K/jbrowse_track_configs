@@ -67,8 +67,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "ColorByType/View/Track/ColorByTypeDraggable",
-      "type": "ColorByType/View/Track/ColorByTypeDraggable",
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Gene/{refseq}/trackData.json"
     },
     {

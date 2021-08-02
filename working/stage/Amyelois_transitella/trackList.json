@@ -1,5 +1,5 @@
 {
-   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
+   "css" : "./plugins/NAL_CSS/css/main.css",
    "share_link" : 0,
    "tracks" : [
       {
@@ -78,7 +78,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -143,7 +143,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -169,7 +169,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -195,7 +195,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -221,7 +221,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -247,7 +247,7 @@
       },
       {
          "style" : {
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
                "exon" : "container-100pct",
@@ -273,7 +273,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "darkblue-80pct"
             },
@@ -296,7 +296,7 @@
       },
       {
          "style" : {
-            "className" : "container-10px",
+            "className" : "{type}",
             "arrowheadClass" : "webapollo-arrowhead"
          },
          "key" : "Match evidence from NCBI Annotation Release 100",
@@ -352,12 +352,6 @@
 "Analysis parameters":"-align_reads 'together' --mate-inner-dist '50' --file_query 'Berenbaum_XAN_R1.PF_5trim2_qualtrim20_trimmo_paired.fastq' --file_query2 'Berenbaum_XAN_R2.PF_5trim2_qualtrim20_trimmo_paired.fastq' --library-type 'fr-unstranded' --min-anchor-length '8' --splice-mismatches '0' --min-intron-length '70' --max-intron-length '50000' --min-isoform-fraction '0.15' --max-multihits '20' --min-segment-intron '50' --max-segment-intron '500000' --segment-mismatches '2' --segment-length '20' --num-threads '6' --user_database '680683_ref_ASM118610v1_chrUn.fa' --b2-sensitive --tophat_version '2.0.9' --bowtie_version '2.1.0'",
 "Alignment summary": "http://de.iplantcollaborative.org/dl/d/07EC0150-4268-406D-931A-613100E2DDEC/align_summary.txt"
 }
-      }
-   ],
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
       }
    ],
    "names" : {
