@@ -19,18 +19,18 @@
       },
       {
          "compress" : 0,
-         "fmtDetailValue_Id" : "function(id, feature) { var name2 = id.replace(/-R./, ''); if(feature.get('type')=='mRN:A') { return ''+id+' (Click for Gene page)';} else {return id}}",
+         "fmtDetailValue_Id" : "function(id, feature) { var name2 = id.replace(/-R./, ''); if(feature.get('type')=='mRNA') { return ''+id+' (Click for Gene page)';} else {return id}}",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
               "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}",
-              },
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}"
+              }
         ],
          "key" : "apimel_OGSv3.3 Gene",
          "category":"Apis mellifera Official Gene Set version 3.3",
@@ -109,7 +109,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "primary_gene_set-cds",

@@ -1,0 +1,13 @@
+
+
+# After updating the config files, I renemed the original files 
+
+find . -iname "trackList.json" -exec rename 's/.json/.json.orig/' '{}' \;
+# and then rename the sorted config files 
+find . -iname "trackList.json.sorted" -exec rename 's/.sorted//' '{}' \;
+ 
+# Special thanks to StackOverflow
+# https://stackoverflow.com/questions/16541582/find-multiple-files-and-rename-them-in-linux
+# 
+# 
+

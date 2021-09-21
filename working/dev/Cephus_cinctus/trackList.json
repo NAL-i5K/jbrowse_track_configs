@@ -69,7 +69,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "webapollo-arrowhead",
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "protein_domains"
             }
@@ -936,7 +936,7 @@
             }
          ],
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
- metadata: {
+ "metadata": {
 "Data source":"https://doi.org/10.15482/USDA.ADC/1484022; https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/341/935/GCF_000341935.1_Ccin1/",
 "Materials and Methods":"https://doi.org/10.15482/USDA.ADC/1484022",
 "Publication status":"Published, please cite https://doi.org/10.1093/gbe/evy232",
@@ -962,7 +962,7 @@
          "compress" : 0,
          "key" : "cepcin_OGSv1.1 Pseudogene",
          "label" : "OGSv_Pseudogene",
-metadata: {
+"metadata": {
 "Data source":"https://doi.org/10.15482/USDA.ADC/1484022; https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/341/935/GCF_000341935.1_Ccin1/",
 "Materials and Methods":"https://doi.org/10.15482/USDA.ADC/1484022",
 "Publication status":"Published, please cite https://doi.org/10.1093/gbe/evy232",
@@ -983,7 +983,7 @@ metadata: {
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",

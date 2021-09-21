@@ -1,337 +1,337 @@
 {
-   "formatVersion" : 1,
-   "names" : {
-      "type" : "Hash",
-      "url" : "names/"
-   },
-   "tracks" : [
-      {
-         "category" : "Reference sequence",
-         "chunkSize" : 20000,
-         "key" : "Reference sequence",
-         "label" : "DNA",
-         "seqType" : "dna",
-         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
-         "type" : "SequenceTrack",
-         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "seqType": "dna",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Reference Assembly",
-         "key" : "Gaps in assembly",
-         "label" : "Gaps in assembly",
-         "metadata" : {
-            "Track contact" : "The i5k workspace@NAL",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "neg_color" : "white",
-            "pos_color" : "black"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/GCF_008802855.1_Ppyr1.3_genomic.fna.gaps.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "0.5",
-         "category" : "Reference Assembly",
-         "key" : "GC Content",
-         "label" : "GC Content",
-         "metadata" : {
-            "Track contact" : "The i5k workspace@NAL",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-	"scoreType" : "avgScore",
-         "style" : {
-            "neg_color" : "rgba(255,255,0,50)",
-            "pos_color" : "rgba(0,0,255,50)"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/GCF_008802855.1_Ppyr1.3_genomic.fna.gc.bigwig"
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_008802855.1_Ppyr1.3_genomic.fna.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
       },
-      {
-         "category" : "RNA-Seq/Mapped Reads",
-         "key" : "SRR3883760 Mapped reads",
-         "label" : "SRR3883760",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883760'>SRR3883760</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "analyses/SRR3883760/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bam"
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "RNA-Seq/Coverage Plots",
-         "key" : "SRR3883760 Coverage",
-         "label" : "SRR3883760 Coverage",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883760'>SRR3883760</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "analyses/SRR3883760/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bigwig"
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_008802855.1_Ppyr1.3_genomic.fna.gc.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "SRR3883760 Mapped reads",
+      "label": "SRR3883760",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883760'>SRR3883760</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
       },
-      {
-         "category" : "RNA-Seq/Splice junctions",
-         "label" : "SRR3883760 Splice junctions",
-	"storeClass": "JBrowse/Store/SeqFeature/BEDTabix",
-	"type": "CanvasFeatures",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883760'>SRR3883760</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "style" : {
-            "description" : "score"
-         },
-         "urlTemplate" : "analyses/SRR3883760/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bed.gz"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/SRR3883760/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "SRR3883760 Coverage",
+      "label": "SRR3883760 Coverage",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883760'>SRR3883760</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
       },
-      {
-         "category" : "RNA-Seq/Splice junctions",
-         "label" : "SRR3883768 Splice junctions",
-	"storeClass": "JBrowse/Store/SeqFeature/BEDTabix",
-	"type": "CanvasFeatures",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883768'>SRR3883768</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools"
-         },
-         "style" : {
-            "description" : "score"
-         },
-         "urlTemplate" : "analyses/SRR3883768/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bed.gz"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "category" : "RNA-Seq/Mapped Reads",
-         "key" : "SRR3883768 Mapped reads",
-         "label" : "SRR3883768 Mapped reads",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883768'>SRR3883768</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "analyses/SRR3883768/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bam"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/SRR3883760/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "label": "SRR3883760 Splice junctions",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883760'>SRR3883760</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "RNA-Seq/Coverage Plots",
-         "key" : "SRR3883768 Coverage",
-         "label" : "SRR3883768 Coverage",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883768'>SRR3883768</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "analyses/SRR3883768/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BEDTabix",
+      "style": {
+        "description": "score"
       },
-      {
-         "category" : "RNA-Seq/Mapped Reads",
-         "key" : "SRR6345445 Mapped reads",
-         "label" : "SRR6345445 Mapped reads",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6345445'>SRR6345445</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "analyses/SRR6345445/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bam"
+      "type": "CanvasFeatures",
+      "urlTemplate": "analyses/SRR3883760/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bed.gz"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "label": "SRR3883768 Splice junctions",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883768'>SRR3883768</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Junction reads generated by Hisat2 aligner and regtools"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "RNA-Seq/Coverage Plots",
-         "key" : "SRR6345445 Coverage",
-         "label" : "SRR6345445 Coverage",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6345445'>SRR6345445</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "analyses/SRR6345445/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BEDTabix",
+      "style": {
+        "description": "score"
       },
-      {
-         "category" : "RNA-Seq/Mapped Reads",
-         "key" : "SRR3883762 Mapped reads",
-         "label" : "SRR3883762 Mapped reads",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883762'>SRR3883762</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "analyses/SRR3883762/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bam"
+      "type": "CanvasFeatures",
+      "urlTemplate": "analyses/SRR3883768/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bed.gz"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "SRR3883768 Mapped reads",
+      "label": "SRR3883768 Mapped reads",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883768'>SRR3883768</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "RNA-Seq/Coverage Plots",
-         "key" : "SRR3883762 Coverage",
-         "label" : "SRR3883762 Coverage",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883762'>SRR3883762</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "analyses/SRR3883762/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/SRR3883768/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "SRR3883768 Coverage",
+      "label": "SRR3883768 Coverage",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883768'>SRR3883768</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
       },
-      {
-         "category" : "NCBI Annotation Release 100",
-         "compress" : 0,
-         "key" : "NCBI_Annotation_Release_100_Gene",
-         "label" : "phopyr_current_models",
- "menuTemplate" : [
-       {
-          "label" : "View details"
-       },
-       {
-        "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-        "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-        "iconClass" : "dijitIconDatabase",
-        "action": "newWindow",
-        "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/SRR3883768/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "SRR6345445 Mapped reads",
+      "label": "SRR6345445 Mapped reads",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6345445'>SRR6345445</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/SRR6345445/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "SRR6345445 Coverage",
+      "label": "SRR6345445 Coverage",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6345445'>SRR6345445</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/SRR6345445/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "SRR3883762 Mapped reads",
+      "label": "SRR3883762 Mapped reads",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883762'>SRR3883762</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/SRR3883762/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "SRR3883762 Coverage",
+      "label": "SRR3883762 Coverage",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3883762'>SRR3883762</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/SRR3883762/Phopyr_Ppyr1.3_RNA-Seq-alignments_2021-02-09.bigwig"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Gene",
+      "label": "phopyr_current_models",
+      "menuTemplate": [
+        {
+          "label": "View details"
+        },
+        {
+          "action": "newWindow",
+          "iconClass": "dijitIconDatabase",
+          "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+          "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('name')}"
         }
-  ],
-         "metadata" : {
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Photinus_pyralis/README_CURRENT_RELEASE",
-            "Data provider" : "NCBI",
-            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/008/802/855/GCF_008802855.1_Ppyr1.3/GCF_008802855.1_Ppyr1.3_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
-         "urlTemplate" : "tracks/phopyr_current_models/{refseq}/trackData.json"
+      ],
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Photinus_pyralis/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/008/802/855/GCF_008802855.1_Ppyr1.3/GCF_008802855.1_Ppyr1.3_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "category" : "NCBI Annotation Release 100",
-         "compress" : 0,
-         "key" : "NCBI_Annotation_Release_100_Pseudogene",
-         "label" : "NCBI_Annotation_Release_100_Pseudogene",
-         "metadata" : {
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Photinus_pyralis/README_CURRENT_RELEASE",
-            "Data provider" : "NCBI",
-            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/008/802/855/GCF_008802855.1_Ppyr1.3/GCF_008802855.1_Ppyr1.3_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
-      },
-      {
-         "category" : "NCBI Annotation Release 100",
-         "compress" : 0,
-         "key" : "NCBI_Annotation_Release_100_Gene - Color by CDS frame",
-         "label" : "NCBI_Annotation_Release_100_Gene - Color by CDS frame",
- "menuTemplate" : [
-       {
-          "label" : "View details"
-       },
-       {
-        "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-        "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-        "iconClass" : "dijitIconDatabase",
-        "action": "newWindow",
-        "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
         }
-  ],
-         "metadata" : {
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Photinus_pyralis/README_CURRENT_RELEASE",
-            "Data provider" : "NCBI",
-            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/008/802/855/GCF_008802855.1_Ppyr1.3/GCF_008802855.1_Ppyr1.3_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
-         "urlTemplate" : "tracks/phopyr_current_models/{refseq}/trackData.json"
-      }
-   ]
+      },
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
+      "urlTemplate": "tracks/phopyr_current_models/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Pseudogene",
+      "label": "NCBI_Annotation_Release_100_Pseudogene",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Photinus_pyralis/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/008/802/855/GCF_008802855.1_Ppyr1.3/GCF_008802855.1_Ppyr1.3_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Gene - Color by CDS frame",
+      "label": "NCBI_Annotation_Release_100_Gene - Color by CDS frame",
+      "menuTemplate": [
+        {
+          "label": "View details"
+        },
+        {
+          "action": "newWindow",
+          "iconClass": "dijitIconDatabase",
+          "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+          "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('name')}"
+        }
+      ],
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Photinus_pyralis/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/008/802/855/GCF_008802855.1_Ppyr1.3/GCF_008802855.1_Ppyr1.3_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
+      "urlTemplate": "tracks/phopyr_current_models/{refseq}/trackData.json"
+    }
+  ]
 }

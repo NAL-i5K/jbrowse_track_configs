@@ -96,15 +96,15 @@
          "category" : "Lasioglossum albipes OGSv5.42/1. Gene Sets/Protein Coding",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
               "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}",
-              },
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}"
+              }
         ],
          "metadata" : {
             "Data source" : "http://hymenopteragenome.org/beebase/sites/hymenopteragenome.org.beebase/files/data/consortium_data/Lalb_OGS_v5.42.gff.gz",

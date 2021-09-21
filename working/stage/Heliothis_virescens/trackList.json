@@ -1,631 +1,626 @@
 {
-   "alwaysOnTracks" : "DNA,Annotations",
-   "css" : "data/contrib_styles.css",
-   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
-   "formatVersion" : 1,
-   "names" : {
-      "type" : "Hash",
-      "url" : "names/"
-   },
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
-   "share_link" : 0,
-   "tracks" : [
-      {
-         "category" : "Reference sequence",
-         "chunkSize" : 20000,
-         "key" : "Reference sequence",
-         "label" : "DNA",
-         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
-         "type" : "SequenceTrack",
-         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
+  "alwaysOnTracks": "DNA,Annotations",
+  "css": "./plugins/NAL_CSS/css/main.css",
+  "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "share_link": 0,
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "autocomplete": "none",
+      "compress": 0,
+      "key": "User-created Annotations",
+      "label": "Annotations",
+      "phase": 0,
+      "storeClass": "WebApollo/Store/SeqFeature/ScratchPad",
+      "style": {
+        "alternateClasses": {
+          "miRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "ncRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "pseudogene": {
+            "className": "light-purple-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "rRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "repeat_region": {
+            "className": "magenta-80pct"
+          },
+          "snRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "snoRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "tRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "transposable_element": {
+            "className": "blue-ibeam",
+            "renderClassName": "blue-ibeam-render"
+          }
+        },
+        "arrowheadClass": "annot-arrowhead",
+        "centerSubFeature": {
+          "non_canonical_five_prime_splice_site": false,
+          "non_canonical_three_prime_splice_site": false
+        },
+        "className": "annot",
+        "renderClassName": "annot-render",
+        "subfeatureClasses": {
+          "CDS": "annot-CDS",
+          "UTR": "annot-UTR",
+          "exon": "container-100pct",
+          "non_canonical_five_prime_splice_site": "noncanonical-splice-site",
+          "non_canonical_three_prime_splice_site": "noncanonical-splice-site",
+          "wholeCDS": null
+        },
+        "uniqueIdField": "id"
       },
-      {
-         "autocomplete" : "none",
-         "compress" : 0,
-         "key" : "User-created Annotations",
-         "label" : "Annotations",
-         "phase" : 0,
-         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
-         "style" : {
-            "alternateClasses" : {
-               "miRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "ncRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "pseudogene" : {
-                  "className" : "light-purple-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "rRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "repeat_region" : {
-                  "className" : "magenta-80pct"
-               },
-               "snRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "snoRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "tRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "transposable_element" : {
-                  "className" : "blue-ibeam",
-                  "renderClassName" : "blue-ibeam-render"
-               }
-            },
-            "arrowheadClass" : "annot-arrowhead",
-            "centerSubFeature" : {
-               "non_canonical_five_prime_splice_site" : false,
-               "non_canonical_three_prime_splice_site" : false
-            },
-            "className" : "annot",
-            "renderClassName" : "annot-render",
-            "subfeatureClasses" : {
-               "CDS" : "annot-CDS",
-               "UTR" : "annot-UTR",
-               "exon" : "container-100pct",
-               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
-               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
-               "wholeCDS" : null
-            },
-            "uniqueIdField" : "id"
-         },
-         "subfeatures" : 1,
-         "type" : "WebApollo/View/Track/AnnotTrack"
+      "subfeatures": 1,
+      "type": "WebApollo/View/Track/AnnotTrack"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Reference Assembly",
-         "key" : "Gaps in assembly",
-         "label" : "Gaps in assembly",
-         "metadata" : {
-            "Track contact" : "The i5k workspace@NAL",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "neg_color" : "white",
-            "pos_color" : "black"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/GCA_002382865.1_K63_refined_pacbio_genomic.fna.gaps.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "0.5",
-         "category" : "Reference Assembly",
-         "key" : "GC Content",
-         "label" : "GC Content",
-         "metadata" : {
-            "Track contact" : "The i5k workspace@NAL",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "neg_color" : "rgba(255,255,0,50)",
-            "pos_color" : "rgba(0,0,255,50)"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/GCA_002382865.1_K63_refined_pacbio_genomic.fna.gc.bigwig"
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCA_002382865.1_K63_refined_pacbio_genomic.fna.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
       },
-      {
-         "category" : "Transcriptome/Mapped Reads",
-         "key" : "Heliothis virescens RNA-Seq HVI-HP_GKW-20, Hairpencils/adult",
-         "label" : "Heliothis virescens RNA-Seq HVI-HP_GKW-20, Hairpencils/adult",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "Hairpencils/adult",
-            "Track legend" : "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/HVI-HP_GKW-20/accepted_hits.bam"
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
       },
-      {
-         "category" : "Transcriptome/Mapped Reads",
-         "key" : "Heliothis virescens RNA-Seq HVI-CY_GKW-25, hemocytes",
-         "label" : "Heliothis virescens RNA-Seq HVI-CY_GKW-25, hemocytes",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "hemocytes",
-            "Track legend" : "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/HVI-CY_GKW-25/accepted_hits.bam"
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCA_002382865.1_K63_refined_pacbio_genomic.fna.gc.bigwig"
+    },
+    {
+      "category": "Transcriptome/Mapped Reads",
+      "key": "Heliothis virescens RNA-Seq HVI-HP_GKW-20, Hairpencils/adult",
+      "label": "Heliothis virescens RNA-Seq HVI-HP_GKW-20, Hairpencils/adult",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "Hairpencils/adult",
+        "Track legend": "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
       },
-      {
-         "category" : "Transcriptome/Mapped Reads",
-         "key" : "Heliothis virescens RNA-Seq HVI-FB_GKW-24, fat body",
-         "label" : "Heliothis virescens RNA-Seq HVI-FB_GKW-24, fat body",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "fat body",
-            "Track legend" : "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/HVI-FB_GKW-24/accepted_hits.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/HVI-HP_GKW-20/accepted_hits.bam"
+    },
+    {
+      "category": "Transcriptome/Mapped Reads",
+      "key": "Heliothis virescens RNA-Seq HVI-CY_GKW-25, hemocytes",
+      "label": "Heliothis virescens RNA-Seq HVI-CY_GKW-25, hemocytes",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "hemocytes",
+        "Track legend": "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
       },
-      {
-         "category" : "Transcriptome/Mapped Reads",
-         "key" : "Heliothis virescens RNA-Seq HVI-GL_GKW-23, pheromone gland/adult",
-         "label" : "Heliothis virescens RNA-Seq HVI-GL_GKW-23, pheromone gland/adult",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "pheromone gland/adult",
-            "Track legend" : "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/HVI-GL_GKW-23/accepted_hits.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/HVI-CY_GKW-25/accepted_hits.bam"
+    },
+    {
+      "category": "Transcriptome/Mapped Reads",
+      "key": "Heliothis virescens RNA-Seq HVI-FB_GKW-24, fat body",
+      "label": "Heliothis virescens RNA-Seq HVI-FB_GKW-24, fat body",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "fat body",
+        "Track legend": "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
       },
-      {
-         "category" : "Transcriptome/Mapped Reads",
-         "key" : "Heliothis virescens RNA-Seq HVI-NE_GKW-26, neonates",
-         "label" : "Heliothis virescens RNA-Seq HVI-NE_GKW-26, neonates",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "neonates",
-            "Track legend" : "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/HVI-NE_GKW-26/accepted_hits.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/HVI-FB_GKW-24/accepted_hits.bam"
+    },
+    {
+      "category": "Transcriptome/Mapped Reads",
+      "key": "Heliothis virescens RNA-Seq HVI-GL_GKW-23, pheromone gland/adult",
+      "label": "Heliothis virescens RNA-Seq HVI-GL_GKW-23, pheromone gland/adult",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "pheromone gland/adult",
+        "Track legend": "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
       },
-      {
-         "category" : "Transcriptome/Mapped Reads",
-         "key" : "Heliothis virescens RNA-Seq HVI-AM_GKW-19, Antenna/adult",
-         "label" : "Heliothis virescens RNA-Seq HVI-AM_GKW-19, Antenna/adult",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "Antenna/adult",
-            "Track legend" : "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/HVI-AM_GKW-19/accepted_hits.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/HVI-GL_GKW-23/accepted_hits.bam"
+    },
+    {
+      "category": "Transcriptome/Mapped Reads",
+      "key": "Heliothis virescens RNA-Seq HVI-NE_GKW-26, neonates",
+      "label": "Heliothis virescens RNA-Seq HVI-NE_GKW-26, neonates",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "neonates",
+        "Track legend": "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
       },
-      {
-         "category" : "Transcriptome/Mapped Reads",
-         "key" : "Heliothis virescens RNA-Seq HVI-OV_GKW-22, ovipositor/adult",
-         "label" : "Heliothis virescens RNA-Seq HVI-OV_GKW-22, ovipositor/adult",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "ovipositor/adult",
-            "Track legend" : "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/HVI-OV_GKW-22/accepted_hits.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/HVI-NE_GKW-26/accepted_hits.bam"
+    },
+    {
+      "category": "Transcriptome/Mapped Reads",
+      "key": "Heliothis virescens RNA-Seq HVI-AM_GKW-19, Antenna/adult",
+      "label": "Heliothis virescens RNA-Seq HVI-AM_GKW-19, Antenna/adult",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "Antenna/adult",
+        "Track legend": "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
       },
-      {
-         "category" : "Transcriptome/Mapped Reads",
-         "key" : "Heliothis virescens RNA-Seq HVI-AF_GKW-21, Antenna/adult",
-         "label" : "Heliothis virescens RNA-Seq HVI-AF_GKW-21, Antenna/adult",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "Antenna/adult",
-            "Track legend" : "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "user_contributed_data/HVI-AF_GKW-21/accepted_hits.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/HVI-AM_GKW-19/accepted_hits.bam"
+    },
+    {
+      "category": "Transcriptome/Mapped Reads",
+      "key": "Heliothis virescens RNA-Seq HVI-OV_GKW-22, ovipositor/adult",
+      "label": "Heliothis virescens RNA-Seq HVI-OV_GKW-22, ovipositor/adult",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "ovipositor/adult",
+        "Track legend": "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Transcriptome/Coverage Plots (BigWig)",
-         "key" : "Heliothis virescens RNA-Seq HVI-FB_GKW-24, fat body (Coverage Plot)",
-         "label" : "Heliothis virescens RNA-Seq HVI-FB_GKW-24, fat body (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "fat body",
-            "Track legend" : "This track represents an RNA-Seq coverage plot."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/HVI-FB_GKW-24/accepted_hits.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/HVI-OV_GKW-22/accepted_hits.bam"
+    },
+    {
+      "category": "Transcriptome/Mapped Reads",
+      "key": "Heliothis virescens RNA-Seq HVI-AF_GKW-21, Antenna/adult",
+      "label": "Heliothis virescens RNA-Seq HVI-AF_GKW-21, Antenna/adult",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "Antenna/adult",
+        "Track legend": "Mapped RNA-Seq reads:<br>Aligned regions: blue<br>Spanned regions (possible splice junctions): light blue<br>Deletions in the read relative to the reference: red<br>Insertions in the read relative to the reference: green<br>Mismatch: yellow (hover over the mismatch to see what the snp is)"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Transcriptome/Coverage Plots (BigWig)",
-         "key" : "Heliothis virescens RNA-Seq HVI-CY_GKW-25, hemocytes (Coverage Plot)",
-         "label" : "Heliothis virescens RNA-Seq HVI-CY_GKW-25, hemocytes (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "hemocytes",
-            "Track legend" : "This track represents an RNA-Seq coverage plot."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/HVI-CY_GKW-25/accepted_hits.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/HVI-AF_GKW-21/accepted_hits.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Transcriptome/Coverage Plots (BigWig)",
+      "key": "Heliothis virescens RNA-Seq HVI-FB_GKW-24, fat body (Coverage Plot)",
+      "label": "Heliothis virescens RNA-Seq HVI-FB_GKW-24, fat body (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "fat body",
+        "Track legend": "This track represents an RNA-Seq coverage plot."
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Transcriptome/Coverage Plots (BigWig)",
-         "key" : "Heliothis virescens RNA-Seq HVI-NE_GKW-26, neonates (Coverage Plot)",
-         "label" : "Heliothis virescens RNA-Seq HVI-NE_GKW-26, neonates (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "neonates",
-            "Track legend" : "This track represents an RNA-Seq coverage plot."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/HVI-NE_GKW-26/accepted_hits.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Transcriptome/Coverage Plots (BigWig)",
-         "key" : "Heliothis virescens RNA-Seq HVI-GL_GKW-23, pheromone gland/adult (Coverage Plot)",
-         "label" : "Heliothis virescens RNA-Seq HVI-GL_GKW-23, pheromone gland/adult (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "pheromone gland/adult",
-            "Track legend" : "This track represents an RNA-Seq coverage plot."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/HVI-GL_GKW-23/accepted_hits.bigwig"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/HVI-FB_GKW-24/accepted_hits.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Transcriptome/Coverage Plots (BigWig)",
+      "key": "Heliothis virescens RNA-Seq HVI-CY_GKW-25, hemocytes (Coverage Plot)",
+      "label": "Heliothis virescens RNA-Seq HVI-CY_GKW-25, hemocytes (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "hemocytes",
+        "Track legend": "This track represents an RNA-Seq coverage plot."
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Transcriptome/Coverage Plots (BigWig)",
-         "key" : "Heliothis virescens RNA-Seq HVI-AM_GKW-19, Antenna/adult (Coverage Plot)",
-         "label" : "Heliothis virescens RNA-Seq HVI-AM_GKW-19, Antenna/adult (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "Antenna/adult",
-            "Track legend" : "This track represents an RNA-Seq coverage plot."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/HVI-AM_GKW-19/accepted_hits.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Transcriptome/Coverage Plots (BigWig)",
-         "key" : "Heliothis virescens RNA-Seq HVI-OV_GKW-22, ovipositor/adult (Coverage Plot)",
-         "label" : "Heliothis virescens RNA-Seq HVI-OV_GKW-22, ovipositor/adult (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "ovipositor/adult",
-            "Track legend" : "This track represents an RNA-Seq coverage plot."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/HVI-OV_GKW-22/accepted_hits.bigwig"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/HVI-CY_GKW-25/accepted_hits.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Transcriptome/Coverage Plots (BigWig)",
+      "key": "Heliothis virescens RNA-Seq HVI-NE_GKW-26, neonates (Coverage Plot)",
+      "label": "Heliothis virescens RNA-Seq HVI-NE_GKW-26, neonates (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "neonates",
+        "Track legend": "This track represents an RNA-Seq coverage plot."
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Transcriptome/Coverage Plots (BigWig)",
-         "key" : "Heliothis virescens RNA-Seq HVI-AF_GKW-21, Antenna/adult (Coverage Plot)",
-         "label" : "Heliothis virescens RNA-Seq HVI-AF_GKW-21, Antenna/adult (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "Antenna/adult",
-            "Track legend" : "This track represents an RNA-Seq coverage plot."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/HVI-AF_GKW-21/accepted_hits.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Transcriptome/Coverage Plots (BigWig)",
-         "key" : "Heliothis virescens RNA-Seq HVI-HP_GKW-20, Hairpencils/adult (Coverage Plot)",
-         "label" : "Heliothis virescens RNA-Seq HVI-HP_GKW-20, Hairpencils/adult (Coverage Plot)",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "Hairpencils/adult",
-            "Track legend" : "This track represents an RNA-Seq coverage plot."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "user_contributed_data/HVI-HP_GKW-20/accepted_hits.bigwig"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/HVI-NE_GKW-26/accepted_hits.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Transcriptome/Coverage Plots (BigWig)",
+      "key": "Heliothis virescens RNA-Seq HVI-GL_GKW-23, pheromone gland/adult (Coverage Plot)",
+      "label": "Heliothis virescens RNA-Seq HVI-GL_GKW-23, pheromone gland/adult (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "pheromone gland/adult",
+        "Track legend": "This track represents an RNA-Seq coverage plot."
       },
-      {
-         "category" : "Transcriptome/Splice Junctions",
-         "compress" : 0,
-         "key" : "Heliothis virescens RNA-Seq HVI-OV_GKW-22, ovipositor/adult, Tophat junctions",
-         "label" : "HVI-OV_GKW-22",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "ovipositor/adult",
-            "Track legend" : "Splice junction information from TopHat v2.1.0."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/HVI-OV_GKW-22/{refseq}/trackData.json"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "category" : "Transcriptome/Splice Junctions",
-         "compress" : 0,
-         "key" : "Heliothis virescens RNA-Seq HVI-FB_GKW-24, fat body, Tophat junctions",
-         "label" : "HVI-FB_GKW-24",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "fat body",
-            "Track legend" : "Splice junction information from TopHat v2.1.0."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/HVI-FB_GKW-24/{refseq}/trackData.json"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/HVI-GL_GKW-23/accepted_hits.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Transcriptome/Coverage Plots (BigWig)",
+      "key": "Heliothis virescens RNA-Seq HVI-AM_GKW-19, Antenna/adult (Coverage Plot)",
+      "label": "Heliothis virescens RNA-Seq HVI-AM_GKW-19, Antenna/adult (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "Antenna/adult",
+        "Track legend": "This track represents an RNA-Seq coverage plot."
       },
-      {
-         "category" : "Transcriptome/Splice Junctions",
-         "compress" : 0,
-         "key" : "Heliothis virescens RNA-Seq HVI-HP_GKW-20, Hairpencils/adult, Tophat junctions",
-         "label" : "HVI-HP_GKW-20",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "Hairpencils/adult",
-            "Track legend" : "Splice junction information from TopHat v2.1.0."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/HVI-HP_GKW-20/{refseq}/trackData.json"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "category" : "Transcriptome/Splice Junctions",
-         "compress" : 0,
-         "key" : "Heliothis virescens RNA-Seq HVI-CY_GKW-25, hemocytes, Tophat junctions",
-         "label" : "HVI-CY_GKW-25",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "hemocytes",
-            "Track legend" : "Splice junction information from TopHat v2.1.0."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/HVI-CY_GKW-25/{refseq}/trackData.json"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/HVI-AM_GKW-19/accepted_hits.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Transcriptome/Coverage Plots (BigWig)",
+      "key": "Heliothis virescens RNA-Seq HVI-OV_GKW-22, ovipositor/adult (Coverage Plot)",
+      "label": "Heliothis virescens RNA-Seq HVI-OV_GKW-22, ovipositor/adult (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "ovipositor/adult",
+        "Track legend": "This track represents an RNA-Seq coverage plot."
       },
-      {
-         "category" : "Transcriptome/Splice Junctions",
-         "compress" : 0,
-         "key" : "Heliothis virescens RNA-Seq HVI-GL_GKW-23, pheromone gland/adult, Tophat junctions",
-         "label" : "HVI-GL_GKW-23",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "pheromone gland/adult",
-            "Track legend" : "Splice junction information from TopHat v2.1.0."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/HVI-GL_GKW-23/{refseq}/trackData.json"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "category" : "Transcriptome/Splice Junctions",
-         "compress" : 0,
-         "key" : "Heliothis virescens RNA-Seq HVI-NE_GKW-26, neonates, Tophat junctions",
-         "label" : "HVI-NE_GKW-26",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "neonates",
-            "Track legend" : "Splice junction information from TopHat v2.1.0."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/HVI-NE_GKW-26/{refseq}/trackData.json"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/HVI-OV_GKW-22/accepted_hits.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Transcriptome/Coverage Plots (BigWig)",
+      "key": "Heliothis virescens RNA-Seq HVI-AF_GKW-21, Antenna/adult (Coverage Plot)",
+      "label": "Heliothis virescens RNA-Seq HVI-AF_GKW-21, Antenna/adult (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "Antenna/adult",
+        "Track legend": "This track represents an RNA-Seq coverage plot."
       },
-      {
-         "category" : "Transcriptome/Splice Junctions",
-         "compress" : 0,
-         "key" : "Heliothis virescens RNA-Seq HVI-AM_GKW-19, Antenna/adult, Tophat junctions",
-         "label" : "HVI-AM_GKW-19",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "Antenna/adult",
-            "Track legend" : "Splice junction information from TopHat v2.1.0."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/HVI-AM_GKW-19/{refseq}/trackData.json"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
       },
-      {
-         "category" : "Transcriptome/Splice Junctions",
-         "compress" : 0,
-         "key" : "Heliothis virescens RNA-Seq HVI-AF_GKW-21, Antenna/adult,Tophat junctions",
-         "label" : "HVI-AF_GKW-21",
-         "metadata" : {
-            "Analysis method" : "Tophat v2.1.0",
-            "Data description" : "https://i5k.nal.usda.gov/node/739292",
-            "Data provider" : "Megan Fritz, UMD",
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Tissues/life history stage" : "Antenna/adult",
-            "Track legend" : "Splice junction information from TopHat v2.1.0."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/HVI-AF_GKW-21/{refseq}/trackData.json"
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/HVI-AF_GKW-21/accepted_hits.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Transcriptome/Coverage Plots (BigWig)",
+      "key": "Heliothis virescens RNA-Seq HVI-HP_GKW-20, Hairpencils/adult (Coverage Plot)",
+      "label": "Heliothis virescens RNA-Seq HVI-HP_GKW-20, Hairpencils/adult (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "Hairpencils/adult",
+        "Track legend": "This track represents an RNA-Seq coverage plot."
       },
-      {
-         "compress" : 0,
-         "metadata" : {
-            "Data provider" : "Alexie Papanicolaou, Hawkesbury Institute for the Environment Richmond NSW Australia",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/382/865/GCA_002382865.1_K63_refined_pacbio",
-            "Method" : "JAMg version RC1, http://jamg.sourceforge.net/",
-            "Publication status" : "Published - please cite http://onlinelibrary.wiley.com/doi/10.1111/mec.14430/abstract"
-         },
-         "category" : "H. virescens Official Gene Set v1/1. Gene Sets/Protein Coding",
-         "key" : "H_virescens_OGS1",
-         "label" : "helvir_current_models",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
-            "description" : "id, description",
-            "label" : "Dbxref,name",
-            "subfeatureClasses" : {
-               "CDS" : "ogs-cds",
-               "UTR" : "ogs-utr",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/helvir_current_models/{refseq}/trackData.json"
-      }
-   ]
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/HVI-HP_GKW-20/accepted_hits.bigwig"
+    },
+    {
+      "category": "Transcriptome/Splice Junctions",
+      "compress": 0,
+      "key": "Heliothis virescens RNA-Seq HVI-OV_GKW-22, ovipositor/adult, Tophat junctions",
+      "label": "HVI-OV_GKW-22",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "ovipositor/adult",
+        "Track legend": "Splice junction information from TopHat v2.1.0."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/HVI-OV_GKW-22/{refseq}/trackData.json"
+    },
+    {
+      "category": "Transcriptome/Splice Junctions",
+      "compress": 0,
+      "key": "Heliothis virescens RNA-Seq HVI-FB_GKW-24, fat body, Tophat junctions",
+      "label": "HVI-FB_GKW-24",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "fat body",
+        "Track legend": "Splice junction information from TopHat v2.1.0."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/HVI-FB_GKW-24/{refseq}/trackData.json"
+    },
+    {
+      "category": "Transcriptome/Splice Junctions",
+      "compress": 0,
+      "key": "Heliothis virescens RNA-Seq HVI-HP_GKW-20, Hairpencils/adult, Tophat junctions",
+      "label": "HVI-HP_GKW-20",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "Hairpencils/adult",
+        "Track legend": "Splice junction information from TopHat v2.1.0."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/HVI-HP_GKW-20/{refseq}/trackData.json"
+    },
+    {
+      "category": "Transcriptome/Splice Junctions",
+      "compress": 0,
+      "key": "Heliothis virescens RNA-Seq HVI-CY_GKW-25, hemocytes, Tophat junctions",
+      "label": "HVI-CY_GKW-25",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "hemocytes",
+        "Track legend": "Splice junction information from TopHat v2.1.0."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/HVI-CY_GKW-25/{refseq}/trackData.json"
+    },
+    {
+      "category": "Transcriptome/Splice Junctions",
+      "compress": 0,
+      "key": "Heliothis virescens RNA-Seq HVI-GL_GKW-23, pheromone gland/adult, Tophat junctions",
+      "label": "HVI-GL_GKW-23",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "pheromone gland/adult",
+        "Track legend": "Splice junction information from TopHat v2.1.0."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/HVI-GL_GKW-23/{refseq}/trackData.json"
+    },
+    {
+      "category": "Transcriptome/Splice Junctions",
+      "compress": 0,
+      "key": "Heliothis virescens RNA-Seq HVI-NE_GKW-26, neonates, Tophat junctions",
+      "label": "HVI-NE_GKW-26",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "neonates",
+        "Track legend": "Splice junction information from TopHat v2.1.0."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/HVI-NE_GKW-26/{refseq}/trackData.json"
+    },
+    {
+      "category": "Transcriptome/Splice Junctions",
+      "compress": 0,
+      "key": "Heliothis virescens RNA-Seq HVI-AM_GKW-19, Antenna/adult, Tophat junctions",
+      "label": "HVI-AM_GKW-19",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "Antenna/adult",
+        "Track legend": "Splice junction information from TopHat v2.1.0."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/HVI-AM_GKW-19/{refseq}/trackData.json"
+    },
+    {
+      "category": "Transcriptome/Splice Junctions",
+      "compress": 0,
+      "key": "Heliothis virescens RNA-Seq HVI-AF_GKW-21, Antenna/adult,Tophat junctions",
+      "label": "HVI-AF_GKW-21",
+      "metadata": {
+        "Analysis method": "Tophat v2.1.0",
+        "Data description": "https://i5k.nal.usda.gov/node/739292",
+        "Data provider": "Megan Fritz, UMD",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Tissues/life history stage": "Antenna/adult",
+        "Track legend": "Splice junction information from TopHat v2.1.0."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/HVI-AF_GKW-21/{refseq}/trackData.json"
+    },
+    {
+      "category": "H. virescens Official Gene Set v1/1. Gene Sets/Protein Coding",
+      "compress": 0,
+      "key": "H_virescens_OGS1",
+      "label": "helvir_current_models",
+      "metadata": {
+        "Data provider": "Alexie Papanicolaou, Hawkesbury Institute for the Environment Richmond NSW Australia",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/382/865/GCA_002382865.1_K63_refined_pacbio",
+        "Method": "JAMg version RC1, http://jamg.sourceforge.net/",
+        "Publication status": "Published - please cite http://onlinelibrary.wiley.com/doi/10.1111/mec.14430/abstract"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "id, description",
+        "label": "Dbxref,name",
+        "subfeatureClasses": {
+          "CDS": "ogs-cds",
+          "UTR": "ogs-utr",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/helvir_current_models/{refseq}/trackData.json"
+    }
+  ]
 }

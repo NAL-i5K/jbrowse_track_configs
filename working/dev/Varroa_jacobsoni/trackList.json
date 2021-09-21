@@ -62,15 +62,15 @@
          "label" : "varjac_current_models",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
               "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}",
-              },
+              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}"
+              }
         ],
          "metadata" : {
             "Publication status" : "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use",

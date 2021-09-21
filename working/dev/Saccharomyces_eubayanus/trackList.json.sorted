@@ -1,0 +1,86 @@
+{
+  "css": "./plugins/NAL_CSS/css/main.css",
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "seqType": "dna",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "category": "NCBI Annotation Release 101",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_101_Gene",
+      "label": "saceub_current_models",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Saccharomyces_Saccharomyces/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/298/625/GCF_001298625.1_SEUB3.0/GCF_001298625.1_SEUB3.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
+      "urlTemplate": "tracks/saceub_current_models/{refseq}/trackData.json"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_001298625.1_SEUB3.0_genomic.fna.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+      },
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_001298625.1_SEUB3.0_genomic.fna.gc.bigwig"
+    }
+  ]
+}

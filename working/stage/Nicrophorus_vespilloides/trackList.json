@@ -1,343 +1,337 @@
 {
-   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
-   "share_link" : 0,
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
-   "tracks" : [
-      {
-         "seqType" : "dna",
-         "key" : "Reference sequence",
-         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
-         "chunkSize" : 20000,
-         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
-         "label" : "DNA",
-         "type" : "SequenceTrack",
-         "category" : "Reference sequence"
+  "alwaysOnTracks": "DNA,Annotations",
+  "css": "./plugins/NAL_CSS/css/main.css",
+  "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
+  "formatVersion": 1,
+  "share_link": 0,
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "seqType": "dna",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "category": "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+      "compress": 0,
+      "key": "NCBI Predicted lncRNA, Annotation Release 100",
+      "label": "NCBI_Annotation_Release_100_lncRNA",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted lncRNA, Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "NCBI_Annotation_Release_100_lncRNA",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE"
-         },
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted pseudogenes, Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Pseudogenes",
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE"
-         },
-         "label" : "NCBI_Annotation_Release_100_Pseudogene",
-         "type" : "FeatureTrack"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100/1. Gene Sets/Pseudogenes",
+      "compress": 0,
+      "key": "NCBI Predicted pseudogenes, Annotation Release 100",
+      "label": "NCBI_Annotation_Release_100_Pseudogene",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted tRNAs, Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "NCBI_Annotation_Release_100_tRNA",
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
-         "metadata" : {
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE"
-         }
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "match evidence from NCBI Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_match/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE"
-         },
-         "category" : "NCBI Annotation Release 100/2. Evidence",
-         "type" : "FeatureTrack",
-         "label" : "NCBI_Annotation_Release_100_match"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+      "compress": 0,
+      "key": "NCBI Predicted tRNAs, Annotation Release 100",
+      "label": "NCBI_Annotation_Release_100_tRNA",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "cDNA match evidence from NCBI Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "NCBI_Annotation_Release_100_cDNA_match",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE"
-         },
-         "category" : "NCBI Annotation Release 100/2. Evidence"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "primary_gene_set-cds",
-               "UTR" : "primary_gene_set-utr"
-            },
-            "arrowheadClass" : "trellis-arrowhead",
-	    "description": "product,note,description"
-         },
-         "key" : "NCBI Predicted protein coding genes, Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/nicves_current_models/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "nicves_current_models",
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
-         "metadata" : {
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
-            "Data provider" : "NCBI",
-            "Note" : "Some genes may have non-coding transcripts",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE"
-         }
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100/2. Evidence",
+      "compress": 0,
+      "key": "match evidence from NCBI Annotation Release 100",
+      "label": "NCBI_Annotation_Release_100_match",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "autocomplete" : "none",
-         "style" : {
-            "className" : "annot",
-            "renderClassName" : "annot-render",
-            "subfeatureClasses" : {
-               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "annot-CDS",
-               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
-               "UTR" : "annot-UTR"
-            },
-            "arrowheadClass" : "annot-arrowhead",
-            "alternateClasses" : {
-               "transposable_element" : {
-                  "renderClassName" : "blue-ibeam-render",
-                  "className" : "blue-ibeam"
-               },
-               "pseudogene" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "light-purple-80pct"
-               },
-               "snRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               },
-               "rRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               },
-               "snoRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               },
-               "repeat_region" : {
-                  "className" : "magenta-80pct"
-               },
-               "ncRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               },
-               "miRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               },
-               "tRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               }
-            },
-            "uniqueIdField" : "id",
-            "centerSubFeature" : {
-               "non_canonical_three_prime_splice_site" : false,
-               "non_canonical_five_prime_splice_site" : false
-            }
-         },
-         "key" : "User-created Annotations",
-         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
-         "phase" : 0,
-         "compress" : 0,
-         "label" : "Annotations",
-         "type" : "WebApollo/View/Track/AnnotTrack",
-         "subfeatures" : 1
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "webapollo-arrowhead",
+        "className": "{type}"
       },
-      {
-         "style" : {
-            "pos_color" : "black",
-            "neg_color" : "white"
-         },
-         "bicolor_pivot" : "zero",
-         "autoscale" : "local",
-         "key" : "Gaps in assembly",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/GCF_001412225.1_Nicves_v1.0_genomic_RefSeqIDs.fna.gaps.bigwig",
-         "label" : "Gaps in assembly",
-         "category" : "Reference Assembly",
-         "metadata" : {
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
-            "Track contact" : "The i5k workspace@NAL"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_match/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100/2. Evidence",
+      "compress": 0,
+      "key": "cDNA match evidence from NCBI Annotation Release 100",
+      "label": "NCBI_Annotation_Release_100_cDNA_match",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/GCF_001412225.1_Nicves_v1.0_genomic_RefSeqIDs.fna.gc.bigwig",
-         "style" : {
-            "neg_color" : "rgba(255,255,0,50)",
-            "pos_color" : "rgba(0,0,255,50)"
-         },
-         "label" : "GC Content",
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "bicolor_pivot" : "0.5",
-         "key" : "GC Content",
-         "scoreType": "avgScore",
-         "autoscale" : "local",
-         "category" : "Reference Assembly",
-         "metadata" : {
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
-            "Track contact" : "The i5k workspace@NAL"
-         }
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "webapollo-arrowhead",
+        "className": "{type}"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "ogs-cds",
-               "UTR" : "ogs-utr"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "Official Gene Set 1.0, protein-coding genes",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/official-gene-set-1-0_protein/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Method" : "MAKER 2.0",
-            "Publication status" : "Cunningham et al. 2015. Genome Biology and Evolution 7: 3383-3396.",
-            "Data provider" : "Chris Cunningham, Swansea University",
-            "Data description" : "Gene set accompanying GBE publication with RefSeq Accession numbers."
-         },
-         "category" : "Official Gene Set 1.0/1. Gene Sets/Protein Coding",
-         "type" : "FeatureTrack",
-         "label" : "official-gene-set-1-0_protein"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
+      "compress": 0,
+      "key": "NCBI Predicted protein coding genes, Annotation Release 100",
+      "label": "nicves_current_models",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Nicrophorus_vespilloides/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_001412225.1_Nicve_v1.0/GCF_001412225.1_Nicve_v1.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+        "Note": "Some genes may have non-coding transcripts"
       },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "arrowheadClass" : "trellis-arrowhead",
-            "renderClassName" : "ogs-utr"
-         },
-         "key" : "Official Gene Set 1.0, non-coding RNA",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/official-gene-set-1-0_RNA-motif/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "Official Gene Set 1.0/1. Gene Sets/Noncoding",
-         "metadata" : {
-            "Method" : "MAKER 2.0",
-            "Publication status" : "Cunningham et al. 2015. Genome Biology and Evolution 7: 3383-3396.",
-            "Data provider" : "Chris Cunningham, Swansea University",
-            "Data description" : "Gene set accompanying GBE publication with RefSeq Accession numbers."
-         },
-         "label" : "official-gene-set-1-0_RNA-motif",
-         "type" : "FeatureTrack"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product,note,description",
+        "subfeatureClasses": {
+          "CDS": "primary_gene_set-cds",
+          "UTR": "primary_gene_set-utr",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "renderClassName" : "repeat",
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "Official Gene Set 1.0, repeatmasker evidence",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/official-gene-set-1-0_repeatmasker/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "Official Gene Set 1.0/2. Evidence",
-         "metadata" : {
-            "Publication status" : "Cunningham et al. 2015. Genome Biology and Evolution 7: 3383-3396.",
-            "Method" : "MAKER 2.0",
-            "Data provider" : "Chris Cunningham, Swansea University",
-            "Data description" : "Gene set accompanying GBE publication with RefSeq Accession numbers."
-         },
-         "label" : "official-gene-set-1-0_repeatmasker",
-         "type" : "FeatureTrack"
-      }
-   ],
-   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
-   "alwaysOnTracks" : "DNA,Annotations",
-   "formatVersion" : 1
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/nicves_current_models/{refseq}/trackData.json"
+    },
+    {
+      "autocomplete": "none",
+      "compress": 0,
+      "key": "User-created Annotations",
+      "label": "Annotations",
+      "phase": 0,
+      "storeClass": "WebApollo/Store/SeqFeature/ScratchPad",
+      "style": {
+        "alternateClasses": {
+          "miRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "ncRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "pseudogene": {
+            "className": "light-purple-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "rRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "repeat_region": {
+            "className": "magenta-80pct"
+          },
+          "snRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "snoRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "tRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "transposable_element": {
+            "className": "blue-ibeam",
+            "renderClassName": "blue-ibeam-render"
+          }
+        },
+        "arrowheadClass": "annot-arrowhead",
+        "centerSubFeature": {
+          "non_canonical_five_prime_splice_site": false,
+          "non_canonical_three_prime_splice_site": false
+        },
+        "className": "annot",
+        "renderClassName": "annot-render",
+        "subfeatureClasses": {
+          "CDS": "annot-CDS",
+          "UTR": "annot-UTR",
+          "exon": "container-100pct",
+          "non_canonical_five_prime_splice_site": "noncanonical-splice-site",
+          "non_canonical_three_prime_splice_site": "noncanonical-splice-site",
+          "wholeCDS": null
+        },
+        "uniqueIdField": "id"
+      },
+      "subfeatures": 1,
+      "type": "WebApollo/View/Track/AnnotTrack"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_001412225.1_Nicves_v1.0_genomic_RefSeqIDs.fna.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+      },
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_001412225.1_Nicves_v1.0_genomic_RefSeqIDs.fna.gc.bigwig"
+    },
+    {
+      "category": "Official Gene Set 1.0/1. Gene Sets/Protein Coding",
+      "compress": 0,
+      "key": "Official Gene Set 1.0, protein-coding genes",
+      "label": "official-gene-set-1-0_protein",
+      "metadata": {
+        "Data description": "Gene set accompanying GBE publication with RefSeq Accession numbers.",
+        "Data provider": "Chris Cunningham, Swansea University",
+        "Method": "MAKER 2.0",
+        "Publication status": "Cunningham et al. 2015. Genome Biology and Evolution 7: 3383-3396."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "ogs-cds",
+          "UTR": "ogs-utr",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/official-gene-set-1-0_protein/{refseq}/trackData.json"
+    },
+    {
+      "category": "Official Gene Set 1.0/1. Gene Sets/Noncoding",
+      "compress": 0,
+      "key": "Official Gene Set 1.0, non-coding RNA",
+      "label": "official-gene-set-1-0_RNA-motif",
+      "metadata": {
+        "Data description": "Gene set accompanying GBE publication with RefSeq Accession numbers.",
+        "Data provider": "Chris Cunningham, Swansea University",
+        "Method": "MAKER 2.0",
+        "Publication status": "Cunningham et al. 2015. Genome Biology and Evolution 7: 3383-3396."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "renderClassName": "ogs-utr"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/official-gene-set-1-0_RNA-motif/{refseq}/trackData.json"
+    },
+    {
+      "category": "Official Gene Set 1.0/2. Evidence",
+      "compress": 0,
+      "key": "Official Gene Set 1.0, repeatmasker evidence",
+      "label": "official-gene-set-1-0_repeatmasker",
+      "metadata": {
+        "Data description": "Gene set accompanying GBE publication with RefSeq Accession numbers.",
+        "Data provider": "Chris Cunningham, Swansea University",
+        "Method": "MAKER 2.0",
+        "Publication status": "Cunningham et al. 2015. Genome Biology and Evolution 7: 3383-3396."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "renderClassName": "repeat"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/official-gene-set-1-0_repeatmasker/{refseq}/trackData.json"
+    }
+  ]
 }

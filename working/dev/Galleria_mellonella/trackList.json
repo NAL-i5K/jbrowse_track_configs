@@ -68,21 +68,21 @@
          },
           "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Find i5k Workspace gene page for '+feature.get('name')}",
               "title": "function(track,feature){ return 'Find i5k Workspace gene page for '+feature.get('name')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}",
+              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}"
               },
              {
               "label": "function(track,feature){ return 'Go to NCBI gene page for '+feature.get('name')}",
               "title": "function(track,feature){ return 'Go to NCBI gene page for '+feature.get('name')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}",
+              "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}"
               }
         ],
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",

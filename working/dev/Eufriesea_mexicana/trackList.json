@@ -40,15 +40,15 @@
          "label" : "NCBI_Annotation_Release_100_Gene",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}",
-              },
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}"
+              }
         ],
          "metadata" : {
             "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Eufriesea_mexicana/README_CURRENT_RELEASE",
@@ -119,15 +119,15 @@
          "label" : "Eufriesea_mexicana_v1.2",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
               "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}",
-              },
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}"
+              }
         ],
          "metadata" : {
             "Data description" : "https://www.ncbi.nlm.nih.gov/pubmed/25977371",

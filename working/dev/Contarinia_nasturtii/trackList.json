@@ -62,15 +62,15 @@
          "label" : "NCBI_Annotation_Release_100_Pseudogene",
 "menuTemplate" : [
        {
-          "label" : "View details",
+          "label" : "View details"
        },
        {
         "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
         "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
         "iconClass" : "dijitIconDatabase",
         "action": "newWindow",
-        "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}",
-        },
+        "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}"
+        }
   ],
          "metadata" : {
             "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/connas/README_CURRENT_RELEASE",
@@ -81,7 +81,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -101,15 +101,15 @@
          "label" : "connas_current_models",
 "menuTemplate" : [
        {
-          "label" : "View details",
+          "label" : "View details"
        },
        {
         "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
         "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
         "iconClass" : "dijitIconDatabase",
         "action": "newWindow",
-        "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}",
-        },
+        "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}"
+        }
   ],
          "metadata" : {
             "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/connas/README_CURRENT_RELEASE",

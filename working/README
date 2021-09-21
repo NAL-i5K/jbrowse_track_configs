@@ -1,0 +1,8 @@
+
+#Run from the dev directory
+for i in */*.sorted; do echo "$i";diff  $i ../stage/$i; done >../sorted_config_file_diff.txt
+This outputs a report showing the diffs between the files
+
+
+I went through multiple rounds to remove the updates I knew I'd need to make, and am left with a set of the updates I need ot make
+

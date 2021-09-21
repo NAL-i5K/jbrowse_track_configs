@@ -1,0 +1,3440 @@
+processing ./Aethina_tumida/trackList.json
+101c101
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+127c127
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+153c153
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+179c179
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+192a193
+>       "className": "{type}",
+205c206
+<         "className": "{type}"
+---
+>         "className": "container-10px"
+processing ./Agrilus_planipennis/trackList.json
+100c100
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+126c126
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+149c149
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+172c172
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+195c195
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+218c218
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+241c241
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+264c264
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+287c287
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+310c310
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+333c333
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+356c356
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+379c379
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+402c402
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+425c425
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+448c448
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+471c471
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+494c494
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+517c517
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+540c540
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+563c563
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+586c586
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+609c609
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+632c632
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+655c655
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+678c678
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+701c701
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+724c724
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+747c747
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+770c770
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+793c793
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+816c816
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+839c839
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+862c862
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+885c885
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+908c908
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+931c931
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+954c954
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+977c977
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1000c1000
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1023c1023
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1046c1046
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1069c1069
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1092c1092
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1115c1115
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1138c1138
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1161c1161
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1224c1224
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1251c1251
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1277c1277
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1290a1291
+>       "className": "{type}",
+1303c1304
+<         "className": "{type}"
+---
+>         "className": "container-10px"
+1323c1324
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Amyelois_transitella/trackList.json
+100c100
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+165c165
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+191c191
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+217c217
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+243c243
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+269c269
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+282a283
+>       "className": "{type}",
+295c296
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+318c319
+<         "className": "{type}"
+---
+>         "className": "container-10px"
+processing ./Anoplophora_glabripennis/trackList.json
+36c36
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+116c116
+<       "label": "AGLA_v0.5.3-Models",
+---
+>       "label": "anogla_legacy_models",
+126c126
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+136c136
+<       "urlTemplate": "tracks/AGLA_v0.5.3-Models/{refseq}/trackData.json"
+---
+>       "urlTemplate": "tracks/anogla_current_models/{refseq}/trackData.json"
+152c152
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+175c175
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+198c198
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+221c221
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+244c244
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+267c267
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+290c290
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+313c313
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+336c336
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+359c359
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+382c382
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+405c405
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+428c428
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+451c451
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+474c474
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+497c497
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+520c520
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+543c543
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+566c566
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+589c589
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+612c612
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+629c629
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+652c652
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+675c675
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+698c698
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+721c721
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+744c744
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+767c767
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+790c790
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+813c813
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+836c836
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+859c859
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+882c882
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+905c905
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+928c928
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+951c951
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+974c974
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+997c997
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1020c1020
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1043c1043
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1066c1066
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1089c1089
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1112c1112
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1135c1135
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1158c1158
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1331c1331
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1343c1343
+<       "urlTemplate": "tracks/anogla_current_models/{refseq}/trackData.json"
+---
+>       "urlTemplate": "tracks/OGS_v1.2/{refseq}/trackData.json"
+1358c1358
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Apis_mellifera/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+112c113
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Athalia_rosae/trackList.json
+99c99
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+124c124
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+150c150
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+173c173
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+196c196
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+219c219
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+242c242
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+265c265
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+288c288
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+311c311
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+334c334
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+357c357
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+380c380
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+403c403
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+426c426
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+449c449
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+472c472
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+495c495
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+518c518
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+541c541
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+564c564
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+587c587
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+610c610
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+627c627
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+650c650
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+673c673
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+696c696
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+719c719
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+742c742
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+765c765
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+788c788
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+811c811
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+834c834
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+857c857
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+880c880
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+903c903
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+926c926
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+949c949
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+972c972
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+995c995
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1018c1018
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1041c1041
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1064c1064
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1087c1087
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1110c1110
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1133c1133
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1156c1156
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1179c1179
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1315c1315
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1338c1338
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1361c1361
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1639c1639
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1664c1664
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1689c1689
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1714c1714
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1739c1739
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1764c1764
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1789c1789
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1808c1808
+<         "className": "{type}"
+---
+>         "className": "container-16px"
+processing ./Bactrocera_cucurbitae/trackList.json
+125c125
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+151c151
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+177c177
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Bactrocera_dorsalis/trackList.json
+135c135
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+161c161
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+187c187
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+239c239
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Bactrocera_oleae/trackList.json
+139c139
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+152a153
+>       "className": "{type}",
+165c166
+<         "className": "{type}"
+---
+>         "className": "container-10px"
+185c186
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+211c212
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+237c238
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+315c316
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+341c342
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+931c932
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+960c961
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+988c989
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1016c1017
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1041c1042
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1069c1070
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1101c1102
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1130c1131
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1156c1157
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1211c1212
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Bemisia_tabaci/trackList.json
+140c140
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+218c218
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+244c244
+<         "className": "{type}",
+---
+>         "className": "{type}x",
+283a284
+>       "className": "{type}",
+296c297
+<         "className": "{type}"
+---
+>         "className": "container-10px"
+316c317
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+342c343
+<         "className": "{type}"
+---
+>         "className": "container-10px"
+361c362
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Blattella_germanica/trackList.json
+100c100
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+120c120
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+143c143
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+166c166
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+189c189
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+212c212
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+235c235
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+258c258
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+281c281
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+304c304
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+327c327
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+350c350
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+373c373
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+396c396
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+419c419
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+442c442
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+465c465
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+488c488
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+511c511
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+534c534
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+557c557
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+580c580
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+603c603
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+626c626
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+643c643
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+666c666
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+689c689
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+712c712
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+735c735
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+758c758
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+781c781
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+804c804
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+827c827
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+850c850
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+873c873
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+896c896
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+919c919
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+942c942
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+965c965
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+988c988
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1011c1011
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1034c1034
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1057c1057
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1080c1080
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1103c1103
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1126c1126
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1149c1149
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1172c1172
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1403c1403
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1426c1426
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1449c1449
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1472c1472
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1495c1495
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1518c1518
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1544c1544
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1567c1567
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1590c1590
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1613c1613
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1636c1636
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1660c1660
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Bombus_impatiens/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+22c23
+<       "fmtDetailValue_Id": "function (id, feature) {  var name2 = id.replace(/-R./, '');  if(feature.get('type')=='mRNA') {    return '<a target=_blank href=https://i5k.nal.usda.gov/'+name2+'>'+id+'</a>';} else { return id}}",
+---
+>       "fmtDetailValue_Id": "function (id, feature) {  var name2 = id.replace(/-R./, '');  if(feature.get('type')=='mRNA') {    return '<a target=_blank href=https://i5k.nal.usda.gov/'+name2+'>'+id+'</a>';} else { return id;}}",
+54c55
+<         "className": "{type}",
+---
+>         "className": "{type",
+processing ./Bombus_terrestris/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+99c100
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Bradysia_coprophila/trackList.json
+processing ./Catajapyx_aquilonaris/trackList.json
+100c100
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+126c126
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+149c149
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+172c172
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+195c195
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+218c218
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+241c241
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+264c264
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+287c287
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+310c310
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+333c333
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+356c356
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+379c379
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+402c402
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+425c425
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+448c448
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+471c471
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+494c494
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+517c517
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+540c540
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+563c563
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+586c586
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+609c609
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+632c632
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+655c655
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+678c678
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+701c701
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+724c724
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+747c747
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+770c770
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+793c793
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+816c816
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+839c839
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+862c862
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+885c885
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+908c908
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+931c931
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+954c954
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+977c977
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1000c1000
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1023c1023
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1046c1046
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1069c1069
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1092c1092
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1115c1115
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1214c1214
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Centruroides_sculpturatus/trackList.json
+100c100
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+145c145
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+168c168
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+191c191
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+214c214
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+237c237
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+260c260
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+283c283
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+306c306
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+329c329
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+352c352
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+375c375
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+398c398
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+421c421
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+444c444
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+467c467
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+490c490
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+513c513
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+536c536
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+559c559
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+582c582
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+605c605
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+628c628
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+651c651
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+674c674
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+697c697
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+720c720
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+743c743
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+766c766
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+789c789
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+812c812
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+835c835
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+858c858
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+881c881
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+904c904
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+927c927
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+950c950
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+973c973
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+996c996
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1019c1019
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1042c1042
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1065c1065
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1088c1088
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1111c1111
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1134c1134
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1157c1157
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1180c1180
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+processing ./Cephus_cinctus/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+71c72
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+934c935
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+973c974
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+985c986
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Ceratitis_capitata/trackList.json
+126c126
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+153c153
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+278c278
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+304c304
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+330c330
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+406c406
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+475c475
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+540a541
+>         "className": "{type}",
+560c561
+<         "className": "{type}",
+---
+>         "className": "repeat",
+1807c1808
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1833c1834
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Chelonus_insularis/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+71c72
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('name')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}"
+processing ./Cimex_lectularius/trackList.json
+101c101
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+127c127
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+150c150
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+173c173
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+196c196
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+219c219
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+242c242
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+265c265
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+288c288
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+311c311
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+334c334
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+357c357
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+380c380
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+403c403
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+426c426
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+449c449
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+472c472
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+495c495
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+518c518
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+541c541
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+564c564
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+587c587
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+604c604
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+627c627
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+650c650
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+673c673
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+696c696
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+719c719
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+742c742
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+765c765
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+788c788
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+811c811
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+834c834
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+857c857
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+880c880
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+903c903
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+926c926
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+949c949
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+972c972
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+995c995
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1018c1018
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1041c1041
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1064c1064
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1087c1087
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1110c1110
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1133c1133
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1156c1156
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1179c1179
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1237c1237
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1367c1367
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1406c1406
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+1430c1430
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Clitarchus_hookeri/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+33c34,131
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+>         "subfeatureClasses": {
+>           "CDS": "primary_gene_set-cds",
+>           "UTR": "primary_gene_set-utr",
+>           "exon": "container-100pct",
+>           "wholeCDS": null
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/clihoo_current_models/{refseq}/trackData.json"
+>     },
+>     {
+>       "autoscale": "local",
+>       "bicolor_pivot": "zero",
+>       "category": "Reference Assembly - only scaffolds over 1000 bp",
+>       "key": "Gaps in assembly",
+>       "label": "Gaps in assembly",
+>       "metadata": {
+>         "Track contact": "The i5k workspace@NAL",
+>         "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+>         "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+>       "style": {
+>         "neg_color": "white",
+>         "pos_color": "black"
+>       },
+>       "type": "JBrowse/View/Track/Wiggle/Density",
+>       "urlTemplate": "bigwig/GCA_002778355.1_ASM277835v1_genomic_over_1000.fna.gap.bigwig"
+>     },
+>     {
+>       "autoscale": "local",
+>       "bicolor_pivot": "0.5",
+>       "category": "Reference Assembly - only scaffolds over 1000 bp",
+>       "key": "GC Content",
+>       "label": "GC Content",
+>       "metadata": {
+>         "Track contact": "The i5k workspace@NAL",
+>         "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+>         "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+>       },
+>       "scoreType": "avgScore",
+>       "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+>       "style": {
+>         "neg_color": "rgba(255,255,0,50)",
+>         "pos_color": "rgba(0,0,255,50)"
+>       },
+>       "type": "JBrowse/View/Track/Wiggle/Density",
+>       "urlTemplate": "bigwig/GCA_002778355.1_ASM277835v1_genomic_over_1000.fna.gc"
+>     },
+>     {
+>       "category": "2. Transcriptome",
+>       "compress": 0,
+>       "key": "Ovariolar Tips RNA-Seq, Cufflinks analysis",
+>       "label": "OvariolarTips_Cufflinks",
+>       "metadata": {
+>         "Data provider": "Chen Wu, Plant and Food Research, NZ",
+>         "Data source": "PRJNA429033",
+>         "Geographic location": "Herekino (35 9.373 S, 173 17.155 E), Bream Head (35 50.479 S, 174 34.485 E), Lake Karapiro (37 56.445 S, 175 35.672 E), Cape Kidnappers (39 40.000 S, 177 46.000 E), Okuti Valley (43 47.390 S, 172 50.248 E)",
+>         "Method": "https://i5k.nal.usda.gov/node/739289",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use",
+>         "Sequencing method": "Illumina HiSeq2000",
+>         "Tissues/Life stage": "Adult ovariolar tips"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+>         "className": "container-16px",
+>         "subfeatureClasses": {
+>           "CDS": "primary_gene_set-cds",
+>           "UTR": "primary_gene_set-utr",
+>           "exon": "transcriptome-cds",
+>           "wholeCDS": null
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/OvariolarTips_Cufflinks/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "2. Transcriptome",
+>       "compress": 0,
+>       "key": "Ovary and Testis RNA-Seq, Cufflinks analysis",
+>       "label": "OvaryAndTestis_Cufflinks_Cufflinks",
+>       "metadata": {
+>         "Data provider": "Chen Wu, Plant and Food Research, NZ",
+>         "Data source": "SRX3055387; SRX3055384; SRX3055383; SRX3055382; SRX3055381; SRX3055380",
+>         "Geographic location": "37°0.111 S, 174° 55.039 E",
+>         "Method": "https://i5k.nal.usda.gov/node/739288/",
+>         "Publication status": "Published - please cite https://doi.org/10.1186/s12864-017-4245-x",
+>         "Sequencing method": "Illumina HiSeq2000",
+>         "Tissues/Life stage": "Adult ovary and testis"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+>         "className": "container-16px",
+processing ./Contarinia_nasturtii/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+71c72
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('name')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}"
+83c84
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+110c111
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('name')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}"
+processing ./Copidosoma_floridanum/trackList.json
+100c100
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+126c126
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+149c149
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+172c172
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+195c195
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+218c218
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+241c241
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+264c264
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+287c287
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+310c310
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+333c333
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+356c356
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+379c379
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+402c402
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+425c425
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+448c448
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+471c471
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+494c494
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+517c517
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+540c540
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+563c563
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+586c586
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+609c609
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+632c632
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+655c655
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+678c678
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+701c701
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+724c724
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+747c747
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+770c770
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+793c793
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+816c816
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+839c839
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+862c862
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+885c885
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+908c908
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+931c931
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+954c954
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+977c977
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1000c1000
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1023c1023
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1046c1046
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1069c1069
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1092c1092
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1115c1115
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1138c1138
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1161c1161
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+processing ./Diabrotica_virgifera_training/trackList.json
+processing ./Diachasma_alloeum/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+71c72
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+processing ./Diaphorina_citri/trackList.json
+9a10
+>       "css": "./plugins/NAL_CSS/css/main.css",
+72c73
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+95c96
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+118c119
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+141c142
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+164c165
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+187c188
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+210c211
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+337c338
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+456c457
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+586c587
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+613c614
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+640c641
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Diaphorina_citri_legacy/trackList.json
+2a3
+>   "css": "./plugins/NAL_CSS/css/main.css",
+92c93
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+112c113
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+129c130
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+146c147
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+163c164
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+180c181
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+197c198
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+214c215
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+231c232
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+processing ./Drosophila_biarmipes/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+34c35
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+87a89
+>       "className": "{type}",
+100c102
+<         "className": "{type}"
+---
+>         "className": "container-10px"
+120c122
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+147c149
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Drosophila_bipectinata/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+34c35
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+87a89
+>       "className": "{type}",
+120c122
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+174c176
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+processing ./Drosophila_elegans/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+87a89
+>       "className": "{type}",
+processing ./Drosophila_eugracilis/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+87a89
+>       "className": "{type}",
+processing ./Drosophila_ficusphila/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+87a89
+>       "className": "{type}",
+174c176
+<         "className": "{type}",
+---
+>         "className": "{type}b",
+processing ./Drosophila_kikkawai/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+87a89
+>       "className": "{type}",
+processing ./Drosophila_rhopaloa/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+87a89
+>       "className": "{type}",
+processing ./Drosophila_takahashii/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+87a89
+>       "className": "{type}",
+processing ./Dufourea_novaeangliae/trackList.json
+292a293
+>       "className": "{type}",
+processing ./Ephemera_danica/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+processing ./Eufriesea_mexicana/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+processing ./Euglossa_dilemma/trackList.json
+processing ./Eurytemora_affinis/trackList.json
+processing ./Eurytemora_affinis_-_training/trackList.json
+processing ./Fopius_arisanus/trackList.json
+processing ./Frankliniella_occidentalis/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+processing ./Galleria_mellonella/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+71c72
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('name')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}"
+processing ./Gerris_buenoi/trackList.json
+processing ./Habropoda_laboriosa/trackList.json
+processing ./Halyomorpha_halys/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+415c416
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+processing ./Heliothis_virescens/trackList.json
+processing ./Holacanthella_duospinosa/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+processing ./Homalodisca_vitripennis/trackList.json
+processing ./Hyalella_azteca/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+processing ./Laodelphax_striatellus/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+99c100
+<         "className": "{type}",
+---
+>         "className": "{type",
+processing ./Lasioglossum_albipes/trackList.json
+processing ./Latrodectus_hesperus/trackList.json
+processing ./Leptinotarsa_decemlineata/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+135c136
+<       "urlTemplate": "tracks/NCBI_Annotation_Release_$version_rRNA/{refseq}/trackData.json"
+---
+>       "urlTemplate": "tracks/NCBI_Annotation_Release_100_rRNA/{refseq}/trackData.json"
+191a193
+>       "className": "{type}",
+processing ./Leptinotarsa_decemlineata_training/trackList.json
+1463d1462
+<         "description": "score",
+processing ./Limnephilus_lunatus/trackList.json
+processing ./Locusta_migratoria/trackList.json
+processing ./Loxosceles_reclusa/trackList.json
+32c32
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+55c55
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+78c78
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+101c101
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+124c124
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+147c147
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+170c170
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+193c193
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+216c216
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+239c239
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+262c262
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+285c285
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+308c308
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+331c331
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+354c354
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+377c377
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+400c400
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+423c423
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+446c446
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+469c469
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+492c492
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+515c515
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+538c538
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+561c561
+<         "className": "{type}",
+---
+>         "className": "container-16px",
+587c587
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+610c610
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+633c633
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+656c656
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+679c679
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+702c702
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+725c725
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+748c748
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+771c771
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+794c794
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+817c817
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+840c840
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+863c863
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+886c886
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+909c909
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+932c932
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+955c955
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+978c978
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1001c1001
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1024c1024
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1047c1047
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1070c1070
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+1093c1093
+<         "className": "{type}",
+---
+>         "className": "container-10px",
+processing ./Mamestra_configurata/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+processing ./Manduca_sexta/trackList.json
+1a2,4
+>   "alwaysOnTracks": "DNA,Annotations",
+>   "css": "./plugins/NAL_CSS/css/main.css",
+>   "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
+6a10
+>   "share_link": 0,
+13d16
+<       "seqType": "dna",
+19c22
+<       "category": "NCBI Annotation Release 102",
+---
+>       "autocomplete": "none",
+21,22c24,90
+<       "key": "NCBI_Annotation_Release_102_Pseudogene",
+<       "label": "NCBI_Annotation_Release_102_Pseudogene",
+---
+>       "key": "User-created Annotations",
+>       "label": "Annotations",
+>       "phase": 0,
+>       "storeClass": "WebApollo/Store/SeqFeature/ScratchPad",
+>       "style": {
+>         "alternateClasses": {
+>           "miRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "ncRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "pseudogene": {
+>             "className": "light-purple-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "rRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "repeat_region": {
+>             "className": "magenta-80pct"
+>           },
+>           "snRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "snoRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "tRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "transposable_element": {
+>             "className": "blue-ibeam",
+>             "renderClassName": "blue-ibeam-render"
+>           }
+>         },
+>         "arrowheadClass": "annot-arrowhead",
+>         "centerSubFeature": {
+>           "non_canonical_five_prime_splice_site": false,
+>           "non_canonical_three_prime_splice_site": false
+>         },
+>         "className": "annot",
+>         "renderClassName": "annot-render",
+>         "subfeatureClasses": {
+>           "CDS": "annot-CDS",
+>           "UTR": "annot-UTR",
+>           "exon": "container-100pct",
+>           "non_canonical_five_prime_splice_site": "noncanonical-splice-site",
+>           "non_canonical_three_prime_splice_site": "noncanonical-splice-site",
+>           "wholeCDS": null
+>         },
+>         "uniqueIdField": "id"
+>       },
+>       "subfeatures": 1,
+>       "type": "WebApollo/View/Track/AnnotTrack"
+>     },
+>     {
+>       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+>       "compress": 0,
+>       "key": "augustus",
+>       "label": "augustus",
+24,27c92,95
+<         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Manduca_sexta/README_CURRENT_RELEASE",
+<         "Data provider": "NCBI",
+<         "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/014/839/805/GCF_014839805.1_JHU_Msex_v1.0/GCF_014839805.1_JHU_Msex_v1.0_genomic.gff.gz",
+<         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+---
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "Augustus results as part of the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "Augustus gene models from the MAKER 2.25 pipeline"
+31c99
+<         "arrowheadClass": "trellis-arrowhead",
+---
+>         "arrowheadClass": "webapollo-arrowhead",
+33d100
+<         "description": "product, note, description",
+35,38c102
+<           "CDS": "gnomon_CDS",
+<           "UTR": "gnomon_UTR",
+<           "exon": "container-100pct",
+<           "wholeCDS": null
+---
+>           "match_part": "augustus"
+41,43c105,337
+<       "trackType": "HTMLFeatures",
+<       "type": "HTMLFeatures",
+<       "urlTemplate": "tracks/NCBI_Annotation_Release_102_Pseudogene/{refseq}/trackData.json"
+---
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/augustus/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+>       "compress": 0,
+>       "key": "augustus_masked",
+>       "label": "augustus_masked",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "Augustus results as part of the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "Augustus gene models from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "webapollo-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "match_part": "augustus"
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/augustus_masked/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/3. Mapped DNA/Supplementary: Blastn",
+>       "compress": 0,
+>       "key": "blastn",
+>       "label": "blastn",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "Blastn results as part of the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "Blastn results from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "webapollo-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "match_part": "blastn"
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/blastn/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/3. Mapped Proteins/Supplementary: BlastX",
+>       "compress": 0,
+>       "key": "blastx",
+>       "label": "blastx",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "Blastx results as part of the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "Blastx results from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "webapollo-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "match_part": "blastx"
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/blastx/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/3. Mapped DNA/est2genome",
+>       "compress": 0,
+>       "key": "est2genome",
+>       "label": "est2genome",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "est2genome results as part of the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "est2genome results from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "webapollo-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "match_part": "est2genome"
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/est2genome/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/4. Transcriptome/Assembly",
+>       "compress": 0,
+>       "key": "est_gff:cufflinks",
+>       "label": "est_gff:cufflinks",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "Mapped cufflinks results as part of the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "Mapped cufflinks results from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "webapollo-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "match_part": "est"
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/est_gff:cufflinks/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/3. Mapped Proteins/Protein2genome",
+>       "compress": 0,
+>       "key": "protein2genome",
+>       "label": "protein2genome",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "protein2genome results as part of the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "protein2genome results from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "webapollo-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "match_part": "protein2genome"
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/protein2genome/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/2. Evidence/Repeats",
+>       "compress": 0,
+>       "key": "repeatmasker",
+>       "label": "repeatmasker",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "Repeatmasker results as part of the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "Repeatmasker results from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "webapollo-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "match_part": "repeat"
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/repeatmasker/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/2. Evidence/Repeats",
+>       "compress": 0,
+>       "key": "repeatrunner",
+>       "label": "repeatrunner",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "Repeatrunner results as part of the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "Repeatrunner results from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "webapollo-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "match_part": "repeat"
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/repeatrunner/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+>       "compress": 0,
+>       "key": "snap",
+>       "label": "snap",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "Snap results as part of the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "Snap results from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "webapollo-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "match_part": "snap"
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/snap/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+>       "compress": 0,
+>       "key": "snap_masked",
+>       "label": "snap_masked",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "Snap results as part of the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "Snap results from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "webapollo-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "match_part": "snap"
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/snap_masked/{refseq}/trackData.json"
+62c356
+<       "urlTemplate": "bigwig/GCF_014839805.1_JHU_Msex_v1.0_genomic.fna.gaps.bigwig"
+---
+>       "urlTemplate": "bigwig/ms_scaffolds_NALmod.fa.gaps.bigwig"
+82c376
+<       "urlTemplate": "bigwig/GCF_014839805.1_JHU_Msex_v1.0_genomic.fna.gc.bigwig"
+---
+>       "urlTemplate": "bigwig/ms_scaffolds_NALmod.fa.gc.bigwig"
+85c379
+<       "category": "Official Gene Set",
+---
+>       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+87,88c381,382
+<       "key": "OGSv2.2",
+<       "label": "OGSv2.2_Gene",
+---
+>       "key": "maker",
+>       "label": "maker",
+91c385,434
+<         "Analysis description": "MAKER 2.25 was used for initial set of gene predictions. These were used for manual annotation using Web Apollo by a community of experts. The resulting manual annotations, the MAKER results, and de novo assemblies of RNA seq data (Trinity and Oases) were used to produce  gene predictions using the PASA2 program to generate OGS2.0. OGS2.0 was then modified to meet NCBI-GenBank quality review (OGS2.1). OGS2.1 was lifted over to assembly JHU_Msex_v1.0 using the LiftOff (https://doi.org/10.1093/bioinformatics/btaa1016) and Genometools (http://genometools.org/) software. OGS2.2 has quality issues due to the liftover - the i5k Workspace@NAL recommends NCBI Annotation Release 102 for general analysis, instead.",
+---
+>         "Analysis description": "Results from the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "Results from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "CDS": "alt_gene_set-cds",
+>           "UTR": "alt_gene_set-utr",
+>           "exon": "container-100pct",
+>           "wholeCDS": null
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/maker/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/1. Gene Sets/Supplementary Gene Predictions",
+>       "compress": 0,
+>       "key": "model_gff:maker.gff",
+>       "label": "model_gff:maker.gff",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "Model-gff results from the MAKER 2.25 pipeline",
+>         "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+>         "Track legend": "Model-gff results from the MAKER 2.25 pipeline"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "webapollo-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "match_part": "darkblue-80pct"
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/model_gff:maker.gff/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "OGS2.0/1. Gene Sets/Official Gene Set",
+>       "compress": 0,
+>       "key": "OGSv2.0 Gene",
+>       "label": "mansex_current_models",
+>       "metadata": {
+>         "Analysis contact": "Michael Kanost, Kansas State University",
+>         "Analysis description": "MAKER 2.25 was used for initial set of gene predictions. These were used for manual annotation using Web Apollo by a community of experts. The resulting manual annotations, the MAKER results, and de novo assemblies of RNA seq data (Trinity and Oases) were used to produce  gene predictions using the PASA2 program. (OGS2.0)",
+93c436
+<         "Track legend": "Consensus gene models from the PASA2 program, lifted over to assembly JHU_Msex_v1.0."
+---
+>         "Track legend": "Consensus gene models from the PASA2 program"
+109c452
+<       "urlTemplate": "tracks/OGSv2.2_Gene/{refseq}/trackData.json"
+---
+>       "urlTemplate": "tracks/mansex_current_models/{refseq}/trackData.json"
+113,114c456,457
+<       "key": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13",
+<       "label": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13",
+---
+>       "key": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28",
+>       "label": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28",
+118c461
+<         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085711'>SRR11085711</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963231'>SRR10963231</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2660035'>SRR2660035</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085686'>SRR11085686</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3467224'>SRR3467224</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085604'>SRR11085604</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085618'>SRR11085618</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577021'>SRR1577021</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963211'>SRR10963211</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659997'>SRR2659997</a>",
+---
+>         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659998'>SRR2659998</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963201'>SRR10963201</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR368953'>ERR368953</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963222'>SRR10963222</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577015'>SRR1577015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1576993'>SRR1576993</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085616'>SRR11085616</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963225'>SRR10963225</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577022'>SRR1577022</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963200'>SRR10963200</a>",
+124c467
+<       "urlTemplate": "analyses/Manduca-sexta-RNA-Seq_2021-05-13_v1.0/Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13.bam"
+---
+>       "urlTemplate": "analyses/Manduca-sexta-RNA-Seq_2020-10-28_v1.0/Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28.bam"
+130,131c473,474
+<       "key": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13_coverage",
+<       "label": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13_coverage",
+---
+>       "key": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_coverage",
+>       "label": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_coverage",
+135c478
+<         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085711'>SRR11085711</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963231'>SRR10963231</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2660035'>SRR2660035</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085686'>SRR11085686</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3467224'>SRR3467224</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085604'>SRR11085604</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085618'>SRR11085618</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577021'>SRR1577021</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963211'>SRR10963211</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659997'>SRR2659997</a>",
+---
+>         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659998'>SRR2659998</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963201'>SRR10963201</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR368953'>ERR368953</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963222'>SRR10963222</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577015'>SRR1577015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1576993'>SRR1576993</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085616'>SRR11085616</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963225'>SRR10963225</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577022'>SRR1577022</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963200'>SRR10963200</a>",
+144c487
+<       "urlTemplate": "analyses/Manduca-sexta-RNA-Seq_2021-05-13_v1.0/Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13.bigwig"
+---
+>       "urlTemplate": "analyses/Manduca-sexta-RNA-Seq_2020-10-28_v1.0/Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28.bigwig"
+149,150c492,493
+<       "key": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13_junctions",
+<       "label": "Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13_junctions",
+---
+>       "key": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_junctions",
+>       "label": "Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_junctions",
+154c497
+<         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085711'>SRR11085711</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963231'>SRR10963231</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2660035'>SRR2660035</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085686'>SRR11085686</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3467224'>SRR3467224</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085604'>SRR11085604</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085618'>SRR11085618</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577021'>SRR1577021</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963211'>SRR10963211</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659997'>SRR2659997</a>",
+---
+>         "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2659998'>SRR2659998</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963201'>SRR10963201</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR368953'>ERR368953</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963222'>SRR10963222</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577015'>SRR1577015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1576993'>SRR1576993</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11085616'>SRR11085616</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963225'>SRR10963225</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1577022'>SRR1577022</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10963200'>SRR10963200</a>",
+160,161c503
+<         "className": "feature",
+<         "description": "score"
+---
+>         "className": "feature"
+165,204c507
+<       "urlTemplate": "tracks/Mansex_JHU_Msex_v1.0_RNA-Seq-alignments_2021-05-13_junctions/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "NCBI Annotation Release 102",
+<       "compress": 0,
+<       "key": "NCBI_Annotation_Release_102_Gene",
+<       "label": "mansex_current_models",
+<       "menuTemplate": [
+<         {
+<           "label": "View details"
+<         },
+<         {
+<           "action": "newWindow",
+<           "iconClass": "dijitIconDatabase",
+<           "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+<           "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+<         }
+<       ],
+<       "metadata": {
+<         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Manduca_sexta/README_CURRENT_RELEASE",
+<         "Data provider": "NCBI",
+<         "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/014/839/805/GCF_014839805.1_JHU_Msex_v1.0/GCF_014839805.1_JHU_Msex_v1.0_genomic.gff.gz",
+<         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "trellis-arrowhead",
+<         "className": "{type}",
+<         "description": "product, note, description",
+<         "subfeatureClasses": {
+<           "CDS": "gnomon_CDS",
+<           "UTR": "gnomon_UTR",
+<           "exon": "container-100pct",
+<           "wholeCDS": null
+<         }
+<       },
+<       "trackType": "HTMLFeatures",
+<       "type": "HTMLFeatures",
+<       "urlTemplate": "tracks/mansex_current_models/{refseq}/trackData.json"
+---
+>       "urlTemplate": "tracks/Mansex_Msex_1.0_RNA-Seq-alignments_2020-10-28_junctions/{refseq}/trackData.json"
+processing ./Mayetiola_destructor/trackList.json
+2a3
+>   "css": "./plugins/NAL_CSS/css/main.css",
+processing ./Medauroidea_extradentata/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+processing ./Megachile_rotundata/trackList.json
+256a257
+>       "className": "{type}",
+processing ./Melipona_quadrifasciata/trackList.json
+processing ./Microplitis_demolitor/trackList.json
+1a2,4
+>   "alwaysOnTracks": "DNA,Annotations",
+>   "css": "./plugins/NAL_CSS/css/main.css",
+>   "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
+6a10
+>   "share_link": 0,
+13d16
+<       "seqType": "dna",
+19c22
+<       "category": "NCBI Annotation Release 101",
+---
+>       "autocomplete": "none",
+21,33c24,72
+<       "key": "NCBI_Annotation_Release_101_Gene",
+<       "label": "NCBI_Annotation_Release_101_Gene",
+<       "metadata": {
+<         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+<         "Data provider": "NCBI",
+<         "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/572/035/GCF_000572035.2_Mdem2/GCF_000572035.2_Mdem2_genomic.gff.gz",
+<         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "trellis-arrowhead",
+<         "className": "{type}",
+<         "description": "product, note, description",
+---
+>       "key": "User-created Annotations",
+>       "label": "Annotations",
+>       "phase": 0,
+>       "storeClass": "WebApollo/Store/SeqFeature/ScratchPad",
+>       "style": {
+>         "alternateClasses": {
+>           "miRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "ncRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "pseudogene": {
+>             "className": "light-purple-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "rRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "repeat_region": {
+>             "className": "magenta-80pct"
+>           },
+>           "snRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "snoRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "tRNA": {
+>             "className": "brightgreen-80pct",
+>             "renderClassName": "gray-center-30pct"
+>           },
+>           "transposable_element": {
+>             "className": "blue-ibeam",
+>             "renderClassName": "blue-ibeam-render"
+>           }
+>         },
+>         "arrowheadClass": "annot-arrowhead",
+>         "centerSubFeature": {
+>           "non_canonical_five_prime_splice_site": false,
+>           "non_canonical_three_prime_splice_site": false
+>         },
+>         "className": "annot",
+>         "renderClassName": "annot-render",
+35,36c74,75
+<           "CDS": "gnomon_CDS",
+<           "UTR": "gnomon_UTR",
+---
+>           "CDS": "annot-CDS",
+>           "UTR": "annot-UTR",
+37a77,78
+>           "non_canonical_five_prime_splice_site": "noncanonical-splice-site",
+>           "non_canonical_three_prime_splice_site": "noncanonical-splice-site",
+39c80,81
+<         }
+---
+>         },
+>         "uniqueIdField": "id"
+41,43c83,84
+<       "trackType": "HTMLFeatures",
+<       "type": "HTMLFeatures",
+<       "urlTemplate": "tracks/NCBI_Annotation_Release_101_Gene/{refseq}/trackData.json"
+---
+>       "subfeatures": 1,
+>       "type": "WebApollo/View/Track/AnnotTrack"
+46c87
+<       "category": "NCBI Annotation Release 101",
+---
+>       "category": "NCBI Annotation Release 101/1. Gene Sets/Protein Coding",
+48,49c89,90
+<       "key": "NCBI_Annotation_Release_101_Pseudogene",
+<       "label": "NCBI_Annotation_Release_101_Pseudogene",
+---
+>       "key": "NCBI Predicted protein coding genes, Annotation Release 101",
+>       "label": "micdem_current_models",
+53c94
+<         "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/572/035/GCF_000572035.2_Mdem2/GCF_000572035.2_Mdem2_genomic.gff.gz",
+---
+>         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+60d100
+<         "description": "product, note, description",
+62,63c102,103
+<           "CDS": "gnomon_CDS",
+<           "UTR": "gnomon_UTR",
+---
+>           "CDS": "primary_gene_set-cds",
+>           "UTR": "primary_gene_set-utr",
+68,70c108,110
+<       "trackType": "HTMLFeatures",
+<       "type": "HTMLFeatures",
+<       "urlTemplate": "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json"
+---
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/micdem_current_models/{refseq}/trackData.json"
+112c152,277
+<       "category": "RNA-Seq/Mapped Reads",
+---
+>       "category": "NCBI Annotation Release 101/2. Evidence",
+>       "className": "{type}",
+>       "compress": 0,
+>       "key": "cDNA match evidence from NCBI Annotation Release 101",
+>       "label": "NCBI_Annotation_Release_101_cDNA_match",
+>       "metadata": {
+>         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+>         "Data provider": "NCBI",
+>         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+>         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+>         "className": "{type}"
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "NCBI Annotation Release 101/1. Gene Sets/Protein Coding",
+>       "compress": 0,
+>       "key": "NCBI Predicted low-quality protein coding genes, Annotation Release 101",
+>       "label": "NCBI_Annotation_Release_100_Protein_Coding_low_quality",
+>       "metadata": {
+>         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+>         "Data provider": "NCBI",
+>         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+>         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "CDS": "gnomon_CDS",
+>           "UTR": "gnomon_UTR",
+>           "exon": "container-100pct",
+>           "wholeCDS": null
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Protein_Coding_low_quality/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "NCBI Annotation Release 101/1. Gene Sets/Noncoding",
+>       "compress": 0,
+>       "key": "NCBI Predicted miscRNA, Annotation Release 100",
+>       "label": "NCBI_Annotation_Release_100_misc_RNA",
+>       "metadata": {
+>         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+>         "Data provider": "NCBI",
+>         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+>         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "CDS": "gnomon_CDS",
+>           "UTR": "gnomon_UTR",
+>           "exon": "container-100pct",
+>           "wholeCDS": null
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/NCBI_Annotation_Release_100_misc_RNA/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "NCBI Annotation Release 101/1. Gene Sets/Pseudogenes",
+>       "compress": 0,
+>       "key": "NCBI Predicted pseudogenes, Annotation Release 101",
+>       "label": "NCBI_Annotation_Release_101_Pseudogene",
+>       "metadata": {
+>         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+>         "Data provider": "NCBI",
+>         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+>         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "CDS": "gnomon_CDS",
+>           "UTR": "gnomon_UTR",
+>           "exon": "container-100pct",
+>           "wholeCDS": null
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "NCBI Annotation Release 101/1. Gene Sets/Noncoding",
+>       "compress": 0,
+>       "key": "NCBI Predicted tRNAs, Annotation Release 101",
+>       "label": "NCBI_Annotation_Release_101_tRNA",
+>       "metadata": {
+>         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
+>         "Data provider": "NCBI",
+>         "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/GFF/ref_Mdem2_scaffolds.gff3.gz",
+>         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+>       },
+>       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+>       "style": {
+>         "arrowheadClass": "trellis-arrowhead",
+>         "className": "{type}",
+>         "subfeatureClasses": {
+>           "CDS": "gnomon_CDS",
+>           "UTR": "gnomon_UTR",
+>           "exon": "container-100pct",
+>           "wholeCDS": null
+>         }
+>       },
+>       "trackType": null,
+>       "type": "FeatureTrack",
+>       "urlTemplate": "tracks/NCBI_Annotation_Release_101_tRNA/{refseq}/trackData.json"
+>     },
+>     {
+>       "category": "Transcriptome/Mapped Reads",
+129c294
+<       "category": "RNA-Seq/Mapped Reads",
+---
+>       "category": "Transcriptome/Mapped Reads",
+146c311
+<       "category": "RNA-Seq/Mapped Reads",
+---
+>       "category": "Transcriptome/Mapped Reads",
+163c328
+<       "category": "RNA-Seq/Mapped Reads",
+---
+>       "category": "Transcriptome/Mapped Reads",
+182c347
+<       "category": "RNA-Seq/Coverage Plots (BigWig)",
+---
+>       "category": "Transcriptome/Coverage Plots (BigWig)",
+204c369
+<       "category": "RNA-Seq/Coverage Plots (BigWig)",
+---
+>       "category": "Transcriptome/Coverage Plots (BigWig)",
+226c391
+<       "category": "RNA-Seq/Coverage Plots (BigWig)",
+---
+>       "category": "Transcriptome/Coverage Plots (BigWig)",
+248c413
+<       "category": "RNA-Seq/Coverage Plots (BigWig)",
+---
+>       "category": "Transcriptome/Coverage Plots (BigWig)",
+527,590d691
+<     },
+<     {
+<       "category": "Official Gene Set v1.0",
+<       "compress": 0,
+<       "key": "OGSv1.0 Gene",
+<       "label": "micdem_current_models",
+<       "menuTemplate": [
+<         {
+<           "label": "View details"
+<         },
+<         {
+<           "action": "newWindow",
+<           "iconClass": "dijitIconDatabase",
+<           "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+<           "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+<         }
+<       ],
+<       "metadata": {
+<         "Data description": "Microplitis demolitor OGSv1.0 is an integration of automatic gene predictions from *Microplitis demolitor* genome annotations NCBI-RefSeq's gene set NCBI Microplitis demolitor Annotation Release 101 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Microplitis_demolitor/101/), with manual annotations by the research community, performed via the Apollo manual curation software (https://zenodo.org/record/1295754#.YDgLyJNKivg), and QC'd via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit) and NCBI's table2asn_GFF software (https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/table2asn_GFF/), and merged via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit).",
+<         "Data source": "https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10",
+<         "Publication status": "Published dataset, please cite (dataset) Tims, Kelly; Poelchau, Monica; Burke, Gaelen. (unpublished). Microplitis demolitor Official Gene Set micdem_OGSv1.0. Ag Data Commons. https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10."
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "trellis-arrowhead",
+<         "className": "{type}",
+<         "description": "product, note, description",
+<         "subfeatureClasses": {
+<           "CDS": "gnomon_CDS",
+<           "UTR": "gnomon_UTR",
+<           "exon": "container-100pct",
+<           "wholeCDS": null
+<         }
+<       },
+<       "trackType": "HTMLFeatures",
+<       "type": "HTMLFeatures",
+<       "urlTemplate": "tracks/micdem_current_models/{refseq}/trackData.json"
+<     },
+<     {
+<       "category": "Official Gene Set v1.0",
+<       "compress": 0,
+<       "key": "OGSv1.0 Pseudogene",
+<       "label": "OGSv1.0_Pseudogene",
+<       "metadata": {
+<         "Data description": "Microplitis demolitor OGSv1.0 is an integration of automatic gene predictions from *Microplitis demolitor* genome annotations NCBI-RefSeq's gene set NCBI Microplitis demolitor Annotation Release 101 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Microplitis_demolitor/101/), with manual annotations by the research community, performed via the Apollo manual curation software (https://zenodo.org/record/1295754#.YDgLyJNKivg), and QC'd via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit) and NCBI's table2asn_GFF software (https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/table2asn_GFF/), and merged via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit).",
+<         "Data source": "https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10",
+<         "Publication status": "Published dataset, please cite (dataset) Tims, Kelly; Poelchau, Monica; Burke, Gaelen. (unpublished). Microplitis demolitor Official Gene Set micdem_OGSv1.0. Ag Data Commons. https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10."
+<       },
+<       "storeClass": "JBrowse/Store/SeqFeature/NCList",
+<       "style": {
+<         "arrowheadClass": "trellis-arrowhead",
+<         "className": "{type}",
+<         "description": "product, note, description",
+<         "subfeatureClasses": {
+<           "CDS": "gnomon_CDS",
+<           "UTR": "gnomon_UTR",
+<           "exon": "container-100pct",
+<           "wholeCDS": null
+<         }
+<       },
+<       "trackType": "HTMLFeatures",
+<       "type": "HTMLFeatures",
+<       "urlTemplate": "tracks/OGSv1.0_Pseudogene/{refseq}/trackData.json"
+processing ./Neodiprion_lecontei/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+processing ./Neodiprion_lecontei_training/trackList.json
+480a481
+>       "className": "{type}",
+processing ./Nicrophorus_vespilloides/trackList.json
+117a118
+>       "className": "{type}",
+processing ./Nylanderia_fulva/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+71c72
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+processing ./Odontomachus_brunneus/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+133,134c134
+<         "className": "feature",
+<         "description": "score"
+---
+>         "className": "feature"
+637c637
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+676c676
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+processing ./Oncopeltus_fasciatus/trackList.json
+processing ./Oncopeltus_fasciatus_training/trackList.json
+processing ./Onthophagus_taurus/trackList.json
+processing ./Orussus_abietinus/trackList.json
+processing ./Osmia_lignaria/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+52c53
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
+processing ./Pachypsylla_venusta/trackList.json
+processing ./Parasteatoda_tepidariorum/trackList.json
+processing ./Photinus_pyralis/trackList.json
+processing ./Rhagoletis_zephyria/trackList.json
+207a208
+>       "className": "{type}",
+processing ./Rhipicephalus_microplus/trackList.json
+processing ./Rhyzopertha_dominica/trackList.json
+397c397
+<         "className": "{type}"
+---
+>         "className": "feature"
+processing ./Saccharomyceseubayanus/trackList.json
+processing ./Tigriopus_californicus/trackList.json
+processing ./Tribolium_castaneum/trackList.json
+387a388
+>       "className": "{type}",
+processing ./Trichogramma_pretiosum/trackList.json
+processing ./Varroa_destructor/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+processing ./Varroa_jacobsoni/trackList.json
+1a2
+>   "css": "./plugins/NAL_CSS/css/main.css",
+71c72
+<           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('name')}"
+---
+>           "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}"

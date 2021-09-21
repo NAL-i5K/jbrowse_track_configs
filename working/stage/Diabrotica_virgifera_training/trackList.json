@@ -1,224 +1,224 @@
 {
-   "formatVersion" : 1,
-   "names" : {
-      "type" : "Hash",
-      "url" : "names/"
-   },
-   "tracks" : [
-      {
-         "category" : "Reference sequence",
-         "chunkSize" : 20000,
-         "key" : "Reference sequence",
-         "label" : "DNA",
-         "seqType" : "dna",
-         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
-         "type" : "SequenceTrack",
-         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "seqType": "dna",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Gene",
+      "label": "diavir_current_models",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Diabrotica_virgifera/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/013/835/GCF_003013835.1_Dvir_v2.0/GCF_003013835.1_Dvir_v2.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "category" : "NCBI Annotation Release 100",
-         "compress" : 0,
-         "key" : "NCBI_Annotation_Release_100_Gene",
-         "label" : "diavir_current_models",
-         "metadata" : {
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Diabrotica_virgifera/README_CURRENT_RELEASE",
-            "Data provider" : "NCBI",
-            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/013/835/GCF_003013835.1_Dvir_v2.0/GCF_003013835.1_Dvir_v2.0_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "trackType" : "HTMLFeatures",
-         "type" : "WebApollo/View/Track/DraggableHTMLFeatures",
-         "urlTemplate" : "tracks/diavir_current_models/{refseq}/trackData.json"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "category" : "NCBI Annotation Release 100",
-         "compress" : 0,
-         "key" : "NCBI_Annotation_Release_100_Pseudogene",
-         "label" : "NCBI_Annotation_Release_100_Pseudogene",
-         "metadata" : {
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Diabrotica_virgifera/README_CURRENT_RELEASE",
-            "Data provider" : "NCBI",
-            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/013/835/GCF_003013835.1_Dvir_v2.0/GCF_003013835.1_Dvir_v2.0_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+      "trackType": "HTMLFeatures",
+      "type": "WebApollo/View/Track/DraggableHTMLFeatures",
+      "urlTemplate": "tracks/diavir_current_models/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Pseudogene",
+      "label": "NCBI_Annotation_Release_100_Pseudogene",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Diabrotica_virgifera/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/013/835/GCF_003013835.1_Dvir_v2.0/GCF_003013835.1_Dvir_v2.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Reference Assembly",
-         "key" : "Gaps in assembly",
-         "label" : "Gaps in assembly",
-         "metadata" : {
-            "Track contact" : "The i5k workspace@NAL",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "neg_color" : "white",
-            "pos_color" : "black"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/GCF_003013835.1_Dvir_v2.0_genomic.fna.gaps.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "0.5",
-         "category" : "Reference Assembly",
-         "key" : "GC Content",
-         "label" : "GC Content",
-         "metadata" : {
-            "Track contact" : "The i5k workspace@NAL",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
-         },
-         "scoreType" : "avgScore",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "neg_color" : "rgba(255,255,0,50)",
-            "pos_color" : "rgba(0,0,255,50)"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/GCF_003013835.1_Dvir_v2.0_genomic.fna.gc.bigwig"
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
       },
-      {
-         "category" : "RNA-Seq/Mapped Reads",
-         "key" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06",
-         "label" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791378>ERR2791378</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1168290>SRR1168290</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506234>SRR6506234</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616588>SRR1616588</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791375>ERR2791375</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616609>SRR1616609</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6439466>SRR6439466</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791391>ERR2791391</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818013>SRR7818013</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616604>SRR1616604</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "analyses/2021-05-06-08-55-04/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06.bam"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "RNA-Seq/Coverage Plots",
-         "key" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06_coverage",
-         "label" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06_coverage",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791378>ERR2791378</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1168290>SRR1168290</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506234>SRR6506234</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616588>SRR1616588</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791375>ERR2791375</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616609>SRR1616609</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6439466>SRR6439466</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791391>ERR2791391</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818013>SRR7818013</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616604>SRR1616604</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "analyses/2021-05-06-08-55-04/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06.bigwig"
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_003013835.1_Dvir_v2.0_genomic.fna.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
       },
-      {
-         "category" : "RNA-Seq/Splice junctions",
-         "compress" : 0,
-         "key" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06_junctions",
-         "label" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06_junctions",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791378>ERR2791378</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1168290>SRR1168290</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506234>SRR6506234</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616588>SRR1616588</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791375>ERR2791375</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616609>SRR1616609</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6439466>SRR6439466</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791391>ERR2791391</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818013>SRR7818013</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616604>SRR1616604</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "className" : "feature",
-            "description" : "score"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06_junctions/{refseq}/trackData.json"
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
       },
-      {
-         "category" : "RNA-Seq/Mapped Reads",
-         "key" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11",
-         "label" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818014'>SRR7818014</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818015'>SRR7818015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818012'>SRR7818012</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506228'>SRR6506228</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506226'>SRR6506226</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506229'>SRR6506229</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506227'>SRR6506227</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "analyses/Diabrotica-virgifera-RNA-Seq_2021-06-11_v1.0/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11.bam"
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_003013835.1_Dvir_v2.0_genomic.fna.gc.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06",
+      "label": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791378>ERR2791378</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1168290>SRR1168290</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506234>SRR6506234</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616588>SRR1616588</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791375>ERR2791375</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616609>SRR1616609</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6439466>SRR6439466</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791391>ERR2791391</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818013>SRR7818013</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616604>SRR1616604</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking - mismatch (hover over the mismatch to see what the snp is)"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "RNA-Seq/Coverage Plots",
-         "key" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11_coverage",
-         "label" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11_coverage",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818014'>SRR7818014</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818015'>SRR7818015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818012'>SRR7818012</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506228'>SRR6506228</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506226'>SRR6506226</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506229'>SRR6506229</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506227'>SRR6506227</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "pos_color" : "#00BFFF"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "analyses/Diabrotica-virgifera-RNA-Seq_2021-06-11_v1.0/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/2021-05-06-08-55-04/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06_coverage",
+      "label": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06_coverage",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791378>ERR2791378</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1168290>SRR1168290</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506234>SRR6506234</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616588>SRR1616588</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791375>ERR2791375</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616609>SRR1616609</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6439466>SRR6439466</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791391>ERR2791391</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818013>SRR7818013</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616604>SRR1616604</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
       },
-      {
-         "category" : "RNA-Seq/Splice junctions",
-         "compress" : 0,
-         "key" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11_junctions",
-         "label" : "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11_junctions",
-         "metadata" : {
-            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
-            "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818014'>SRR7818014</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818015'>SRR7818015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818012'>SRR7818012</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506228'>SRR6506228</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506226'>SRR6506226</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506229'>SRR6506229</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506227'>SRR6506227</a>",
-            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
-            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "className" : "feature",
-            "description" : "score"
-         },
-         "trackType" : null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11_junctions/{refseq}/trackData.json"
-      }
-   ]
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/2021-05-06-08-55-04/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06_junctions",
+      "label": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06_junctions",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791378>ERR2791378</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1168290>SRR1168290</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506234>SRR6506234</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616588>SRR1616588</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791375>ERR2791375</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616609>SRR1616609</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR6439466>SRR6439466</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=ERR2791391>ERR2791391</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818013>SRR7818013</a>,<a href=https://www.ncbi.nlm.nih.gov/sra/?term=SRR1616604>SRR1616604</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Junction reads generated by Hisat2 aligner and regtools"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "className": "feature",
+        "description": "score"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06_junctions/{refseq}/trackData.json"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11",
+      "label": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818014'>SRR7818014</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818015'>SRR7818015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818012'>SRR7818012</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506228'>SRR6506228</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506226'>SRR6506226</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506229'>SRR6506229</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506227'>SRR6506227</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "analyses/Diabrotica-virgifera-RNA-Seq_2021-06-11_v1.0/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11_coverage",
+      "label": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11_coverage",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818014'>SRR7818014</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818015'>SRR7818015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818012'>SRR7818012</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506228'>SRR6506228</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506226'>SRR6506226</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506229'>SRR6506229</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506227'>SRR6506227</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "analyses/Diabrotica-virgifera-RNA-Seq_2021-06-11_v1.0/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11_junctions",
+      "label": "Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11_junctions",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818014'>SRR7818014</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818015'>SRR7818015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7818012'>SRR7818012</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506228'>SRR6506228</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506226'>SRR6506226</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506229'>SRR6506229</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6506227'>SRR6506227</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "className": "feature",
+        "description": "score"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11_junctions/{refseq}/trackData.json"
+    }
+  ]
 }

@@ -19,30 +19,29 @@
       },
       {
          "compress" : 0,
-         "fmtDetailValue_Id" : "function(id, feature) { var name2 = id.replace(/-R./, ''); if(feature.get('type')=='mRNA') { return ''+id+' (Click for Gene pag          e)';} else {return id}}",
          "key" : "OGSv1.1 Gene",
          "category" : "Official Gene Set",
          "label" : "bomimp_current_models",
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "fmtDetailValue_Id": "function (id, feature) {  var name2 = id.replace(/\-R./, '');  if(feature.get('type')=='mRNA') {    return '<a target=_blank href=https://i5k.nal.usda.gov/'+name2+'>'+id+'</a>';} else { return id;}}",
+         "fmtDetailValue_Id": "function (id, feature) {  var name2 = id.replace(/-R./, '');  if(feature.get('type')=='mRNA') {    return '<a target=_blank href=https://i5k.nal.usda.gov/'+name2+'>'+id+'</a>';} else { return id;}}",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
-              "label": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/\-R./, '')}",
-              "title": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/\-R./, '')}",
+              "label": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/-R./, '')}",
+              "title": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/-R./, '')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id').replace(/\-R./, '')}",
+              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id').replace(/-R./, '')}"
               },
              {
               "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
               "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}",
-              },
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}"
+              }
         ],
 	"metadata" : {
 		   "Data description":"Sadd et al. 2015, doi:10.1186/s13059-015-0623-3",
@@ -111,15 +110,15 @@
          "label" : "NCBI_Annotation_Release_102_Pseudogene",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Open GenBank page for '+feature.get('name')}",
               "title": "function(track,feature){ return 'Open GenBank page for '+feature.get('name')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}",
-              },
+              "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}"
+              }
         ],
          "metadata" : {
             "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bombus_impatiens/README_CURRENT_RELEASE",
@@ -150,15 +149,15 @@
          "label" : "NCBI_Annotation_Release_102_Gene",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Open GenBank page for '+feature.get('name')}",
               "title": "function(track,feature){ return 'Open GenBank page for '+feature.get('name')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}",
-              },
+              "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}"
+              }
         ],
          "metadata" : {
             "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bombus_impatiens/README_CURRENT_RELEASE",

@@ -97,7 +97,7 @@
             "storeClass": "JBrowse/Store/SeqFeature/NCList",
             "style": {
                 "arrowheadClass": "trellis-arrowhead",
-                "className": "container-16px",
+                "className": "{type}",
                 "description": "product, note, description",
                 "subfeatureClasses": {
                     "CDS": "gnomon_CDS",
@@ -117,15 +117,15 @@
             "label": "NCBI_Annotation_Release_102_Gene",
          "menuTemplate" : [
              {
-                "label" : "View details",
+                "label" : "View details"
              },
              {
               "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
               "iconClass" : "dijitIconDatabase",
               "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}",
-              },
+              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}"
+              }
         ],
             "metadata": {
                 "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bombus_terrestris/README_CURRENT_RELEASE",

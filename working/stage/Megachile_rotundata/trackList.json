@@ -1,558 +1,552 @@
 {
-   "share_link" : 0,
-   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
-   "tracks" : [
-      {
-         "chunkSize" : 20000,
-         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
-         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
-         "category" : "Reference sequence",
-         "type" : "SequenceTrack",
-         "label" : "DNA",
-         "key" : "Reference sequence"
+  "alwaysOnTracks": "DNA,Annotations",
+  "css": "./plugins/NAL_CSS/css/main.css",
+  "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "share_link": 0,
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "autocomplete": "none",
+      "compress": 0,
+      "key": "User-created Annotations",
+      "label": "Annotations",
+      "phase": 0,
+      "storeClass": "WebApollo/Store/SeqFeature/ScratchPad",
+      "style": {
+        "alternateClasses": {
+          "miRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "ncRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "pseudogene": {
+            "className": "light-purple-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "rRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "repeat_region": {
+            "className": "magenta-80pct"
+          },
+          "snRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "snoRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "tRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "transposable_element": {
+            "className": "blue-ibeam",
+            "renderClassName": "blue-ibeam-render"
+          }
+        },
+        "arrowheadClass": "annot-arrowhead",
+        "centerSubFeature": {
+          "non_canonical_five_prime_splice_site": false,
+          "non_canonical_three_prime_splice_site": false
+        },
+        "className": "annot",
+        "renderClassName": "annot-render",
+        "subfeatureClasses": {
+          "CDS": "annot-CDS",
+          "UTR": "annot-UTR",
+          "exon": "container-100pct",
+          "non_canonical_five_prime_splice_site": "noncanonical-splice-site",
+          "non_canonical_three_prime_splice_site": "noncanonical-splice-site",
+          "wholeCDS": null
+        },
+        "uniqueIdField": "id"
       },
-      {
-         "autocomplete" : "none",
-         "style" : {
-            "renderClassName" : "annot-render",
-            "className" : "annot",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
-               "exon" : "container-100pct",
-               "CDS" : "annot-CDS",
-               "UTR" : "annot-UTR",
-               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site"
-            },
-            "alternateClasses" : {
-               "transposable_element" : {
-                  "className" : "blue-ibeam",
-                  "renderClassName" : "blue-ibeam-render"
-               },
-               "pseudogene" : {
-                  "className" : "light-purple-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "snRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "rRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "snoRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "repeat_region" : {
-                  "className" : "magenta-80pct"
-               },
-               "miRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "tRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "ncRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               }
-            },
-            "arrowheadClass" : "annot-arrowhead",
-            "uniqueIdField" : "id",
-            "centerSubFeature" : {
-               "non_canonical_three_prime_splice_site" : false,
-               "non_canonical_five_prime_splice_site" : false
-            }
-         },
-         "key" : "User-created Annotations",
-         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
-         "phase" : 0,
-         "compress" : 0,
-         "label" : "Annotations",
-         "type" : "WebApollo/View/Track/AnnotTrack",
-         "subfeatures" : 1
+      "subfeatures": 1,
+      "type": "WebApollo/View/Track/AnnotTrack"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
       },
-      {
-         "style" : {
-            "neg_color" : "white",
-            "pos_color" : "black"
-         },
-         "bicolor_pivot" : "zero",
-         "key" : "Gaps in assembly",
-         "autoscale" : "local",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/GCF_000220905.1_MROT_1.0_genomic_RefSeqIDs.fna.gaps.bigwig",
-         "metadata" : {
-            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track contact" : "The i5k workspace@NAL"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "category" : "Reference Assembly",
-         "label" : "Gaps in assembly"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
       },
-      {
-         "style" : {
-            "pos_color" : "rgba(0,0,255,50)",
-            "neg_color" : "rgba(255,255,0,50)"
-         },
-         "bicolor_pivot" : "0.5",
-         "autoscale" : "local",
-         "key" : "GC Content",
-         "scoreType": "avgScore",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/GCF_000220905.1_MROT_1.0_genomic_RefSeqIDs.fna.gc.bigwig",
-         "label" : "GC Content",
-         "metadata" : {
-            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are  scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track contact" : "The i5k workspace@NAL"
-         },
-         "category" : "Reference Assembly",
-         "type" : "JBrowse/View/Track/Wiggle/Density"
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_000220905.1_MROT_1.0_genomic_RefSeqIDs.fna.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are  scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "primary_gene_set-cds",
-               "UTR" : "primary_gene_set-utr"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted protein coding genes, Annotation Release 101",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/megrot_current_models/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "NCBI Annotation Release 101/1. Gene Sets/Protein Coding",
-         "label" : "megrot_current_models",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE"
-         }
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "primary_gene_set-cds",
-               "UTR" : "primary_gene_set-utr"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted low-quality protein coding genes, Annotation Release 101",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_Protein_Coding_low_quality/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE"
-         },
-         "label" : "NCBI_Annotation_Release_101_Protein_Coding_low_quality",
-         "category" : "NCBI Annotation Release 101/1. Gene Sets/Protein Coding"
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_000220905.1_MROT_1.0_genomic_RefSeqIDs.fna.gc.bigwig"
+    },
+    {
+      "category": "NCBI Annotation Release 101/1. Gene Sets/Protein Coding",
+      "compress": 0,
+      "key": "NCBI Predicted protein coding genes, Annotation Release 101",
+      "label": "megrot_current_models",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted pseudogenes, Annotation Release 101",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "NCBI_Annotation_Release_101_Pseudogene",
-         "category" : "NCBI Annotation Release 101/1. Gene Sets/Pseudogenes",
-         "metadata" : {
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE"
-         },
-         "type" : "FeatureTrack"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "primary_gene_set-cds",
+          "UTR": "primary_gene_set-utr",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted non-coding RNA, Annotation Release 101",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_noncoding/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE"
-         },
-         "type" : "FeatureTrack",
-         "category" : "NCBI Annotation Release 101/1. Gene Sets/Noncoding",
-         "label" : "NCBI_Annotation_Release_101_noncoding"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/megrot_current_models/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 101/1. Gene Sets/Protein Coding",
+      "compress": 0,
+      "key": "NCBI Predicted low-quality protein coding genes, Annotation Release 101",
+      "label": "NCBI_Annotation_Release_101_Protein_Coding_low_quality",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted tRNA, Annotation Release 101",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_tRNA/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "NCBI Annotation Release 101/1. Gene Sets/Noncoding",
-         "label" : "NCBI_Annotation_Release_101_tRNA",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE"
-         }
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "primary_gene_set-cds",
+          "UTR": "primary_gene_set-utr",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "container-10px",
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "cDNA match evidence from NCBI Annotation Release 101",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE"
-         },
-         "label" : "NCBI_Annotation_Release_101_cDNA_match",
-         "category" : "NCBI Annotation Release 101/2. Evidence"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_101_Protein_Coding_low_quality/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 101/1. Gene Sets/Pseudogenes",
+      "compress": 0,
+      "key": "NCBI Predicted pseudogenes, Annotation Release 101",
+      "label": "NCBI_Annotation_Release_101_Pseudogene",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "Megachile rotundata gene predictions v1.1 (Kapheim et al.)",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/Megachile_rotundata_v1.1/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "Megachile_rotundata_v1.1/1. Gene Sets/Protein Coding",
-         "label" : "Megachile_rotundata_v1.1",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Other notes" : "Scaffold IDs were changed from GenBank to RefSeq IDs by the NAL",
-            "Data source" : "http://hymenopteragenome.org/beebase/sites/hymenopteragenome.org.beebase/files/data/consortium_data/Megachile_rotundata_v1.1.gff.gz",
-            "Data provider" : "BGI and BeeBase",
-            "Data description" : "http://www.ncbi.nlm.nih.gov/pubmed/25977371"
-         }
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "Maker gene set",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/Maker gene set/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Other notes" : "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS.",
-            "Method" : "described in supplementary materials of PMID: 25977371",
-            "Analysis provider" : "Kapheim et al., 2015"
-         },
-         "type" : "FeatureTrack",
-         "category" : "MAKER gene set/1. Gene Sets/Protein Coding",
-         "label" : "Maker gene set"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 101/1. Gene Sets/Noncoding",
+      "compress": 0,
+      "key": "NCBI Predicted non-coding RNA, Annotation Release 101",
+      "label": "NCBI_Annotation_Release_101_noncoding",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "match_part" : "augustus"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "augustus_masked",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/augustus_masked/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "augustus_masked",
-         "category" : "MAKER gene set/1. Gene Sets/Supplementary Gene Predictions",
-         "metadata" : {
-            "Other notes" : "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS.",
-            "Method" : "described in supplementary materials of PMID: 25977371",
-            "Analysis provider" : "Kapheim et al., 2015"
-         },
-         "type" : "FeatureTrack"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "match_part" : "blastn"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "blastn",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/blastn/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Other notes" : "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS.",
-            "Method" : "described in supplementary materials of PMID: 25977371",
-            "Analysis provider" : "Kapheim et al., 2015"
-         },
-         "type" : "FeatureTrack",
-         "category" : "MAKER gene set/2. Evidence/Supplementary:blastn",
-         "label" : "blastn"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_101_noncoding/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 101/1. Gene Sets/Noncoding",
+      "compress": 0,
+      "key": "NCBI Predicted tRNA, Annotation Release 101",
+      "label": "NCBI_Annotation_Release_101_tRNA",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "blastx",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/blastx/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "MAKER gene set/2. Evidence/Supplementary:blastx",
-         "label" : "blastx",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Other notes" : "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS.",
-            "Method" : "described in supplementary materials of PMID: 25977371",
-            "Analysis provider" : "Kapheim et al., 2015"
-         }
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "match_part" : "est2genome"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "est2genome",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/est2genome/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Other notes" : "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS.",
-            "Method" : "described in supplementary materials of PMID: 25977371",
-            "Analysis provider" : "Kapheim et al., 2015"
-         },
-         "label" : "est2genome",
-         "category" : "MAKER gene set/2. Evidence/est2genome"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_101_tRNA/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 101/2. Evidence",
+      "compress": 0,
+      "key": "cDNA match evidence from NCBI Annotation Release 101",
+      "label": "NCBI_Annotation_Release_101_cDNA_match",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Megachile_rotundata/GFF/ref_MROT_1.0_scaffolds.gff3.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "match_part" : "blast-match_part"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "InterProScan",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/InterProScan/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "InterProScan",
-         "category" : "MAKER gene set/2. Evidence/InterProScan",
-         "metadata" : {
-            "Other notes" : "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS.",
-            "Method" : "described in supplementary materials of PMID: 25977371",
-            "Analysis provider" : "Kapheim et al., 2015"
-         },
-         "type" : "FeatureTrack"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "webapollo-arrowhead",
+        "className": "{type}"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "protein2genome",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/protein2genome/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Other notes" : "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS.",
-            "Method" : "described in supplementary materials of PMID: 25977371",
-            "Analysis provider" : "Kapheim et al., 2015"
-         },
-         "type" : "FeatureTrack",
-         "category" : "MAKER gene set/2. Evidence/protein2genome",
-         "label" : "protein2genome"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
+    },
+    {
+      "category": "Megachile_rotundata_v1.1/1. Gene Sets/Protein Coding",
+      "compress": 0,
+      "key": "Megachile rotundata gene predictions v1.1 (Kapheim et al.)",
+      "label": "Megachile_rotundata_v1.1",
+      "metadata": {
+        "Data description": "http://www.ncbi.nlm.nih.gov/pubmed/25977371",
+        "Data provider": "BGI and BeeBase",
+        "Data source": "http://hymenopteragenome.org/beebase/sites/hymenopteragenome.org.beebase/files/data/consortium_data/Megachile_rotundata_v1.1.gff.gz",
+        "Other notes": "Scaffold IDs were changed from GenBank to RefSeq IDs by the NAL"
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "match_part" : "repeat"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "RepeatMasker",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/RepeatMasker/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "MAKER gene set/2. Evidence/Repeats",
-         "label" : "RepeatMasker",
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Other notes" : "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS.",
-            "Method" : "described in supplementary materials of PMID: 25977371",
-            "Analysis provider" : "Kapheim et al., 2015"
-         }
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "match_part" : "repeat"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "RepeatRunner",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/RepeatRunner/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Other notes" : "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS.",
-            "Method" : "described in supplementary materials of PMID: 25977371",
-            "Analysis provider" : "Kapheim et al., 2015"
-         },
-         "label" : "RepeatRunner",
-         "category" : "MAKER gene set/2. Evidence/Repeats"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Megachile_rotundata_v1.1/{refseq}/trackData.json"
+    },
+    {
+      "category": "MAKER gene set/1. Gene Sets/Protein Coding",
+      "compress": 0,
+      "key": "Maker gene set",
+      "label": "Maker gene set",
+      "metadata": {
+        "Analysis provider": "Kapheim et al., 2015",
+        "Method": "described in supplementary materials of PMID: 25977371",
+        "Other notes": "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS."
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "match_part" : "snap"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "SNAP",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/SNAP/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "SNAP",
-         "category" : "MAKER gene set/1. Gene Sets/Supplementary Gene Predictions",
-         "metadata" : {
-            "Other notes" : "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS.",
-            "Method" : "described in supplementary materials of PMID: 25977371",
-            "Analysis provider" : "Kapheim et al., 2015"
-         },
-         "type" : "FeatureTrack"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "transcriptome-cds",
-               "CDS" : "primary_gene_set-cds",
-               "UTR" : "primary_gene_set-utr"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "Diapause development RNAseq, combined assembly",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/Megachile_rotundata_transcriptome_20171113/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "Megachile_rotundata_transcriptome_20171113",
-         "category" : "Diapause development transcriptome/1. Transcripts",
-         "metadata" : {
-            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use",
-            "Method" : "https://i5k.nal.usda.gov/content/diapause-development-rnaseq-combined-assembly",
-            "Data source" : "NA",
-            "Data provider" : "Anna Childers, USDA-ARS",
-            "Data description" : "geographical location-Utah, tissues-whole insect and prepupae, sequence platform - Illumina HiSeq 2000, 100 bp PE"
-         },
-         "type" : "FeatureTrack"
-      }
-   ],
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
-   "names" : {
-      "url" : "names/",
-      "type" : "Hash"
-   },
-   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
-   "formatVersion" : 1,
-   "alwaysOnTracks" : "DNA,Annotations"
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Maker gene set/{refseq}/trackData.json"
+    },
+    {
+      "category": "MAKER gene set/1. Gene Sets/Supplementary Gene Predictions",
+      "compress": 0,
+      "key": "augustus_masked",
+      "label": "augustus_masked",
+      "metadata": {
+        "Analysis provider": "Kapheim et al., 2015",
+        "Method": "described in supplementary materials of PMID: 25977371",
+        "Other notes": "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "match_part": "augustus"
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/augustus_masked/{refseq}/trackData.json"
+    },
+    {
+      "category": "MAKER gene set/2. Evidence/Supplementary:blastn",
+      "compress": 0,
+      "key": "blastn",
+      "label": "blastn",
+      "metadata": {
+        "Analysis provider": "Kapheim et al., 2015",
+        "Method": "described in supplementary materials of PMID: 25977371",
+        "Other notes": "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "match_part": "blastn"
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/blastn/{refseq}/trackData.json"
+    },
+    {
+      "category": "MAKER gene set/2. Evidence/Supplementary:blastx",
+      "compress": 0,
+      "key": "blastx",
+      "label": "blastx",
+      "metadata": {
+        "Analysis provider": "Kapheim et al., 2015",
+        "Method": "described in supplementary materials of PMID: 25977371",
+        "Other notes": "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "match_part": "blastx"
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/blastx/{refseq}/trackData.json"
+    },
+    {
+      "category": "MAKER gene set/2. Evidence/est2genome",
+      "compress": 0,
+      "key": "est2genome",
+      "label": "est2genome",
+      "metadata": {
+        "Analysis provider": "Kapheim et al., 2015",
+        "Method": "described in supplementary materials of PMID: 25977371",
+        "Other notes": "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "match_part": "est2genome"
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/est2genome/{refseq}/trackData.json"
+    },
+    {
+      "category": "MAKER gene set/2. Evidence/InterProScan",
+      "compress": 0,
+      "key": "InterProScan",
+      "label": "InterProScan",
+      "metadata": {
+        "Analysis provider": "Kapheim et al., 2015",
+        "Method": "described in supplementary materials of PMID: 25977371",
+        "Other notes": "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "match_part": "blast-match_part"
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/InterProScan/{refseq}/trackData.json"
+    },
+    {
+      "category": "MAKER gene set/2. Evidence/protein2genome",
+      "compress": 0,
+      "key": "protein2genome",
+      "label": "protein2genome",
+      "metadata": {
+        "Analysis provider": "Kapheim et al., 2015",
+        "Method": "described in supplementary materials of PMID: 25977371",
+        "Other notes": "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "match_part": "protein2genome"
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/protein2genome/{refseq}/trackData.json"
+    },
+    {
+      "category": "MAKER gene set/2. Evidence/Repeats",
+      "compress": 0,
+      "key": "RepeatMasker",
+      "label": "RepeatMasker",
+      "metadata": {
+        "Analysis provider": "Kapheim et al., 2015",
+        "Method": "described in supplementary materials of PMID: 25977371",
+        "Other notes": "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "match_part": "repeat"
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/RepeatMasker/{refseq}/trackData.json"
+    },
+    {
+      "category": "MAKER gene set/2. Evidence/Repeats",
+      "compress": 0,
+      "key": "RepeatRunner",
+      "label": "RepeatRunner",
+      "metadata": {
+        "Analysis provider": "Kapheim et al., 2015",
+        "Method": "described in supplementary materials of PMID: 25977371",
+        "Other notes": "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "match_part": "repeat"
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/RepeatRunner/{refseq}/trackData.json"
+    },
+    {
+      "category": "MAKER gene set/1. Gene Sets/Supplementary Gene Predictions",
+      "compress": 0,
+      "key": "SNAP",
+      "label": "SNAP",
+      "metadata": {
+        "Analysis provider": "Kapheim et al., 2015",
+        "Method": "described in supplementary materials of PMID: 25977371",
+        "Other notes": "Scaffold IDs were converted from GenBank to RefSeq IDs by Anna Childers, USDA-ARS."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "match_part": "snap"
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/SNAP/{refseq}/trackData.json"
+    },
+    {
+      "category": "Diapause development transcriptome/1. Transcripts",
+      "compress": 0,
+      "key": "Diapause development RNAseq, combined assembly",
+      "label": "Megachile_rotundata_transcriptome_20171113",
+      "metadata": {
+        "Data description": "geographical location-Utah, tissues-whole insect and prepupae, sequence platform - Illumina HiSeq 2000, 100 bp PE",
+        "Data provider": "Anna Childers, USDA-ARS",
+        "Data source": "NA",
+        "Method": "https://i5k.nal.usda.gov/content/diapause-development-rnaseq-combined-assembly",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "primary_gene_set-cds",
+          "UTR": "primary_gene_set-utr",
+          "exon": "transcriptome-cds",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/Megachile_rotundata_transcriptome_20171113/{refseq}/trackData.json"
+    }
+  ]
 }
