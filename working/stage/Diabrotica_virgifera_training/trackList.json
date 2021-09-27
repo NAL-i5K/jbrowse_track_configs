@@ -38,8 +38,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLFeatures",
-      "type": "WebApollo/View/Track/DraggableHTMLFeatures",
+      "trackType": "HTMLNeatFeatures",
+      "type": "WebApollo/View/Track/DraggableHTMLNeatFeatures",
       "urlTemplate": "tracks/diavir_current_models/{refseq}/trackData.json"
     },
     {
@@ -65,8 +65,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLFeatures",
-      "type": "HTMLFeatures",
+      "trackType": "HTMLNeatFeatures",
+      "type": "HTMLNeatFeatures",
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {

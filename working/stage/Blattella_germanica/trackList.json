@@ -1566,7 +1566,7 @@
         "arrowheadClass": "webapollo-arrowhead",
         "className": "{type}",
         "subfeatureClasses": {
-          "match_part": "model_gff"
+          "match_part": "alt_gene_set-cds"
         }
       },
       "trackType": null,
