@@ -1,0 +1,1062 @@
+{
+   "css" : "./plugins/NAL_CSS/css/main.css",
+   "share_link" : 0,
+   "tracks" : [
+      {
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "chunkSize" : 20000,
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "label" : "DNA",
+         "type" : "SequenceTrack",
+         "category" : "Reference sequence",
+         "key" : "Reference sequence"
+      },
+      {
+         "autocomplete" : "none",
+         "style" : {
+            "className" : "annot",
+            "renderClassName" : "annot-render",
+            "subfeatureClasses" : {
+               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "annot-CDS",
+               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
+               "UTR" : "annot-UTR"
+            },
+            "arrowheadClass" : "annot-arrowhead",
+            "alternateClasses" : {
+               "transposable_element" : {
+                  "renderClassName" : "blue-ibeam-render",
+                  "className" : "blue-ibeam"
+               },
+               "pseudogene" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "light-purple-80pct"
+               },
+               "snRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "rRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "snoRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "repeat_region" : {
+                  "className" : "magenta-80pct"
+               },
+               "miRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "tRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               },
+               "ncRNA" : {
+                  "renderClassName" : "gray-center-30pct",
+                  "className" : "brightgreen-80pct"
+               }
+            },
+            "uniqueIdField" : "id",
+            "centerSubFeature" : {
+               "non_canonical_three_prime_splice_site" : false,
+               "non_canonical_five_prime_splice_site" : false
+            }
+         },
+         "key" : "User-created Annotations",
+         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
+         "phase" : 0,
+         "compress" : 0,
+         "label" : "Annotations",
+         "type" : "WebApollo/View/Track/AnnotTrack",
+         "subfeatures" : 1
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "primary_gene_set-cds",
+               "UTR" : "primary_gene_set-utr"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "key" : "TCALIF_genes_v1.0",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/tigcal_current_models/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "tigcal_current_models",
+         "category" : "TCALIF_v1.0/1. Gene Sets/Primary Gene Sets: Protein Coding",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Consensus gene models from the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "repeat"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "repeatmasker",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/repeatmasker/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "category" : "TCALIF_v1.0/2. Evidence/Repeats",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from RepeatMasker as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         },
+         "label" : "repeatmasker"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "repeat"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "repeatrunner",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/repeatrunner/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "category" : "TCALIF_v1.0/2. Evidence/Repeats",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Repeatrunner as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         },
+         "label" : "repeatrunner"
+      },
+      {
+         "style" : {
+            "pos_color" : "black",
+            "neg_color" : "white"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Gaps in assembly",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/TCALIF_genome_v1.0.fasta.gaps.bigwig",
+         "category" : "Reference Assembly",
+         "label" : "Gaps in assembly",
+         "metadata" : {
+            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track contact" : "The i5k workspace@NAL"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/Density"
+      },
+      {
+         "style" : {
+            "neg_color" : "rgba(255,255,0,50)",
+            "pos_color" : "rgba(0,0,255,50)"
+         },
+         "bicolor_pivot" : "0.5",
+         "key" : "GC Content",
+         "scoreType": "avgScore",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "bigwig/TCALIF_genome_v1.0.fasta.gc.bigwig",
+         "metadata" : {
+            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track contact" : "The i5k workspace@NAL"
+         },
+         "category" : "Reference Assembly",
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "label" : "GC Content"
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Apis_mellifera_blastx",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Apis_mellifera_blastx/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Apis_mellifera_blastx",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Apis_mellifera_protein2genome",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Apis_mellifera_protein2genome/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Apis_mellifera_protein2genome",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "C_elegans_blastx",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/C_elegans_blastx/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "C_elegans_blastx",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "C_elegans_protein2genome",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/C_elegans_protein2genome/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "C_elegans_protein2genome",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Copepoda_blastx",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Copepoda_blastx/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Copepoda_blastx",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Copepoda_protein2genome",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Copepoda_protein2genome/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Copepoda_protein2genome",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Daphnia_blastx",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Daphnia_blastx/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Daphnia_blastx",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Daphnia_protein2genome",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Daphnia_protein2genome/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Daphnia_protein2genome",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Drosophila_melanogaster_blastx",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Drosophila_melanogaster_blastx/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Drosophila_melanogaster_blastx",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Drosophila_melanogaster_protein2genome",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Drosophila_melanogaster_protein2genome/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Drosophila_melanogaster_protein2genome",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Mus_musculus_blastx",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Mus_musculus_blastx/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Mus_musculus_blastx",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Mus_musculus_protein2genome",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Mus_musculus_protein2genome/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Mus_musculus_protein2genome",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "augustus"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Tcalif_augustus_masked",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Tcalif_augustus_masked/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Tcalif_augustus_masked",
+         "category" : "TCALIF_v1.0/1. Gene Sets/Supplementary Gene Predictions",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Augustus analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "snap"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Tcalif_snap_masked",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Tcalif_snap_masked/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Tcalif_snap_masked",
+         "category" : "TCALIF_v1.0/1. Gene Sets/Supplementary Gene Predictions",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Snap analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "blastn"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Tcalif_transcriptome_blastn",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Tcalif_transcriptome_blastn/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Tcalif_transcriptome_blastn",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Supplementary: Blastn",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastn as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "est2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Tcalif_transcriptome_est2genome",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Tcalif_transcriptome_est2genome/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Tcalif_transcriptome_est2genome",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Est2genome",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Est2genome analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Tribolium_blastx",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Tribolium_blastx/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Tribolium_blastx",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Supplementary: BlastX",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Blastx analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "style" : {
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            },
+            "arrowheadClass" : "webapollo-arrowhead"
+         },
+         "key" : "Tribolium_protein2genome",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Tribolium_protein2genome/{refseq}/trackData.json",
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "Tribolium_protein2genome",
+         "category" : "TCALIF_v1.0/3. Mapped DNA or Proteins/Protein2genome",
+         "metadata" : {
+            "Analysis description" : "MAKER2.31",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Track legend" : "Results from Protein2genome analysis as part of the MAKER automated annotation pipeline.",
+            "Analysis contact" : "Felipe Bareto, Burton lab, SIO"
+         }
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
+         "urlTemplate" : "user_contributed_data/TCALIF_ABpop/AB_to_SD_genome4.flt.vcf.gz",
+         "label" : "Abalone_Cove_population",
+         "type" : "JBrowse/View/Track/HTMLVariants",
+         "metadata" : {
+            "Analysis method" : "samtools-0.1.19",
+            "Geographical location of specimen collection" : "USA, Abalone Cove, 33.7377°N, 118.3753°W",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Sequencing platform" : "Illumina HiSeq 200bp",
+            "Date completed" : "5/8/14",
+            "Track legend" : "Variant calls from the program samtools-1.1. Click on each SNP for more detailed information",
+            "Sex" : "Pooled",
+            "Tissues included" : "Pooled adult males and females",
+            "Analysis contact" : "Thiago Lima, Scripps Institution of Oceanography"
+         },
+         "category" : "DNASeq/Variant information",
+         "key" : "Abalone Cove population (variant calls)"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/TCALIF_ABpop/AB_to_SD_genome4_opt_15_merged_sort.bam",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "Abalone Cove population",
+         "metadata" : {
+            "Analysis method" : "BWA-0.6.2",
+            "Geographical location of specimen collection" : "USA, Abalone Cove, 33.7377°N, 118.3753°W",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Sequencing platform" : "Illumina HiSeq 200bp",
+            "Date completed" : "4/25/14",
+            "Sex" : "Pooled",
+            "Tissues included" : "Pooled adult males and females",
+            "Analysis contact" : "Thiago Lima, Scripps Institution of Oceanography"
+         },
+         "category" : "DNASeq/Mapped Reads",
+         "key" : "Abalone Cove population (mapped reads)"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Abalone Cove population (Coverage Plot)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/TCALIF_ABpop/AB_to_SD_genome4_opt_15_merged_sort.bigwig",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "label" : "Abalone Cove population (Coverage Plot)",
+         "category" : "DNASeq/Coverage Plots (BigWig)",
+         "metadata" : {
+            "Analysis method" : "BWA-0.6.2",
+            "Geographical location of specimen collection" : "USA, Abalone Cove, 33.7377°N, 118.3753°W",
+            "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+            "Sequencing platform" : "Illumina HiSeq 200bp",
+            "Date completed" : "4/25/14",
+            "Sex" : "Pooled",
+            "Tissues included" : "Pooled adult males and females",
+            "Analysis contact" : "Thiago Lima, Scripps Institution of Oceanography"
+         }
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/CAT_to_SD_genome4_opt_15_merged_sort.bam",
+
+"category" : "DNASeq/Mapped Reads",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Catalina Island, 33°26.8’N, 118°28.6’W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"7/24/14",
+	"Track legend":"This track displays alignments of the BWA-0.6.2 program. Aligned portions of the source data are dark blue, whereas alignment gaps are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)."
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "Catalina Island population (mapped reads)",
+         "key" : "Catalina Island population (mapped reads)"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/BB_to_SD_genome4_opt_15_merged_sort.bam",
+
+"category" : "DNASeq/Mapped Reads",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Bodega Bay, 38°19'4”N, 123°4'23”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"4/25/14",
+	"Track legend":"This track displays alignments of the BWA-0.6.2 program. Aligned portions of the source data are dark blue, whereas alignment gaps are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)."
+},
+         "label" : "Bodega Bay population (mapped reads)",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "Bodega Bay population (mapped reads)"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/BR_to_SD_genome4_opt_15_merged_sort.bam",
+
+"category" : "DNASeq/Mapped Reads",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Bird Rock, 32˚48’54”N, 117˚16’23”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"7/24/14",
+	"Track legend":"This track displays alignments of the BWA-0.6.2 program. Aligned portions of the source data are dark blue, whereas alignment gaps are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)."
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "Bird Rock population (mapped reads)",
+         "key" : "Bird Rock population (mapped reads)"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/FHL_to_SD_genome4_opt_15_merged_sort.bam",
+
+"category" : "DNASeq/Mapped Reads",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Friday Harbor, 48°32'47”N, 123°0'35”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"7/24/14",
+	"Track legend":"This track displays alignments of the BWA-0.6.2 program. Aligned portions of the source data are dark blue, whereas alignment gaps are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)."
+},
+         "label" : "Friday Harbor population (mapped reads)",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "Friday Harbor population (mapped reads)"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/SC_to_SD_genome4_opt_15_merged_sort.bam",
+
+"category" : "DNASeq/Mapped Reads",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Santa Cruz, 36°56’58”N, 122°02’49”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"4/15/14",
+	"Track legend":"This track displays alignments of the BWA-0.6.2 program. Aligned portions of the source data are dark blue, whereas alignment gaps are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)."
+},
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "label" : "Santa Cruz population (mapped reads)",
+         "key" : "Santa Cruz population (mapped reads)"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/SRQ_to_SD_genome4_opt_15_merged_sort.bam",
+
+"category" : "DNASeq/Mapped Reads",
+"metadata" : {
+	"Geographical location of specimen collection":"Mexico, San Roque, 27°11'12”N, 114°23'52”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"4/25/14",
+	"Track legend":"This track displays alignments of the BWA-0.6.2 program. Aligned portions of the source data are dark blue, whereas alignment gaps are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)."
+},
+         "label" : "San Roque population (mapped reads)",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "key" : "San Roque population (mapped reads)"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Catalina Island population (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/CAT_to_SD_genome4_opt_15_merged_sort.bigwig",
+
+"category" : "DNASeq/Coverage Plots (BigWig)",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Catalina Island, 33°26.8’N, 118°28.6’W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"7/24/14",
+	"Track legend":"This track represents a coverage plot of mapped reads. See track Catalina Island population (mapped reads) for the corresponding alignments."
+},
+         "label" : "Catalina Island population (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Bird Rock population (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/BR_to_SD_genome4_opt_15_merged_sort.bigwig",
+
+"category" : "DNASeq/Coverage Plots (BigWig)",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Bird Rock, 32˚48’54”N, 117˚16’23”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"7/24/14",
+	"Track legend":"This track represents a coverage plot of mapped reads. See track Bird Rock population (mapped reads) for the corresponding alignments."
+},
+         "label" : "Bird Rock population (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "Friday Harbor population (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/FHL_to_SD_genome4_opt_15_merged_sort.bigwig",
+
+"category" : "DNASeq/Coverage Plots (BigWig)",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Friday Harbor, 48°32'47”N, 123°0'35”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"7/24/14",
+	"Track legend":"This track represents a coverage plot of mapped reads. See track Friday Harbor population (mapped reads) for the corresponding alignments."
+},
+         "label" : "Friday Harbor population (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Santa Cruz population (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/SC_to_SD_genome4_opt_15_merged_sort.bigwig",
+
+"category" : "DNASeq/Coverage Plots (BigWig)",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Santa Cruz, 36°56’58”N, 122°02’49”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"4/15/14",
+	"Track legend":"This track represents a coverage plot of mapped reads. See track Santa Cruz population (mapped reads) for the corresponding alignments."
+},
+         "label" : "Santa Cruz population (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "key" : "San Roque population (Coverage Plots)",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/SRQ_to_SD_genome4_opt_15_merged_sort.bigwig",
+
+"category" : "DNASeq/Coverage Plots (BigWig)",
+"metadata" : {
+	"Geographical location of specimen collection":"Mexico, San Roque, 27°11'12”N, 114°23'52”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"4/25/14",
+	"Track legend":"This track represents a coverage plot of mapped reads. See track San Roque population (mapped reads) for the corresponding alignments."
+},
+         "label" : "San Roque population (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "bicolor_pivot" : "zero",
+         "key" : "Bodega Bay population (Coverage Plots)",
+         "autoscale" : "local",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/BB_to_SD_genome4_opt_15_merged_sort.bigwig",
+
+"category" : "DNASeq/Coverage Plots (BigWig)",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Bodega Bay, 38°19'4”N, 123°4'23”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"BWA-0.6.2",
+	"Date completed":"4/25/14",
+	"Track legend":"This track represents a coverage plot of mapped reads. See track Bodega Bay population (mapped reads) for the corresponding alignments."
+},
+         "label" : "Bodega Bay population (Coverage Plots)",
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/BR_to_SD_genome4.flt.vcf.gz",
+
+"category" : "DNASeq/Variant information",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Bird Rock, 32˚48’54”N, 117˚16’23”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"samtools-0.1.19",
+	"Date completed":"10/14/15",
+	"Track legend":"Variant calls from the program samtools-0.1.19. Click on each SNP for more detailed information"
+},
+         "label" : "Bird Rock population (variant calls)",
+         "type" : "JBrowse/View/Track/HTMLVariants",
+         "key" : "Bird Rock population (variant calls)"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/CAT_to_SD_genome4.flt.vcf.gz",
+
+"category" : "DNASeq/Variant information",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Catalina Island, 33°26.8’N, 118°28.6’W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"samtools-1.1",
+	"Date completed":"10/15/17",
+	"Track legend":"Variant calls from the program samtools-1.1. Click on each SNP for more detailed information"
+},
+         "type" : "JBrowse/View/Track/HTMLVariants",
+         "label" : "Catalina Island population (variant calls)",
+         "key" : "Catalina Island population (variant calls)"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/SC_to_SD_genome4.flt.vcf.gz",
+
+"category" : "DNASeq/Variant information",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Santa Cruz, 36°56’58”N, 122°02’49”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"samtools-1.1",
+	"Date completed":"2/15/17",
+	"Track legend":"Variant calls from the program samtools-1.1. Click on each SNP for more detailed information"
+},
+         "label" : "Santa Cruz population (variant calls)",
+         "type" : "JBrowse/View/Track/HTMLVariants",
+         "key" : "Santa Cruz population (variant calls)"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/BB_to_SD_genome4.flt.vcf.gz",
+
+"category" : "DNASeq/Variant information",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Bodega Bay, 38°19'4”N, 123°4'23”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"samtools-1.1",
+	"Date completed":"10/16/15",
+	"Track legend":"Variant calls from the program samtools-1.1. Click on each SNP for more detailed information"
+},
+         "type" : "JBrowse/View/Track/HTMLVariants",
+         "label" : "Bodega Bay population (variant calls)",
+         "key" : "Bodega Bay population (variant calls)"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/SRQ_to_SD_genome4.flt.vcf.gz",
+
+"category" : "DNASeq/Variant information",
+"metadata" : {
+	"Geographical location of specimen collection":"Mexico, San Roque, 27°11'12”N, 114°23'52”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"samtools-1.1",
+	"Date completed":"10/26/15",
+	"Track legend":"Variant calls from the program samtools-1.1. Click on each SNP for more detailed information"
+},
+         "label" : "San Roque population (variant calls)",
+         "type" : "JBrowse/View/Track/HTMLVariants",
+         "key" : "San Roque population (variant calls)"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
+         "urlTemplate" : "user_contributed_data/Tigriopus_californicus_i5k/FHL_to_SD_genome4.flt.vcf.gz",
+
+"category" : "DNASeq/Variant information",
+"metadata" : {
+	"Geographical location of specimen collection":"USA, Friday Harbor, 48°32'47”N, 123°0'35”W",
+	"Tissues included":"Pooled adult males and females",
+	"Sex":"Pooled",
+	"Sequencing platform and version":"Illumina HiSeq 200bp",
+	"Publication status":"Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+	"File provider":"Thiago Lima, Scripps Institution of Oceanography",
+	"Analysis method":"samtools-1.1",
+	"Date completed":"10/26/15",
+	"Track legend":"Variant calls from the program samtools-1.1. Click on each SNP for more detailed information"
+},
+         "type" : "JBrowse/View/Track/HTMLVariants",
+         "label" : "Friday Harbor population (variant calls)",
+         "key" : "Friday Harbor population (variant calls)"
+      }
+   ],
+   "names" : {
+      "url" : "names/",
+      "type" : "Hash"
+   },
+   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
+   "alwaysOnTracks" : "DNA,Annotations",
+   "formatVersion" : 1
+}
