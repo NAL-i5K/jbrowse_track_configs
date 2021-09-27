@@ -90,8 +90,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLFeatures",
-      "type": "HTMLFeatures",
+      trackType: null,
+      "type": "FeatureTrack",
       "urlTemplate": "tracks/hyaazt_current_models/{refseq}/trackData.json"
     }
   ]

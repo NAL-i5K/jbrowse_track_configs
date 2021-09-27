@@ -41,7 +41,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -50,8 +50,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         trackType: null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/bracop_current_models/{refseq}/trackData.json"
       },
       {
@@ -68,7 +68,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -77,8 +77,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         trackType: null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
       },
       {
@@ -134,7 +134,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className": "container-16px",
+            "className": "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -143,8 +143,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         trackType: null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/Bcop_v1.0-Gene_set/{refseq}/trackData.json"
       },
       {
@@ -162,15 +162,15 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className": "container-16px",
+            "className": "{type}",
             "description" : "name",
             "subfeatureClasses" : {
                "match_part" : "blast-match_part",
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         trackType: null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/Bcop_v1.0-Evidence/{refseq}/trackData.json"
       },
       {
@@ -244,7 +244,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-	    "className": "container-16px",
+	    "className": "{type}",
             "description" : "name",
             "subfeatureClasses" : {
                "match" : "repeat",
@@ -252,8 +252,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         trackType: null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/Bcop_v1.0-Repeats/{refseq}/trackData.json"
       }
    ]

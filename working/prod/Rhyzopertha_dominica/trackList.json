@@ -407,7 +407,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "note, Ontology_term, Dbxref",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -416,8 +416,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         trackType: null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/Rhyzopertha_dominica.annotation/{refseq}/trackData.json"
       }
    ]

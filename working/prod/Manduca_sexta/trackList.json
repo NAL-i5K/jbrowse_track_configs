@@ -29,7 +29,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -38,8 +38,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         trackType: null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_102_Pseudogene/{refseq}/trackData.json"
       },
       {
@@ -101,7 +101,7 @@ _Msex_v1.0 using the LiftOff (https://doi.org/10.1093/bioinformatics/btaa1016) a
   },
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -110,8 +110,8 @@ _Msex_v1.0 using the LiftOff (https://doi.org/10.1093/bioinformatics/btaa1016) a
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         trackType: null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/OGSv2.2_Gene/{refseq}/trackData.json"
       },
       {
@@ -196,7 +196,7 @@ _Msex_v1.0 using the LiftOff (https://doi.org/10.1093/bioinformatics/btaa1016) a
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -205,8 +205,8 @@ _Msex_v1.0 using the LiftOff (https://doi.org/10.1093/bioinformatics/btaa1016) a
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         trackType: null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/mansex_current_models/{refseq}/trackData.json"
       }
    ]

@@ -96,8 +96,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLFeatures",
-      "type": "HTMLFeatures",
+      trackType: null,
+      "type": "FeatureTrack",
       "urlTemplate": "tracks/galmel_current_models/{refseq}/trackData.json"
     },
     {
@@ -123,8 +123,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLFeatures",
-      "type": "HTMLFeatures",
+      trackType: null,
+      "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json"
     }
   ]

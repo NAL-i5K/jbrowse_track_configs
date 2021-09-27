@@ -67,7 +67,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "webapollo-arrowhead",
-            "className" : "container-10px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "protein_domains"
             }
@@ -942,7 +942,7 @@
 },
         "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -951,7 +951,7 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
+         trackType: null,
          "type" : "ColorByType/View/Track/ColorByTypeDraggable",
          "urlTemplate" : "tracks/cepcin_current_models/{refseq}/trackData.json"
       },
@@ -981,7 +981,7 @@ metadata: {
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -990,8 +990,8 @@ metadata: {
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         trackType: null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/OGSv_Pseudogene/{refseq}/trackData.json"
       },
       {
@@ -1008,7 +1008,7 @@ metadata: {
          },
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -1017,7 +1017,7 @@ metadata: {
                "wholeCDS" : null
             }
          },
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
+         trackType: null,
          "type" : "ColorByType/View/Track/ColorByTypeDraggable",
          "urlTemplate" : "tracks/NCBI_Cephus_cinctus_Annotation_Release_101-tRNAs-and-rRNAs/{refseq}/trackData.json"
       }

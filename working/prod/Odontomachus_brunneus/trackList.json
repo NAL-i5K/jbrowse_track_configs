@@ -77,8 +77,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLFeatures",
-      "type": "HTMLFeatures",
+      trackType: null,
+      "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -655,8 +655,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLFeatures",
-      "type": "HTMLFeatures",
+      trackType: null,
+      "type": "FeatureTrack",
       "urlTemplate": "tracks/odobru_current_models/{refseq}/trackData.json"
     },
     {
@@ -695,8 +695,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLFeatures",
-      "type": "HTMLFeatures",
+      trackType: null,
+      "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Gene-CBT/{refseq}/trackData.json"
     },
     {

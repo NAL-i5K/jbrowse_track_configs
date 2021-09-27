@@ -53,7 +53,7 @@
         }
       },
       "trackType": null,
-      "type": "HTMLFeatures",
+      "type": "FeatureTrack",
       "urlTemplate": "tracks/apimel_current_models/{refseq}/trackData.json"
     },
     {
@@ -118,8 +118,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLFeatures",
-      "type": "HTMLFeatures",
+      trackType: null,
+      "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_103_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -134,7 +134,7 @@
         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
-      "trackType": "HTMLFeatures",
+      trackType: null,
       "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_103_Gene/{refseq}/trackData.json"
     }

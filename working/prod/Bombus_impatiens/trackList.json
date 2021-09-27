@@ -60,7 +60,7 @@
         }
       },
       "trackType": null,
-      "type": "HTMLFeatures",
+      "type": "FeatureTrack",
       "urlTemplate": "tracks/bomimp_current_models/{refseq}/trackData.json"
     },
     {
@@ -137,8 +137,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLFeatures",
-      "type": "HTMLFeatures",
+      trackType: null,
+      "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_102_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -176,8 +176,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLFeatures",
-      "type": "HTMLFeatures",
+      trackType: null,
+      "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_102_Gene/{refseq}/trackData.json"
     }
   ]
