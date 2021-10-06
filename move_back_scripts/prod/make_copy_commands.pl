@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 use strict;
-my $server = "stage";
+my $server = "prod";
 while (<>){
 	$_ =~ m/(\S*)\|(\S*)/;
 #	print "mkdir $1; cd $1; cp ./$1/* $2/trackList.json; cd .. \n";
