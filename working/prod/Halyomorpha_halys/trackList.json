@@ -422,7 +422,7 @@
             }
          },
          trackType: null,
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/halhal_current_models/{refseq}/trackData.json"
       }
    ]

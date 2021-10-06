@@ -89,7 +89,7 @@
 	 "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster",
 	 },	 
          trackType: null,
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/nylful_current_models/{refseq}/trackData.json"
       },
       {

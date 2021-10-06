@@ -89,7 +89,7 @@
             }
          },
          trackType: null,
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/cheins_current_models/{refseq}/trackData.json"
       },
       {
