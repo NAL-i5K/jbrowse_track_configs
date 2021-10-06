@@ -952,7 +952,7 @@
             }
          },
          trackType: null,
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/cepcin_current_models/{refseq}/trackData.json"
       },
       {
@@ -1018,7 +1018,7 @@ metadata: {
             }
          },
          trackType: null,
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/NCBI_Cephus_cinctus_Annotation_Release_101-tRNAs-and-rRNAs/{refseq}/trackData.json"
       }
    ]

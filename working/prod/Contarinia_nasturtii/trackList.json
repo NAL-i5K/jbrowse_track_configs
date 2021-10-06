@@ -129,7 +129,7 @@
             }
          },
          trackType: null,
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/connas_current_models/{refseq}/trackData.json"
       }
    ]

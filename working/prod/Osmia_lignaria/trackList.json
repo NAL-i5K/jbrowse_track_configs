@@ -70,7 +70,7 @@
             }
          },
          trackType: null,
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/osmlig_current_models/{refseq}/trackData.json"
       },
       {

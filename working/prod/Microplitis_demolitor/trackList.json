@@ -39,7 +39,7 @@
             }
          },
          trackType: null,
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_101_Gene/{refseq}/trackData.json"
       },
       {
