@@ -1,0 +1,154 @@
+{
+   "formatVersion" : 1,
+   "names" : {
+      "type" : "Hash",
+      "url" : "names/"
+   },
+   "tracks" : [
+      {
+         "category" : "Reference sequence",
+         "chunkSize" : 20000,
+         "key" : "Reference sequence",
+         "label" : "DNA",
+         "seqType" : "dna",
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "type" : "SequenceTrack",
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
+      },
+      {
+         "category" : "NCBI Annotation Release 100",
+         "compress" : 0,
+         "key" : "NCBI_Annotation_Release_100_Gene",
+         "label" : "lucser_current_models",
+         "menuTemplate" : [
+            {
+               "label" : "View details"
+            },
+            {
+               "action" : "newWindow",
+               "iconClass" : "dijitIconDatabase",
+               "label" : "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+               "title" : "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+               "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('name')}"
+            }
+         ],
+         "metadata" : {
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Lucilia_sericata/README_CURRENT_RELEASE",
+            "Data provider" : "NCBI",
+            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/015/586/225/GCF_015586225.1_ASM1558622v1/GCF_015586225.1_ASM1558622v1_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
+            "description" : "product, note, description",
+            "subfeatureClasses" : {
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType": null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/lucser_current_models/{refseq}/trackData.json"
+      },
+      {
+         "category" : "NCBI Annotation Release 100",
+         "compress" : 0,
+         "key" : "NCBI_Annotation_Release_100_Pseudogene",
+         "label" : "NCBI_Annotation_Release_100_Pseudogene",
+         "metadata" : {
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Lucilia_sericata/README_CURRENT_RELEASE",
+            "Data provider" : "NCBI",
+            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/015/586/225/GCF_015586225.1_ASM1558622v1/GCF_015586225.1_ASM1558622v1_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
+            "description" : "product, note, description",
+            "subfeatureClasses" : {
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType": null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "0.5",
+         "category" : "Reference Assembly",
+         "key" : "GC Content",
+         "label" : "GC Content",
+         "metadata" : {
+            "Track contact" : "The i5k workspace@NAL",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+         },
+         "scoreType" : "avgScore",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "neg_color" : "rgba(255,255,0,50)",
+            "pos_color" : "rgba(0,0,255,50)"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "urlTemplate" : "bigwig/GCF_015586225.1_ASM1558622v1_genomic.fna.gc.bigwig"
+      },
+      {
+         "category" : "RNA-Seq/Mapped Reads",
+         "key" : "Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11",
+         "label" : "Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR14883001'>SRR14883001</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11814677'>SRR11814677</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR14883004'>SRR14883004</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11814669'>SRR11814669</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR14882999'>SRR14882999</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR350015'>SRR350015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR14882997'>SRR14882997</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR658157'>ERR658157</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11814676'>SRR11814676</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR14882996'>SRR14882996</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "urlTemplate" : "analyses/Lucilia-sericata-RNA-Seq_2021-08-11_v1.0/Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11.bam"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "RNA-Seq/Coverage Plots",
+         "key" : "Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11_coverage",
+         "label" : "Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11_coverage",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "urlTemplate" : "analyses/Lucilia-sericata-RNA-Seq_2021-08-11_v1.0/Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11.bigwig"
+      },
+      {
+         "category" : "RNA-Seq/Splice junctions",
+         "compress" : 0,
+         "key" : "Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11_junctions",
+         "label" : "Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11_junctions",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR14883001'>SRR14883001</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11814677'>SRR11814677</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR14883004'>SRR14883004</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11814669'>SRR11814669</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR14882999'>SRR14882999</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR350015'>SRR350015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR14882997'>SRR14882997</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR658157'>ERR658157</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11814676'>SRR11814676</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR14882996'>SRR14882996</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "feature",
+	    "description" : "score"
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11_junctions/{refseq}/trackData.json"
+      }
+   ]
+}

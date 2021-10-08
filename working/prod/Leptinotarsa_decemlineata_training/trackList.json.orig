@@ -1,5 +1,5 @@
 {
-   "css" : "./plugins/NAL_CSS/css/main.css",
+   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
    "share_link" : 0,
    "tracks" : [
       {
@@ -1327,6 +1327,7 @@
       },
       {
          "style" : {
+            "description" : "score",
             "className" : "{type}",
             "subfeatureClasses" : {
                "wholeCDS" : null,
@@ -1703,6 +1704,12 @@
             "Data provider" : "Kristian Brevik, University of Vermont",
             "Data description" : "RepeatModeler, followed by removal of false positives via active protein prediction, and RepeatMasker"
          }
+      }
+   ],
+   "plugins" : [
+      {
+         "location" : "./plugins/WebApollo",
+         "name" : "WebApollo"
       }
    ],
    "names" : {

@@ -40,7 +40,6 @@
          "category" : "Reference Assembly",
          "key" : "GC Content",
          "label" : "GC Content",
-         "scoreType": "avgScore",
          "metadata" : {
             "Track contact" : "The i5k workspace@NAL",
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
@@ -422,8 +421,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/halhal_current_models/{refseq}/trackData.json"
       }
    ]

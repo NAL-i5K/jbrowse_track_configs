@@ -40,7 +40,6 @@
          "category" : "Reference Assembly",
          "key" : "GC Content",
          "label" : "GC Content",
-         "scoreType": "avgScore",
          "metadata" : {
             "Track contact" : "The i5k workspace@NAL",
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
@@ -935,8 +934,8 @@
             }
          ],
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-	  "metadata": {
-	  "Data source":"https://doi.org/10.15482/USDA.ADC/1484022; https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/341/935/GCF_000341935.1_Ccin1/",
+ "metadata": {
+"Data source":"https://doi.org/10.15482/USDA.ADC/1484022; https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/341/935/GCF_000341935.1_Ccin1/",
 "Materials and Methods":"https://doi.org/10.15482/USDA.ADC/1484022",
 "Publication status":"Published, please cite https://doi.org/10.1093/gbe/evy232",
 "Data provider":"National Agricultural Library; Cephus cinctus annotation community; NCBI"
@@ -952,8 +951,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/cepcin_current_models/{refseq}/trackData.json"
       },
       {
@@ -991,8 +990,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/OGSv_Pseudogene/{refseq}/trackData.json"
       },
       {
@@ -1018,8 +1017,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/NCBI_Cephus_cinctus_Annotation_Release_101-tRNAs-and-rRNAs/{refseq}/trackData.json"
       }
    ]

@@ -38,8 +38,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_101_Gene/{refseq}/trackData.json"
       },
       {
@@ -65,8 +65,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json"
       },
       {
@@ -94,7 +94,6 @@
          "category" : "Reference Assembly",
          "key" : "GC Content",
          "label" : "GC Content",
-         "scoreType": "avgScore",
          "metadata" : {
             "Track contact" : "The i5k workspace@NAL",
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
@@ -559,8 +558,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/micdem_current_models/{refseq}/trackData.json"
       },
       {
@@ -585,8 +584,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/OGSv1.0_Pseudogene/{refseq}/trackData.json"
       }
    ]

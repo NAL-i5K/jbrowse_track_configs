@@ -40,7 +40,6 @@
          "category" : "Reference Assembly",
          "key" : "GC Content",
          "label" : "GC Content",
-         "scoreType": "avgScore",
          "metadata" : {
             "Track contact" : "The i5k workspace@NAL",
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
@@ -89,8 +88,8 @@
 	 "Publication status" : "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use", 
 	 "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster"
 	 },	 
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/nylful_current_models/{refseq}/trackData.json"
       },
       {
@@ -116,8 +115,8 @@
          "Publication status" : "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use",
          "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster"
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/OGSv1.0_Pseudogene/{refseq}/trackData.json"
       }
    ]

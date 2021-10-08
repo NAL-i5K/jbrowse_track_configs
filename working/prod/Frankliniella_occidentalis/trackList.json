@@ -90,7 +90,7 @@
           "wholeCDS": null
         }
       },
-      trackType: null,
+      "trackType": null,
       "type": "FeatureTrack",
       "urlTemplate": "tracks/fraocc_current_models/{refseq}/trackData.json"
     },

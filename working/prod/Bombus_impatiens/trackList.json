@@ -137,7 +137,7 @@
           "wholeCDS": null
         }
       },
-      trackType: null,
+      "trackType": null,
       "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_102_Pseudogene/{refseq}/trackData.json"
     },
@@ -176,7 +176,7 @@
           "wholeCDS": null
         }
       },
-      trackType: null,
+      "trackType": null,
       "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_102_Gene/{refseq}/trackData.json"
     }
