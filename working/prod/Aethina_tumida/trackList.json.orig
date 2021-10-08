@@ -1,232 +1,232 @@
 {
-   "css" : "./plugins/NAL_CSS/css/main.css",
-   "share_link" : 0,
-   "tracks" : [
-      {
-         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
-         "chunkSize" : 20000,
-         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
-         "label" : "DNA",
-         "type" : "SequenceTrack",
-         "category" : "Reference sequence",
-         "key" : "Reference sequence"
+  "alwaysOnTracks": "DNA,Annotations",
+  "css": "./plugins/NAL_CSS/css/main.css",
+  "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "share_link": 0,
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "autocomplete": "none",
+      "compress": 0,
+      "key": "User-created Annotations",
+      "label": "Annotations",
+      "phase": 0,
+      "storeClass": "WebApollo/Store/SeqFeature/ScratchPad",
+      "style": {
+        "alternateClasses": {
+          "miRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "ncRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "pseudogene": {
+            "className": "light-purple-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "rRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "repeat_region": {
+            "className": "magenta-80pct"
+          },
+          "snRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "snoRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "tRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "transposable_element": {
+            "className": "blue-ibeam",
+            "renderClassName": "blue-ibeam-render"
+          }
+        },
+        "arrowheadClass": "annot-arrowhead",
+        "centerSubFeature": {
+          "non_canonical_five_prime_splice_site": false,
+          "non_canonical_three_prime_splice_site": false
+        },
+        "className": "annot",
+        "renderClassName": "annot-render",
+        "subfeatureClasses": {
+          "CDS": "annot-CDS",
+          "UTR": "annot-UTR",
+          "exon": "container-100pct",
+          "non_canonical_five_prime_splice_site": "noncanonical-splice-site",
+          "non_canonical_three_prime_splice_site": "noncanonical-splice-site",
+          "wholeCDS": null
+        },
+        "uniqueIdField": "id"
       },
-      {
-         "autocomplete" : "none",
-         "style" : {
-            "className" : "annot",
-            "renderClassName" : "annot-render",
-            "subfeatureClasses" : {
-               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "annot-CDS",
-               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
-               "UTR" : "annot-UTR"
-            },
-            "arrowheadClass" : "annot-arrowhead",
-            "alternateClasses" : {
-               "transposable_element" : {
-                  "renderClassName" : "blue-ibeam-render",
-                  "className" : "blue-ibeam"
-               },
-               "pseudogene" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "light-purple-80pct"
-               },
-               "snRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               },
-               "rRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               },
-               "snoRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               },
-               "repeat_region" : {
-                  "className" : "magenta-80pct"
-               },
-               "miRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               },
-               "tRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               },
-               "ncRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               }
-            },
-            "uniqueIdField" : "id",
-            "centerSubFeature" : {
-               "non_canonical_three_prime_splice_site" : false,
-               "non_canonical_five_prime_splice_site" : false
-            }
-         },
-         "key" : "User-created Annotations",
-         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
-         "phase" : 0,
-         "compress" : 0,
-         "label" : "Annotations",
-         "type" : "WebApollo/View/Track/AnnotTrack",
-         "subfeatures" : 1
+      "subfeatures": 1,
+      "type": "WebApollo/View/Track/AnnotTrack"
+    },
+    {
+      "category": "NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
+      "compress": 0,
+      "key": "NCBI Predicted protein-coding genes, Annotation Release 100",
+      "label": "aettum_current_models",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+        "Note": "Some genes may have non-coding transcripts"
       },
-            {
-         "style" : {
-            "className" : "{type}",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "primary_gene_set-cds",
-               "UTR" : "primary_gene_set-utr"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted protein-coding genes, Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/aettum_current_models/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Protein Coding",
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data provider" : "NCBI",
-            "Note" : "Some genes may have non-coding transcripts",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE"
-         },
-         "label" : "aettum_current_models",
-         "type" : "FeatureTrack"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "primary_gene_set-cds",
+          "UTR": "primary_gene_set-utr",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "{type}",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted lncRNA, Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "NCBI_Annotation_Release_100_lncRNA",
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
-         "metadata" : {
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE"
-         }
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/aettum_current_models/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+      "compress": 0,
+      "key": "NCBI Predicted lncRNA, Annotation Release 100",
+      "label": "NCBI_Annotation_Release_100_lncRNA",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "style" : {
-            "className" : "{type}",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted pseudogenes, Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE"
-         },
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Pseudogenes",
-         "type" : "FeatureTrack",
-         "label" : "NCBI_Annotation_Release_100_Pseudogene"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "style" : {
-            "className" : "{type}",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted tRNAs, Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "label" : "NCBI_Annotation_Release_100_tRNA",
-         "category" : "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
-         "metadata" : {
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE"
-         }
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100/1. Gene Sets/Pseudogenes",
+      "compress": 0,
+      "key": "NCBI Predicted pseudogenes, Annotation Release 100",
+      "label": "NCBI_Annotation_Release_100_Pseudogene",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
-      {
-         "style" : {
-            "className" : "{type}",
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "cDNA match evidence from NCBI Annotation Release 100",
-         "trackType" : null,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "NCBI Annotation Release 100/2. Evidence",
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE"
-         },
-         "label" : "NCBI_Annotation_Release_100_cDNA_match",
-         "type" : "FeatureTrack"
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
       },
-      {
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/GCF_001937115.1_Atum_1.0_genomic_RefSeqIDs.fna.gc.bigwig",
-         "style" : {
-            "neg_color" : "rgba(255,255,0,50)",
-            "pos_color" : "rgba(0,0,255,50)"
-         },
-         "label" : "GC Content",
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "bicolor_pivot" : "0.5",
-         "key" : "GC Content",
-         "scoreType": "avgScore",
-         "autoscale" : "local",
-         "metadata" : {
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
-            "Track contact" : "The i5k workspace@NAL"
-         },
-         "category" : "Reference Assembly"
-      }
-   ],
-   "names" : {
-      "url" : "names/",
-      "type" : "Hash"
-   },
-   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
-   "alwaysOnTracks" : "DNA,Annotations",
-   "formatVersion" : 1
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100/1. Gene Sets/Noncoding",
+      "compress": 0,
+      "key": "NCBI Predicted tRNAs, Annotation Release 100",
+      "label": "NCBI_Annotation_Release_100_tRNA",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100/2. Evidence",
+      "compress": 0,
+      "key": "cDNA match evidence from NCBI Annotation Release 100",
+      "label": "NCBI_Annotation_Release_100_cDNA_match",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Aethina_tumida/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/937/115/GCF_001937115.1_Atum_1.0/GCF_001937115.1_Atum_1.0_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "webapollo-arrowhead",
+        "className": "{type}"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+      },
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_001937115.1_Atum_1.0_genomic_RefSeqIDs.fna.gc.bigwig"
+    }
+  ]
 }

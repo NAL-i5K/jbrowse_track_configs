@@ -13,7 +13,6 @@
          "seqType" : "dna",
          "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
          "type" : "SequenceTrack",
-	"refSeqOrder" : "length descending",
          "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
       },
       {
@@ -51,8 +50,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/bracop_current_models/{refseq}/trackData.json"
       },
       {
@@ -78,8 +77,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
       },
       {
@@ -144,8 +143,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/Bcop_v1.0-Gene_set/{refseq}/trackData.json"
       },
       {
@@ -170,8 +169,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/Bcop_v1.0-Evidence/{refseq}/trackData.json"
       },
       {
@@ -253,8 +252,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/Bcop_v1.0-Repeats/{refseq}/trackData.json"
       }
    ]

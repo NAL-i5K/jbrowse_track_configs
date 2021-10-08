@@ -118,7 +118,7 @@
           "wholeCDS": null
         }
       },
-      trackType: null,
+      "trackType": null,
       "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_103_Pseudogene/{refseq}/trackData.json"
     },
@@ -134,7 +134,7 @@
         "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
       },
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
-      trackType: null,
+      "trackType": null,
       "type": "FeatureTrack",
       "urlTemplate": "tracks/NCBI_Annotation_Release_103_Gene/{refseq}/trackData.json"
     }

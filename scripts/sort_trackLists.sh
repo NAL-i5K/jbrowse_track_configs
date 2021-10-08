@@ -1,11 +1,8 @@
 #!/bin/bash
 
 for filename in ./*/trackList.json; do
-#    for ((i=0; i<=3; i++)); do
-#        ./MyProgram.exe "$filename" "Logs/$(basename "$filename" .txt)_Log$i.txt"
-#    done
+    cp "$filename" "$filename".orig
     echo "processing $filename"
-    cat "$filename" |jq -S > "$filename".sorted 
-    mv "$filename" "filename".orig
-    mv "$filename".sorted "$filename" 
+    cat "$filename.orig" |jq -S > "$filename".sorted 
+    mv "$filename".sorted "$filename"
 done

@@ -38,7 +38,7 @@
           "wholeCDS": null
         }
       },
-      trackType: null,
+      "trackType": null,
       "type": "FeatureTrack",
       "urlTemplate": "tracks/saceub_current_models/{refseq}/trackData.json"
     },

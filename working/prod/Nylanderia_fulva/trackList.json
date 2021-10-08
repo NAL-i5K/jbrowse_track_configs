@@ -1,123 +1,123 @@
 {
-   "formatVersion" : 1,
-   "names" : {
-      "type" : "Hash",
-      "url" : "names/"
-   },
-   "tracks" : [
-      {
-         "category" : "Reference sequence",
-         "chunkSize" : 20000,
-         "key" : "Reference sequence",
-         "label" : "DNA",
-         "seqType" : "dna",
-         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
-         "type" : "SequenceTrack",
-         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "seqType": "dna",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "zero",
-         "category" : "Reference Assembly",
-         "key" : "Gaps in assembly",
-         "label" : "Gaps in assembly",
-         "metadata" : {
-            "Track contact" : "The i5k workspace@NAL",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "neg_color" : "white",
-            "pos_color" : "black"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/GCF_005281655.1_TAMU_Nfulva_1.0_genomic.fna.gaps.bigwig"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
       },
-      {
-         "autoscale" : "local",
-         "bicolor_pivot" : "0.5",
-         "category" : "Reference Assembly",
-         "key" : "GC Content",
-         "label" : "GC Content",
-         "metadata" : {
-            "Track contact" : "The i5k workspace@NAL",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "style" : {
-            "neg_color" : "rgba(255,255,0,50)",
-            "pos_color" : "rgba(0,0,255,50)"
-         },
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/GCF_005281655.1_TAMU_Nfulva_1.0_genomic.fna.gc.bigwig"
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_005281655.1_TAMU_Nfulva_1.0_genomic.fna.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
       },
-      {
-         "category" : "Official Gene Set",
-         "compress" : 0,
-         "key" : "OGSv1.0 Gene",
-         "label" : "nylful_current_models",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "menuTemplate" : [
-             {
-                "label" : "View details",
-             },
-             {
-              "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-              "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-              "iconClass" : "dijitIconDatabase",
-              "action": "newWindow",
-              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}",
-              },
-        ],
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "{type}",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-	 "metadata" : {
-	 "Data source" : "https://data.nal.usda.gov/dataset/nylanderia-fulva-annotations-ogsv10",
-	 "Materials and Methods" : "The Nylanderia fulva OGSv1.0 is the Official Gene Set of genome assembly TAMU_Nfulva_1.0 (https://www.ncbi.nlm.nih.gov/assembly/GCF_005281655.1/). It is a merge of NCBI Nylanderia fulva Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Nylanderia_fulva/100/) and semi-automated predictions of odorant receptors.",
-	 "Publication status" : "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use", 
-	 "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster",
-	 },	 
-         trackType: null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/nylful_current_models/{refseq}/trackData.json"
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
       },
-      {
-         "category" : "Official Gene Set",
-         "compress" : 0,
-         "key" : "OGSv1.0 Pseudogene",
-         "label" : "OGSv1.0_Pseudogene",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "{type}",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "metadata" : {
-         "Data source" : "https://data.nal.usda.gov/dataset/nylanderia-fulva-annotations-ogsv10",
-         "Materials and Methods" : "The Nylanderia fulva OGSv1.0 is the Official Gene Set of genome assembly TAMU_Nfulva_1.0 (https://www.ncbi.nlm.nih.gov/assembly/GCF_005281655.1/). It is a merge of NCBI Nylanderia fulva Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Nylanderia_fulva/100/) and semi-automated predictions of odorant receptors.",
-         "Publication status" : "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use",
-         "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster",
-         },
-         trackType: null,
-         "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/OGSv1.0_Pseudogene/{refseq}/trackData.json"
-      }
-   ]
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCF_005281655.1_TAMU_Nfulva_1.0_genomic.fna.gc.bigwig"
+    },
+    {
+      "category": "Official Gene Set",
+      "compress": 0,
+      "key": "OGSv1.0 Gene",
+      "label": "nylful_current_models",
+      "menuTemplate": [
+        {
+          "label": "View details"
+        },
+        {
+          "action": "newWindow",
+          "iconClass": "dijitIconDatabase",
+          "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+          "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
+          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id')}"
+        }
+      ],
+      "metadata": {
+        "Data provider": "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster",
+        "Data source": "https://data.nal.usda.gov/dataset/nylanderia-fulva-annotations-ogsv10",
+        "Materials and Methods": "The Nylanderia fulva OGSv1.0 is the Official Gene Set of genome assembly TAMU_Nfulva_1.0 (https://www.ncbi.nlm.nih.gov/assembly/GCF_005281655.1/). It is a merge of NCBI Nylanderia fulva Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Nylanderia_fulva/100/) and semi-automated predictions of odorant receptors.",
+        "Publication status": "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/nylful_current_models/{refseq}/trackData.json"
+    },
+    {
+      "category": "Official Gene Set",
+      "compress": 0,
+      "key": "OGSv1.0 Pseudogene",
+      "label": "OGSv1.0_Pseudogene",
+      "metadata": {
+        "Data provider": "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster",
+        "Data source": "https://data.nal.usda.gov/dataset/nylanderia-fulva-annotations-ogsv10",
+        "Materials and Methods": "The Nylanderia fulva OGSv1.0 is the Official Gene Set of genome assembly TAMU_Nfulva_1.0 (https://www.ncbi.nlm.nih.gov/assembly/GCF_005281655.1/). It is a merge of NCBI Nylanderia fulva Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Nylanderia_fulva/100/) and semi-automated predictions of odorant receptors.",
+        "Publication status": "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/OGSv1.0_Pseudogene/{refseq}/trackData.json"
+    }
+  ]
 }

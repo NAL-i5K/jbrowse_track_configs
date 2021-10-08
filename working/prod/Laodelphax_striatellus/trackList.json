@@ -105,7 +105,7 @@
           "wholeCDS": null
         }
       },
-      trackType: null,
+      "trackType": null,
       "type": "FeatureTrack",
       "urlTemplate": "tracks/laostr_current_models/{refseq}/trackData.json"
     },
@@ -132,7 +132,7 @@
           "wholeCDS": null
         }
       },
-      trackType: null,
+      "trackType": null,
       "type": "FeatureTrack",
       "urlTemplate": "tracks/laostr_OGS_v1.2_pseudogene/{refseq}/trackData.json"
     },
@@ -154,7 +154,7 @@
         "description": "target",
         "renderClassName": "repeat"
       },
-      trackType: null,
+      "trackType": null,
       "type": "FeatureTrack",
       "urlTemplate": "tracks/ASM333518v2_Laodelphax_striatellus.RepeatMasker_v1.1_4-5-2019/{refseq}/trackData.json"
     }

@@ -1,6 +1,5 @@
 {
    "formatVersion" : 1,
-   "css" : "./plugins/NAL_CSS/css/main.css",
    "names" : {
       "type" : "Hash",
       "url" : "names/"
@@ -41,7 +40,6 @@
          "category" : "Reference Assembly",
          "key" : "GC Content",
          "label" : "GC Content",
-         "scoreType": "avgScore",
          "metadata" : {
             "Track contact" : "The i5k workspace@NAL",
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
@@ -394,7 +392,8 @@
          },
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
-            "className" : "{type}"
+	    "description": "score",
+            "className" : "feature"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
@@ -417,8 +416,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
+         "trackType": null,
+         "type" : "FeatureTrack",
          "urlTemplate" : "tracks/Rhyzopertha_dominica.annotation/{refseq}/trackData.json"
       }
    ]
