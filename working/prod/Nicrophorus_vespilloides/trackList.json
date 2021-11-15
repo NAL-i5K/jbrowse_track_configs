@@ -4,6 +4,7 @@
   "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
   "formatVersion": 1,
   "share_link": 0,
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -39,6 +41,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json"
     },
     {
@@ -65,6 +68,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -91,6 +95,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json"
     },
     {
@@ -111,6 +116,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_match/{refseq}/trackData.json"
     },
     {
@@ -131,6 +137,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json"
     },
     {
@@ -159,6 +166,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/nicves_current_models/{refseq}/trackData.json"
     },
     {
@@ -243,6 +251,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_001412225.1_Nicves_v1.0_genomic_RefSeqIDs.fna.gaps.bigwig"
     },
     {
@@ -263,6 +272,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_001412225.1_Nicves_v1.0_genomic_RefSeqIDs.fna.gc.bigwig"
     },
     {
@@ -289,6 +299,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/official-gene-set-1-0_protein/{refseq}/trackData.json"
     },
     {
@@ -310,6 +321,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/official-gene-set-1-0_RNA-motif/{refseq}/trackData.json"
     },
     {
@@ -331,6 +343,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/official-gene-set-1-0_repeatmasker/{refseq}/trackData.json"
     }
   ]

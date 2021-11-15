@@ -8,6 +8,7 @@
     "url": "names/"
   },
   "share_link": 0,
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -16,6 +17,7 @@
       "label": "DNA",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -100,6 +102,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_000220905.1_MROT_1.0_genomic_RefSeqIDs.fna.gaps.bigwig"
     },
     {
@@ -120,6 +123,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_000220905.1_MROT_1.0_genomic_RefSeqIDs.fna.gc.bigwig"
     },
     {
@@ -146,6 +150,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/megrot_current_models/{refseq}/trackData.json"
     },
     {
@@ -172,6 +177,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_101_Protein_Coding_low_quality/{refseq}/trackData.json"
     },
     {
@@ -198,6 +204,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -224,6 +231,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_101_noncoding/{refseq}/trackData.json"
     },
     {
@@ -250,6 +258,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_101_tRNA/{refseq}/trackData.json"
     },
     {
@@ -270,6 +279,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_101_cDNA_match/{refseq}/trackData.json"
     },
     {
@@ -296,6 +306,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Megachile_rotundata_v1.1/{refseq}/trackData.json"
     },
     {
@@ -321,6 +332,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Maker gene set/{refseq}/trackData.json"
     },
     {
@@ -343,6 +355,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/augustus_masked/{refseq}/trackData.json"
     },
     {
@@ -365,6 +378,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastn/{refseq}/trackData.json"
     },
     {
@@ -387,6 +401,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx/{refseq}/trackData.json"
     },
     {
@@ -409,6 +424,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/est2genome/{refseq}/trackData.json"
     },
     {
@@ -431,6 +447,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/InterProScan/{refseq}/trackData.json"
     },
     {
@@ -453,6 +470,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome/{refseq}/trackData.json"
     },
     {
@@ -475,6 +493,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/RepeatMasker/{refseq}/trackData.json"
     },
     {
@@ -497,6 +516,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/RepeatRunner/{refseq}/trackData.json"
     },
     {
@@ -519,6 +539,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/SNAP/{refseq}/trackData.json"
     },
     {
@@ -546,6 +567,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Megachile_rotundata_transcriptome_20171113/{refseq}/trackData.json"
     }
   ]

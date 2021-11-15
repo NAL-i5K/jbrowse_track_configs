@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/IndexedFasta",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/GCF_000188095.2_BIMP_2.1_genomic.fna",
       "useAsRefSeqStore": 1
     },
@@ -61,6 +63,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/bomimp_current_models/{refseq}/trackData.json"
     },
     {
@@ -80,6 +83,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_000188095.2_BIMP_2.1_genomic.fna.gaps.bigwig"
     },
     {
@@ -100,6 +104,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_000188095.2_BIMP_2.1_genomic.fna.gc.bigwig"
     },
     {
@@ -139,6 +144,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_102_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -178,6 +184,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_102_Gene/{refseq}/trackData.json"
     }
   ]

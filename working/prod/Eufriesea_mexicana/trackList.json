@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "NCBI Annotation Release 100",
@@ -30,6 +31,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -69,6 +71,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Gene/{refseq}/trackData.json"
     },
     {
@@ -79,6 +82,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/IndexedFasta",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/GCF_001483705.1_ASM148370v1_genomic.fna",
       "useAsRefSeqStore": 1
     },
@@ -94,6 +98,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_001483705.1_ASM148370v1_genomic.fna.gaps.bigwig"
     },
     {
@@ -109,6 +114,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_001483705.1_ASM148370v1_genomic.fna.gc.bigwig"
     },
     {
@@ -147,6 +153,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Eufriesea_mexicana_v1.2/{refseq}/trackData.json"
     }
   ]

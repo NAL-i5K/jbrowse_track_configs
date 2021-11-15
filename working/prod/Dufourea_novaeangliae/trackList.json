@@ -8,6 +8,7 @@
     "url": "names/"
   },
   "share_link": 0,
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -16,6 +17,7 @@
       "label": "DNA",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -119,6 +121,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/dufnov_current_models/{refseq}/trackData.json"
     },
     {
@@ -138,6 +141,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/178035_ref_ASM127255v1_chrUn_RefSeqIDs.fa.gaps.bigwig"
     },
     {
@@ -158,6 +162,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/178035_ref_ASM127255v1_chrUn_RefSeqIDs.fa.gc.bigwig"
     },
     {
@@ -196,6 +201,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Protein_Coding_low_quality/{refseq}/trackData.json"
     },
     {
@@ -222,6 +228,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -260,6 +267,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json"
     },
     {
@@ -286,6 +294,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json"
     },
     {
@@ -306,6 +315,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json"
     },
     {
@@ -344,6 +354,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_miscRNA/{refseq}/trackData.json"
     },
     {
@@ -382,6 +393,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Dufourea_novaeangliae_v1.1/{refseq}/trackData.json"
     }
   ]

@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -32,6 +34,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_000696795.3_Hhal_1.1_genomic.fna.gaps.bigwig"
     },
     {
@@ -51,6 +54,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_000696795.3_Hhal_1.1_genomic.fna.gc.bigwig"
     },
     {
@@ -70,6 +74,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_Tube1.UMD_updated.bam"
     },
     {
@@ -89,6 +94,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_2ndInstar.IIBBL_updated.bam"
     },
     {
@@ -108,6 +114,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_FemaleImago.IIBBL_updated.bam"
     },
     {
@@ -127,6 +134,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_4thInstar.IIBBL_updated.bam"
     },
     {
@@ -146,6 +154,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_global_assembly.IIBBL_updated.bam"
     },
     {
@@ -165,6 +174,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_antennae.EMBRAPA_updated.bam"
     },
     {
@@ -184,6 +194,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_Tube2.UMD_updated.bam"
     },
     {
@@ -203,6 +214,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_MaleImago.IIBBL_updated.bam"
     },
     {
@@ -227,6 +239,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_global_assembly.IIBBL_updated.bigwig"
     },
     {
@@ -251,6 +264,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_FemaleImago.IIBBL_updated.bigwig"
     },
     {
@@ -275,6 +289,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_Tube2.UMD_updated.bigwig"
     },
     {
@@ -299,6 +314,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_4thInstar.IIBBL_updated.bigwig"
     },
     {
@@ -323,6 +339,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_MaleImago.IIBBL_updated.bigwig"
     },
     {
@@ -347,6 +364,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_antennae.EMBRAPA_updated.bigwig"
     },
     {
@@ -371,6 +389,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_Tube1.UMD_updated.bigwig"
     },
     {
@@ -395,6 +414,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/BMSB_IIBBL/BMSB_2ndInstar.IIBBL_updated.bigwig"
     },
     {
@@ -434,6 +454,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/halhal_current_models/{refseq}/trackData.json"
     }
   ]

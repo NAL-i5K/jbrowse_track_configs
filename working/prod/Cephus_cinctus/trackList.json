@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -32,6 +34,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_000341935.1_Ccin1_genomic.fna.gaps.bigwig"
     },
     {
@@ -51,6 +54,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_000341935.1_Ccin1_genomic.fna.gc.bigwig"
     },
     {
@@ -74,6 +78,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Ccin_TEs_REPET/{refseq}/trackData.json"
     },
     {
@@ -96,6 +101,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/female_head_without_antennae_2016_accepted_hits.bam"
     },
     {
@@ -122,6 +128,7 @@
         "featureScale": 0.9
       },
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2011_female_accepted_hits.bam"
     },
     {
@@ -144,6 +151,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2013_female_antennae_short_introns_accepted_hits.bam"
     },
     {
@@ -166,6 +174,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2011_male_accepted_hits.bam"
     },
     {
@@ -189,6 +198,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/female_abdominal_tip_2016_accepted_hits.bam"
     },
     {
@@ -211,6 +221,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/male_abdomen_without_tip_2016_accepted_hits.bam"
     },
     {
@@ -233,6 +244,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2013_male_accepted_hits.bam"
     },
     {
@@ -255,6 +267,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/male_head_without_antennae_2016_accepted_hits.bam"
     },
     {
@@ -278,6 +291,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2013_female_accepted_hits.bam"
     },
     {
@@ -300,6 +314,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2011_larva_accepted_hits.bam"
     },
     {
@@ -322,6 +337,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/larvae_2016_accepted_hits.bam"
     },
     {
@@ -344,6 +360,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2013_larvae_accepted_hits.bam"
     },
     {
@@ -366,6 +383,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/female_pupae_2016_accepted_hits.bam"
     },
     {
@@ -389,6 +407,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/female_abdomen_without_tip_2016_accepted_hits.bam"
     },
     {
@@ -411,6 +430,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/male_abdominal_tip_2016_accepted_hits.bam"
     },
     {
@@ -433,6 +453,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2013_male_antennae_accepted_hits.bam"
     },
     {
@@ -455,6 +476,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/male_pupae_2016_accepted_hits.bam"
     },
     {
@@ -482,6 +504,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/male_pupae_2016_accepted_hits.bigwig"
     },
     {
@@ -509,6 +532,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/female_abdomen_without_tip_2016_accepted_hits.bigwig"
     },
     {
@@ -536,6 +560,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/larvae_2016_accepted_hits.bigwig"
     },
     {
@@ -563,6 +588,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/female_pupae_2016_accepted_hits.bigwig"
     },
     {
@@ -590,6 +616,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/female_head_without_antennae_2016_accepted_hits.bigwig"
     },
     {
@@ -617,6 +644,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2013_female_antennae_short_introns_accepted_hits.bigwig"
     },
     {
@@ -644,6 +672,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2011_female_accepted_hits.bigwig"
     },
     {
@@ -671,6 +700,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/male_abdominal_tip_2016_accepted_hits.bigwig"
     },
     {
@@ -698,6 +728,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2013_female_accepted_hits.bigwig"
     },
     {
@@ -725,6 +756,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2011_male_accepted_hits.bigwig"
     },
     {
@@ -752,6 +784,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2013_male_accepted_hits.bigwig"
     },
     {
@@ -779,6 +812,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/male_abdomen_without_tip_2016_accepted_hits.bigwig"
     },
     {
@@ -806,6 +840,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2013_male_antennae_accepted_hits.bigwig"
     },
     {
@@ -833,6 +868,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2013_larvae_accepted_hits.bigwig"
     },
     {
@@ -860,6 +896,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/Cephus_cinctus_2011_larva_accepted_hits.bigwig"
     },
     {
@@ -887,6 +924,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/male_head_without_antennae_2016_accepted_hits.bigwig"
     },
     {
@@ -914,6 +952,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Cephus-cinctus-RNA-Seq_August-2016_v1.1/female_abdominal_tip_2016_accepted_hits.bigwig"
     },
     {
@@ -953,6 +992,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/cepcin_current_models/{refseq}/trackData.json"
     },
     {
@@ -992,6 +1032,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -1019,6 +1060,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Cephus_cinctus_Annotation_Release_101-tRNAs-and-rRNAs/{refseq}/trackData.json"
     }
   ]

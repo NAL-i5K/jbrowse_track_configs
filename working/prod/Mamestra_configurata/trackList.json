@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/IndexedFasta",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/GCA_002192655.1_ASM219265v1_genomic.fna",
       "useAsRefSeqStore": 1
     },
@@ -33,6 +35,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_002192655.1_ASM219265v1_genomic.fna.gaps.bigwig"
     },
     {
@@ -53,6 +56,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_002192655.1_ASM219265v1_genomic.fna.gc.bigwig"
     },
     {
@@ -61,7 +65,8 @@
         "color": "#00BFFF",
         "height": 75,
         "storeClass": "JBrowse/Store/SeqFeature/BigWig",
-        "urlTemplate": "bigwig/BAW_454_and_Sanger.bw"
+        "unsafePopup": true,
+      "urlTemplate": "bigwig/BAW_454_and_Sanger.bw"
       },
       "key": "long_read_RNA_mapped_to_genome",
       "label": "long_read_RNA_mapped_to_genome",
@@ -77,6 +82,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "bam/BAW_454_and_Sanger.bam"
     },
     {
@@ -86,7 +92,8 @@
         "color": "#00BFFF",
         "height": 75,
         "storeClass": "JBrowse/Store/SeqFeature/BigWig",
-        "urlTemplate": "bigwig/merged.reduced-coverage-RGmod.bw"
+        "unsafePopup": true,
+      "urlTemplate": "bigwig/merged.reduced-coverage-RGmod.bw"
       },
       "key": "Short_read_RNA_mapped_to_genome",
       "label": "Short_read_RNA_mapped_to_genome",
@@ -102,6 +109,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "bam/merged.reduced-coverage-RGmod.bam"
     },
     {
@@ -130,6 +138,7 @@
         "variance_band_color": "rgba(0,0,0,0.3)"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/BAW_454_and_Sanger.bw"
     },
     {
@@ -157,6 +166,7 @@
         "variance_band_color": "rgba(0,0,0,0.3)"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/merged.reduced-coverage-RGmod.bw"
     }
   ]

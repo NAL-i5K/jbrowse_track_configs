@@ -8,6 +8,7 @@
     "url": "names/"
   },
   "share_link": 0,
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -16,6 +17,7 @@
       "label": "DNA",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -107,6 +109,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/tigcal_current_models/{refseq}/trackData.json"
     },
     {
@@ -130,6 +133,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/repeatmasker/{refseq}/trackData.json"
     },
     {
@@ -153,6 +157,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/repeatrunner/{refseq}/trackData.json"
     },
     {
@@ -172,6 +177,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/TCALIF_genome_v1.0.fasta.gaps.bigwig"
     },
     {
@@ -192,6 +198,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/TCALIF_genome_v1.0.fasta.gc.bigwig"
     },
     {
@@ -215,6 +222,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Apis_mellifera_blastx/{refseq}/trackData.json"
     },
     {
@@ -238,6 +246,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Apis_mellifera_protein2genome/{refseq}/trackData.json"
     },
     {
@@ -261,6 +270,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/C_elegans_blastx/{refseq}/trackData.json"
     },
     {
@@ -284,6 +294,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/C_elegans_protein2genome/{refseq}/trackData.json"
     },
     {
@@ -307,6 +318,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Copepoda_blastx/{refseq}/trackData.json"
     },
     {
@@ -330,6 +342,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Copepoda_protein2genome/{refseq}/trackData.json"
     },
     {
@@ -353,6 +366,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Daphnia_blastx/{refseq}/trackData.json"
     },
     {
@@ -376,6 +390,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Daphnia_protein2genome/{refseq}/trackData.json"
     },
     {
@@ -399,6 +414,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Drosophila_melanogaster_blastx/{refseq}/trackData.json"
     },
     {
@@ -422,6 +438,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Drosophila_melanogaster_protein2genome/{refseq}/trackData.json"
     },
     {
@@ -445,6 +462,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Mus_musculus_blastx/{refseq}/trackData.json"
     },
     {
@@ -468,6 +486,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Mus_musculus_protein2genome/{refseq}/trackData.json"
     },
     {
@@ -491,6 +510,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Tcalif_augustus_masked/{refseq}/trackData.json"
     },
     {
@@ -514,6 +534,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Tcalif_snap_masked/{refseq}/trackData.json"
     },
     {
@@ -537,6 +558,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Tcalif_transcriptome_blastn/{refseq}/trackData.json"
     },
     {
@@ -560,6 +582,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Tcalif_transcriptome_est2genome/{refseq}/trackData.json"
     },
     {
@@ -583,6 +606,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Tribolium_blastx/{refseq}/trackData.json"
     },
     {
@@ -606,6 +630,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Tribolium_protein2genome/{refseq}/trackData.json"
     },
     {
@@ -625,6 +650,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/VCFTabix",
       "type": "JBrowse/View/Track/HTMLVariants",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/TCALIF_ABpop/AB_to_SD_genome4.flt.vcf.gz"
     },
     {
@@ -643,6 +669,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/TCALIF_ABpop/AB_to_SD_genome4_opt_15_merged_sort.bam"
     },
     {
@@ -666,6 +693,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/TCALIF_ABpop/AB_to_SD_genome4_opt_15_merged_sort.bigwig"
     },
     {
@@ -685,6 +713,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/CAT_to_SD_genome4_opt_15_merged_sort.bam"
     },
     {
@@ -704,6 +733,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/BB_to_SD_genome4_opt_15_merged_sort.bam"
     },
     {
@@ -723,6 +753,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/BR_to_SD_genome4_opt_15_merged_sort.bam"
     },
     {
@@ -742,6 +773,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/FHL_to_SD_genome4_opt_15_merged_sort.bam"
     },
     {
@@ -761,6 +793,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/SC_to_SD_genome4_opt_15_merged_sort.bam"
     },
     {
@@ -780,6 +813,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/SRQ_to_SD_genome4_opt_15_merged_sort.bam"
     },
     {
@@ -804,6 +838,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/CAT_to_SD_genome4_opt_15_merged_sort.bigwig"
     },
     {
@@ -828,6 +863,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/BR_to_SD_genome4_opt_15_merged_sort.bigwig"
     },
     {
@@ -852,6 +888,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/FHL_to_SD_genome4_opt_15_merged_sort.bigwig"
     },
     {
@@ -876,6 +913,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/SC_to_SD_genome4_opt_15_merged_sort.bigwig"
     },
     {
@@ -900,6 +938,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/SRQ_to_SD_genome4_opt_15_merged_sort.bigwig"
     },
     {
@@ -924,6 +963,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/BB_to_SD_genome4_opt_15_merged_sort.bigwig"
     },
     {
@@ -943,6 +983,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/VCFTabix",
       "type": "JBrowse/View/Track/HTMLVariants",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/BR_to_SD_genome4.flt.vcf.gz"
     },
     {
@@ -962,6 +1003,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/VCFTabix",
       "type": "JBrowse/View/Track/HTMLVariants",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/CAT_to_SD_genome4.flt.vcf.gz"
     },
     {
@@ -981,6 +1023,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/VCFTabix",
       "type": "JBrowse/View/Track/HTMLVariants",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/SC_to_SD_genome4.flt.vcf.gz"
     },
     {
@@ -1000,6 +1043,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/VCFTabix",
       "type": "JBrowse/View/Track/HTMLVariants",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/BB_to_SD_genome4.flt.vcf.gz"
     },
     {
@@ -1019,6 +1063,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/VCFTabix",
       "type": "JBrowse/View/Track/HTMLVariants",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/SRQ_to_SD_genome4.flt.vcf.gz"
     },
     {
@@ -1038,6 +1083,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/VCFTabix",
       "type": "JBrowse/View/Track/HTMLVariants",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Tigriopus_californicus_i5k/FHL_to_SD_genome4.flt.vcf.gz"
     }
   ]

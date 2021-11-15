@@ -7,6 +7,7 @@
     "url": "names/"
   },
   "share_link": 0,
+
   "tracks": [
     {
       "chunkSize": 20000,
@@ -14,6 +15,7 @@
       "label": "DNA",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -99,6 +101,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/diacit_current_models/{refseq}/trackData.json"
     },
     {
@@ -116,6 +119,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/augustus_masked/{refseq}/trackData.json"
     },
     {
@@ -133,6 +137,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastn/{refseq}/trackData.json"
     },
     {
@@ -150,6 +155,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx/{refseq}/trackData.json"
     },
     {
@@ -167,6 +173,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/est2genome/{refseq}/trackData.json"
     },
     {
@@ -184,6 +191,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome/{refseq}/trackData.json"
     },
     {
@@ -201,6 +209,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/repeatmasker/{refseq}/trackData.json"
     },
     {
@@ -218,6 +227,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/repeatrunner/{refseq}/trackData.json"
     },
     {
@@ -235,6 +245,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/snap_masked/{refseq}/trackData.json"
     },
     {
@@ -254,6 +265,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/diaci1.1_annotated_contigs.GAPS.bigwig"
     },
     {
@@ -274,6 +286,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/diaci1.1_annotated_contigs_GC.bigwig"
     }
   ]

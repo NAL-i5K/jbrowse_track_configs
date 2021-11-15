@@ -8,6 +8,7 @@
     "url": "names/"
   },
   "share_link": 0,
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -16,6 +17,7 @@
       "label": "DNA",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -100,6 +102,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/104688_ref_gapfilled_joined_lt9474.gt500.covgt10_chrMT_and_UN_refseq_IDs.gaps.bigwig"
     },
     {
@@ -120,6 +123,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/104688_ref_gapfilled_joined_lt9474.gt500.covgt10_chrMT_and_UN_refseq_IDs.gc.bigwig"
     },
     {
@@ -146,6 +150,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/bacole_current_models/{refseq}/trackData.json"
     },
     {
@@ -166,6 +171,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json"
     },
     {
@@ -192,6 +198,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json"
     },
     {
@@ -218,6 +225,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Protein_Coding_low_quality/{refseq}/trackData.json"
     },
     {
@@ -244,6 +252,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_misc_RNA/{refseq}/trackData.json"
     },
     {
@@ -270,6 +279,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Protein_Coding_mtDNA/{refseq}/trackData.json"
     },
     {
@@ -296,6 +306,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -322,6 +333,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_rRNA/{refseq}/trackData.json"
     },
     {
@@ -348,6 +360,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json"
     },
     {
@@ -376,6 +389,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.001.Index_13.Bo_Heads_Male_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -404,6 +418,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.001.Index_15.Bo_Heads_Ovip_Female_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -432,6 +447,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.001.Index_18.Bo_ovipositor_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -460,6 +476,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.001.Index_6.Bo_Heads_Female_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -488,6 +505,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.001.Index_7.Bo_Legs_ovip_Female_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -516,6 +534,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.002.Index_12.SexOrgans_male_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -544,6 +563,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.002.Index_14.Bo_Ypin_Fem_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -572,6 +592,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.002.Index_16.Bo_Npin_Fem_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -600,6 +621,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.002.Index_4.Bo_Cpin_Fem_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -628,6 +650,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.002.Index_5.Testes_after_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -656,6 +679,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.003.Index_1.Bo_larva_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -684,6 +708,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.003.Index_19.Bo_egg_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -712,6 +737,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.003.Index_3.Bo_pupa_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -740,6 +766,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.003.Index_8.Bo_Thorx_Mix_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -768,6 +795,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.HI.1557.003.Index_9.Bo_adult_vs_B.oleae.concordant_uniq.bam.coverage_refseq_ids.bw"
     },
     {
@@ -797,6 +825,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.SRR826665_vs_B.oleae.gmap.concordant_uniq.coverage_refseq_ids.bw"
     },
     {
@@ -826,6 +855,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.SRR826666_vs_B.oleae.gmap.concordant_uniq.coverage_refseq_ids.bw"
     },
     {
@@ -855,6 +885,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.SRR826667_vs_B.oleae.gmap.unpaired_uniq.coverage_refseq_ids.bw"
     },
     {
@@ -884,6 +915,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/transcriptomes/gsnap.SRR826668_vs_B.oleae.gmap.unpaired_uniq.coverage_refseq_ids.bw"
     },
     {
@@ -910,6 +942,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/alexie-haig-annotation-data/evidence/master_bamfile.bam.coverage_refseq_ids.bw"
     },
     {
@@ -937,6 +970,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/JAMg transcripts de-novo alignments/{refseq}/trackData.json"
     },
     {
@@ -966,6 +1000,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/JAMg OGS v1/{refseq}/trackData.json"
     },
     {
@@ -994,6 +1029,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Uniref50 alignments/{refseq}/trackData.json"
     },
     {
@@ -1019,6 +1055,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Protein Domains via Hidden Markov Model (Uniprot)/{refseq}/trackData.json"
     },
     {
@@ -1047,6 +1084,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Genemark prediction/{refseq}/trackData.json"
     },
     {
@@ -1079,6 +1117,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/JAMg golden transcriptome genes/{refseq}/trackData.json"
     },
     {
@@ -1108,6 +1147,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Novel repeats (RepeatScout)/{refseq}/trackData.json"
     },
     {
@@ -1134,6 +1174,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Simple repeats/{refseq}/trackData.json"
     },
     {
@@ -1160,6 +1201,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Known Insecta Repeats/{refseq}/trackData.json"
     },
     {
@@ -1189,6 +1231,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/tRNAScan predictions (mtDNA eukaryotic)/{refseq}/trackData.json"
     },
     {
@@ -1218,6 +1261,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/tRNAScan predictions (general eukaryotic)/{refseq}/trackData.json"
     },
     {
@@ -1245,6 +1289,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/tRNA aragorn predictions (mtDNA eukaryotic)/{refseq}/trackData.json"
     }
   ]

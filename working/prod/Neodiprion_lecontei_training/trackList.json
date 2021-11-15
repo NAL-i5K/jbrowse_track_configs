@@ -8,6 +8,7 @@
     "url": "names/"
   },
   "share_link": 0,
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -16,6 +17,7 @@
       "label": "DNA",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -106,6 +108,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/neolec_current_models/{refseq}/trackData.json"
     },
     {
@@ -125,6 +128,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/Nlec_v1_NCBI_scaffolds_GenBankIDs.fasta.gaps.bigwig"
     },
     {
@@ -145,6 +149,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/Nlec_v1_NCBI_scaffolds_GenBankIDs.fasta.gc.bigwig"
     },
     {
@@ -166,6 +171,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AFB.Aligned.sortedByCoord.out_GenBankIds.bam"
     },
     {
@@ -187,6 +193,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_EB.Aligned.sortedByCoord.out_GenBankIds.bam"
     },
     {
@@ -208,6 +215,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_FLB.Aligned.sortedByCoord.out_GenBankIds.bam"
     },
     {
@@ -229,6 +237,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AMB.Aligned.sortedByCoord.out_GenBankIds.bam"
     },
     {
@@ -250,6 +259,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AMH.Aligned.sortedByCoord.out_GenBankIds.bam"
     },
     {
@@ -271,6 +281,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AFH.Aligned.sortedByCoord.out_GenBankIds.bam"
     },
     {
@@ -292,6 +303,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_FLH.Aligned.sortedByCoord.out_GenBankIds.bam"
     },
     {
@@ -318,6 +330,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_FLB.Aligned.sortedByCoord.out_GenBankIds.bigwig"
     },
     {
@@ -344,6 +357,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AFB.Aligned.sortedByCoord.out_GenBankIds.bigwig"
     },
     {
@@ -370,6 +384,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_EB.Aligned.sortedByCoord.out_GenBankIds.bigwig"
     },
     {
@@ -396,6 +411,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AFH.Aligned.sortedByCoord.out_GenBankIds.bigwig"
     },
     {
@@ -422,6 +438,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AMB.Aligned.sortedByCoord.out_GenBankIds.bigwig"
     },
     {
@@ -448,6 +465,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_FLH.Aligned.sortedByCoord.out_GenBankIds.bigwig"
     },
     {
@@ -474,6 +492,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/N.lecontei_RNAseq_bam_files/Nlec_AMH.Aligned.sortedByCoord.out_GenBankIds.bigwig"
     },
     {
@@ -497,6 +516,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json"
     },
     {
@@ -523,6 +543,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json"
     },
     {
@@ -546,6 +567,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_match/{refseq}/trackData.json"
     },
     {
@@ -572,6 +594,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_misc_RNA/{refseq}/trackData.json"
     },
     {
@@ -598,6 +621,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Protein_Coding_high_quality/{refseq}/trackData.json"
     },
     {
@@ -624,6 +648,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -650,6 +675,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json"
     },
     {
@@ -676,6 +702,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Protein_Coding_low_quality/{refseq}/trackData.json"
     }
   ]

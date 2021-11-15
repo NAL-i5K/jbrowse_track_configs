@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/IndexedFasta",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/121845_ref_Diaci_psyllid_genome_assembly_version_1.1_chrUn.fa",
       "useAsRefSeqStore": 1
     },
@@ -33,6 +35,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/121845_ref_Diaci_psyllid_genome_assembly_version_1.1_chrUn.mfa.gaps.bigwig"
     },
     {
@@ -53,6 +56,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/121845_ref_Diaci_psyllid_genome_assembly_version_1.1_chrUn.mfa.gc.bigwig"
     },
     {
@@ -76,6 +80,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/augustus_masked/{refseq}/trackData.json"
     },
     {
@@ -99,6 +104,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastn/{refseq}/trackData.json"
     },
     {
@@ -122,6 +128,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx/{refseq}/trackData.json"
     },
     {
@@ -145,6 +152,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/est2genome/{refseq}/trackData.json"
     },
     {
@@ -168,6 +176,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome/{refseq}/trackData.json"
     },
     {
@@ -191,6 +200,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/repeatrunner/{refseq}/trackData.json"
     },
     {
@@ -214,6 +224,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/snap_masked/{refseq}/trackData.json"
     },
     {
@@ -240,6 +251,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Diacit_1.1_RefSeq_low_quality_protein_coding/{refseq}/trackData.json"
     },
     {
@@ -266,6 +278,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Diacit_1.1_RefSeq_noncoding_RNA/{refseq}/trackData.json"
     },
     {
@@ -292,6 +305,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Diacit_1.1_RefSeq_pseudogene/{refseq}/trackData.json"
     },
     {
@@ -318,6 +332,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Diacit_1.1_RefSeq_protein_coding/{refseq}/trackData.json"
     },
     {
@@ -341,6 +356,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/repeatmasker/{refseq}/trackData.json"
     },
     {
@@ -365,6 +381,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OrthoDB8_orthologous_proteins_Toll_IMD_JAKSTAT_tBLASTN/{refseq}/trackData.json"
     },
     {
@@ -389,6 +406,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/ImmunoDB_JAKSTAT_pathway_proteins_tBLASTN/{refseq}/trackData.json"
     },
     {
@@ -413,6 +431,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/ImmunoDB_Toll_pathway_proteins_tBLASTN/{refseq}/trackData.json"
     },
     {
@@ -437,6 +456,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/ImmunoDB_IMD_pathway_proteins_tBLASTN/{refseq}/trackData.json"
     },
     {
@@ -463,6 +483,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Maker_gene_predictions/{refseq}/trackData.json"
     },
     {
@@ -487,6 +508,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/IMCOT_proteins_tBLASTN/{refseq}/trackData.json"
     },
     {
@@ -508,6 +530,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Whole_insect_expressed_protein_tags_ePSTs_for_peptides_from_mass_spectrometry_MS_proteomics_data/{refseq}/trackData.json"
     },
     {
@@ -527,6 +550,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Whole_insect_reverse-translated_peptides_RTPs_from_mass_spectrometry_MS_proteomics_data/{refseq}/trackData.json"
     },
     {
@@ -546,6 +570,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/S9_expressed_protein_tags_ePSTs_for_peptides_from_mass_spectrometry_MS_proteomics_data/{refseq}/trackData.json"
     },
     {
@@ -565,6 +590,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/S9_reverse-translated_peptides_RTPs_from_mass_spectrometry_MS_proteomics_data/{refseq}/trackData.json"
     },
     {
@@ -593,6 +619,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/diacit_current_models/{refseq}/trackData.json"
     },
     {
@@ -620,6 +647,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv1.0_pseudogenes/{refseq}/trackData.json"
     },
     {
@@ -647,6 +675,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv1.0_ncRNA/{refseq}/trackData.json"
     },
     {
@@ -669,6 +698,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/12-15-2015/rnaseq_nymph.bam"
     },
     {
@@ -691,6 +721,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/12-15-2015/AdultNymph_Clas_infected.bam"
     },
     {
@@ -713,6 +744,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/12-15-2015/rnaseq_adult.bam"
     },
     {
@@ -735,6 +767,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/12-15-2015/AdultNymph_uninfected.bam"
     },
     {
@@ -757,6 +790,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/12-15-2015/rnaseq_egg.bam"
     },
     {
@@ -784,6 +818,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/12-15-2015/rnaseq_nymph.bw"
     },
     {
@@ -811,6 +846,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/12-15-2015/rnaseq_egg.bw"
     },
     {
@@ -838,6 +874,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/12-15-2015/AdultNymph_uninfected.bw"
     },
     {
@@ -865,6 +902,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/12-15-2015/rnaseq_adult.bw"
     },
     {
@@ -892,6 +930,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/12-15-2015/AdultNymph_Clas_infected.bw"
     },
     {
@@ -919,6 +958,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/04-11-2016/all_PE.bam"
     },
     {
@@ -950,6 +990,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ssaha/04-11-2016/all_PE.bam.bedgraph.sorted.bw"
     }
   ]

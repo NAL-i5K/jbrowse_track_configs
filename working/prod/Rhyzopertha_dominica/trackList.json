@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -32,6 +34,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/_____RdoDt3_Drdd8_decomES.fasta.gaps.bigwig"
     },
     {
@@ -51,6 +54,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/_____RdoDt3_Drdd8_decomES.fasta.gc.bigwig"
     },
     {
@@ -63,6 +67,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Gut3.sorted.bam"
     },
     {
@@ -80,6 +85,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Gut3.sorted.bigwig"
     },
     {
@@ -92,6 +98,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Adult.sorted.bam"
     },
     {
@@ -109,6 +116,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Adult.sorted.bigwig"
     },
     {
@@ -121,6 +129,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Head2.sorted.bam"
     },
     {
@@ -138,6 +147,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Head2.sorted.bigwig"
     },
     {
@@ -150,6 +160,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Carcass1.sorted.bam"
     },
     {
@@ -167,6 +178,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Carcass1.sorted.bigwig"
     },
     {
@@ -179,6 +191,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Gut1.sorted.bam"
     },
     {
@@ -196,6 +209,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Gut1.sorted.bigwig"
     },
     {
@@ -208,6 +222,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Gut2.sorted.bam"
     },
     {
@@ -225,6 +240,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Gut2.sorted.bigwig"
     },
     {
@@ -237,6 +253,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Carcass3.sorted.bam"
     },
     {
@@ -254,6 +271,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Carcass3.sorted.bigwig"
     },
     {
@@ -266,6 +284,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Carcass2.sorted.bam"
     },
     {
@@ -283,6 +302,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Carcass2.sorted.bigwig"
     },
     {
@@ -295,6 +315,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Head3.sorted.bam"
     },
     {
@@ -312,6 +333,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Head3.sorted.bigwig"
     },
     {
@@ -324,6 +346,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Head1.sorted.bam"
     },
     {
@@ -341,6 +364,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_05-2020/Head1.sorted.bigwig"
     },
     {
@@ -356,6 +380,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_2020-06-09_v1.0/Rhydom_RdoDt3_RNA-Seq-alignments_2020-06-09.bam"
     },
     {
@@ -376,6 +401,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Rhyzopertha-dominica-RNA-Seq_2020-06-09_v1.0/Rhydom_RdoDt3_RNA-Seq-alignments_2020-06-09.bigwig"
     },
     {
@@ -397,6 +423,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Rhydom_RdoDt3_RNA-Seq-alignments_2020-06-09_junctions/{refseq}/trackData.json"
     },
     {
@@ -418,6 +445,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Rhyzopertha_dominica.annotation/{refseq}/trackData.json"
     }
   ]

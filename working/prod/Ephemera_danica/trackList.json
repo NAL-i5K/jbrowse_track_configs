@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/IndexedFasta",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/GCA_000507165.2_Edan_2.0_genomic.fna",
       "useAsRefSeqStore": 1
     },
@@ -33,6 +35,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_000507165.2_Edan_2.0_genomic.fna.gaps.bigwig"
     },
     {
@@ -53,6 +56,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_000507165.2_Edan_2.0_genomic.fna.gc.bigwig"
     },
     {
@@ -93,6 +97,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/ephdan_current_models/{refseq}/trackData.json"
     }
   ]

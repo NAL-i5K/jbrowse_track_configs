@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -32,6 +34,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_000697945.4_Focc_3.0_genomic.fna.gaps.bigwig"
     },
     {
@@ -52,6 +55,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_000697945.4_Focc_3.0_genomic.fna.gc.bigwig"
     },
     {
@@ -92,6 +96,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/fraocc_current_models/{refseq}/trackData.json"
     },
     {
@@ -107,6 +112,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/drotenberg/sal_gland_sorted_updated.bam"
     },
     {
@@ -121,6 +127,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/drotenberg/FO_454AllContigs_30793seqs.parse_updated.bam"
     },
     {
@@ -138,6 +145,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/drotenberg/Female_Focc_ICD_FOi5DR_updated.bam"
     },
     {
@@ -155,6 +163,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/drotenberg/Larva_Pupa_Focc_ICD_FOi5DR_updated.bam"
     },
     {
@@ -177,6 +186,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/drotenberg/Larva_Pupa_Focc_ICD_FOi5DR_updated.bigwig"
     },
     {
@@ -199,6 +209,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/drotenberg/Female_Focc_ICD_FOi5DR_updated.bigwig"
     },
     {
@@ -227,6 +238,7 @@
       },
       "trackType": "null",
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/KSU_Cufflinks/{refseq}/trackData.json"
     }
   ]

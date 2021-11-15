@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -52,6 +54,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/lucser_current_models/{refseq}/trackData.json"
     },
     {
@@ -79,6 +82,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -99,6 +103,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_015586225.1_ASM1558622v1_genomic.fna.gc.bigwig"
     },
     {
@@ -114,6 +119,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Lucilia-sericata-RNA-Seq_2021-08-11_v1.0/Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11.bam"
     },
     {
@@ -127,6 +133,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Lucilia-sericata-RNA-Seq_2021-08-11_v1.0/Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11.bigwig"
     },
     {
@@ -148,6 +155,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Lucser_ASM1558622v1_RNA-Seq-alignments_2021-08-11_junctions/{refseq}/trackData.json"
     }
   ]

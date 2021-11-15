@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -40,6 +42,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_101_Gene/{refseq}/trackData.json"
     },
     {
@@ -67,6 +70,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_101_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -86,6 +90,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/69319_ref_Mdem2_chrUn_refseq_IDS.fa.gaps.bigwig"
     },
     {
@@ -105,6 +110,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/69319_ref_Mdem2_chrUn_refseq_IDS.fa.gc.bigwig"
     },
     {
@@ -122,6 +128,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_teratocytes_accepted_hits_refSeq_IDs.bam"
     },
     {
@@ -139,6 +146,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_venom_gland_accepted_hits_refSeq_IDs.bam"
     },
     {
@@ -156,6 +164,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_ovary_accepted_hits_refSeq_IDs.bam"
     },
     {
@@ -173,6 +182,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_larvae_accepted_hits_refSeq_IDs.bam"
     },
     {
@@ -195,6 +205,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_ovary_accepted_hits_refSeq_IDs.bigwig"
     },
     {
@@ -217,6 +228,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_larvae_accepted_hits_refSeq_IDs.bigwig"
     },
     {
@@ -239,6 +251,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_venom_gland_accepted_hits_refSeq_IDs.bigwig"
     },
     {
@@ -261,6 +274,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/Microplitis_demolitor/Microplitis_demolitor_teratocytes_accepted_hits_refSeq_IDs.bigwig"
     },
     {
@@ -277,6 +291,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/3t4wo_sort.bam"
     },
     {
@@ -293,6 +308,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/mdbv_all_sort.bam"
     },
     {
@@ -314,6 +330,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/3t4wo_sort.bigwig"
     },
     {
@@ -335,6 +352,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/mdbv_all_sort.bigwig"
     },
     {
@@ -351,6 +369,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/p_hemo_sort_mdbv.bam"
     },
     {
@@ -367,6 +386,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/p_sort_mdbv.bam"
     },
     {
@@ -383,6 +403,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/t_sort_mdbv.bam"
     },
     {
@@ -404,6 +425,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/p_hemo_sort_mdbv.bigwig"
     },
     {
@@ -425,6 +447,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/p_sort_mdbv.bigwig"
     },
     {
@@ -446,6 +469,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/t_sort_mdbv.bigwig"
     },
     {
@@ -462,6 +486,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/3t4wo_sort.RG.Reordered.RCfrac.bam"
     },
     {
@@ -478,6 +503,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/UGA_March_2018/mdbv_all_sort.RG.Reordered.RCfrac.bam"
     },
     {
@@ -500,6 +526,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/proviral_segment/{refseq}/trackData.json"
     },
     {
@@ -522,6 +549,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/replication_unit/{refseq}/trackData.json"
     },
     {
@@ -560,6 +588,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/micdem_current_models/{refseq}/trackData.json"
     },
     {
@@ -586,6 +615,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv1.0_Pseudogene/{refseq}/trackData.json"
     }
   ]

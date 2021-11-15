@@ -4,6 +4,7 @@
   "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
   "formatVersion": 1,
   "share_link": 0,
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -12,6 +13,7 @@
       "label": "DNA",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -96,6 +98,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/64838_ref_ASM80636v1_chrUn_refseq_IDS.fa.gaps.bigwig"
     },
     {
@@ -116,6 +119,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/64838_ref_ASM80636v1_chrUn_refseq_IDS.fa.gc.bigwig"
     },
     {
@@ -142,6 +146,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/RefSeq_Protein_Coding/{refseq}/trackData.json"
     },
     {
@@ -168,6 +173,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/RefSeq_Low_Quality_Protein_Coding/{refseq}/trackData.json"
     },
     {
@@ -194,6 +200,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/RefSeq_Noncoding_RNA/{refseq}/trackData.json"
     },
     {
@@ -220,6 +227,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/RefSeq_Psuedogene/{refseq}/trackData.json"
     },
     {
@@ -242,6 +250,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/sgeib/Fari_i5k/male_accepted_hits_refSeq_IDs.bam"
     },
     {
@@ -264,6 +273,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/sgeib/Fari_i5k/female_accepted_hits_refSeq_IDs.bam"
     },
     {
@@ -286,6 +296,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/sgeib/Fari_i5k/pupae_accepted_hits_refSeq_IDs.bam"
     },
     {
@@ -308,6 +319,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/sgeib/Fari_i5k/larvae_accepted_hits_refSeq_IDs.bam"
     },
     {
@@ -335,6 +347,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/sgeib/Fari_i5k/female_accepted_hits_refSeq_IDs.bigwig"
     },
     {
@@ -362,6 +375,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/sgeib/Fari_i5k/male_accepted_hits_refSeq_IDs.bigwig"
     },
     {
@@ -389,6 +403,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/sgeib/Fari_i5k/larvae_accepted_hits_refSeq_IDs.bigwig"
     },
     {
@@ -416,6 +431,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/sgeib/Fari_i5k/pupae_accepted_hits_refSeq_IDs.bigwig"
     }
   ]

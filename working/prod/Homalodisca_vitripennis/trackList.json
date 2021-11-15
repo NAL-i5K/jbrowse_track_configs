@@ -8,6 +8,7 @@
     "url": "names/"
   },
   "share_link": 0,
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -17,6 +18,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -40,6 +42,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/augustus_masked/{refseq}/trackData.json"
     },
     {
@@ -63,6 +66,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Annelida/{refseq}/trackData.json"
     },
     {
@@ -86,6 +90,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Arthropoda/{refseq}/trackData.json"
     },
     {
@@ -109,6 +114,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Atelocerata/{refseq}/trackData.json"
     },
     {
@@ -132,6 +138,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Cephalochordata/{refseq}/trackData.json"
     },
     {
@@ -155,6 +162,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Chelicerata/{refseq}/trackData.json"
     },
     {
@@ -178,6 +186,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Cnidaria/{refseq}/trackData.json"
     },
     {
@@ -201,6 +210,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Craniata/{refseq}/trackData.json"
     },
     {
@@ -224,6 +234,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Crustacea/{refseq}/trackData.json"
     },
     {
@@ -247,6 +258,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Echinodermata/{refseq}/trackData.json"
     },
     {
@@ -270,6 +282,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Mollusca/{refseq}/trackData.json"
     },
     {
@@ -293,6 +306,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Nemata/{refseq}/trackData.json"
     },
     {
@@ -316,6 +330,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Nematomorpha/{refseq}/trackData.json"
     },
     {
@@ -339,6 +354,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Onychophora/{refseq}/trackData.json"
     },
     {
@@ -362,6 +378,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Parazoa/{refseq}/trackData.json"
     },
     {
@@ -385,6 +402,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Placozoa/{refseq}/trackData.json"
     },
     {
@@ -408,6 +426,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Platyhelminthes/{refseq}/trackData.json"
     },
     {
@@ -431,6 +450,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Priapulida/{refseq}/trackData.json"
     },
     {
@@ -454,6 +474,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Tardigrada/{refseq}/trackData.json"
     },
     {
@@ -477,6 +498,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Tunicata/{refseq}/trackData.json"
     },
     {
@@ -500,6 +522,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_UNCATEGORISED/{refseq}/trackData.json"
     },
     {
@@ -523,6 +546,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Cegma/{refseq}/trackData.json"
     },
     {
@@ -546,6 +570,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/ESTs_cufflinks/{refseq}/trackData.json"
     },
     {
@@ -572,6 +597,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/homvit_current_models/{refseq}/trackData.json"
     },
     {
@@ -595,6 +621,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Annelida/{refseq}/trackData.json"
     },
     {
@@ -618,6 +645,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Arthropoda/{refseq}/trackData.json"
     },
     {
@@ -641,6 +669,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Atelocerata/{refseq}/trackData.json"
     },
     {
@@ -664,6 +693,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Cephalochordata/{refseq}/trackData.json"
     },
     {
@@ -687,6 +717,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Chelicerata/{refseq}/trackData.json"
     },
     {
@@ -710,6 +741,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Cnidaria/{refseq}/trackData.json"
     },
     {
@@ -733,6 +765,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Craniata/{refseq}/trackData.json"
     },
     {
@@ -756,6 +789,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Crustacea/{refseq}/trackData.json"
     },
     {
@@ -779,6 +813,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Echinodermata/{refseq}/trackData.json"
     },
     {
@@ -802,6 +837,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Mollusca/{refseq}/trackData.json"
     },
     {
@@ -825,6 +861,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Nemata/{refseq}/trackData.json"
     },
     {
@@ -848,6 +885,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Nematomorpha/{refseq}/trackData.json"
     },
     {
@@ -871,6 +909,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Onychophora/{refseq}/trackData.json"
     },
     {
@@ -894,6 +933,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Parazoa/{refseq}/trackData.json"
     },
     {
@@ -917,6 +957,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Placozoa/{refseq}/trackData.json"
     },
     {
@@ -940,6 +981,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Platyhelminthes/{refseq}/trackData.json"
     },
     {
@@ -963,6 +1005,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Priapulida/{refseq}/trackData.json"
     },
     {
@@ -986,6 +1029,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Tardigrada/{refseq}/trackData.json"
     },
     {
@@ -1009,6 +1053,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Tunicata/{refseq}/trackData.json"
     },
     {
@@ -1032,6 +1077,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_UNCATEGORISED/{refseq}/trackData.json"
     },
     {
@@ -1055,6 +1101,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/snap_masked/{refseq}/trackData.json"
     },
     {
@@ -1078,6 +1125,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/repeatmasker/{refseq}/trackData.json"
     },
     {
@@ -1101,6 +1149,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/repeatrunner/{refseq}/trackData.json"
     },
     {
@@ -1128,6 +1177,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Hvit_female_RNAseq_junction-reads/{refseq}/trackData.json"
     },
     {
@@ -1155,6 +1205,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Hvit_male_RNAseq_junction-reads/{refseq}/trackData.json"
     },
     {
@@ -1239,6 +1290,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_000696855.1_Hvit_1.0_genomic.fna.gaps.bigwig"
     },
     {
@@ -1259,6 +1311,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_000696855.1_Hvit_1.0_genomic.fna.gc.bigwig"
     },
     {
@@ -1279,6 +1332,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/srichards/male-female/female_Nvit_RNAseq_alignments_accepted_hits_GCA_000696855.1.bigwig"
     },
     {
@@ -1299,6 +1353,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/srichards/male-female/male_Nvit_RNAseq_alignments_accepted_hits_GCA_000696855.1.bigwig"
     },
     {
@@ -1314,6 +1369,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/srichards/male-female/female_Nvit_RNAseq_alignments_accepted_hits_GCA_000696855.1.bam"
     },
     {
@@ -1329,6 +1385,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/srichards/male-female/male_Nvit_RNAseq_alignments_accepted_hits_GCA_000696855.1.bam"
     }
   ]

@@ -8,6 +8,7 @@
     "url": "names/"
   },
   "share_link": 0,
+
   "tracks": [
     {
       "chunkSize": 20000,
@@ -15,6 +16,7 @@
       "label": "DNA",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -106,6 +108,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/AROS_v0.5.3/{refseq}/trackData.json"
     },
     {
@@ -131,6 +134,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/athros_current_models/{refseq}/trackData.json"
     },
     {
@@ -154,6 +158,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/augustus_masked/{refseq}/trackData.json"
     },
     {
@@ -177,6 +182,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Annelida/{refseq}/trackData.json"
     },
     {
@@ -200,6 +206,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Arthropoda/{refseq}/trackData.json"
     },
     {
@@ -223,6 +230,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Atelocerata/{refseq}/trackData.json"
     },
     {
@@ -246,6 +254,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Cephalochordata/{refseq}/trackData.json"
     },
     {
@@ -269,6 +278,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Chelicerata/{refseq}/trackData.json"
     },
     {
@@ -292,6 +302,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Cnidaria/{refseq}/trackData.json"
     },
     {
@@ -315,6 +326,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Craniata/{refseq}/trackData.json"
     },
     {
@@ -338,6 +350,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Crustacea/{refseq}/trackData.json"
     },
     {
@@ -361,6 +374,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Echinodermata/{refseq}/trackData.json"
     },
     {
@@ -384,6 +398,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Mollusca/{refseq}/trackData.json"
     },
     {
@@ -407,6 +422,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Nemata/{refseq}/trackData.json"
     },
     {
@@ -430,6 +446,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Nematomorpha/{refseq}/trackData.json"
     },
     {
@@ -453,6 +470,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Onychophora/{refseq}/trackData.json"
     },
     {
@@ -476,6 +494,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Parazoa/{refseq}/trackData.json"
     },
     {
@@ -499,6 +518,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Placozoa/{refseq}/trackData.json"
     },
     {
@@ -522,6 +542,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Platyhelminthes/{refseq}/trackData.json"
     },
     {
@@ -545,6 +566,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Priapulida/{refseq}/trackData.json"
     },
     {
@@ -568,6 +590,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Tardigrada/{refseq}/trackData.json"
     },
     {
@@ -591,6 +614,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_Tunicata/{refseq}/trackData.json"
     },
     {
@@ -614,6 +638,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/blastx_UNCATEGORISED/{refseq}/trackData.json"
     },
     {
@@ -631,6 +656,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Cegma/{refseq}/trackData.json"
     },
     {
@@ -654,6 +680,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/est_gff/{refseq}/trackData.json"
     },
     {
@@ -677,6 +704,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Annelida/{refseq}/trackData.json"
     },
     {
@@ -700,6 +728,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Arthropoda/{refseq}/trackData.json"
     },
     {
@@ -723,6 +752,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Atelocerata/{refseq}/trackData.json"
     },
     {
@@ -746,6 +776,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Cephalochordata/{refseq}/trackData.json"
     },
     {
@@ -769,6 +800,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Chelicerata/{refseq}/trackData.json"
     },
     {
@@ -792,6 +824,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Cnidaria/{refseq}/trackData.json"
     },
     {
@@ -815,6 +848,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Craniata/{refseq}/trackData.json"
     },
     {
@@ -838,6 +872,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Crustacea/{refseq}/trackData.json"
     },
     {
@@ -861,6 +896,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Echinodermata/{refseq}/trackData.json"
     },
     {
@@ -884,6 +920,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Mollusca/{refseq}/trackData.json"
     },
     {
@@ -907,6 +944,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Nemata/{refseq}/trackData.json"
     },
     {
@@ -930,6 +968,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Nematomorpha/{refseq}/trackData.json"
     },
     {
@@ -953,6 +992,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Onychophora/{refseq}/trackData.json"
     },
     {
@@ -976,6 +1016,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Parazoa/{refseq}/trackData.json"
     },
     {
@@ -999,6 +1040,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Placozoa/{refseq}/trackData.json"
     },
     {
@@ -1022,6 +1064,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Platyhelminthes/{refseq}/trackData.json"
     },
     {
@@ -1045,6 +1088,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Priapulida/{refseq}/trackData.json"
     },
     {
@@ -1068,6 +1112,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Tardigrada/{refseq}/trackData.json"
     },
     {
@@ -1091,6 +1136,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_Tunicata/{refseq}/trackData.json"
     },
     {
@@ -1114,6 +1160,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/protein2genome_UNCATEGORISED/{refseq}/trackData.json"
     },
     {
@@ -1137,6 +1184,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/repeatmasker/{refseq}/trackData.json"
     },
     {
@@ -1160,6 +1208,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/repeatrunner/{refseq}/trackData.json"
     },
     {
@@ -1183,6 +1232,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/snap_masked/{refseq}/trackData.json"
     },
     {
@@ -1201,6 +1251,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "bam/Aros_ID05.bam"
     },
     {
@@ -1219,6 +1270,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "bam/Aros_ID06.bam"
     },
     {
@@ -1237,6 +1289,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "bam/Aros_ID07.bam"
     },
     {
@@ -1255,6 +1308,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "bam/Aros_ID08.bam"
     },
     {
@@ -1275,6 +1329,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/Aros01112013-genome_GC.bigwig"
     },
     {
@@ -1294,6 +1349,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/Aros01112013-GAPS.bigwig"
     },
     {
@@ -1319,6 +1375,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/atro-females-comb_est2genome/{refseq}/trackData.json"
     },
     {
@@ -1342,6 +1399,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/atro-male-1_est2genome/{refseq}/trackData.json"
     },
     {
@@ -1365,6 +1423,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/atro-male-2_est2genome/{refseq}/trackData.json"
     },
     {
@@ -1380,6 +1439,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "bam/janphilipoeyen/Athalia_rosae/cleaned-reads-tophat/aros_male-1_tophat-accepted_hits.bam"
     },
     {
@@ -1395,6 +1455,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "bam/janphilipoeyen/Athalia_rosae/cleaned-reads-tophat/aros_male-2_tophat-accepted_hits.bam"
     },
     {
@@ -1410,6 +1471,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "bam/janphilipoeyen/Athalia_rosae/cleaned-reads-tophat/aros_female-1_tophat-accepted_hits.bam"
     },
     {
@@ -1425,6 +1487,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "bam/janphilipoeyen/Athalia_rosae/cleaned-reads-tophat/aros_female-2_tophat-accepted_hits.bam"
     },
     {
@@ -1448,6 +1511,7 @@
         "pos_color": "#FFA600"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/janphilipoeyen/Athalia_rosae/cleaned-reads-tophat/aros_female-1_tophat-accepted_hits.bigwig"
     },
     {
@@ -1471,6 +1535,7 @@
         "pos_color": "#FFA600"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/janphilipoeyen/Athalia_rosae/cleaned-reads-tophat/aros_female-2_tophat-accepted_hits.bigwig"
     },
     {
@@ -1494,6 +1559,7 @@
         "pos_color": "#FFA600"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/janphilipoeyen/Athalia_rosae/cleaned-reads-tophat/aros_male-1_tophat-accepted_hits.bigwig"
     },
     {
@@ -1517,6 +1583,7 @@
         "pos_color": "#FFA600"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/janphilipoeyen/Athalia_rosae/cleaned-reads-tophat/aros_male-2_tophat-accepted_hits.bigwig"
     },
     {
@@ -1543,6 +1610,7 @@
         "pos_color": "#FFA600"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/Aros_ID08.bigwig"
     },
     {
@@ -1569,6 +1637,7 @@
         "pos_color": "#FFA600"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/Aros_ID07.bigwig"
     },
     {
@@ -1595,6 +1664,7 @@
         "pos_color": "#FFA600"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/Aros_ID06.bigwig"
     },
     {
@@ -1621,6 +1691,7 @@
         "pos_color": "#FFA600"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/Aros_ID05.bigwig"
     },
     {
@@ -1646,6 +1717,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv.1.0-miRNA/{refseq}/trackData.json"
     },
     {
@@ -1671,6 +1743,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv.1.0-ncRNA/{refseq}/trackData.json"
     },
     {
@@ -1696,6 +1769,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv.1.0-rRNA/{refseq}/trackData.json"
     },
     {
@@ -1721,6 +1795,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv.1.0-snoRNA/{refseq}/trackData.json"
     },
     {
@@ -1746,6 +1821,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv.1.0-snRNA/{refseq}/trackData.json"
     },
     {
@@ -1771,6 +1847,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv.1.0-tRNA/{refseq}/trackData.json"
     },
     {
@@ -1791,6 +1868,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv.1.0-transposable_element/{refseq}/trackData.json"
     },
     {
@@ -1809,6 +1887,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv.1.0-sequence/{refseq}/trackData.json"
     }
   ]

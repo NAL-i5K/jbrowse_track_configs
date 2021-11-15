@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -32,6 +34,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_010583005.1_Obru_v1_genomic.fna.gaps.bigwig"
     },
     {
@@ -52,6 +55,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_010583005.1_Obru_v1_genomic.fna.gc.bigwig"
     },
     {
@@ -79,6 +83,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -94,6 +99,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-02_v1.0/Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02.bam"
     },
     {
@@ -114,6 +120,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-02_v1.0/Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02.bigwig"
     },
     {
@@ -135,6 +142,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Odobru_Obru_v1_RNA-Seq-alignments_2020-06-02_junctions/{refseq}/trackData.json"
     },
     {
@@ -151,6 +159,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_male_2nd_passAligned.sortedByCoord.out.bam"
     },
     {
@@ -172,6 +181,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_male_2nd_passAligned.sortedByCoord.out.bigwig"
     },
     {
@@ -188,6 +198,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_larva_2nd_passAligned.sortedByCoord.out.bam"
     },
     {
@@ -209,6 +220,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_larva_2nd_passAligned.sortedByCoord.out.bigwig"
     },
     {
@@ -225,6 +237,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_egg_2nd_passAligned.sortedByCoord.out.bam"
     },
     {
@@ -246,6 +259,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_egg_2nd_passAligned.sortedByCoord.out.bigwig"
     },
     {
@@ -262,6 +276,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_RAW_2nd_passAligned.sortedByCoord.out.bam"
     },
     {
@@ -283,6 +298,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_RAW_2nd_passAligned.sortedByCoord.out.bigwig"
     },
     {
@@ -299,6 +315,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_NRW_2nd_passAligned.sortedByCoord.out.bam"
     },
     {
@@ -320,6 +337,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_NRW_2nd_passAligned.sortedByCoord.out.bigwig"
     },
     {
@@ -336,6 +354,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_queen_2nd_passAligned.sortedByCoord.out.bam"
     },
     {
@@ -357,6 +376,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_queen_2nd_passAligned.sortedByCoord.out.bigwig"
     },
     {
@@ -373,6 +393,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_pupa_2nd_passAligned.sortedByCoord.out.bam"
     },
     {
@@ -394,6 +415,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-RNA-Seq_2020-06-09_v1.0/Odontomachus_pupa_2nd_passAligned.sortedByCoord.out.bigwig"
     },
     {
@@ -426,6 +448,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Larva, junction reads/{refseq}/trackData.json"
     },
     {
@@ -458,6 +481,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Non-reproductive Adult Worker, junction reads/{refseq}/trackData.json"
     },
     {
@@ -490,6 +514,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Egg, junction reads/{refseq}/trackData.json"
     },
     {
@@ -522,6 +547,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Male, junction reads/{refseq}/trackData.json"
     },
     {
@@ -554,6 +580,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Queen, junction reads/{refseq}/trackData.json"
     },
     {
@@ -586,6 +613,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Pupa, junction reads/{refseq}/trackData.json"
     },
     {
@@ -618,6 +646,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Reproductive Adult Worker, junction reads/{refseq}/trackData.json"
     },
     {
@@ -657,6 +686,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/odobru_current_models/{refseq}/trackData.json"
     },
     {
@@ -697,6 +727,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Gene-CBT/{refseq}/trackData.json"
     },
     {
@@ -712,6 +743,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Odontomachus-brunneus-Transcriptome-assembly_GIKU00000000_2020-06-15/20200615_GMAP_Trinity_vs_NCBI_genome_out_sorted.bam"
     }
   ]

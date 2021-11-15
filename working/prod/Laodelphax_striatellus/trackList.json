@@ -5,6 +5,7 @@
     "url": "names/"
   },
   "refSeqs": "seq/GCA_003335185.2_ASM333518v2_genomic.fna.fai",
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -14,6 +15,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -33,6 +35,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_003335185.2_ASM333518v2_genomic.fna.gaps.bigwig"
     },
     {
@@ -53,6 +56,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_003335185.2_ASM333518v2_genomic.fna.gc.bigwig"
     },
     {
@@ -67,6 +71,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/VCFTabix",
       "type": "JBrowse/View/Track/HTMLVariants",
+      "unsafePopup": true,
       "urlTemplate": "ASM333518v2-variant-alignment_v1.1_4-5-2019/ASM333518v2-variant-alignment_v1.1_4-5-2019.vcf.gz"
     },
     {
@@ -107,6 +112,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/laostr_current_models/{refseq}/trackData.json"
     },
     {
@@ -134,6 +140,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/laostr_OGS_v1.2_pseudogene/{refseq}/trackData.json"
     },
     {
@@ -156,6 +163,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/ASM333518v2_Laodelphax_striatellus.RepeatMasker_v1.1_4-5-2019/{refseq}/trackData.json"
     }
   ]

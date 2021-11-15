@@ -8,6 +8,7 @@
     "url": "names/"
   },
   "share_link": 0,
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -16,6 +17,7 @@
       "label": "DNA",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -100,6 +102,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_001854935.1_ASM185493v1_genomic.fna.gaps.bigwig"
     },
     {
@@ -120,6 +123,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_001854935.1_ASM185493v1_genomic.fna.gc.bigwig"
     },
     {
@@ -147,6 +151,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_protein-coding/{refseq}/trackData.json"
     },
     {
@@ -173,6 +178,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -199,6 +205,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI Predicted mtDNA protein coding genes, Annotation Release 100/{refseq}/trackData.json"
     },
     {
@@ -225,6 +232,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json"
     },
     {
@@ -251,6 +259,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json"
     },
     {
@@ -277,6 +286,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_rRNA/{refseq}/trackData.json"
     },
     {
@@ -297,6 +307,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json"
     },
     {
@@ -323,6 +334,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_misc_RNA/{refseq}/trackData.json"
     },
     {
@@ -343,6 +355,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_repeat_region/{refseq}/trackData.json"
     },
     {
@@ -368,6 +381,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/bemtab_current_models/{refseq}/trackData.json"
     },
     {
@@ -387,6 +401,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-25.bam.sorted"
     },
     {
@@ -406,6 +421,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-20.bam.sorted"
     },
     {
@@ -425,6 +441,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-38.bam.sorted"
     },
     {
@@ -444,6 +461,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-24.bam.sorted"
     },
     {
@@ -463,6 +481,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-35.bam.sorted"
     },
     {
@@ -482,6 +501,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-26.bam.sorted"
     },
     {
@@ -501,6 +521,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-33.bam.sorted"
     },
     {
@@ -520,6 +541,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-37.bam.sorted"
     },
     {
@@ -539,6 +561,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-22.bam.sorted"
     },
     {
@@ -558,6 +581,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-21.bam.sorted"
     },
     {
@@ -577,6 +601,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-32.bam.sorted"
     },
     {
@@ -596,6 +621,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-36.bam.sorted"
     },
     {
@@ -615,6 +641,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-29.bam.sorted"
     },
     {
@@ -634,6 +661,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-28.bam.sorted"
     },
     {
@@ -653,6 +681,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-34.bam.sorted"
     },
     {
@@ -672,6 +701,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-27.bam.sorted"
     },
     {
@@ -691,6 +721,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-30.bam.sorted"
     },
     {
@@ -710,6 +741,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-19.bam.sorted"
     },
     {
@@ -729,6 +761,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-23.bam.sorted"
     },
     {
@@ -748,6 +781,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-31.bam.sorted"
     },
     {
@@ -772,6 +806,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-29.bigwig.sorted"
     },
     {
@@ -796,6 +831,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-24.bigwig.sorted"
     },
     {
@@ -820,6 +856,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-33.bigwig.sorted"
     },
     {
@@ -844,6 +881,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-31.bigwig.sorted"
     },
     {
@@ -868,6 +906,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-26.bigwig.sorted"
     },
     {
@@ -892,6 +931,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-32.bigwig.sorted"
     },
     {
@@ -916,6 +956,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-21.bigwig.sorted"
     },
     {
@@ -940,6 +981,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-37.bigwig.sorted"
     },
     {
@@ -964,6 +1006,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-30.bigwig.sorted"
     },
     {
@@ -988,6 +1031,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-23.bigwig.sorted"
     },
     {
@@ -1012,6 +1056,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-28.bigwig.sorted"
     },
     {
@@ -1036,6 +1081,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-34.bigwig.sorted"
     },
     {
@@ -1060,6 +1106,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-20.bigwig.sorted"
     },
     {
@@ -1084,6 +1131,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-35.bigwig.sorted"
     },
     {
@@ -1108,6 +1156,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-27.bigwig.sorted"
     },
     {
@@ -1132,6 +1181,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-36.bigwig.sorted"
     },
     {
@@ -1156,6 +1206,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-38.bigwig.sorted"
     },
     {
@@ -1180,6 +1231,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-25.bigwig.sorted"
     },
     {
@@ -1204,6 +1256,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-22.bigwig.sorted"
     },
     {
@@ -1228,6 +1281,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_data/ARS_11_2017/Bemisia_tabaci_Nov_29__2017/Bemisia_tabaci_Bam_Files/WF-19.bigwig.sorted"
     }
   ]

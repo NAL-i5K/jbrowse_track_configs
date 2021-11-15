@@ -8,6 +8,7 @@
     "url": "names/"
   },
   "share_link": 0,
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -16,6 +17,7 @@
       "label": "DNA",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -108,6 +110,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/AUGUSTUS_JAMg/{refseq}/trackData.json"
     },
     {
@@ -135,6 +138,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/FOREIGN_JAMg/{refseq}/trackData.json"
     },
     {
@@ -162,6 +166,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/GOLD_JAMg/{refseq}/trackData.json"
     },
     {
@@ -188,6 +193,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/GENEMARK_JAMg/{refseq}/trackData.json"
     },
     {
@@ -214,6 +220,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/GLIMMERHMM_JAMg/{refseq}/trackData.json"
     },
     {
@@ -240,6 +247,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/SNAP_JAMg/{refseq}/trackData.json"
     },
     {
@@ -259,6 +267,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/HMM_DOMAINS/{refseq}/trackData.json"
     },
     {
@@ -285,6 +294,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_low_quality_protein_coding/{refseq}/trackData.json"
     },
     {
@@ -311,6 +321,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_noncoding_RNA/{refseq}/trackData.json"
     },
     {
@@ -337,6 +348,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_protein_coding/{refseq}/trackData.json"
     },
     {
@@ -350,6 +362,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "bam/all_alignments_rnaseq.bam.junctions.bam"
     },
     {
@@ -367,6 +380,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/Ccap01172013-genome.fa.gap.wig.bw"
     },
     {
@@ -388,6 +402,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/gsnap.SRR836188_vs_Ccap01172013-genome.concordant_uniq.bam.coverage.bw"
     },
     {
@@ -414,6 +429,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/JAMg_v1/{refseq}/trackData.json"
     },
     {
@@ -435,6 +451,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/gsnap.SRR836189_vs_Ccap01172013-genome.concordant_uniq.bam.coverage.bw"
     },
     {
@@ -456,6 +473,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/gsnap.SRR836190_vs_Ccap01172013-genome.concordant_uniq.bam.coverage.bw"
     },
     {
@@ -482,6 +500,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_pseudogene/{refseq}/trackData.json"
     },
     {
@@ -503,6 +522,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/all_alignments_rnaseq.bam.coverage.bw"
     },
     {
@@ -523,6 +543,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/Ccap01172013-genome.fa.gc.bigwig"
     },
     {
@@ -543,6 +564,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Transposon domains (HMM)/{refseq}/trackData.json"
     },
     {
@@ -566,6 +588,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Transposable_element_predictions/{refseq}/trackData.json"
     },
     {
@@ -589,6 +612,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.ViFe24_sample6_vs_Ccap01172013.concordant_uniq.bam"
     },
     {
@@ -612,6 +636,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.SRR836188_vs_Ccap01172013-genome.concordant_uniq.bam"
     },
     {
@@ -635,6 +660,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.ViFe96_sample7_vs_Ccap01172013.concordant_uniq.bam"
     },
     {
@@ -658,6 +684,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.ViMa24_sample8_vs_Ccap01172013.concordant_uniq.bam"
     },
     {
@@ -681,6 +708,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample12.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -704,6 +732,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.CoFe6uts_sample1_vs_Ccap01172013.concordant_uniq.bam"
     },
     {
@@ -727,6 +756,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample9.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -750,6 +780,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample6.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -773,6 +804,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.MoFe96_sample3_vs_Ccap01172013.concordant_uniq.bam"
     },
     {
@@ -796,6 +828,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.MoMa24_sample4_vs_Ccap01172013.concordant_uniq.bam"
     },
     {
@@ -819,6 +852,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample3.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -842,6 +876,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample5.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -865,6 +900,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample8.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -888,6 +924,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample10.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -911,6 +948,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample7.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -934,6 +972,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.MoMa96_sample5_vs_Ccap01172013.concordant_uniq.bam"
     },
     {
@@ -957,6 +996,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.MoFe24_sample2_vs_Ccap01172013.concordant_uniq.bam"
     },
     {
@@ -980,6 +1020,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample11.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -1003,6 +1044,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.ViMa96_sample9_vs_Ccap01172013.concordant_uniq.bam"
     },
     {
@@ -1026,6 +1068,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.SRR836189_vs_Ccap01172013-genome.concordant_uniq.bam"
     },
     {
@@ -1049,6 +1092,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample4.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -1072,6 +1116,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.SRR836190_vs_Ccap01172013-genome.concordant_uniq.bam"
     },
     {
@@ -1095,6 +1140,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample2.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -1118,6 +1164,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample1.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bam"
     },
     {
@@ -1146,6 +1193,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample5.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1174,6 +1222,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.MoMa96_sample5_vs_Ccap01172013.concordant_uniq.bigwig"
     },
     {
@@ -1202,6 +1251,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample8.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1230,6 +1280,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.MoFe24_sample2_vs_Ccap01172013.concordant_uniq.bigwig"
     },
     {
@@ -1258,6 +1309,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample9.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1286,6 +1338,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample1.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1314,6 +1367,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.SRR836189_vs_Ccap01172013-genome.concordant_uniq.bigwig"
     },
     {
@@ -1342,6 +1396,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.ViFe24_sample6_vs_Ccap01172013.concordant_uniq.bigwig"
     },
     {
@@ -1370,6 +1425,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.MoMa24_sample4_vs_Ccap01172013.concordant_uniq.bigwig"
     },
     {
@@ -1398,6 +1454,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample12.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1426,6 +1483,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.ViMa96_sample9_vs_Ccap01172013.concordant_uniq.bigwig"
     },
     {
@@ -1454,6 +1512,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample6.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1482,6 +1541,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample2.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1510,6 +1570,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample11.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1538,6 +1599,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample3.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1566,6 +1628,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.SRR836190_vs_Ccap01172013-genome.concordant_uniq.bigwig"
     },
     {
@@ -1594,6 +1657,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample7.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1622,6 +1686,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.ViMa24_sample8_vs_Ccap01172013.concordant_uniq.bigwig"
     },
     {
@@ -1650,6 +1715,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.ViFe96_sample7_vs_Ccap01172013.concordant_uniq.bigwig"
     },
     {
@@ -1678,6 +1744,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.CoFe6uts_sample1_vs_Ccap01172013.concordant_uniq.bigwig"
     },
     {
@@ -1706,6 +1773,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.MoFe96_sample3_vs_Ccap01172013.concordant_uniq.bigwig"
     },
     {
@@ -1734,6 +1802,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/PE/gsnap.SRR836188_vs_Ccap01172013-genome.concordant_uniq.bigwig"
     },
     {
@@ -1762,6 +1831,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample10.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1790,6 +1860,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "user_contributed_files/papanicolaou/ceratitis/RNASEQ_BAM/SE/gsnap.sample4.fastq.trimmomatic_vs_Ccap01172013.unpaired_uniq.bigwig"
     },
     {
@@ -1816,6 +1887,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OGSv1-1_pseudogene/{refseq}/trackData.json"
     },
     {
@@ -1847,6 +1919,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/cercap_current_models/{refseq}/trackData.json"
     }
   ]

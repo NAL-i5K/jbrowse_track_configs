@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -52,6 +54,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/bracop_current_models/{refseq}/trackData.json"
     },
     {
@@ -79,6 +82,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -98,6 +102,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_014529535.1_BU_Bcop_v1_genomic.fna.gaps.bigwig"
     },
     {
@@ -118,6 +123,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_014529535.1_BU_Bcop_v1_genomic.fna.gc.bigwig"
     },
     {
@@ -145,6 +151,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Bcop_v1.0-Gene_set/{refseq}/trackData.json"
     },
     {
@@ -171,6 +178,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Bcop_v1.0-Evidence/{refseq}/trackData.json"
     },
     {
@@ -186,6 +194,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Bradysia-coprophila-RNA-Seq_2021-06-10_v1.0/Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10.bam"
     },
     {
@@ -206,6 +215,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Bradysia-coprophila-RNA-Seq_2021-06-10_v1.0/Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10.bigwig"
     },
     {
@@ -227,6 +237,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10_junctions/{refseq}/trackData.json"
     },
     {
@@ -254,6 +265,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Bcop_v1.0-Repeats/{refseq}/trackData.json"
     }
   ]

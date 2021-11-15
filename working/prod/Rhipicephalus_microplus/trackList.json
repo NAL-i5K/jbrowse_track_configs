@@ -4,6 +4,7 @@
   "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
   "formatVersion": 1,
   "share_link": 0,
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -12,6 +13,7 @@
       "label": "DNA",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -96,6 +98,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_002176555.1_Rmi2.0_genomic.fna.gaps.bigwig"
     },
     {
@@ -116,6 +119,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCA_002176555.1_Rmi2.0_genomic.fna.gc.bigwig"
     }
   ]

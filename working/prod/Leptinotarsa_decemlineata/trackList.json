@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/IndexedFasta",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/GCF_000500325.1_Ldec_2.0_genomic.fna",
       "useAsRefSeqStore": 1
     },
@@ -40,6 +42,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/lepdec_current_models/{refseq}/trackData.json"
     },
     {
@@ -59,6 +62,7 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_000500325.1_Ldec_2.0_genomic.fna.gaps.bigwig"
     },
     {
@@ -79,6 +83,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_000500325.1_Ldec_2.0_genomic.fna.gc.bigwig"
     },
     {
@@ -105,6 +110,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_tRNA/{refseq}/trackData.json"
     },
     {
@@ -132,6 +138,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_$version_rRNA/{refseq}/trackData.json"
     },
     {
@@ -158,6 +165,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -185,6 +193,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_lncRNA/{refseq}/trackData.json"
     },
     {
@@ -205,6 +214,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_cDNA_match/{refseq}/trackData.json"
     },
     {
@@ -230,6 +240,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/LDEC_OGSv12_pseudogenes/{refseq}/trackData.json"
     },
     {
@@ -255,6 +266,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/LDEC_OGSv12_miRNA/{refseq}/trackData.json"
     },
     {
@@ -280,6 +292,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/LDEC_OGSv12_pre_miRNA/{refseq}/trackData.json"
     },
     {
@@ -305,6 +318,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/LDEC_OGSv12_pre_rRNA/{refseq}/trackData.json"
     },
     {
@@ -330,6 +344,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/LDEC_OGSv12_snRNA/{refseq}/trackData.json"
     },
     {
@@ -358,6 +373,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Protein_Coding/{refseq}/trackData.json"
     },
     {
@@ -374,6 +390,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "Long-Island-NY-control-resistant-adult-males_v1.0_09-13-2019/srr1827566.sorted.bam"
     },
     {
@@ -395,6 +412,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "Long-Island-NY-control-resistant-adult-males_v1.0_09-13-2019/srr1827566.bigwig"
     },
     {
@@ -411,6 +429,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "London-Ontario-susceptible-adults_v1.0_09-17-2019/srr4069276.sorted.bam"
     },
     {
@@ -432,6 +451,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "London-Ontario-susceptible-adults_v1.0_09-17-2019/srr4069276.bigwig"
     },
     {
@@ -448,6 +468,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "Long-Island-NY-control-resistant-adult-females_v1.0_09-13-2019/SRR1827565.sorted.bam"
     },
     {
@@ -469,6 +490,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "Long-Island-NY-control-resistant-adult-females_v1.0_09-13-2019/SRR1827565.bigwig"
     },
     {
@@ -485,6 +507,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "Hancock-WI-resistant-adults_v1.0_09-20-2019/SRR2600376.sorted.bam"
     },
     {
@@ -506,6 +529,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "Hancock-WI-resistant-adults_v1.0_09-20-2019/SRR2600376.bigwig"
     }
   ]

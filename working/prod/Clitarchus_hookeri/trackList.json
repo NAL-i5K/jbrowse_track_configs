@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/IndexedFasta",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/GCA_002778355.1_ASM277835v1_genomic_over_1000.fna",
       "useAsRefSeqStore": 1
     },
@@ -40,6 +42,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/OvaryAndTestis_Cufflinks_Cufflinks/{refseq}/trackData.json"
     }
   ]

@@ -4,6 +4,7 @@
     "type": "Hash",
     "url": "names/"
   },
+
   "tracks": [
     {
       "category": "Reference sequence",
@@ -13,6 +14,7 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
+      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -40,6 +42,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/culqui_current_models/{refseq}/trackData.json"
     },
     {
@@ -67,6 +70,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -87,6 +91,7 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_015732765.1_VPISU_Cqui_1.0_pri_paternal_genomic.fna.gc.bigwig"
     },
     {
@@ -102,6 +107,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Culex-quinquefasciatus-RNA-Seq_2021-08-19_v1.0/Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19.bam"
     },
     {
@@ -122,6 +128,7 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
       "urlTemplate": "analyses/Culex-quinquefasciatus-RNA-Seq_2021-08-19_v1.0/Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19.bigwig"
     },
     {
@@ -143,6 +150,7 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
+      "unsafePopup": true,
       "urlTemplate": "tracks/Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19_junctions/{refseq}/trackData.json"
     }
   ]
