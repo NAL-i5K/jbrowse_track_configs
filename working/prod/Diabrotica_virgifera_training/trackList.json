@@ -41,7 +41,7 @@
         }
       },
       "trackType": "HTMLNeatFeatures",
-      "type": "WebApollo/View/Track/DraggableHTMLNeatFeatures",
+      "type": "WebApollo/View/Track/DraggableNeatHTMLFeatures",
       "unsafePopup": true,
       "urlTemplate": "tracks/diavir_current_models/{refseq}/trackData.json"
     },
@@ -69,7 +69,7 @@
         }
       },
       "trackType": "HTMLNeatFeatures",
-      "type": "HTMLNeatFeatures",
+      "type": "WebApollo/View/Track/DraggableNeatHTMLFeatures",
       "unsafePopup": true,
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
