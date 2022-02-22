@@ -527,6 +527,7 @@
     },
     {
       "category": "JAMg Evidence/Other features",
+      "className": "repeat",
       "compress": 0,
       "key": "Transposon domains (HMM)",
       "label": "Transposon domains (HMM)",
@@ -546,6 +547,7 @@
     },
     {
       "category": "JAMg Evidence/Other features",
+      "className": "repeat",
       "compress": 0,
       "key": "Transposable element predictions",
       "label": "Transposable_element_predictions",

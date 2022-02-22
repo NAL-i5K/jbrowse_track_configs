@@ -1,0 +1,35 @@
+This is the incoming config files direcrtory.
+After running these checksums against the original files in the stging folder:
+
+[cchilders@apollo2-node1 stage]$ md5sum -c ../prod/prod_checksums.md5 |grep -v ": OK"
+./Bradysia_coprophila/trackList.json: FAILED
+./Cephus_cinctus/trackList.json: FAILED
+./Chelonus_insularis/trackList.json: FAILED
+./Contarinia_nasturtii/trackList.json: FAILED
+md5sum: ./Culex_quinquefasciatus/trackList.json: No such file or directory
+./Culex_quinquefasciatus/trackList.json: FAILED open or read
+./Diachasma_alloeum/trackList.json: FAILED
+./Galleria_mellonella/trackList.json: FAILED
+./Halyomorpha_halys/trackList.json: FAILED
+md5sum: ./Ladona_fulva/trackList.json: No such file or directory
+./Ladona_fulva/trackList.json: FAILED open or read
+./Leptinotarsa_decemlineata_training/trackList.json: FAILED
+md5sum: ./Lucilia_sericata/trackList.json: No such file or directory
+./Lucilia_sericata/trackList.json: FAILED open or read
+./Manduca_sexta/trackList.json: FAILED
+./Microplitis_demolitor/trackList.json: FAILED
+./Nylanderia_fulva/trackList.json: FAILED
+./Odontomachus_brunneus/trackList.json: FAILED
+./Osmia_lignaria/trackList.json: FAILED
+./Photinus_pyralis/trackList.json: FAILED
+./Rhyzopertha_dominica/trackList.json: FAILED
+md5sum: WARNING: 3 listed files could not be read
+md5sum: WARNING: 16 computed checksums did NOT match
+./Varroa_jacobsoni/trackList.json: FAILED
+
+There are 16 files that do not match and need to be manually updated
+There are three files that I didn't have when I did this work on stage
+
+This leaves me 19 files I need to adjust.
+
+

@@ -1,0 +1,206 @@
+{
+  "alwaysOnTracks": "DNA,Annotations",
+  "css": "./plugins/NAL_CSS/css/main.css",
+  "favicon": "./plugins/WebApollo/img/webapollo_favicon.ico",
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "share_link": 0,
+
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "unsafePopup": true,
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "autocomplete": "none",
+      "compress": 0,
+      "key": "User-created Annotations",
+      "label": "Annotations",
+      "phase": 0,
+      "storeClass": "WebApollo/Store/SeqFeature/ScratchPad",
+      "style": {
+        "alternateClasses": {
+          "miRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "ncRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "pseudogene": {
+            "className": "light-purple-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "rRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "repeat_region": {
+            "className": "magenta-80pct"
+          },
+          "snRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "snoRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "tRNA": {
+            "className": "brightgreen-80pct",
+            "renderClassName": "gray-center-30pct"
+          },
+          "transposable_element": {
+            "className": "blue-ibeam",
+            "renderClassName": "blue-ibeam-render"
+          }
+        },
+        "arrowheadClass": "annot-arrowhead",
+        "centerSubFeature": {
+          "non_canonical_five_prime_splice_site": false,
+          "non_canonical_three_prime_splice_site": false
+        },
+        "className": "annot",
+        "renderClassName": "annot-render",
+        "subfeatureClasses": {
+          "CDS": "annot-CDS",
+          "UTR": "annot-UTR",
+          "exon": "container-100pct",
+          "non_canonical_five_prime_splice_site": "noncanonical-splice-site",
+          "non_canonical_three_prime_splice_site": "noncanonical-splice-site",
+          "wholeCDS": null
+        },
+        "uniqueIdField": "id"
+      },
+      "subfeatures": 1,
+      "type": "WebApollo/View/Track/AnnotTrack"
+    },
+    {
+      "category": "Official Gene Set 1/1. Gene Sets/Protein Coding",
+      "compress": 0,
+      "key": "JAMg Official Gene Set v1",
+      "label": "locmig_current_models",
+      "metadata": {
+        "Data provider": "Alexie Papanicolaou, Western Sydney University",
+        "Method": "JAMg version 536c4c1",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "ogs-cds",
+          "UTR": "ogs-utr",
+          "exon": "container-100pct",
+          "five_prime_cis_splice_site": null,
+          "intron": null,
+          "three_prime_cis_splice_site": null,
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "unsafePopup": true,
+      "urlTemplate": "tracks/locmig_current_models/{refseq}/trackData.json"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly - only scaffolds over 500 bp",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
+      "urlTemplate": "bigwig/Lm_assembly2-2_RefSeqIDs.fasta.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly - only scaffolds over 500 bp",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+      },
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
+      "urlTemplate": "bigwig/Lm_assembly2-2.gc.bigwig"
+    },
+    {
+      "category": "Transcriptome/Mapped Reads",
+      "chunkSizeLimit": 18000000,
+      "key": "Adult_male_pathogen",
+      "label": "Adult_male_pathogen",
+      "metadata": {
+        "Analysis method": "HISAT2 v2.0.5",
+        "Data provider": "Chris Jacobs, Max Planck Institute for Chemical Ecology",
+        "Data source": "https://www.ncbi.nlm.nih.gov/nuccore/GDIO00000000",
+        "Other methods": "Data was trimmed before mapping with trimmomatic v0.35 using: TruSeqAdapters.fa:2:30:10 LEADING:20 TRAILING:20 MINLEN:50",
+        "Publication Status": "Published, Zhang W et al., BMC Genomics, 2015 Oct 26,16:867; doi: 10.1186/s12864-015-2089-9",
+        "Sequencing platform and version": "TruSeq RNA Sample Prep Kit v2, Illumina HiSeq™ 2000 pair-end system (Illumina, USA)",
+        "Sex": "Male",
+        "Tissues included": "fat body and hemocytes, Adults"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "style": {
+        "featureScale": 0.9
+      },
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
+      "urlTemplate": "user_contributed_data/PRJNA283919_sorted.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Transcriptome/Coverage Plots (BigWig)",
+      "key": "Adult_male_pathogen (Coverage Plot)",
+      "label": "Adult_male_pathogen (Coverage Plot)",
+      "metadata": {
+        "Analysis method": "HISAT2 v2.0.5",
+        "Data provider": "Chris Jacobs, Max Planck Institute for Chemical Ecology",
+        "Data source": "https://www.ncbi.nlm.nih.gov/nuccore/GDIO00000000",
+        "Other methods": "Data was trimmed before mapping with trimmomatic v0.35 using: TruSeqAdapters.fa:2:30:10 LEADING:20 TRAILING:20 MINLEN:50",
+        "Publication Status": "Published, Zhang W et al., BMC Genomics, 2015 Oct 26,16:867; doi: 10.1186/s12864-015-2089-9",
+        "Sequencing platform and version": "TruSeq RNA Sample Prep Kit v2, Illumina HiSeq™ 2000 pair-end system (Illumina, USA)",
+        "Sex": "Male",
+        "Tissues included": "fat body and hemocytes, Adults"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
+      "urlTemplate": "user_contributed_data/PRJNA283919_sorted.bigwig"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "seqType": "dna",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCA_000697945.4_Focc_3.0_genomic.fna.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+      },
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "urlTemplate": "bigwig/GCA_000697945.4_Focc_3.0_genomic.fna.gc.bigwig"
+    },
+    {
+      "category": "Official Gene Set",
+      "compress": 0,
+      "fmtDetailValue_Id": "function (id, feature) {  var name2 = id.replace(/-R./, '');  if(feature.get('type')=='mRNA') {    return '<a target=_blank href=https://i5k.nal.usda.gov/'+name2+'>'+id+'</a>';} else { return id;}}",
+      "key": "OGSv1.1 Gene",
+      "label": "fraocc_current_models",
+      "menuTemplate": [
+        {
+          "label": "View details"
+        },
+        {
+          "action": "newWindow",
+          "iconClass": "dijitIconDatabase",
+          "label": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/-R./, '')}",
+          "title": "function(track,feature){ return 'Open gene page for '+feature.get('id').replace(/-R./, '')}",
+          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('id').replace(/-R./, '')}"
+        }
+      ],
+      "metadata": {
+        "Data provider": "Dorith Rotenberg, NC State University",
+        "Data source": "https://data.nal.usda.gov/dataset/frankliniella-occidentalis-official-gene-set-ogsv11",
+        "Materials and Methods": "The Frankliniella occidentalis Official Gene Set fraocc_OGSv1.1 is an update of OGSv1.0 (https://doi.org/10.15482/USDA.ADC/1504029). OGSv1.0 is an integration of automatic gene predictions from the Baylor College of Medicine's i5k pilot project, with manual annotations by the research community (performed via the Apollo manual curation software, http://genomearchitect.org/). OGSv1.1 was updated from OGSv1.0 (https://doi.org/10.15482/USDA.ADC/1504029) to the coordinates of genome assembly GCA_000697945.4 (https://www.ncbi.nlm.nih.gov/assembly/GCA_000697945.4) using https://github.com/NAL-i5K/coordinates_conversion/.",
+        "Publication status": "In review"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/fraocc_current_models/{refseq}/trackData.json"
+    },
+    {
+      "category": "Transcriptome",
+      "key": "FO_Salivary_CS_Ullman",
+      "label": "FO_Salivary_CS_Ullman",
+      "metadata": {
+        "Analysis method": "GMAP 2015-06-23",
+        "Citation": "Stafford-Banks CA, Rotenberg D, Johnson BR, Whitfield AE, Ullman DE (2014) Analysis of the Salivary Gland Transcriptome of Frankliniella occidentalis. PLoS ONE 9(4): e94447. doi:10.1371/journal.pone.0094447",
+        "Data provider": "Diane Ullman, Univ. of CA-Davis",
+        "Publication status": "published",
+        "Track legend": "These mapping results are displayed so that the contigs are light blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/drotenberg/sal_gland_sorted_updated.bam"
+    },
+    {
+      "category": "Transcriptome",
+      "key": "Transcriptome: 454 contigs assembled by Newbler",
+      "label": "Transcriptome: 454 contigs assembled by Newbler",
+      "metadata": {
+        "Analysis method": "GMAP v2014-5-15",
+        "Analysis provider": "Dorith Rotenberg, Kansas State University",
+        "Publication status": "unpublished - No usage restrictions",
+        "Track legend": "These Tophat RNA-seq mapping results are displayed so that the parts corresponding to the actual reads are colored in dark red or blue while the introns spanning the predicted splicing sites are light red or blue. Reads mapped to the forward strand are red; reads mapped to the reverse strand are blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/drotenberg/FO_454AllContigs_30793seqs.parse_updated.bam"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "FO_RNAseq_females",
+      "label": "FO_RNAseq_females",
+      "metadata": {
+        "Alignment method": "TopHat",
+        "Alignment summary": "http://de.iplantcollaborative.org/dl/d/42FD83E1-1694-4394-A50A-53C7E049C905/align_summary.txt",
+        "Analysis provider": "Dorith Rotenberg, Kansas State University",
+        "Data Source": "ftp://ftp.hgsc.bcm.edu/I5K-pilot/Western_flower_thrips/RNA_sequence/",
+        "Materials Source": "Groups of whole bodies of females from a laboratory colony of Frankliniella occidentalis originating from the Kamilo Iki valley on the island of Oahu, Hawaii",
+        "Read cleaning method": "Prior to tophatPE alignment, reads were trimmed and cleaned with Prinseq-lite",
+        "Track legend": "These Tophat RNA-seq mapping results are displayed so that the parts corresponding to the actual reads are colored in dark red or blue while the introns spanning the predicted splicing sites are light red or blue. Reads mapped to the forward strand are red; reads mapped to the reverse strand are blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/drotenberg/Female_Focc_ICD_FOi5DR_updated.bam"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "FO_RNAseq_larval&pupal",
+      "label": "FO_RNAseq_larval&pupal",
+      "metadata": {
+        "Alignment method": "TopHat",
+        "Alignment summary": "http://de.iplantcollaborative.org/dl/d/6FF6BC2D-3AE9-4682-9983-E0787A3056D0/align_summary.txt",
+        "Analysis provider": "Dorith Rotenberg, Kansas State University",
+        "Data Source": "ftp://ftp.hgsc.bcm.edu/I5K-pilot/Western_flower_thrips/RNA_sequence/",
+        "Materials Source": "Groups of whole bodies of a mixture of pre-adult stages (first and second instar larva & pre-pupae and pupae) from a laboratory colony of Frankliniella occidentalis originating from the Kamilo Iki valley on the island of Oahu, Hawaii",
+        "Read cleaning method": "Prior to tophatPE alignment, reads were trimmed and cleaned with Prinseq-lite",
+        "Track legend": "These Tophat RNA-seq mapping results are displayed so that the parts corresponding to the actual reads are colored in dark red or blue while the introns spanning the predicted splicing sites are light red or blue. Reads mapped to the forward strand are red; reads mapped to the reverse strand are blue. Indels and substitutions identified during the mapping are also color marked:<br>Red - deletion in the read relative to the reference<br>Green - insertion in the read relative to the reference<br>Yellow - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "urlTemplate": "user_contributed_data/drotenberg/Larva_Pupa_Focc_ICD_FOi5DR_updated.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "FO_RNAseq_larval&pupal (Coverage Plots)",
+      "label": "FO_RNAseq_larval&pupal (Coverage Plots)",
+      "metadata": {
+        "Alignment method": "TopHat",
+        "Alignment summary": "http://de.iplantcollaborative.org/dl/d/6FF6BC2D-3AE9-4682-9983-E0787A3056D0/align_summary.txt",
+        "Analysis provider": "Dorith Rotenberg, Kansas State University",
+        "Data Source": "ftp://ftp.hgsc.bcm.edu/I5K-pilot/Western_flower_thrips/RNA_sequence/",
+        "Materials Source": "Groups of whole bodies of a mixture of pre-adult stages (first and second instar larva & pre-pupae and pupae) from a laboratory colony of Frankliniella occidentalis originating from the Kamilo Iki valley on the island of Oahu, Hawaii",
+        "Read cleaning method": "Prior to tophatPE alignment, reads were trimmed and cleaned with Prinseq-lite",
+        "Track legend": "This track represents a density plot of RNA-Seq coverage. Darker blue represents higher coverage, and lighter blue lower coverage."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/drotenberg/Larva_Pupa_Focc_ICD_FOi5DR_updated.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "FO_RNAseq_females (Coverage Plots)",
+      "label": "FO_RNAseq_females (Coverage Plots)",
+      "metadata": {
+        "Alignment method": "TopHat",
+        "Alignment summary": "http://de.iplantcollaborative.org/dl/d/42FD83E1-1694-4394-A50A-53C7E049C905/align_summary.txt",
+        "Analysis provider": "Dorith Rotenberg, Kansas State University",
+        "Data Source": "ftp://ftp.hgsc.bcm.edu/I5K-pilot/Western_flower_thrips/RNA_sequence/",
+        "Materials Source": "Groups of whole bodies of females from a laboratory colony of Frankliniella occidentalis originating from the Kamilo Iki valley on the island of Oahu, Hawaii",
+        "Read cleaning method": "Prior to tophatPE alignment, reads were trimmed and cleaned with Prinseq-lite",
+        "Track legend": "This track represents a density plot of RNA-Seq coverage. Darker blue represents higher coverage, and lighter blue lower coverage."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "urlTemplate": "user_contributed_data/drotenberg/Female_Focc_ICD_FOi5DR_updated.bigwig"
+    },
+    {
+      "category": "Transcriptome",
+      "compress": 0,
+      "key": "KSU_Cufflinks",
+      "label": "KSU_Cufflinks",
+      "metadata": {
+        "Analysis Method": "Illumina Hi-Seq 200 bp; Cufflinks 2.1.1",
+        "Data submitter": "Derek Schneweis (Kansas State University)",
+        "Description": "KSU_Cufflinks",
+        "Publication status": "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
+        "Sex": "Pooled",
+        "Tissue": "Whole Body Group"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "subfeatureClasses": {
+          "CDS": "transcriptome-cds",
+          "UTR": "transcriptome-utr",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": "null",
+      "type": "FeatureTrack",
+      "urlTemplate": "tracks/KSU_Cufflinks/{refseq}/trackData.json"
+    }
+  ]
+}

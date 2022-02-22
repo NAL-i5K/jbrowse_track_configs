@@ -1,0 +1,157 @@
+{
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "seqType": "dna",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "unsafePopup": true,
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Gene",
+      "label": "culqui_current_models",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Culex_quinquefasciatus/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/015/732/765/GCF_015732765.1_VPISU_Cqui_1.0_pri_paternal/GCF_015732765.1_VPISU_Cqui_1.0_pri_paternal_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "unsafePopup": true,
+      "urlTemplate": "tracks/culqui_current_models/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Pseudogene",
+      "label": "NCBI_Annotation_Release_100_Pseudogene",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Culex_quinquefasciatus/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/015/732/765/GCF_015732765.1_VPISU_Cqui_1.0_pri_paternal/GCF_015732765.1_VPISU_Cqui_1.0_pri_paternal_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "unsafePopup": true,
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+      },
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
+      "urlTemplate": "bigwig/GCF_015732765.1_VPISU_Cqui_1.0_pri_paternal_genomic.fna.gc.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19",
+      "label": "Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1271734'>SRR1271734</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11292941'>SRR11292941</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR407542'>SRR407542</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1012914'>SRR1012914</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1005581'>SRR1005581</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1012915'>SRR1012915</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR407541'>SRR407541</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR5500832'>SRR5500832</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1462324'>SRR1462324</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1539391'>SRR1539391</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
+      "urlTemplate": "analyses/Culex-quinquefasciatus-RNA-Seq_2021-08-19_v1.0/Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19_coverage",
+      "label": "Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19_coverage",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1271734'>SRR1271734</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11292941'>SRR11292941</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR407542'>SRR407542</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1012914'>SRR1012914</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1005581'>SRR1005581</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1012915'>SRR1012915</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR407541'>SRR407541</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR5500832'>SRR5500832</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1462324'>SRR1462324</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1539391'>SRR1539391</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
+      "urlTemplate": "analyses/Culex-quinquefasciatus-RNA-Seq_2021-08-19_v1.0/Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19_junctions",
+      "label": "Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19_junctions",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1271734'>SRR1271734</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11292941'>SRR11292941</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR407542'>SRR407542</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1012914'>SRR1012914</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1005581'>SRR1005581</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1012915'>SRR1012915</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR407541'>SRR407541</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR5500832'>SRR5500832</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1462324'>SRR1462324</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1539391'>SRR1539391</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "className": "feature",
+        "description": "score"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "unsafePopup": true,
+      "urlTemplate": "tracks/Culqui_VPISU_Cqui_1.0_pri_paternal_RNA-Seq-alignments_2021-08-19_junctions/{refseq}/trackData.json"
+    }
+  ]
+}

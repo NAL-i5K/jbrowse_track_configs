@@ -1,0 +1,272 @@
+{
+  "formatVersion": 1,
+  "names": {
+    "type": "Hash",
+    "url": "names/"
+  },
+
+  "tracks": [
+    {
+      "category": "Reference sequence",
+      "chunkSize": 20000,
+      "key": "Reference sequence",
+      "label": "DNA",
+      "seqType": "dna",
+      "storeClass": "JBrowse/Store/Sequence/StaticChunked",
+      "type": "SequenceTrack",
+      "unsafePopup": true,
+      "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Gene",
+      "label": "bracop_current_models",
+      "menuTemplate": [
+        {
+          "label": "View details"
+        },
+        {
+          "action": "newWindow",
+          "iconClass": "dijitIconDatabase",
+          "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+          "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('name')}"
+        }
+      ],
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bradysia_coprophila/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/014/529/535/GCF_014529535.1_BU_Bcop_v1/GCF_014529535.1_BU_Bcop_v1_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "unsafePopup": true,
+      "urlTemplate": "tracks/bracop_current_models/{refseq}/trackData.json"
+    },
+    {
+      "category": "NCBI Annotation Release 100",
+      "compress": 0,
+      "key": "NCBI_Annotation_Release_100_Pseudogene",
+      "label": "NCBI_Annotation_Release_100_Pseudogene",
+      "metadata": {
+        "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bradysia_coprophila/README_CURRENT_RELEASE",
+        "Data provider": "NCBI",
+        "Data source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/014/529/535/GCF_014529535.1_BU_Bcop_v1/GCF_014529535.1_BU_Bcop_v1_genomic.gff.gz",
+        "Method": "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "unsafePopup": true,
+      "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "Reference Assembly",
+      "key": "Gaps in assembly",
+      "label": "Gaps in assembly",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "white",
+        "pos_color": "black"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
+      "urlTemplate": "bigwig/GCF_014529535.1_BU_Bcop_v1_genomic.fna.gaps.bigwig"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "0.5",
+      "category": "Reference Assembly",
+      "key": "GC Content",
+      "label": "GC Content",
+      "metadata": {
+        "Track contact": "The i5k workspace@NAL",
+        "Track description": "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+        "Track legend": "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+      },
+      "scoreType": "avgScore",
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "neg_color": "rgba(255,255,0,50)",
+        "pos_color": "rgba(0,0,255,50)"
+      },
+      "type": "JBrowse/View/Track/Wiggle/Density",
+      "unsafePopup": true,
+      "urlTemplate": "bigwig/GCF_014529535.1_BU_Bcop_v1_genomic.fna.gc.bigwig"
+    },
+    {
+      "category": "Other Gene Sets",
+      "compress": 0,
+      "key": "Bcop_v1.0-Gene_set",
+      "label": "Bcop_v1.0-Gene_set",
+      "metadata": {
+        "Data provider": "John Urban, Carnegie Institution for Science",
+        "Data source": "https://data.nal.usda.gov/dataset/bradysia-coprophila-genome-annotations-bcopv10",
+        "Materials and Methods": "Maker2, for details see https://doi.org/10.1101/2020.02.24.963009",
+        "Publication status": "Published, please cite https://doi.org/10.1101/2020.02.24.963009"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "product, note, description",
+        "subfeatureClasses": {
+          "CDS": "gnomon_CDS",
+          "UTR": "gnomon_UTR",
+          "exon": "container-100pct",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "unsafePopup": true,
+      "urlTemplate": "tracks/Bcop_v1.0-Gene_set/{refseq}/trackData.json"
+    },
+    {
+      "category": "Other Gene Sets",
+      "compress": 0,
+      "key": "Bcop_v1.0-Evidence",
+      "label": "Bcop_v1.0-Evidence",
+      "metadata": {
+        "Data provider": "John Urban, Carnegie Institution for Science",
+        "Data source": "https://data.nal.usda.gov/dataset/bradysia-coprophila-genome-annotations-bcopv10",
+        "Materials and Methods": "Maker2 evidence, for details see https://doi.org/10.1101/2020.02.24.963009",
+        "Publication status": "Published, please cite https://doi.org/10.1101/2020.02.24.963009",
+        "Track legend": "Maker2 evidence for gene set Bcop_v1.0"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "name",
+        "subfeatureClasses": {
+          "match_part": "blast-match_part",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "unsafePopup": true,
+      "urlTemplate": "tracks/Bcop_v1.0-Evidence/{refseq}/trackData.json"
+    },
+    {
+      "category": "RNA-Seq/Mapped Reads",
+      "key": "Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10",
+      "label": "Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969381'>SRR9969381</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969372'>SRR9969372</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969367'>SRR9969367</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969378'>SRR9969378</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969374'>SRR9969374</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969368'>SRR9969368</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969375'>SRR9969375</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969373'>SRR9969373</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969382'>SRR9969382</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969369'>SRR9969369</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BAM",
+      "type": "WebApollo/View/Track/DraggableAlignments",
+      "unsafePopup": true,
+      "urlTemplate": "analyses/Bradysia-coprophila-RNA-Seq_2021-06-10_v1.0/Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10.bam"
+    },
+    {
+      "autoscale": "local",
+      "bicolor_pivot": "zero",
+      "category": "RNA-Seq/Coverage Plots",
+      "key": "Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10_coverage",
+      "label": "Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10_coverage",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969381'>SRR9969381</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969372'>SRR9969372</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969367'>SRR9969367</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969378'>SRR9969378</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969374'>SRR9969374</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969368'>SRR9969368</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969375'>SRR9969375</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969373'>SRR9969373</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969382'>SRR9969382</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969369'>SRR9969369</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "This track represents an X-Y plot of RNA-Seq coverage."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/BigWig",
+      "style": {
+        "pos_color": "#00BFFF"
+      },
+      "type": "JBrowse/View/Track/Wiggle/XYPlot",
+      "unsafePopup": true,
+      "urlTemplate": "analyses/Bradysia-coprophila-RNA-Seq_2021-06-10_v1.0/Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10.bigwig"
+    },
+    {
+      "category": "RNA-Seq/Splice junctions",
+      "compress": 0,
+      "key": "Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10_junctions",
+      "label": "Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10_junctions",
+      "metadata": {
+        "Analysis method": "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+        "Analysis provider": "i5k Workspace@NAL",
+        "Data source": "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969381'>SRR9969381</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969372'>SRR9969372</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969367'>SRR9969367</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969378'>SRR9969378</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969374'>SRR9969374</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969368'>SRR9969368</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969375'>SRR9969375</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969373'>SRR9969373</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969382'>SRR9969382</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969369'>SRR9969369</a>",
+        "Publication status": "Analysis: NA; Source data: see individual SRA accessions",
+        "Track legend": "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "className": "feature",
+        "description": "score"
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "unsafePopup": true,
+      "urlTemplate": "tracks/Bracop_BU_Bcop_v1_RNA-Seq-alignments_2021-06-10_junctions/{refseq}/trackData.json"
+    },
+    {
+      "category": "Other Gene Sets",
+      "compress": 0,
+      "key": "Bcop_v1.0-Repeats",
+      "label": "Bcop_v1.0-Repeats",
+      "metadata": {
+        "Data provider": "John Urban, Carnegie Institution for Science",
+        "Data source": "https://data.nal.usda.gov/dataset/bradysia-coprophila-genome-annotations-bcopv10",
+        "Materials and Methods": "Mapped repeat sequences, for details see https://doi.org/10.1101/2020.02.24.963009",
+        "Publication status": "Published, please cite https://doi.org/10.1101/2020.02.24.963009",
+        "Track legend": "Mapped repeat sequences from RepeatModeler, known repeat sequences from Bradysia coprophila and the RepeatMasker Combined Database: Dfam_Consensus-20181026"
+      },
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "style": {
+        "arrowheadClass": "trellis-arrowhead",
+        "className": "{type}",
+        "description": "name",
+        "subfeatureClasses": {
+          "match": "repeat",
+          "match_part": "repeat",
+          "wholeCDS": null
+        }
+      },
+      "trackType": null,
+      "type": "FeatureTrack",
+      "unsafePopup": true,
+      "urlTemplate": "tracks/Bcop_v1.0-Repeats/{refseq}/trackData.json"
+    }
+  ]
+}
