@@ -1246,34 +1246,6 @@
       "trackType": null,
       "type": "FeatureTrack",
       "urlTemplate": "tracks/tRNA aragorn predictions (mtDNA eukaryotic)/{refseq}/trackData.json"
-    },
-     {
-         "category" : "BACOLE User Annotation Release 0.5",
-         "compress" : 0,
-         "key" : "BACOLE_User-created-Annotation_Release_0.5",
-         "label" : "BACOLE_apollo1_annotations",
-         "metadata" : {
-         },
-         "apollo":{
-             "permission":{
-                 "level":"private"
-             }
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "style" : {
-            "arrowheadClass" : "trellis-arrowhead",
-            "className" : "{type}",
-            "description" : "product, note, description",
-            "subfeatureClasses" : {
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR",
-               "exon" : "container-100pct",
-               "wholeCDS" : null
-            }
-         },
-         "trackType" : "HTMLFeatures",
-         "type" : "HTMLFeatures",
-         "urlTemplate" : "tracks/BACOLE_apollo1_annotations/{refseq}/trackData.json"
-      }
+    }
   ]
 }
