@@ -4,7 +4,6 @@
     "type": "Hash",
     "url": "names/"
   },
-
   "tracks": [
     {
       "category": "Reference sequence",
@@ -14,7 +13,6 @@
       "seqType": "dna",
       "storeClass": "JBrowse/Store/Sequence/StaticChunked",
       "type": "SequenceTrack",
-      "unsafePopup": true,
       "urlTemplate": "seq/{refseq_dirpath}/{refseq}-"
     },
     {
@@ -40,9 +38,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLNeatFeatures",
-      "type": "WebApollo/View/Track/DraggableNeatHTMLFeatures",
-      "unsafePopup": true,
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
       "urlTemplate": "tracks/diavir_current_models/{refseq}/trackData.json"
     },
     {
@@ -68,9 +65,8 @@
           "wholeCDS": null
         }
       },
-      "trackType": "HTMLNeatFeatures",
-      "type": "WebApollo/View/Track/DraggableNeatHTMLFeatures",
-      "unsafePopup": true,
+      "trackType": "HTMLFeatures",
+      "type": "HTMLFeatures",
       "urlTemplate": "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
     },
     {
@@ -90,7 +86,6 @@
         "pos_color": "black"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
-      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_003013835.1_Dvir_v2.0_genomic.fna.gaps.bigwig"
     },
     {
@@ -111,7 +106,6 @@
         "pos_color": "rgba(0,0,255,50)"
       },
       "type": "JBrowse/View/Track/Wiggle/Density",
-      "unsafePopup": true,
       "urlTemplate": "bigwig/GCF_003013835.1_Dvir_v2.0_genomic.fna.gc.bigwig"
     },
     {
@@ -127,7 +121,6 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
-      "unsafePopup": true,
       "urlTemplate": "analyses/2021-05-06-08-55-04/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06.bam"
     },
     {
@@ -148,7 +141,6 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
-      "unsafePopup": true,
       "urlTemplate": "analyses/2021-05-06-08-55-04/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06.bigwig"
     },
     {
@@ -170,7 +162,6 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
-      "unsafePopup": true,
       "urlTemplate": "tracks/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-05-06_junctions/{refseq}/trackData.json"
     },
     {
@@ -186,7 +177,6 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/BAM",
       "type": "WebApollo/View/Track/DraggableAlignments",
-      "unsafePopup": true,
       "urlTemplate": "analyses/Diabrotica-virgifera-RNA-Seq_2021-06-11_v1.0/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11.bam"
     },
     {
@@ -207,7 +197,6 @@
         "pos_color": "#00BFFF"
       },
       "type": "JBrowse/View/Track/Wiggle/XYPlot",
-      "unsafePopup": true,
       "urlTemplate": "analyses/Diabrotica-virgifera-RNA-Seq_2021-06-11_v1.0/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11.bigwig"
     },
     {
@@ -229,7 +218,6 @@
       },
       "trackType": null,
       "type": "FeatureTrack",
-      "unsafePopup": true,
       "urlTemplate": "tracks/Diavir_Dvir_v2.0_RNA-Seq-alignments_2021-06-11_junctions/{refseq}/trackData.json"
     }
   ]
