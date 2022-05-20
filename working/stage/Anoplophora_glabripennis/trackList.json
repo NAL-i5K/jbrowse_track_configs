@@ -151,7 +151,7 @@
         "arrowheadClass": "webapollo-arrowhead",
         "className": "{type}",
         "subfeatureClasses": {
-          "match_part": "augustus_masked"
+          "match_part": "augustus"
         }
       },
       "trackType": null,

@@ -59,18 +59,18 @@
       "compress": 0,
       "key": "NCBI_Annotation_Release_100_Gene",
       "label": "varjac_current_models",
-      "menuTemplate": [
-        {
-          "label": "View details"
-        },
-        {
-          "action": "newWindow",
-          "iconClass": "dijitIconDatabase",
-          "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-          "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-          "url": "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('name')}"
-        }
-      ],
+         "menuTemplate" : [
+             {
+                "label" : "View details"
+             },
+             {
+              "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+              "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+              "iconClass" : "dijitIconDatabase",
+              "action": "newWindow",
+              "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}"
+              }
+        ],
       "metadata": {
         "Data description": "ftp://ftp.ncbi.nlm.nih.gov/genomes/Varroa_jacobsoni/README_CURRENT_RELEASE",
         "Data provider": "NCBI",

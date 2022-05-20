@@ -394,6 +394,7 @@
       },
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "style": {
+        "description": "score",
         "className": "{type}"
       },
       "trackType": null,

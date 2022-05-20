@@ -1,5 +1,21 @@
+# Generate a current list of the organisms:
+ psql -U postgres -d webapollo_2 -c "SELECT common_name, directory from organism" >may_20_2022_organism_list.txt
+# Remive spaces to help with subsequent scripts
+perl -pi -e "s/ //g" may_20_2022_organism_list.txt
+# create directories as needed and copy in the trackList.json files from the real directories
+# manually remove the header and last lines
 
 
+
+
+
+
+
+
+
+
+
+ 
 # After updating the config files, I renemed the original files 
 
 find . -iname "trackList.json" -exec rename 's/.json/.json.orig/' '{}' \;

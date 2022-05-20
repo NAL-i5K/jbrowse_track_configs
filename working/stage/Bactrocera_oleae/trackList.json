@@ -929,6 +929,7 @@
       "style": {
         "arrowheadClass": "trellis-arrowhead",
         "className": "{type}",
+        "renderClassName": "protein_domains",
         "subfeatureClasses": {
           "cDNA_match": "jamp_match",
           "exon": "container-100pct",
