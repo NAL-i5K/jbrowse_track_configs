@@ -16,11 +16,18 @@
          "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
       },
       {
-         "category" : "NCBI Annotation Release 102",
+         "category" : "NCBI Annotation Release 100",
          "compress" : 0,
-         "key" : "NCBI_Annotation_Release_102_Gene",
-         "label" : "drofic_current_models",
-         "menuTemplate" : [
+         "key" : "NCBI_Annotation_Release_100_Gene",
+         "label" : "neopin_current_models",
+         "metadata" : {
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Neodiprion_pinetum/README_CURRENT_RELEASE",
+            "Data provider" : "NCBI",
+            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/021/155/775/GCF_021155775.1_iyNeoPine1.1/GCF_021155775.1_iyNeoPine1.1_genomic.gff.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+  "menuTemplate" : [
              {
                 "label" : "View details"
              },
@@ -32,13 +39,6 @@
               "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}"
               }
         ],
-         "metadata" : {
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Drosophila_ficusphila/README_CURRENT_RELEASE",
-            "Data provider" : "NCBI",
-            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/152/265/GCF_018152265.1_ASM1815226v1/GCF_018152265.1_ASM1815226v1_genomic.gff.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
-         },
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
             "className" : "container-16px",
@@ -52,17 +52,17 @@
          },
          "trackType" : "HTMLFeatures",
          "type" : "HTMLFeatures",
-         "urlTemplate" : "tracks/drofic_current_models/{refseq}/trackData.json"
+         "urlTemplate" : "tracks/neopin_current_models/{refseq}/trackData.json"
       },
       {
-         "category" : "NCBI Annotation Release 102",
+         "category" : "NCBI Annotation Release 100",
          "compress" : 0,
-         "key" : "NCBI_Annotation_Release_102_Pseudogene",
-         "label" : "NCBI_Annotation_Release_102_Pseudogene",
+         "key" : "NCBI_Annotation_Release_100_Pseudogene",
+         "label" : "NCBI_Annotation_Release_100_Pseudogene",
          "metadata" : {
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Drosophila_ficusphila/README_CURRENT_RELEASE",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Neodiprion_pinetum/README_CURRENT_RELEASE",
             "Data provider" : "NCBI",
-            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/152/265/GCF_018152265.1_ASM1815226v1/GCF_018152265.1_ASM1815226v1_genomic.gff.gz",
+            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/021/155/775/GCF_021155775.1_iyNeoPine1.1/GCF_021155775.1_iyNeoPine1.1_genomic.gff.gz",
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
          },
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
@@ -79,7 +79,26 @@
          },
          "trackType" : "HTMLFeatures",
          "type" : "HTMLFeatures",
-         "urlTemplate" : "tracks/NCBI_Annotation_Release_102_Pseudogene/{refseq}/trackData.json"
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "Reference Assembly",
+         "key" : "Gaps in assembly",
+         "label" : "Gaps in assembly",
+         "metadata" : {
+            "Track contact" : "The i5k workspace@NAL",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "neg_color" : "white",
+            "pos_color" : "black"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "urlTemplate" : "bigwig/GCF_021155775.1_iyNeoPine1.1_genomic.fna.gaps.bigwig"
       },
       {
          "autoscale" : "local",
@@ -99,35 +118,35 @@
             "pos_color" : "rgba(0,0,255,50)"
          },
          "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/GCF_018152265.1_ASM1815226v1_genomic.fna.gc.bigwig"
+         "urlTemplate" : "bigwig/GCF_021155775.1_iyNeoPine1.1_genomic.fna.gc.bigwig"
       },
       {
          "category" : "RNA-Seq/Mapped Reads",
-         "key" : "Drofic_ASM1815226v1_RNA-Seq-alignments_2021-10-08",
-         "label" : "Drofic_ASM1815226v1_RNA-Seq-alignments_2021-10-08",
+         "key" : "Neopin_iyNeoPine1.1_RNA-Seq-alignments_2022-03-11",
+         "label" : "Neopin_iyNeoPine1.1_RNA-Seq-alignments_2022-03-11",
          "metadata" : {
             "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
             "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346750'>SRR346750</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346751'>SRR346751</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346748'>SRR346748</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346749'>SRR346749</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346752'>SRR346752</a>",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198135'>SRR11198135</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198136'>SRR11198136</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198133'>SRR11198133</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198134'>SRR11198134</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198129'>SRR11198129</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198130'>SRR11198130</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198131'>SRR11198131</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198132'>SRR11198132</a>",
             "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
             "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
          },
          "storeClass" : "JBrowse/Store/SeqFeature/BAM",
          "type" : "WebApollo/View/Track/DraggableAlignments",
-	"unsafePopup":true,
-         "urlTemplate" : "analyses/Drosophila-ficusphila-RNA-Seq_2021-10-08_v1.0/Drofic_ASM1815226v1_RNA-Seq-alignments_2021-10-08.bam"
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Neodiprion-pinetum-RNA-Seq_2022-03-11_v1.0/Neopin_iyNeoPine1.1_RNA-Seq-alignments_2022-03-11.bam"
       },
       {
          "autoscale" : "local",
          "bicolor_pivot" : "zero",
          "category" : "RNA-Seq/Coverage Plots",
-         "key" : "Drofic_ASM1815226v1_RNA-Seq-alignments_2021-10-08_coverage",
-         "label" : "Drofic_ASM1815226v1_RNA-Seq-alignments_2021-10-08_coverage",
+         "key" : "Neopin_iyNeoPine1.1_RNA-Seq-alignments_2022-03-11_coverage",
+         "label" : "Neopin_iyNeoPine1.1_RNA-Seq-alignments_2022-03-11_coverage",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "metadata" : {
             "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
             "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346750'>SRR346750</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346751'>SRR346751</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346748'>SRR346748</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346749'>SRR346749</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346752'>SRR346752</a>",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198135'>SRR11198135</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198136'>SRR11198136</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198133'>SRR11198133</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198134'>SRR11198134</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198129'>SRR11198129</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198130'>SRR11198130</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198131'>SRR11198131</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198132'>SRR11198132</a>",
             "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
             "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
          },
@@ -135,30 +154,30 @@
             "pos_color" : "#00BFFF"
          },
          "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-	"unsafePopup":true,
-         "urlTemplate" : "analyses/Drosophila-ficusphila-RNA-Seq_2021-10-08_v1.0/Drofic_ASM1815226v1_RNA-Seq-alignments_2021-10-08.bigwig"
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Neodiprion-pinetum-RNA-Seq_2022-03-11_v1.0/Neopin_iyNeoPine1.1_RNA-Seq-alignments_2022-03-11.bigwig"
       },
       {
          "category" : "RNA-Seq/Splice junctions",
          "compress" : 0,
-         "key" : "Drofic_ASM1815226v1_RNA-Seq-alignments_2021-10-08_junctions",
-         "label" : "Drofic_ASM1815226v1_RNA-Seq-alignments_2021-10-08_junctions",
+         "key" : "Neopin_iyNeoPine1.1_RNA-Seq-alignments_2022-03-11_junctions",
+         "label" : "Neopin_iyNeoPine1.1_RNA-Seq-alignments_2022-03-11_junctions",
          "metadata" : {
             "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
             "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346750'>SRR346750</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346751'>SRR346751</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346748'>SRR346748</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346749'>SRR346749</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR346752'>SRR346752</a>",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198135'>SRR11198135</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198136'>SRR11198136</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198133'>SRR11198133</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198134'>SRR11198134</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198129'>SRR11198129</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198130'>SRR11198130</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198131'>SRR11198131</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11198132'>SRR11198132</a>",
             "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
             "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
          },
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
-	     "description":"score",
-            "className" : "feature"
+            "className" : "feature",
+            "description" : "score"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
-	"unsafePopup":true,
-         "urlTemplate" : "tracks/Drofic_ASM1815226v1_RNA-Seq-alignments_2021-10-08_junctions/{refseq}/trackData.json"
+         "unsafePopup" : true,
+         "urlTemplate" : "tracks/Neopin_iyNeoPine1.1_RNA-Seq-alignments_2022-03-11_junctions/{refseq}/trackData.json"
       }
    ]
 }
