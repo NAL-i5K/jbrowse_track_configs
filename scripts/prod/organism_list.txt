@@ -1,5 +1,5 @@
-            common_name             |                                directory                                
-------------------------------------+-------------------------------------------------------------------------
+            common_name             |                          directory                           
+------------------------------------+--------------------------------------------------------------
  10_-_Onthophagus_taurus_training   | /app/data/BCM_i5k_pilot/onttau_training/jbrowse/data
  11_-_Onthophagus_taurus_training   | /app/data/BCM_i5k_pilot/onttau_training/jbrowse/data
  12_-_Onthophagus_taurus_training   | /app/data/BCM_i5k_pilot/onttau_training/jbrowse/data
@@ -63,7 +63,6 @@
  Clitarchus_hookeri                 | /app/data/other_species/clihoo/jbrowse/data
  Contarinia_nasturtii               | /app/data/other_species/connas/AAFC_CNas_1.1/jbrowse/data
  Copidosoma_floridanum              | /app/data/BCM_i5k_pilot/copflo/jbrowse/data
- Culex_quinquefasciatus             | /app/data/other_species/culqui/VPISU_Cqui_1.0_pri_paternal/jbrowse/data
  Diabrotica_virgifera_training      | /app/data/other_species/diavir/Dvir_v2.0_RefSeq/jbrowse/data
  Diachasma_alloeum                  | /app/data/other_species/diaall/Dall2.0/jbrowse/data
  Diaphorina_citri                   | /app/data/other_species/diacit/jbrowse/data
@@ -130,6 +129,7 @@
  Rhagoletis_zephyria                | /app/data/other_species/rhazep/jbrowse/data
  Rhipicephalus_microplus            | /app/data/other_species/rhimic/ASM1333972v1/jbrowse/data
  Rhyzopertha_dominica               | /app/data/other_species/rhydom/RdoDt3_tmp/jbrowse/data
+ Schistocerca_americana             | /app/data/other_species/schame/iqSchAmer2.1/jbrowse/data
  Schistocerca_piceifrons            | /app/data/other_species/schpic/iqSchPice1.1/jbrowse/data
  Tigriopus_californicus             | /app/data/other_species/tigcal/jbrowse/data
  Tribolium_castaneum                | /app/data/other_species/tricas/jbrowse/data
