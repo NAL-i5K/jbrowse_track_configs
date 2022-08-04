@@ -1,0 +1,112 @@
+{
+   "formatVersion" : 1,
+   "names" : {
+      "type" : "Hash",
+      "url" : "names/"
+   },
+   "tracks" : [
+      {
+         "key" : "Reference sequence",
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "chunkSize" : 20000,
+         "category" : "Reference sequence",
+         "type" : "SequenceTrack",
+         "label" : "DNA",
+         "seqType" : "dna"
+      },
+      {
+         "category" : "NCBI Annotation Release 100",
+         "type" : "HTMLFeatures",
+         "label" : "schpic_current_models",
+         "key" : "NCBI_Annotation_Release_100_Gene",
+         "trackType" : "HTMLFeatures",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "{type}",
+            "description" : "product, note, description",
+            "subfeatureClasses" : {
+               "wholeCDS" : null,
+               "exon" : "container-100pct",
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR"
+            },
+            "arrowheadClass" : "trellis-arrowhead"
+         },
+         "urlTemplate" : "tracks/schpic_current_models/{refseq}/trackData.json",
+         "metadata" : {
+            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/021/461/385/GCF_021461385.2_iqSchPice1.1/GCF_021461385.2_iqSchPice1.1_genomic.gff.gz",
+            "Data provider" : "NCBI",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Schistocerca_piceifrons/README_CURRENT_RELEASE"
+         },
+         "compress" : 0
+      },
+      {
+         "category" : "NCBI Annotation Release 100",
+         "type" : "HTMLFeatures",
+         "label" : "NCBI_Annotation_Release_100_Pseudogene",
+         "trackType" : "HTMLFeatures",
+         "key" : "NCBI_Annotation_Release_100_Pseudogene",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "subfeatureClasses" : {
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            },
+            "className" : "{type}",
+            "description" : "product, note, description"
+         },
+         "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json",
+         "metadata" : {
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Schistocerca_piceifrons/README_CURRENT_RELEASE",
+            "Data provider" : "NCBI",
+            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/021/461/385/GCF_021461385.2_iqSchPice1.1/GCF_021461385.2_iqSchPice1.1_genomic.gff.gz"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "compress" : 0
+      },
+      {
+         "urlTemplate" : "bigwig/GCF_021461385.2_iqSchPice1.1_genomic.fna.gaps.bigwig",
+	"category" : "Reference Assembly",
+		"metadata" : {
+		"Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+		"Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
+		"Track contact" : "The i5k workspace@NAL"
+		},
+         "style" : {
+            "neg_color" : "white",
+            "pos_color" : "black"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "key" : "Gaps in assembly",
+         "label" : "Gaps in assembly",
+         "bicolor_pivot" : "zero",
+         "autoscale" : "local",
+         "type" : "JBrowse/View/Track/Wiggle/Density"
+      },
+      {
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "bicolor_pivot" : "0.5",
+         "autoscale" : "local",
+         "label" : "GC Content",
+         "key" : "GC Content",
+         "urlTemplate" : "bigwig/GCF_021461385.2_iqSchPice1.1_genomic.fna.gc.bigwig",
+	"scoreType" : "avgScore",
+		"category" : "Reference Assembly",
+		"metadata" : {
+		"Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+		"Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
+		"Track contact" : "The i5k workspace@NAL"
+		},
+         "style" : {
+            "pos_color" : "rgba(0,0,255,50)",
+            "neg_color" : "rgba(255,255,0,50)"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig"
+      }
+   ]
+}

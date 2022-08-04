@@ -19,23 +19,23 @@
          "category" : "NCBI Annotation Release 100",
          "compress" : 0,
          "key" : "NCBI_Annotation_Release_100_Gene",
-         "label" : "rhimic_current_models",
+         "label" : "neofab_current_models",
          "menuTemplate" : [
-             {
-                "label" : "View details"
-             },
-             {
-              "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-              "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-              "iconClass" : "dijitIconDatabase",
-              "action": "newWindow",
-              "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}"
-              }
-        ],
+            {
+               "label" : "View details"
+            },
+            {
+               "action" : "newWindow",
+               "iconClass" : "dijitIconDatabase",
+               "label" : "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+               "title" : "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+               "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}"
+            }
+         ],
          "metadata" : {
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Rhipicephalus_microplus/README_CURRENT_RELEASE",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Neodiprion_fabricii/README_CURRENT_RELEASE",
             "Data provider" : "NCBI",
-            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/013/339/725/GCF_013339725.1_ASM1333972v1/GCF_013339725.1_ASM1333972v1_genomic.gff.gz",
+            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/021/155/785/GCF_021155785.1_iyNeoFabr1.1/GCF_021155785.1_iyNeoFabr1.1_genomic.gff.gz",
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
          },
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
@@ -52,7 +52,7 @@
          },
          "trackType" : "HTMLFeatures",
          "type" : "HTMLFeatures",
-         "urlTemplate" : "tracks/rhimic_current_models/{refseq}/trackData.json"
+         "urlTemplate" : "tracks/neofab_current_models/{refseq}/trackData.json"
       },
       {
          "category" : "NCBI Annotation Release 100",
@@ -60,9 +60,9 @@
          "key" : "NCBI_Annotation_Release_100_Pseudogene",
          "label" : "NCBI_Annotation_Release_100_Pseudogene",
          "metadata" : {
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Rhipicephalus_microplus/README_CURRENT_RELEASE",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Neodiprion_fabricii/README_CURRENT_RELEASE",
             "Data provider" : "NCBI",
-            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/013/339/725/GCF_013339725.1_ASM1333972v1/GCF_013339725.1_ASM1333972v1_genomic.gff.gz",
+            "Data source" : "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/021/155/785/GCF_021155785.1_iyNeoFabr1.1/GCF_021155785.1_iyNeoFabr1.1_genomic.gff.gz",
             "Method" : "http://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/"
          },
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
@@ -98,7 +98,7 @@
             "pos_color" : "black"
          },
          "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/GCF_013339725.1_ASM1333972v1_genomic.fna.gaps.bigwig"
+         "urlTemplate" : "bigwig/GCF_021155785.1_iyNeoFabr1.1_genomic.fna.gaps.bigwig"
       },
       {
          "autoscale" : "local",
@@ -111,69 +111,73 @@
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
             "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
          },
+         "scoreType" : "avgScore",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "style" : {
             "neg_color" : "rgba(255,255,0,50)",
             "pos_color" : "rgba(0,0,255,50)"
          },
          "type" : "JBrowse/View/Track/Wiggle/Density",
-         "urlTemplate" : "bigwig/GCF_013339725.1_ASM1333972v1_genomic.fna.gc.bigwig"
+         "urlTemplate" : "bigwig/GCF_021155785.1_iyNeoFabr1.1_genomic.fna.gc.bigwig"
       },
       {
          "category" : "RNA-Seq/Mapped Reads",
-         "key" : "Rhimic_ASM1333972v1_RNA-Seq-alignments_2021-07-25",
-         "label" : "Rhimic_ASM1333972v1_RNA-Seq-alignments_2021-07-25",
+         "key" : "Neodiprion lecontei RNA-Seq alignments against iyNeoFabr1.1",
+         "label" : "Neolec_iyNeoFabr1.1_RNA-Seq-alignments_2022-03-29",
          "metadata" : {
             "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
             "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7754371'>SRR7754371</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457965'>SRR11457965</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR13614645'>SRR13614645</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR13562171'>SRR13562171</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457967'>SRR11457967</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457976'>SRR11457976</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6765806'>SRR6765806</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10740628'>SRR10740628</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457968'>SRR11457968</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457974'>SRR11457974</a>",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814109'>SRR12814109</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814057'>SRR12814057</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814099'>SRR12814099</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814073'>SRR12814073</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2970130'>SRR2970130</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814062'>SRR12814062</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814078'>SRR12814078</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814088'>SRR12814088</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814047'>SRR12814047</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814055'>SRR12814055</a>",
             "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
             "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
          },
          "storeClass" : "JBrowse/Store/SeqFeature/BAM",
          "type" : "WebApollo/View/Track/DraggableAlignments",
-         "urlTemplate" : "analyses/Rhipicephalus-microplus-RNA-Seq_2021-07-25_v1.0/Rhimic_ASM1333972v1_RNA-Seq-alignments_2021-07-25.bam"
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Neodiprion-fabricii-RNA-Seq_2022-03-29_v1.0/Neolec_iyNeoFabr1.1_RNA-Seq-alignments_2022-03-29.bam"
       },
       {
          "autoscale" : "local",
          "bicolor_pivot" : "zero",
          "category" : "RNA-Seq/Coverage Plots",
-         "key" : "Rhimic_ASM1333972v1_RNA-Seq-alignments_2021-07-25_coverage",
-         "label" : "Rhimic_ASM1333972v1_RNA-Seq-alignments_2021-07-25_coverage",
+         "key" : "Neodiprion lecontei RNA-Seq alignments against iyNeoFabr1.1, coverage",
+         "label" : "Neolec_iyNeoFabr1.1_RNA-Seq-alignments_2022-03-29_coverage",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "style" : {
             "pos_color" : "#00BFFF"
          },
-        "metadata" : {
+         "metadata" : {
             "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
             "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7754371'>SRR7754371</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457965'>SRR11457965</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR13614645'>SRR13614645</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR13562171'>SRR13562171</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457967'>SRR11457967</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457976'>SRR11457976</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6765806'>SRR6765806</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10740628'>SRR10740628</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457968'>SRR11457968</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457974'>SRR11457974</a>",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814109'>SRR12814109</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814057'>SRR12814057</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814099'>SRR12814099</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814073'>SRR12814073</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2970130'>SRR2970130</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814062'>SRR12814062</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814078'>SRR12814078</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814088'>SRR12814088</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814047'>SRR12814047</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814055'>SRR12814055</a>",
             "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
             "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
          },
+         "unsafePopup" : true,
          "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "urlTemplate" : "analyses/Rhipicephalus-microplus-RNA-Seq_2021-07-25_v1.0/Rhimic_ASM1333972v1_RNA-Seq-alignments_2021-07-25.bigwig"
+         "urlTemplate" : "analyses/Neodiprion-fabricii-RNA-Seq_2022-03-29_v1.0/Neolec_iyNeoFabr1.1_RNA-Seq-alignments_2022-03-29.bigwig"
       },
       {
          "category" : "RNA-Seq/Splice junctions",
          "compress" : 0,
-         "key" : "Rhimic_ASM1333972v1_RNA-Seq-alignments_2021-07-25_junctions",
-         "label" : "Rhimic_ASM1333972v1_RNA-Seq-alignments_2021-07-25_junctions",
+         "key" : "Neodiprion lecontei RNA-Seq alignments against iyNeoFabr1.1, junctions",
+         "label" : "Neolec_iyNeoFabr1.1_RNA-Seq-alignments_2022-03-29_junctions",
          "metadata" : {
             "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
             "Analysis provider" : "i5k Workspace@NAL",
-            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR7754371'>SRR7754371</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457965'>SRR11457965</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR13614645'>SRR13614645</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR13562171'>SRR13562171</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457967'>SRR11457967</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457976'>SRR11457976</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6765806'>SRR6765806</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10740628'>SRR10740628</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457968'>SRR11457968</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11457974'>SRR11457974</a>",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814109'>SRR12814109</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814057'>SRR12814057</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814099'>SRR12814099</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814073'>SRR12814073</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2970130'>SRR2970130</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814062'>SRR12814062</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814078'>SRR12814078</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814088'>SRR12814088</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814047'>SRR12814047</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12814055'>SRR12814055</a>",
             "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
             "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
          },
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
-	    "description":"score",
-            "className" : "feature"
+            "className" : "feature",
+            "description" : "score"
          },
          "trackType" : null,
          "type" : "FeatureTrack",
-         "urlTemplate" : "tracks/Rhimic_ASM1333972v1_RNA-Seq-alignments_2021-07-25_junctions/{refseq}/trackData.json"
+         "unsafePopup" : true,
+         "urlTemplate" : "tracks/Neolec_iyNeoFabr1.1_RNA-Seq-alignments_2022-03-29_junctions/{refseq}/trackData.json"
       }
    ]
 }
