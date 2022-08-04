@@ -59,18 +59,18 @@
          "compress" : 0,
          "key" : "NCBI_Annotation_Release_100_Pseudogene",
          "label" : "NCBI_Annotation_Release_100_Pseudogene",
-"menuTemplate" : [
-       {
-          "label" : "View details",
-       },
-       {
-        "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-        "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-        "iconClass" : "dijitIconDatabase",
-        "action": "newWindow",
-        "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}",
-        },
-  ],
+         "menuTemplate" : [
+            {
+               "label" : "View details"
+            },
+            {
+               "action" : "newWindow",
+               "iconClass" : "dijitIconDatabase",
+               "label" : "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+               "title" : "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+               "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}"
+            }
+         ],
          "metadata" : {
             "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/connas/README_CURRENT_RELEASE",
             "Data provider" : "NCBI",
@@ -80,7 +80,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -98,18 +98,18 @@
          "compress" : 0,
          "key" : "NCBI_Annotation_Release_100_Gene",
          "label" : "connas_current_models",
-"menuTemplate" : [
-       {
-          "label" : "View details",
-       },
-       {
-        "label": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-        "title": "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
-        "iconClass" : "dijitIconDatabase",
-        "action": "newWindow",
-        "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('name')}",
-        },
-  ],
+         "menuTemplate" : [
+            {
+               "label" : "View details"
+            },
+            {
+               "action" : "newWindow",
+               "iconClass" : "dijitIconDatabase",
+               "label" : "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+               "title" : "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+               "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/'+feature.get('name')}"
+            }
+         ],
          "metadata" : {
             "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/connas/README_CURRENT_RELEASE",
             "Data provider" : "NCBI",
@@ -119,7 +119,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -128,9 +128,68 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "trackType" : "HTMLFeatures",
+         "type" : "HTMLFeatures",
          "urlTemplate" : "tracks/connas_current_models/{refseq}/trackData.json"
+      },
+      {
+         "category" : "RNA-Seq/Mapped Reads",
+         "key" : "Connas_AAFC_CNas_1.1_RNA-Seq-alignments_2021-06-11",
+         "label" : "Connas_AAFC_CNas_1.1_RNA-Seq-alignments_2021-06-11",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125244'>SRR10125244</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10186704'>SRR10186704</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125243'>SRR10125243</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125242'>SRR10125242</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125240'>SRR10125240</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125239'>SRR10125239</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125238'>SRR10125238</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125241'>SRR10125241</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Contarinia-nasturtii-RNA-Seq_2021-06-11_v1.0/Connas_AAFC_CNas_1.1_RNA-Seq-alignments_2021-06-11.bam"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "RNA-Seq/Coverage Plots",
+         "key" : "Connas_AAFC_CNas_1.1_RNA-Seq-alignments_2021-06-11_coverage",
+         "label" : "Connas_AAFC_CNas_1.1_RNA-Seq-alignments_2021-06-11_coverage",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125244'>SRR10125244</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10186704'>SRR10186704</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125243'>SRR10125243</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125242'>SRR10125242</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125240'>SRR10125240</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125239'>SRR10125239</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125238'>SRR10125238</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125241'>SRR10125241</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Contarinia-nasturtii-RNA-Seq_2021-06-11_v1.0/Connas_AAFC_CNas_1.1_RNA-Seq-alignments_2021-06-11.bigwig"
+      },
+      {
+         "category" : "RNA-Seq/Splice junctions",
+         "compress" : 0,
+         "key" : "Connas_AAFC_CNas_1.1_RNA-Seq-alignments_2021-06-11_junctions",
+         "label" : "Connas_AAFC_CNas_1.1_RNA-Seq-alignments_2021-06-11_junctions",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125244'>SRR10125244</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10186704'>SRR10186704</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125243'>SRR10125243</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125242'>SRR10125242</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125240'>SRR10125240</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125239'>SRR10125239</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125238'>SRR10125238</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR10125241'>SRR10125241</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "feature",
+            "description" : "score"
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "unsafePopup" : true,
+         "urlTemplate" : "tracks/Connas_AAFC_CNas_1.1_RNA-Seq-alignments_2021-06-11_junctions/{refseq}/trackData.json"
       }
    ]
 }

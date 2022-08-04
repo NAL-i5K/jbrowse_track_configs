@@ -5,7 +5,7 @@ select common_name, directory from organism ORDER by common_name;
 psql-U postgres -d webapollo_2 -c 'select common_name,directory from organism ORDER by common_name;'>organism_list.txt
 
 #makeaworkingfile
-cporganism_list.txtorganism_list.txt2
+cp organism_list.txtorganism_list.txt2
 
 
 

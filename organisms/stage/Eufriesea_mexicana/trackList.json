@@ -19,7 +19,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -38,17 +38,17 @@
          "key" : "NCBI_Annotation_Release_100_Gene",
          "label" : "NCBI_Annotation_Release_100_Gene",
          "menuTemplate" : [
-             {
-                "label" : "View details",
-             },
-             {
-              "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
-              "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
-              "iconClass" : "dijitIconDatabase",
-              "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}",
-              },
-        ],
+            {
+               "label" : "View details"
+            },
+            {
+               "action" : "newWindow",
+               "iconClass" : "dijitIconDatabase",
+               "label" : "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
+               "title" : "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('name')}",
+               "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('name')+'&searchSubmit=Search'}"
+            }
+         ],
          "metadata" : {
             "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Eufriesea_mexicana/README_CURRENT_RELEASE",
             "Data provider" : "NCBI",
@@ -58,7 +58,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -67,8 +67,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "trackType" : "HTMLFeatures",
+         "type" : "HTMLFeatures",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Gene/{refseq}/trackData.json"
       },
       {
@@ -83,9 +83,9 @@
          "useAsRefSeqStore" : 1
       },
       {
-         "category" : "Reference sequence",
          "autoscale" : "local",
          "bicolor_pivot" : "zero",
+         "category" : "Reference sequence",
          "key" : "Gaps in assembly",
          "label" : "Gaps in assembly",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
@@ -97,9 +97,9 @@
          "urlTemplate" : "bigwig/GCF_001483705.1_ASM148370v1_genomic.fna.gaps.bigwig"
       },
       {
-         "category" : "Reference sequence",
          "autoscale" : "local",
          "bicolor_pivot" : "0.5",
+         "category" : "Reference sequence",
          "key" : "GC Content",
          "label" : "GC Content",
          "scoreType" : "avgScore",
@@ -117,17 +117,17 @@
          "key" : "Eufriesea_mexicana_v1.2",
          "label" : "Eufriesea_mexicana_v1.2",
          "menuTemplate" : [
-             {
-                "label" : "View details",
-             },
-             {
-              "label": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
-              "title": "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
-              "iconClass" : "dijitIconDatabase",
-              "action": "newWindow",
-              "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}",
-              },
-        ],
+            {
+               "label" : "View details"
+            },
+            {
+               "action" : "newWindow",
+               "iconClass" : "dijitIconDatabase",
+               "label" : "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
+               "title" : "function(track,feature){ return 'Search HymenopteraMine for '+feature.get('id')}",
+               "url" : "function(track,feature){ return 'http://128.206.116.3:8080/hymenopteramine/keywordSearchResults.do?searchTerm='+feature.get('id')+'&searchSubmit=Search'}"
+            }
+         ],
          "metadata" : {
             "Data description" : "https://www.ncbi.nlm.nih.gov/pubmed/25977371",
             "Data provider" : "BeeBase",
@@ -137,7 +137,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "CDS" : "ogs-cds",
                "UTR" : "ogs-utr",
@@ -148,6 +148,65 @@
          "trackType" : null,
          "type" : "FeatureTrack",
          "urlTemplate" : "tracks/Eufriesea_mexicana_v1.2/{refseq}/trackData.json"
+      },
+      {
+         "category" : "RNA-Seq/Mapped Reads",
+         "key" : "Eufmex_ASM148370v1_RNA-Seq-alignments_2021-06-14",
+         "label" : "Eufmex_ASM148370v1_RNA-Seq-alignments_2021-06-14",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2001621'>SRR2001621</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Eufriesea-mexicana-RNA-Seq_2021-06-14_v1.0/Eufmex_ASM148370v1_RNA-Seq-alignments_2021-06-14.bam"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "RNA-Seq/Coverage Plots",
+         "key" : "Eufmex_ASM148370v1_RNA-Seq-alignments_2021-06-14_coverage",
+         "label" : "Eufmex_ASM148370v1_RNA-Seq-alignments_2021-06-14_coverage",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2001621'>SRR2001621</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Eufriesea-mexicana-RNA-Seq_2021-06-14_v1.0/Eufmex_ASM148370v1_RNA-Seq-alignments_2021-06-14.bigwig"
+      },
+      {
+         "category" : "RNA-Seq/Splice junctions",
+         "compress" : 0,
+         "key" : "Eufmex_ASM148370v1_RNA-Seq-alignments_2021-06-14_junctions",
+         "label" : "Eufmex_ASM148370v1_RNA-Seq-alignments_2021-06-14_junctions",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR2001621'>SRR2001621</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "feature",
+            "description" : "score"
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "unsafePopup" : true,
+         "urlTemplate" : "tracks/Eufmex_ASM148370v1_RNA-Seq-alignments_2021-06-14_junctions/{refseq}/trackData.json"
       }
    ]
 }

@@ -20,6 +20,18 @@
          "compress" : 0,
          "key" : "NCBI_Annotation_Release_101_Gene",
          "label" : "NCBI_Annotation_Release_101_Gene",
+         "menuTemplate" : [
+            {
+               "label" : "View details"
+            },
+            {
+               "action" : "newWindow",
+               "iconClass" : "dijitIconDatabase",
+               "label" : "function(track,feature){ return 'Find NCBI record for '+feature.get('id')}",
+               "title" : "function(track,feature){ return 'Find NCBI record for '+feature.get('id')}",
+               "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}"
+            }
+         ],
          "metadata" : {
             "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Microplitis_demolitor/README_CURRENT_RELEASE",
             "Data provider" : "NCBI",
@@ -29,7 +41,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -38,8 +50,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "trackType" : "HTMLFeatures",
+         "type" : "HTMLFeatures",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_101_Gene/{refseq}/trackData.json"
       },
       {
@@ -56,7 +68,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -99,6 +111,7 @@
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
             "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
          },
+         "scoreType" : "avgScore",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "style" : {
             "neg_color" : "rgba(255,255,0,50)",
@@ -495,7 +508,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "renderClassName" : "genemark"
          },
          "trackType" : null,
@@ -517,7 +530,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "renderClassName" : "genemark"
          },
          "trackType" : null,
@@ -526,30 +539,30 @@
       },
       {
          "category" : "Official Gene Set v1.0",
-         "metadata" : {
-            "Data description" : "Microplitis demolitor OGSv1.0 is an integration of automatic gene predictions from *Microplitis demolitor* genome annotations NCBI-RefSeq's gene set NCBI Microplitis demolitor Annotation Release 101 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Microplitis_demolitor/101/), with manual annotations by the research community, performed via the Apollo manual curation software (https://zenodo.org/record/1295754#.YDgLyJNKivg), and QC'd via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit) and NCBI's table2asn_GFF software (https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/table2asn_GFF/), and merged via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit).",
-            "Data source" : "https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10",
-            "Publication status" : "Published dataset, please cite (dataset) Tims, Kelly; Poelchau, Monica; Burke, Gaelen. (unpublished). Microplitis demolitor Official Gene Set micdem_OGSv1.0. Ag Data Commons. https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10."
-         },
+         "compress" : 0,
+         "key" : "OGSv1.0 Gene",
+         "label" : "micdem_current_models",
          "menuTemplate" : [
             {
                "label" : "View details"
             },
             {
-             "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-             "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-             "iconClass" : "dijitIconDatabase",
-             "action": "newWindow",
-             "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
-             }
-       ],
-         "compress" : 0,
-         "key" : "OGSv1.0 Gene",
-         "label" : "micdem_current_models",
+               "action" : "newWindow",
+               "iconClass" : "dijitIconDatabase",
+               "label" : "function(track,feature){ return 'Find NCBI record for '+feature.get('id')}",
+               "title" : "function(track,feature){ return 'Find NCBI record for '+feature.get('id')}",
+               "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/protein/'+feature.get('id')}"
+            }
+         ],
+         "metadata" : {
+            "Data description" : "Microplitis demolitor OGSv1.0 is an integration of automatic gene predictions from *Microplitis demolitor* genome annotations NCBI-RefSeq's gene set NCBI Microplitis demolitor Annotation Release 101 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Microplitis_demolitor/101/), with manual annotations by the research community, performed via the Apollo manual curation software (https://zenodo.org/record/1295754#.YDgLyJNKivg), and QC'd via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit) and NCBI's table2asn_GFF software (https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/table2asn_GFF/), and merged via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit).",
+            "Data source" : "https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10",
+            "Publication status" : "Published dataset, please cite (dataset) Tims, Kelly; Poelchau, Monica; Burke, Gaelen. (unpublished). Microplitis demolitor Official Gene Set micdem_OGSv1.0. Ag Data Commons. https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10."
+         },
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -564,18 +577,18 @@
       },
       {
          "category" : "Official Gene Set v1.0",
+         "compress" : 0,
+         "key" : "OGSv1.0 Pseudogene",
+         "label" : "OGSv1.0_Pseudogene",
          "metadata" : {
             "Data description" : "Microplitis demolitor OGSv1.0 is an integration of automatic gene predictions from *Microplitis demolitor* genome annotations NCBI-RefSeq's gene set NCBI Microplitis demolitor Annotation Release 101 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Microplitis_demolitor/101/), with manual annotations by the research community, performed via the Apollo manual curation software (https://zenodo.org/record/1295754#.YDgLyJNKivg), and QC'd via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit) and NCBI's table2asn_GFF software (https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/table2asn_GFF/), and merged via the GFF3toolkit (https://github.com/NAL-i5K/gff3toolkit).",
             "Data source" : "https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10",
             "Publication status" : "Published dataset, please cite (dataset) Tims, Kelly; Poelchau, Monica; Burke, Gaelen. (unpublished). Microplitis demolitor Official Gene Set micdem_OGSv1.0. Ag Data Commons. https://data.nal.usda.gov/dataset/microplitis-demolitor-official-gene-set-micdemogsv10."
          },
-         "compress" : 0,
-         "key" : "OGSv1.0 Pseudogene",
-         "label" : "OGSv1.0_Pseudogene",
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -587,6 +600,65 @@
          "trackType" : "HTMLFeatures",
          "type" : "HTMLFeatures",
          "urlTemplate" : "tracks/OGSv1.0_Pseudogene/{refseq}/trackData.json"
+      },
+      {
+         "category" : "RNA-Seq/Mapped Reads",
+         "key" : "Micdem_Mdem2_RNA-Seq-alignments_2021-06-21",
+         "label" : "Micdem_Mdem2_RNA-Seq-alignments_2021-06-21",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955374'>SRR955374</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955015'>SRR955015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955076'>SRR955076</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955397'>SRR955397</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Microplitis-demolitor-RNA-Seq_2021-06-21_v1.0/Micdem_Mdem2_RNA-Seq-alignments_2021-06-21.bam"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "RNA-Seq/Coverage Plots",
+         "key" : "Micdem_Mdem2_RNA-Seq-alignments_2021-06-21_coverage",
+         "label" : "Micdem_Mdem2_RNA-Seq-alignments_2021-06-21_coverage",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955374'>SRR955374</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955015'>SRR955015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955076'>SRR955076</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955397'>SRR955397</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Microplitis-demolitor-RNA-Seq_2021-06-21_v1.0/Micdem_Mdem2_RNA-Seq-alignments_2021-06-21.bigwig"
+      },
+      {
+         "category" : "RNA-Seq/Splice junctions",
+         "compress" : 0,
+         "key" : "Micdem_Mdem2_RNA-Seq-alignments_2021-06-21_junctions",
+         "label" : "Micdem_Mdem2_RNA-Seq-alignments_2021-06-21_junctions",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955374'>SRR955374</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955015'>SRR955015</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955076'>SRR955076</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR955397'>SRR955397</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "feature",
+            "description" : "score"
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "unsafePopup" : true,
+         "urlTemplate" : "tracks/Micdem_Mdem2_RNA-Seq-alignments_2021-06-21_junctions/{refseq}/trackData.json"
       }
    ]
 }

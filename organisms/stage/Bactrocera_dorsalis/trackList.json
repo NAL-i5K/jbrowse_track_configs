@@ -1,43 +1,48 @@
 {
-   "css" : "./plugins/NAL_CSS/css/contrib_styles.css",
+   "alwaysOnTracks" : "DNA,Annotations",
+   "css" : "./plugins/NAL_CSS/css/main.css",
+   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
+   "formatVersion" : 1,
    "share_link" : 0,
    "tracks" : [
       {
-         "chunkSize" : 20000,
-         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
-         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
          "category" : "Reference sequence",
-         "type" : "SequenceTrack",
+         "chunkSize" : 20000,
+         "key" : "Reference sequence",
          "label" : "DNA",
-         "key" : "Reference sequence"
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "type" : "SequenceTrack",
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
       },
       {
          "autocomplete" : "none",
+         "compress" : 0,
+         "key" : "User-created Annotations",
+         "label" : "Annotations",
+         "phase" : 0,
+         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
          "style" : {
-            "renderClassName" : "annot-render",
-            "className" : "annot",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
-               "exon" : "container-100pct",
-               "CDS" : "annot-CDS",
-               "UTR" : "annot-UTR",
-               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site"
-            },
             "alternateClasses" : {
-               "transposable_element" : {
-                  "className" : "blue-ibeam",
-                  "renderClassName" : "blue-ibeam-render"
+               "miRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "ncRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
                "pseudogene" : {
                   "className" : "light-purple-80pct",
                   "renderClassName" : "gray-center-30pct"
                },
-               "snRNA" : {
+               "rRNA" : {
                   "className" : "brightgreen-80pct",
                   "renderClassName" : "gray-center-30pct"
                },
-               "rRNA" : {
+               "repeat_region" : {
+                  "className" : "magenta-80pct"
+               },
+               "snRNA" : {
                   "className" : "brightgreen-80pct",
                   "renderClassName" : "gray-center-30pct"
                },
@@ -45,538 +50,586 @@
                   "className" : "brightgreen-80pct",
                   "renderClassName" : "gray-center-30pct"
                },
-               "repeat_region" : {
-                  "className" : "magenta-80pct"
-               },
-               "ncRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
-               "miRNA" : {
-                  "className" : "brightgreen-80pct",
-                  "renderClassName" : "gray-center-30pct"
-               },
                "tRNA" : {
                   "className" : "brightgreen-80pct",
                   "renderClassName" : "gray-center-30pct"
+               },
+               "transposable_element" : {
+                  "className" : "blue-ibeam",
+                  "renderClassName" : "blue-ibeam-render"
                }
             },
             "arrowheadClass" : "annot-arrowhead",
-            "uniqueIdField" : "id",
             "centerSubFeature" : {
-               "non_canonical_three_prime_splice_site" : false,
-               "non_canonical_five_prime_splice_site" : false
-            }
+               "non_canonical_five_prime_splice_site" : false,
+               "non_canonical_three_prime_splice_site" : false
+            },
+            "className" : "annot",
+            "renderClassName" : "annot-render",
+            "subfeatureClasses" : {
+               "CDS" : "annot-CDS",
+               "UTR" : "annot-UTR",
+               "exon" : "container-100pct",
+               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
+               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
+               "wholeCDS" : null
+            },
+            "uniqueIdField" : "id"
          },
-         "key" : "User-created Annotations",
-         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
-         "phase" : 0,
-         "compress" : 0,
-         "label" : "Annotations",
-         "type" : "WebApollo/View/Track/AnnotTrack",
-         "subfeatures" : 1
+         "subfeatures" : 1,
+         "type" : "WebApollo/View/Track/AnnotTrack"
       },
       {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "Reference Assembly",
+         "key" : "Gaps in assembly",
+         "label" : "Gaps in assembly",
+         "metadata" : {
+            "Track contact" : "The i5k workspace@NAL",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "style" : {
             "neg_color" : "white",
             "pos_color" : "black"
          },
-         "bicolor_pivot" : "zero",
-         "key" : "Gaps in assembly",
-         "autoscale" : "local",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/27457_ref_ASM78921v2_chrUn_refseq_IDS.fa.gaps.bigwig",
-         "category" : "Reference Assembly",
-         "label" : "Gaps in assembly",
          "type" : "JBrowse/View/Track/Wiggle/Density",
-         "metadata" : {
-            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track contact" : "The i5k workspace@NAL"
-         }
+         "urlTemplate" : "bigwig/27457_ref_ASM78921v2_chrUn_refseq_IDS.fa.gaps.bigwig"
       },
       {
-         "style" : {
-            "pos_color" : "rgba(0,0,255,50)",
-            "neg_color" : "rgba(255,255,0,50)"
-         },
+         "autoscale" : "local",
          "bicolor_pivot" : "0.5",
-         "autoscale" : "local",
+         "category" : "Reference Assembly",
          "key" : "GC Content",
-         "scoreType": "avgScore",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/27457_ref_ASM78921v2_chrUn_refseq_IDS.fa.gc.bigwig",
-         "metadata" : {
-            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track contact" : "The i5k workspace@NAL"
-         },
          "label" : "GC Content",
-         "type" : "JBrowse/View/Track/Wiggle/Density",
-         "category" : "Reference Assembly"
-      },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted protein coding genes, Annotation Release 100",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/RefSeq_Protein_Coding/{refseq}/trackData.json",
-         "compress" : 0,
-         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Protein Coding",
-         "label" : "RefSeq_Protein_Coding",
-         "type" : "FeatureTrack",
          "metadata" : {
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/GFF/ref_ASM78921v2_scaffolds.gff3.gz",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/README_CURRENT_RELEASE"
-         }
-      },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
+            "Track contact" : "The i5k workspace@NAL",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
          },
-         "key" : "NCBI Predicted low-quality protein coding genes, Annotation Release 100",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/RefSeq_Low_Quality_Protein_Coding/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/GFF/ref_ASM78921v2_scaffolds.gff3.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/README_CURRENT_RELEASE"
-         },
-         "label" : "RefSeq_Low_Quality_Protein_Coding",
-         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Protein Coding"
-      },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted noncoding RNA, Annotation Release 100",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/RefSeq_Noncoding_RNA/{refseq}/trackData.json",
-         "compress" : 0,
-         "label" : "RefSeq_Noncoding_RNA",
-         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Protein Coding",
-         "metadata" : {
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/",
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/GFF/ref_ASM78921v2_scaffolds.gff3.gz",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/README_CURRENT_RELEASE"
-         },
-         "type" : "FeatureTrack"
-      },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "gnomon_CDS",
-               "UTR" : "gnomon_UTR"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "NCBI Predicted pseudogenes, Annotation Release 100",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/RefSeq_Psuedogene/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/GFF/ref_ASM78921v2_scaffolds.gff3.gz",
-            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/",
-            "Data provider" : "NCBI",
-            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/README_CURRENT_RELEASE"
-         },
-         "type" : "FeatureTrack",
-         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Pseudogenes",
-         "label" : "RefSeq_Psuedogene"
-      },
-      {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "primary_gene_set-cds",
-               "UTR" : "primary_gene_set-utr"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "BDOR_v1-Models",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/BDOR_v1-Models/{refseq}/trackData.json",
-         "compress" : 0,
-         "metadata" : {
-            "Method" : "Maker",
-            "Data source" : "Scott Geib",
-            "Data provider" : "Scott Geib",
-            "Data description" : " "
-         },
-         "type" : "FeatureTrack",
-         "category" : "Bdor_v1/Primary Gene Sets: Protein Coding",
-         "label" : "BDOR_v1-Models"
-      },
-      {
-         "style" : {
-            "neg_color" : "#0086B3",
-            "pos_color" : "#00BFFF",
-            "bg_color" : "rgba(230,230,230,0.6)",
-            "height" : 75
-         },
-         "bicolor_pivot" : "zero",
-         "key" : "Punador_male, XY Plot",
-         "autoscale" : "local",
+         "scoreType" : "avgScore",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/male_accepted_hits.bigwig",
+         "style" : {
+            "neg_color" : "rgba(255,255,0,50)",
+            "pos_color" : "rgba(0,0,255,50)"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/Density",
+         "urlTemplate" : "bigwig/27457_ref_ASM78921v2_chrUn_refseq_IDS.fa.gc.bigwig"
+      },
+      {
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Protein Coding",
+         "compress" : 0,
+         "key" : "NCBI Predicted protein coding genes, Annotation Release 100",
+         "label" : "RefSeq_Protein_Coding",
          "metadata" : {
-            "Publiction Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/README_CURRENT_RELEASE",
+            "Data provider" : "NCBI",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/GFF/ref_ASM78921v2_scaffolds.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/RefSeq_Protein_Coding/{refseq}/trackData.json"
+      },
+      {
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Protein Coding",
+         "compress" : 0,
+         "key" : "NCBI Predicted low-quality protein coding genes, Annotation Release 100",
+         "label" : "RefSeq_Low_Quality_Protein_Coding",
+         "metadata" : {
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/README_CURRENT_RELEASE",
+            "Data provider" : "NCBI",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/GFF/ref_ASM78921v2_scaffolds.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/RefSeq_Low_Quality_Protein_Coding/{refseq}/trackData.json"
+      },
+      {
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Protein Coding",
+         "compress" : 0,
+         "key" : "NCBI Predicted noncoding RNA, Annotation Release 100",
+         "label" : "RefSeq_Noncoding_RNA",
+         "metadata" : {
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/README_CURRENT_RELEASE",
+            "Data provider" : "NCBI",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/GFF/ref_ASM78921v2_scaffolds.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/RefSeq_Noncoding_RNA/{refseq}/trackData.json"
+      },
+      {
+         "category" : "NCBI-RefSeq Annotation Release 100/1. Gene Sets/Pseudogenes",
+         "compress" : 0,
+         "key" : "NCBI Predicted pseudogenes, Annotation Release 100",
+         "label" : "RefSeq_Psuedogene",
+         "metadata" : {
+            "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/README_CURRENT_RELEASE",
+            "Data provider" : "NCBI",
+            "Data source" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Bactrocera_dorsalis/GFF/ref_ASM78921v2_scaffolds.gff3.gz",
+            "Method" : "http://www.ncbi.nlm.nih.gov/genome/guide/gnomon.shtml; http://www.ncbi.nlm.nih.gov/refseq/about/"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "CDS" : "gnomon_CDS",
+               "UTR" : "gnomon_UTR",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/RefSeq_Psuedogene/{refseq}/trackData.json"
+      },
+      {
+         "category" : "Bdor_v1/Primary Gene Sets: Protein Coding",
+         "compress" : 0,
+         "key" : "BDOR_v1-Models",
+         "label" : "BDOR_v1-Models",
+         "metadata" : {
+            "Data description" : " ",
+            "Data provider" : "Scott Geib",
+            "Data source" : "Scott Geib",
+            "Method" : "Maker"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "CDS" : "primary_gene_set-cds",
+               "UTR" : "primary_gene_set-utr",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/BDOR_v1-Models/{refseq}/trackData.json"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "Transcriptome/Coverage plots (BigWig)",
+         "key" : "Punador_male, XY Plot",
+         "label" : "Punador_male, XY Plot",
+         "metadata" : {
             "Analysis method" : "TopHat v2.0.13",
-            "Tissue/lifestage" : "Pooled Adult Male ",
+            "DOI" : "doi:10.1186/1471-2164-15-942",
+            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261510",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publiction Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
             "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
             "Sex" : "Male",
-            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
-            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
-            "DOI" : "doi:10.1186/1471-2164-15-942",
-            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
-            "Date completed" : "6/28/15",
-            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-            "NCBI SRA accession" : "SRX261510",
-            "Strain" : "Punador"
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Adult Male "
          },
-         "label" : "Punador_male, XY Plot",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "bg_color" : "rgba(230,230,230,0.6)",
+            "height" : 75,
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
          "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "category" : "Transcriptome/Coverage plots (BigWig)"
+         "urlTemplate" : "bam/GEIB_FilesforI5k/male_accepted_hits.bigwig"
       },
       {
-         "style" : {
-            "pos_color" : "#00BFFF",
-            "neg_color" : "#0086B3",
-            "bg_color" : "rgba(230,230,230,0.6)",
-            "height" : 75
-         },
-         "bicolor_pivot" : "zero",
          "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "Transcriptome/Coverage plots (BigWig)",
          "key" : "Punador_matedFemale, XY Plot",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/mated_accepted_hits.bigwig",
+         "label" : "Punador_matedFemale, XY Plot",
          "metadata" : {
-            "Publiction Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
             "Analysis method" : "TopHat v2.0.13",
-            "Tissue/lifestage" : "Pooled Mated Adult Female",
+            "DOI" : "doi:10.1186/1471-2164-15-942",
+            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261512",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publiction Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
             "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
             "Sex" : "Female",
-            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
-            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
-            "DOI" : "doi:10.1186/1471-2164-15-942",
-            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
-            "Date completed" : "6/28/15",
-            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-            "NCBI SRA accession" : "SRX261512",
-            "Strain" : "Punador"
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Mated Adult Female"
          },
-         "label" : "Punador_matedFemale, XY Plot",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "bg_color" : "rgba(230,230,230,0.6)",
+            "height" : 75,
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
          "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "category" : "Transcriptome/Coverage plots (BigWig)"
+         "urlTemplate" : "bam/GEIB_FilesforI5k/mated_accepted_hits.bigwig"
       },
       {
-         "style" : {
-            "neg_color" : "#0086B3",
-            "pos_color" : "#00BFFF",
-            "bg_color" : "rgba(230,230,230,0.6)",
-            "height" : 75
-         },
+         "autoscale" : "local",
          "bicolor_pivot" : "zero",
+         "category" : "Transcriptome/Coverage plots (BigWig)",
          "key" : "Punador_pupae, XY Plot",
-         "autoscale" : "local",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/pupae_accepted_hits.bigwig",
-         "metadata" : {
-            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
-            "Analysis method" : "TopHat v2.0.13",
-            "Tissue/lifestage" : "Pooled Pupae",
-            "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
-            "Sex" : "Pool",
-            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
-            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
-            "DOI" : "doi:10.1186/1471-2164-15-942",
-            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
-            "Date completed" : "6/28/15",
-            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-            "NCBI SRA accession" : "SRX261509",
-            "Strain" : "Punador"
-         },
          "label" : "Punador_pupea, XY Plot",
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "category" : "Transcriptome/Coverage plots (BigWig)"
-      },
-      {
-         "style" : {
-            "pos_color" : "#00BFFF",
-            "neg_color" : "#0086B3",
-            "bg_color" : "rgba(230,230,230,0.6)",
-            "height" : 75
-         },
-         "bicolor_pivot" : "zero",
-         "autoscale" : "local",
-         "key" : "Punador_egg, XY Plot",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/egg_accepted_hits.bigwig",
          "metadata" : {
-            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
             "Analysis method" : "TopHat v2.0.13",
-            "Tissue/lifestage" : "Pooled Eggs",
-            "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
-            "Sex" : "Pool",
-            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
-            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
             "DOI" : "doi:10.1186/1471-2164-15-942",
             "Data provider" : "Scott Geib, USDA-ARS-PBARC",
-            "Date completed" : "6/28/15",
             "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-            "NCBI SRA accession" : "SRX261507",
-            "Strain" : "Punador"
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261509",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
+            "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
+            "Sex" : "Pool",
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Pupae"
          },
-         "label" : "Punador_egg, XY Plot",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "bg_color" : "rgba(230,230,230,0.6)",
+            "height" : 75,
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
          "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "category" : "Transcriptome/Coverage plots (BigWig)"
+         "urlTemplate" : "bam/GEIB_FilesforI5k/pupae_accepted_hits.bigwig"
       },
       {
-         "style" : {
-            "neg_color" : "#0086B3",
-            "pos_color" : "#00BFFF",
-            "bg_color" : "rgba(230,230,230,0.6)",
-            "height" : 75
-         },
-         "bicolor_pivot" : "zero",
-         "key" : "Punador_unmatedFemale, XY Plot",
          "autoscale" : "local",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/female_accepted_hits.bigwig",
+         "bicolor_pivot" : "zero",
+         "category" : "Transcriptome/Coverage plots (BigWig)",
+         "key" : "Punador_egg, XY Plot",
+         "label" : "Punador_egg, XY Plot",
          "metadata" : {
-            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
             "Analysis method" : "TopHat v2.0.13",
-            "Tissue/lifestage" : "Pooled Unmated Adult Female",
+            "DOI" : "doi:10.1186/1471-2164-15-942",
+            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261507",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
+            "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
+            "Sex" : "Pool",
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Eggs"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "bg_color" : "rgba(230,230,230,0.6)",
+            "height" : 75,
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "urlTemplate" : "bam/GEIB_FilesforI5k/egg_accepted_hits.bigwig"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "Transcriptome/Coverage plots (BigWig)",
+         "key" : "Punador_unmatedFemale, XY Plot",
+         "label" : "Punador_unmatedFemale, XY Plot",
+         "metadata" : {
+            "Analysis method" : "TopHat v2.0.13",
+            "DOI" : "doi:10.1186/1471-2164-15-942",
+            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261511",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
             "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
             "Sex" : "Female ",
-            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
-            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
-            "DOI" : "doi:10.1186/1471-2164-15-942",
-            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
-            "Date completed" : "6/28/15",
-            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-            "NCBI SRA accession" : "SRX261511",
-            "Strain" : "Punador"
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Unmated Adult Female"
          },
-         "label" : "Punador_unmatedFemale, XY Plot",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "bg_color" : "rgba(230,230,230,0.6)",
+            "height" : 75,
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
          "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "category" : "Transcriptome/Coverage plots (BigWig)"
+         "urlTemplate" : "bam/GEIB_FilesforI5k/female_accepted_hits.bigwig"
       },
       {
-         "style" : {
-            "pos_color" : "#00BFFF",
-            "neg_color" : "#0086B3",
-            "bg_color" : "rgba(230,230,230,0.6)",
-            "height" : 75
-         },
-         "bicolor_pivot" : "zero",
          "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "Transcriptome/Coverage plots (BigWig)",
          "key" : "Punador_larvae, XY Plot",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/larvae_accepted_hits.bigwig",
+         "label" : "Punador_larvae, XY Plot",
          "metadata" : {
-            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
             "Analysis method" : "TopHat v2.0.13",
-            "Tissue/lifestage" : "Pooled Larvae",
+            "DOI" : "doi:10.1186/1471-2164-15-942",
+            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261508",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
             "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
             "Sex" : "Pool",
-            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
-            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Larvae"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "bg_color" : "rgba(230,230,230,0.6)",
+            "height" : 75,
+            "neg_color" : "#0086B3",
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "urlTemplate" : "bam/GEIB_FilesforI5k/larvae_accepted_hits.bigwig"
+      },
+      {
+         "category" : "Transcriptome/Mapped Reads",
+         "key" : "Punador_egg",
+         "label" : "Punador_egg",
+         "metadata" : {
+            "Analysis method" : "TopHat v2.0.13",
             "DOI" : "doi:10.1186/1471-2164-15-942",
             "Data provider" : "Scott Geib, USDA-ARS-PBARC",
-            "Date completed" : "6/28/15",
             "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-            "NCBI SRA accession" : "SRX261508",
-            "Strain" : "Punador"
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261507",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
+            "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
+            "Sex" : "Pool",
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Eggs"
          },
-         "label" : "Punador_larvae, XY Plot",
-         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-         "category" : "Transcriptome/Coverage plots (BigWig)"
-      },
-      {
          "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/egg_accepted_hits.bam",
          "type" : "WebApollo/View/Track/DraggableAlignments",
-        "metadata": {
-                "Geographical location of specimen collection": "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
-                "Tissue/lifestage": "Pooled Eggs",
-                "Sex": "Pool",
-                "Strain": "Punador",
-                "Other notes": "See publication and NCBI Bioproject PRJNA167923 for sample details",
-                "NCBI SRA accession": "SRX261507",
-                "Sequencing platform and version ": "Illumina GAIIx, 2x100 bp PE",
-                "Data source URL": "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-                "Publication Status": "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
-                "DOI": "doi:10.1186/1471-2164-15-942",
-                "Data provider": "Scott Geib, USDA-ARS-PBARC",
-                "Analysis method": "TopHat v2.0.13",
-                "Date completed": "6/28/15"
-                },
-         "category" : "Transcriptome/Mapped Reads",
-         "label" : "Punador_egg",
-         "key" : "Punador_egg"
+         "urlTemplate" : "bam/GEIB_FilesforI5k/egg_accepted_hits.bam"
       },
       {
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/female_accepted_hits.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "key" : "Punador_unmatedFemale",
          "label" : "Punador_unmatedFemale",
-         "metadata": {
-                     "Geographical location of specimen collection": "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
-                     "Tissue/lifestage": "Pooled Unmated Adult Female",
-                     "Sex": "Female ",
-                     "Strain": "Punador",
-                     "Other notes": "See publication and NCBI Bioproject PRJNA167923 for sample details",
-                     "NCBI SRA accession": "SRX261511",
-                     "Sequencing platform and version ": "Illumina GAIIx, 2x100 bp PE",
-                     "Data source URL": "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-                     "Publication Status": "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
-                     "DOI": "doi:10.1186/1471-2164-15-942",
-                     "Data provider": "Scott Geib, USDA-ARS-PBARC",
-                     "Analysis method": "TopHat v2.0.13",
-                     "Date completed": "6/28/15"
-                     },
-         "category" : "Transcriptome/Mapped Reads",
+         "metadata" : {
+            "Analysis method" : "TopHat v2.0.13",
+            "DOI" : "doi:10.1186/1471-2164-15-942",
+            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261511",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
+            "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
+            "Sex" : "Female ",
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Unmated Adult Female"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
          "type" : "WebApollo/View/Track/DraggableAlignments",
-         "key" : "Punador_unmatedFemale"
+         "urlTemplate" : "bam/GEIB_FilesforI5k/female_accepted_hits.bam"
       },
       {
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/larvae_accepted_hits.bam",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "metadata": {
-                     "Geographical location of specimen collection": "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
-                     "Tissue/lifestage": "Pooled Larvae",
-                     "Sex": "Pool",
-                     "Strain": "Punador",
-                     "Other notes": "See publication and NCBI Bioproject PRJNA167923 for sample details",
-                     "NCBI SRA accession": "SRX261508",
-                     "Sequencing platform and version ": "Illumina GAIIx, 2x100 bp PE",
-                     "Data source URL": "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-                     "Publication Status": "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
-                     "DOI": "doi:10.1186/1471-2164-15-942",
-                     "Data provider": "Scott Geib, USDA-ARS-PBARC",
-                     "Analysis method": "TopHat v2.0.13",
-                     "Date completed": "6/28/15"
-                     },
          "category" : "Transcriptome/Mapped Reads",
+         "key" : "Punador_larvae",
          "label" : "Punador_larvae",
-         "key" : "Punador_larvae"
+         "metadata" : {
+            "Analysis method" : "TopHat v2.0.13",
+            "DOI" : "doi:10.1186/1471-2164-15-942",
+            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261508",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
+            "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
+            "Sex" : "Pool",
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Larvae"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "urlTemplate" : "bam/GEIB_FilesforI5k/larvae_accepted_hits.bam"
       },
       {
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/male_accepted_hits.bam",
+         "category" : "Transcriptome/Mapped Reads",
+         "key" : "Punador_male",
          "label" : "Punador_male",
+         "metadata" : {
+            "Analysis method" : "TopHat v2.0.13",
+            "DOI" : "doi:10.1186/1471-2164-15-942",
+            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261510",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
+            "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
+            "Sex" : "Male",
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Adult Male "
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
          "type" : "WebApollo/View/Track/DraggableAlignments",
-         "metadata": {
-                     "Geographical location of specimen collection": "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
-                     "Tissue/lifestage": "Pooled Adult Male ",
-                     "Sex": "Male",
-                     "Strain": "Punador",
-                     "Other notes": "See publication and NCBI Bioproject PRJNA167923 for sample details",
-                     "NCBI SRA accession": "SRX261510",
-                     "Sequencing platform and version ": "Illumina GAIIx, 2x100 bp PE",
-                     "Data source URL": "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-                     "Publication Status": "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
-                     "DOI": "doi:10.1186/1471-2164-15-942",
-                     "Data provider": "Scott Geib, USDA-ARS-PBARC",
-                     "Analysis method": "TopHat v2.0.13",
-                     "Date completed": "6/28/15"
-                     },
-         "category" : "Transcriptome/Mapped Reads",
-         "key" : "Punador_male"
+         "urlTemplate" : "bam/GEIB_FilesforI5k/male_accepted_hits.bam"
       },
       {
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/mated_accepted_hits.bam",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "metadata": {
-                     "Geographical location of specimen collection": "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
-                     "Tissue/lifestage": "Pooled Mated Adult Female",
-                     "Sex": "Female",
-                     "Strain": "Punador",
-                     "Other notes": "See publication and NCBI Bioproject PRJNA167923 for sample details",
-                     "NCBI SRA accession": "SRX261512",
-                     "Sequencing platform and version ": "Illumina GAIIx, 2x100 bp PE",
-                     "Data source URL": "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-                     "Publication Status": "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
-                     "DOI": "doi:10.1186/1471-2164-15-942",
-                     "Data provider": "Scott Geib, USDA-ARS-PBARC",
-                     "Analysis method": "TopHat v2.0.13",
-                     "Date completed": "6/28/15"
-                     },
          "category" : "Transcriptome/Mapped Reads",
+         "key" : "Punador_matedFemale",
          "label" : "Punador_matedFemale",
-         "key" : "Punador_matedFemale"
+         "metadata" : {
+            "Analysis method" : "TopHat v2.0.13",
+            "DOI" : "doi:10.1186/1471-2164-15-942",
+            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261512",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
+            "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
+            "Sex" : "Female",
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Mated Adult Female"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "urlTemplate" : "bam/GEIB_FilesforI5k/mated_accepted_hits.bam"
       },
       {
-         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-         "urlTemplate" : "bam/GEIB_FilesforI5k/pupae_accepted_hits.bam",
-         "label" : "Punador_pupae",
-         "type" : "WebApollo/View/Track/DraggableAlignments",
-         "metadata": {
-                     "Geographical location of specimen collection": "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
-                     "Tissue/lifestage": "Pooled Pupae",
-                     "Sex": "Pool",
-                     "Strain": "Punador",
-                     "Other notes": "See publication and NCBI Bioproject PRJNA167923 for sample details",
-                     "NCBI SRA accession": "SRX261509",
-                     "Sequencing platform and version ": "Illumina GAIIx, 2x100 bp PE",
-                     "Data source URL": "http://www.ncbi.nlm.nih.gov/bioproject/167923",
-                     "Publication Status": "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
-                     "DOI": "doi:10.1186/1471-2164-15-942",
-                     "Data provider": "Scott Geib, USDA-ARS-PBARC",
-                     "Analysis method": "TopHat v2.0.13",
-                     "Date completed": "6/28/15"
-                     },
          "category" : "Transcriptome/Mapped Reads",
-         "key" : "Punador_pupae"
-      }
-   ],
-   "plugins" : [
+         "key" : "Punador_pupae",
+         "label" : "Punador_pupae",
+         "metadata" : {
+            "Analysis method" : "TopHat v2.0.13",
+            "DOI" : "doi:10.1186/1471-2164-15-942",
+            "Data provider" : "Scott Geib, USDA-ARS-PBARC",
+            "Data source URL" : "http://www.ncbi.nlm.nih.gov/bioproject/167923",
+            "Date completed" : "6/28/15",
+            "Geographical location of specimen collection" : "Punador Lab colony, USDA-ARS Pacific Basin Agricultural Research Center, Hilo, HI",
+            "NCBI SRA accession" : "SRX261509",
+            "Other notes" : "See publication and NCBI Bioproject PRJNA167923 for sample details",
+            "Publication Status" : "Published - Geib et al.: Characterizing the developmental transcriptome of the oriental fruit fly, Bactrocera dorsalis (Diptera: Tephritidae) through comparative genomic analysis with Drosophila melanogaster utilizing modENCODE datasets. BMC Genomics 2014 15:942",
+            "Sequencing platform and version " : "Illumina GAIIx, 2x100 bp PE",
+            "Sex" : "Pool",
+            "Strain" : "Punador",
+            "Tissue/lifestage" : "Pooled Pupae"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "urlTemplate" : "bam/GEIB_FilesforI5k/pupae_accepted_hits.bam"
+      },
       {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
+         "category" : "RNA-Seq/Mapped Reads",
+         "key" : "Bacdor_ASM78921v2_RNA-Seq-alignments_2021-06-01",
+         "label" : "Bacdor_ASM78921v2_RNA-Seq-alignments_2021-06-01",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1979675'>SRR1979675</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=DRR126149'>DRR126149</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9945682'>SRR9945682</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1646840'>SRR1646840</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR4026397'>ERR4026397</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR13518309'>SRR13518309</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR4026396'>ERR4026396</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1646839'>SRR1646839</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR5092564'>SRR5092564</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6981547'>SRR6981547</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Bactrocera-dorsalis-RNA-Seq_2021-06-01_v1.0/Bacdor_ASM78921v2_RNA-Seq-alignments_2021-06-01.bam"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "RNA-Seq/Coverage Plots",
+         "key" : "Bacdor_ASM78921v2_RNA-Seq-alignments_2021-06-01_coverage",
+         "label" : "Bacdor_ASM78921v2_RNA-Seq-alignments_2021-06-01_coverage",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1979675'>SRR1979675</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=DRR126149'>DRR126149</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9945682'>SRR9945682</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1646840'>SRR1646840</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR4026397'>ERR4026397</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR13518309'>SRR13518309</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR4026396'>ERR4026396</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1646839'>SRR1646839</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR5092564'>SRR5092564</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6981547'>SRR6981547</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Bactrocera-dorsalis-RNA-Seq_2021-06-01_v1.0/Bacdor_ASM78921v2_RNA-Seq-alignments_2021-06-01.bigwig"
+      },
+      {
+         "category" : "RNA-Seq/Splice junctions",
+         "compress" : 0,
+         "key" : "Bacdor_ASM78921v2_RNA-Seq-alignments_2021-06-01_junctions",
+         "label" : "Bacdor_ASM78921v2_RNA-Seq-alignments_2021-06-01_junctions",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1979675'>SRR1979675</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=DRR126149'>DRR126149</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9945682'>SRR9945682</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1646840'>SRR1646840</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR4026397'>ERR4026397</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR13518309'>SRR13518309</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=ERR4026396'>ERR4026396</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1646839'>SRR1646839</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR5092564'>SRR5092564</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR6981547'>SRR6981547</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "feature",
+            "description" : "score"
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "unsafePopup" : true,
+         "urlTemplate" : "tracks/Bacdor_ASM78921v2_RNA-Seq-alignments_2021-06-01_junctions/{refseq}/trackData.json"
       }
-   ],
-   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
-   "formatVersion" : 1,
-   "alwaysOnTracks" : "DNA,Annotations"
+   ]
 }

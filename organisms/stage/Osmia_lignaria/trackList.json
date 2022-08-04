@@ -26,6 +26,7 @@
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
             "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
          },
+         "scoreType" : "avgScore",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "style" : {
             "neg_color" : "rgba(255,255,0,50)",
@@ -39,18 +40,18 @@
          "compress" : 0,
          "key" : "NCBI_Annotation_Release_100_Gene",
          "label" : "osmlig_current_models",
-   "menuTemplate" : [
-       {
-          "label" : "View details"
-       },
-       {
-        "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-        "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-        "iconClass" : "dijitIconDatabase",
-        "action": "newWindow",
-	"url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}"
-        }
-  ],
+         "menuTemplate" : [
+            {
+               "label" : "View details"
+            },
+            {
+               "action" : "newWindow",
+               "iconClass" : "dijitIconDatabase",
+               "label" : "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+               "title" : "function(track,feature){ return 'Find gene page for '+feature.get('name')}",
+               "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/nuccore/'+feature.get('name')}"
+            }
+         ],
          "metadata" : {
             "Data description" : "ftp://ftp.ncbi.nlm.nih.gov/genomes/Osmia_lignaria/README_CURRENT_RELEASE",
             "Data provider" : "NCBI",
@@ -60,7 +61,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -69,8 +70,8 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "trackType" : "HTMLFeatures",
+         "type" : "HTMLFeatures",
          "urlTemplate" : "tracks/osmlig_current_models/{refseq}/trackData.json"
       },
       {
@@ -87,7 +88,7 @@
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -99,6 +100,65 @@
          "trackType" : "HTMLFeatures",
          "type" : "HTMLFeatures",
          "urlTemplate" : "tracks/NCBI_Annotation_Release_100_Pseudogene/{refseq}/trackData.json"
+      },
+      {
+         "category" : "RNA-Seq/Mapped Reads",
+         "key" : "Osmlig_USDA_OLig_1.0_RNA-Seq-alignments_2021-06-16",
+         "label" : "Osmlig_USDA_OLig_1.0_RNA-Seq-alignments_2021-06-16",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9670749'>SRR9670749</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9670745'>SRR9670745</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676035'>SRR9676035</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676050'>SRR9676050</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676042'>SRR9676042</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9670747'>SRR9670747</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676057'>SRR9676057</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676038'>SRR9676038</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676039'>SRR9676039</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676040'>SRR9676040</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Osmia-lignaria-RNA-Seq_2021-06-16_v1.0/Osmlig_USDA_OLig_1.0_RNA-Seq-alignments_2021-06-16.bam"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "RNA-Seq/Coverage Plots",
+         "key" : "Osmlig_USDA_OLig_1.0_RNA-Seq-alignments_2021-06-16_coverage",
+         "label" : "Osmlig_USDA_OLig_1.0_RNA-Seq-alignments_2021-06-16_coverage",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9670749'>SRR9670749</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9670745'>SRR9670745</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676035'>SRR9676035</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676050'>SRR9676050</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676042'>SRR9676042</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9670747'>SRR9670747</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676057'>SRR9676057</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676038'>SRR9676038</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676039'>SRR9676039</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676040'>SRR9676040</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Osmia-lignaria-RNA-Seq_2021-06-16_v1.0/Osmlig_USDA_OLig_1.0_RNA-Seq-alignments_2021-06-16.bigwig"
+      },
+      {
+         "category" : "RNA-Seq/Splice junctions",
+         "compress" : 0,
+         "key" : "Osmlig_USDA_OLig_1.0_RNA-Seq-alignments_2021-06-16_junctions",
+         "label" : "Osmlig_USDA_OLig_1.0_RNA-Seq-alignments_2021-06-16_junctions",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9670749'>SRR9670749</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9670745'>SRR9670745</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676035'>SRR9676035</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676050'>SRR9676050</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676042'>SRR9676042</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9670747'>SRR9670747</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676057'>SRR9676057</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676038'>SRR9676038</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676039'>SRR9676039</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9676040'>SRR9676040</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "feature",
+            "description" : "score"
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "unsafePopup" : true,
+         "urlTemplate" : "tracks/Osmlig_USDA_OLig_1.0_RNA-Seq-alignments_2021-06-16_junctions/{refseq}/trackData.json"
       }
    ]
 }

@@ -13,6 +13,7 @@
          "seqType" : "dna",
          "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
          "type" : "SequenceTrack",
+         "unsafePopup" : true,
          "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
       },
       {
@@ -32,6 +33,7 @@
             "pos_color" : "black"
          },
          "type" : "JBrowse/View/Track/Wiggle/Density",
+         "unsafePopup" : true,
          "urlTemplate" : "bigwig/GCF_005281655.1_TAMU_Nfulva_1.0_genomic.fna.gaps.bigwig"
       },
       {
@@ -51,6 +53,7 @@
             "pos_color" : "rgba(0,0,255,50)"
          },
          "type" : "JBrowse/View/Track/Wiggle/Density",
+         "unsafePopup" : true,
          "urlTemplate" : "bigwig/GCF_005281655.1_TAMU_Nfulva_1.0_genomic.fna.gc.bigwig"
       },
       {
@@ -58,19 +61,25 @@
          "compress" : 0,
          "key" : "OGSv1.0 Gene",
          "label" : "nylful_current_models",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "menuTemplate" : [
-             {
-                "label" : "View details",
-             },
-             {
-              "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-              "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}",
-              "iconClass" : "dijitIconDatabase",
-              "action": "newWindow",
-              "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}",
-              },
-        ],
+            {
+               "label" : "View details"
+            },
+            {
+               "action" : "newWindow",
+               "iconClass" : "dijitIconDatabase",
+               "label" : "function(track,feature){ return 'Find NCBI record for '+feature.get('id')}",
+               "title" : "function(track,feature){ return 'Find NCBI record for '+feature.get('id')}",
+               "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/protein/'+feature.get('id')}"
+            }
+         ],
+         "metadata" : {
+            "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster",
+            "Data source" : "https://data.nal.usda.gov/dataset/nylanderia-fulva-annotations-ogsv10",
+            "Materials and Methods" : "The Nylanderia fulva OGSv1.0 is the Official Gene Set of genome assembly TAMU_Nfulva_1.0 (https://www.ncbi.nlm.nih.gov/assembly/GCF_005281655.1/). It is a merge of NCBI Nylanderia fulva Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Nylanderia_fulva/100/) and semi-automated predictions of odorant receptors.",
+            "Publication status" : "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
             "className" : "container-16px",
@@ -82,14 +91,9 @@
                "wholeCDS" : null
             }
          },
-	 "metadata" : {
-	 "Data source" : "https://data.nal.usda.gov/dataset/nylanderia-fulva-annotations-ogsv10",
-	 "Materials and Methods" : "The Nylanderia fulva OGSv1.0 is the Official Gene Set of genome assembly TAMU_Nfulva_1.0 (https://www.ncbi.nlm.nih.gov/assembly/GCF_005281655.1/). It is a merge of NCBI Nylanderia fulva Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Nylanderia_fulva/100/) and semi-automated predictions of odorant receptors.",
-	 "Publication status" : "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use", 
-	 "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster",
-	 },	 
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "trackType" : "HTMLFeatures",
+         "type" : "HTMLFeatures",
+         "unsafePopup" : true,
          "urlTemplate" : "tracks/nylful_current_models/{refseq}/trackData.json"
       },
       {
@@ -97,6 +101,12 @@
          "compress" : 0,
          "key" : "OGSv1.0 Pseudogene",
          "label" : "OGSv1.0_Pseudogene",
+         "metadata" : {
+            "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster",
+            "Data source" : "https://data.nal.usda.gov/dataset/nylanderia-fulva-annotations-ogsv10",
+            "Materials and Methods" : "The Nylanderia fulva OGSv1.0 is the Official Gene Set of genome assembly TAMU_Nfulva_1.0 (https://www.ncbi.nlm.nih.gov/assembly/GCF_005281655.1/). It is a merge of NCBI Nylanderia fulva Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Nylanderia_fulva/100/) and semi-automated predictions of odorant receptors.",
+            "Publication status" : "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use"
+         },
          "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
@@ -109,15 +119,69 @@
                "wholeCDS" : null
             }
          },
-         "metadata" : {
-         "Data source" : "https://data.nal.usda.gov/dataset/nylanderia-fulva-annotations-ogsv10",
-         "Materials and Methods" : "The Nylanderia fulva OGSv1.0 is the Official Gene Set of genome assembly TAMU_Nfulva_1.0 (https://www.ncbi.nlm.nih.gov/assembly/GCF_005281655.1/). It is a merge of NCBI Nylanderia fulva Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Nylanderia_fulva/100/) and semi-automated predictions of odorant receptors.",
-         "Publication status" : "Unpublished, please refer to Fort Lauderdale/Toronto conditions of data re-use",
-         "Data provider" : "Kranti Konganti, Texas A&M University; Ed Vargo, Texas A&M University; Aaron Tarone, Texas A&M University; Lukas Schrader, University of Muenster",
-         },
          "trackType" : "HTMLFeatures",
          "type" : "HTMLFeatures",
+         "unsafePopup" : true,
          "urlTemplate" : "tracks/OGSv1.0_Pseudogene/{refseq}/trackData.json"
+      },
+      {
+         "category" : "RNA-Seq/Mapped Reads",
+         "key" : "Nylful_TAMU_Nfulva_1.0_RNA-Seq-alignments_2021-06-16",
+         "label" : "Nylful_TAMU_Nfulva_1.0_RNA-Seq-alignments_2021-06-16",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528657'>SRR8528657</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528663'>SRR8528663</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528637'>SRR8528637</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528659'>SRR8528659</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528638'>SRR8528638</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528662'>SRR8528662</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528642'>SRR8528642</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528652'>SRR8528652</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528626'>SRR8528626</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528649'>SRR8528649</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Nylanderia-fulva-RNA-Seq_2021-06-16_v1.0/Nylful_TAMU_Nfulva_1.0_RNA-Seq-alignments_2021-06-16.bam"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "RNA-Seq/Coverage Plots",
+         "key" : "Nylful_TAMU_Nfulva_1.0_RNA-Seq-alignments_2021-06-16_coverage",
+         "label" : "Nylful_TAMU_Nfulva_1.0_RNA-Seq-alignments_2021-06-16_coverage",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528657'>SRR8528657</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528663'>SRR8528663</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528637'>SRR8528637</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528659'>SRR8528659</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528638'>SRR8528638</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528662'>SRR8528662</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528642'>SRR8528642</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528652'>SRR8528652</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528626'>SRR8528626</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528649'>SRR8528649</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Nylanderia-fulva-RNA-Seq_2021-06-16_v1.0/Nylful_TAMU_Nfulva_1.0_RNA-Seq-alignments_2021-06-16.bigwig"
+      },
+      {
+         "category" : "RNA-Seq/Splice junctions",
+         "compress" : 0,
+         "key" : "Nylful_TAMU_Nfulva_1.0_RNA-Seq-alignments_2021-06-16_junctions",
+         "label" : "Nylful_TAMU_Nfulva_1.0_RNA-Seq-alignments_2021-06-16_junctions",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528657'>SRR8528657</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528663'>SRR8528663</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528637'>SRR8528637</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528659'>SRR8528659</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528638'>SRR8528638</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528662'>SRR8528662</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528642'>SRR8528642</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528652'>SRR8528652</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528626'>SRR8528626</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR8528649'>SRR8528649</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "feature",
+            "description" : "score"
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "unsafePopup" : true,
+         "urlTemplate" : "tracks/Nylful_TAMU_Nfulva_1.0_RNA-Seq-alignments_2021-06-16_junctions/{refseq}/trackData.json"
       }
    ]
 }

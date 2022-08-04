@@ -1,5 +1,5 @@
-            common_name             |                          directory                           
-------------------------------------+--------------------------------------------------------------
+            common_name             |                                directory                                
+------------------------------------+-------------------------------------------------------------------------
  10_-_Onthophagus_taurus_training   | /app/data/BCM_i5k_pilot/onttau_training/jbrowse/data
  11_-_Onthophagus_taurus_training   | /app/data/BCM_i5k_pilot/onttau_training/jbrowse/data
  12_-_Onthophagus_taurus_training   | /app/data/BCM_i5k_pilot/onttau_training/jbrowse/data
@@ -63,18 +63,20 @@
  Clitarchus_hookeri                 | /app/data/other_species/clihoo/jbrowse/data
  Contarinia_nasturtii               | /app/data/other_species/connas/AAFC_CNas_1.1/jbrowse/data
  Copidosoma_floridanum              | /app/data/BCM_i5k_pilot/copflo/jbrowse/data
+ Culex_quinquefasciatus             | /app/data/other_species/culqui/VPISU_Cqui_1.0_pri_paternal/jbrowse/data
  Diabrotica_virgifera_training      | /app/data/other_species/diavir/Dvir_v2.0_RefSeq/jbrowse/data
  Diachasma_alloeum                  | /app/data/other_species/diaall/Dall2.0/jbrowse/data
  Diaphorina_citri                   | /app/data/other_species/diacit/jbrowse/data
  Diaphorina_citri_legacy            | /app/data/other_species/diacit_legacy/jbrowse/data
+ Diprion_similis                    | /app/data//other_species/dipsim/iyDipSimi1.1/jbrowse/data
  Drosophila_biarmipes               | /app/data/modencode/drobia/Dbia_2.0/jbrowse/data
- Drosophila_bipectinata             | /app/data/modencode/drobip/Dbip_2.0/jbrowse/data
- Drosophila_elegans                 | /app/data/modencode/droele/Dele_2.0/jbrowse/data
- Drosophila_eugracilis              | /app/data/modencode/droeug/Deug_2.0/jbrowse/data
- Drosophila_ficusphila              | /app/data/modencode/drofic/Dfic_2.0/jbrowse/data
- Drosophila_kikkawai                | /app/data/modencode/drokik/Dkik_2.0/jbrowse/data
- Drosophila_rhopaloa                | /app/data/modencode/drorho/Drho_2.0/jbrowse/data
- Drosophila_takahashii              | /app/data/modencode/drotak/Dtak_2.0/jbrowse/data
+ Drosophila_bipectinata             | /app/data/other_species/drobip/ASM1815384v1/jbrowse/data
+ Drosophila_elegans                 | /app/data/other_species/droele/ASM1815250v1/jbrowse/data
+ Drosophila_eugracilis              | /app/data/other_species/droeug/ASM1815383v1/jbrowse/data
+ Drosophila_ficusphila              | /app/data/other_species/drofic/ASM1815226v1/jbrowse/data
+ Drosophila_kikkawai                | /app/data/other_species/drokik/ASM1815253v1/jbrowse/data
+ Drosophila_rhopaloa                | /app/data/other_species/drorho/ASM1815211v1/jbrowse/data
+ Drosophila_takahashii              | /app/data/other_species/drotak/ASM1815269v1/jbrowse/data
  Dufourea_novaeangliae              | /app/data/other_species/dufnov/jbrowse/data
  Ephemera_danica                    | /app/data/BCM_i5k_pilot/ephdan/Edan_2.0/jbrowse/data/
  Eufriesea_mexicana                 | /app/data/other_species/eufmex/ASM148370v1/jbrowse/data
@@ -87,10 +89,12 @@
  Gerris_buenoi                      | /app/data/BCM_i5k_pilot/gerbue/jbrowse/data/
  Habropoda_laboriosa                | /app/data/other_species/hablab/jbrowse/data
  Halyomorpha_halys                  | /app/data/BCM_i5k_pilot/halhal/Hhal_1.1/jbrowse/data
+ Helicoverpa_zea                    | /app/data/other_species/helzea/ilHelZeax1.1/jbrowse/data
  Heliothis_virescens                | /app/data/other_species/helvir/jbrowse/data/
  Holacanthella_duospinosa           | /app/data/other_species/holduo/ASM273828v1/jbrowse/data
  Homalodisca_vitripennis            | /app/data/BCM_i5k_pilot/homvit/jbrowse/data
  Hyalella_azteca                    | /app/data/BCM_i5k_pilot/hyaazt/Hazt_2.0.1/jbrowse/data
+ Ladona_fulva                       | /app/data/other_species/ladful/Lful_2.0/jbrowse/data
  Laodelphax_striatellus             | /app/data/other_species/laostr/ASM333518v2/jbrowse/data
  Lasioglossum_albipes               | /app/data/other_species/lasalb/jbrowse/data
  Latrodectus_hesperus               | /app/data/BCM_i5k_pilot/lathes/GCA_000697925.1/jbrowse/data
@@ -99,6 +103,7 @@
  Limnephilus_lunatus                | /app/data/BCM_i5k_pilot/limlun/jbrowse/data
  Locusta_migratoria                 | /app/data/other_species/locmig/jbrowse/data/
  Loxosceles_reclusa                 | /app/data/BCM_i5k_pilot/loxrec/GCA_001188405.1/jbrowse/data
+ Lucilia_sericata                   | /app/data/other_species/lucser/ASM1558622v1/jbrowse/data
  Mamestra_configurata               | /app/data/other_species/mamcon/GCA_002192655.1/jbrowse/data
  Manduca_sexta                      | /app/data/other_species/mansex/JHU_Msex_v1.0/jbrowse/data
  Mayetiola_destructor               | /app/data/other_species/maydes/jbrowse/data
@@ -106,8 +111,11 @@
  Megachile_rotundata                | /app/data/other_species/megrot/jbrowse/data
  Melipona_quadrifasciata            | /app/data/other_species/melqua/jbrowse/data
  Microplitis_demolitor              | /app/data/other_species/micdem/jbrowse/data
- Neodiprion_lecontei                | /app/data/other_species/neolec/Nlec1.1/jbrowse/data
+ Neodiprion_fabricii                | /app/data/other_species/neofab/iyNeoFabr1.1/jbrowse/data
+ Neodiprion_lecontei                | /app/data/other_species/neolec/iyNeoLeco1.1/jbrowse/data
  Neodiprion_lecontei_training       | /app/data/other_species/neolec/jbrowse/data
+ Neodiprion_pinetum                 | /app/data/other_species/neopin/iyNeoPine1.1/jbrowse/data
+ Neodiprion_virginiana              | /app/data/other_species/neovir/iyNeoVirg1.1/jbrowse/data
  Nicrophorus_vespilloides           | /app/data/other_species/nicves/jbrowse/data
  Nylanderia_fulva                   | /app/data/other_species/nylful/TAMU_Nfulva_1.0/jbrowse/data
  Odontomachus_brunneus              | /app/data/other_species/odobru/Obru_v1/jbrowse/data
@@ -120,13 +128,17 @@
  Parasteatoda_tepidariorum          | /app/data/BCM_i5k_pilot/partep/jbrowse/data
  Photinus_pyralis                   | /app/data/other_species/phopyr/Ppyr1.3/jbrowse/data
  Rhagoletis_zephyria                | /app/data/other_species/rhazep/jbrowse/data
- Rhipicephalus_microplus            | /app/data/other_species/rhimic/jbrowse/data
+ Rhipicephalus_microplus            | /app/data/other_species/rhimic/ASM1333972v1/jbrowse/data
  Rhyzopertha_dominica               | /app/data/other_species/rhydom/RdoDt3_tmp/jbrowse/data
  Saccharomyces eubayanus            | /app/data/other_species/saceub/SEUB3.0/jbrowse/data
+ Schistocerca_americana             | /app/data/other_species/schame/iqSchAmer2.1/jbrowse/data
+ Schistocerca piceifrons            | /app/data/other_species/schpic/iqSchPice1.1/jbrowse/data/
  Tigriopus_californicus             | /app/data/other_species/tigcal/jbrowse/data
  Tribolium_castaneum                | /app/data/other_species/tricas/jbrowse/data
+ Tribolium_madens                   | /app/data/other_species/trimad/Tmad_KSU_1.1/jbrowse/data
  Trichogramma_pretiosum             | /app/data/BCM_i5k_pilot/tripre/jbrowse/data
  Varroa_destructor                  | /app/data/other_species/vardes/Vdes_3.0/jbrowse/data
  Varroa_jacobsoni                   | /app/data/other_species/varjac/vjacob_1.0/jbrowse/data
-(128 rows)
+ Venturia_canescens                 | /app/data/other_species/vencan/ASM1945775v1/jbrowse/data
+(140 rows)
 

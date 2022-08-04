@@ -1,367 +1,420 @@
 {
+   "alwaysOnTracks" : "DNA,Annotations",
+   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
+   "formatVersion" : 1,
+   "names" : {
+      "type" : "Hash",
+      "url" : "names/"
+   },
    "share_link" : 0,
-   "plugins" : [
-      {
-         "location" : "./plugins/WebApollo",
-         "name" : "WebApollo"
-      }
-   ],
    "tracks" : [
       {
-         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
-         "chunkSize" : 20000,
-         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
-         "label" : "DNA",
-         "type" : "SequenceTrack",
          "category" : "Reference sequence",
-         "key" : "Reference sequence"
+         "chunkSize" : 20000,
+         "key" : "Reference sequence",
+         "label" : "DNA",
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "type" : "SequenceTrack",
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
       },
       {
          "autocomplete" : "none",
+         "compress" : 0,
+         "key" : "User-created Annotations",
+         "label" : "Annotations",
+         "phase" : 0,
+         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
          "style" : {
-            "className" : "annot",
-            "renderClassName" : "annot-render",
-            "subfeatureClasses" : {
-               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "annot-CDS",
-               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
-               "UTR" : "annot-UTR"
-            },
-            "arrowheadClass" : "annot-arrowhead",
             "alternateClasses" : {
-               "transposable_element" : {
-                  "renderClassName" : "blue-ibeam-render",
-                  "className" : "blue-ibeam"
+               "miRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "ncRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
                "pseudogene" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "light-purple-80pct"
-               },
-               "snRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
+                  "className" : "light-purple-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
                "rRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
-               },
-               "snoRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
                "repeat_region" : {
                   "className" : "magenta-80pct"
                },
-               "miRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
+               "snRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
+               },
+               "snoRNA" : {
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
                "tRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
+                  "className" : "brightgreen-80pct",
+                  "renderClassName" : "gray-center-30pct"
                },
-               "ncRNA" : {
-                  "renderClassName" : "gray-center-30pct",
-                  "className" : "brightgreen-80pct"
+               "transposable_element" : {
+                  "className" : "blue-ibeam",
+                  "renderClassName" : "blue-ibeam-render"
                }
             },
-            "uniqueIdField" : "id",
+            "arrowheadClass" : "annot-arrowhead",
             "centerSubFeature" : {
-               "non_canonical_three_prime_splice_site" : false,
-               "non_canonical_five_prime_splice_site" : false
-            }
+               "non_canonical_five_prime_splice_site" : false,
+               "non_canonical_three_prime_splice_site" : false
+            },
+            "className" : "annot",
+            "renderClassName" : "annot-render",
+            "subfeatureClasses" : {
+               "CDS" : "annot-CDS",
+               "UTR" : "annot-UTR",
+               "exon" : "container-100pct",
+               "non_canonical_five_prime_splice_site" : "noncanonical-splice-site",
+               "non_canonical_three_prime_splice_site" : "noncanonical-splice-site",
+               "wholeCDS" : null
+            },
+            "uniqueIdField" : "id"
          },
-         "key" : "User-created Annotations",
-         "storeClass" : "WebApollo/Store/SeqFeature/ScratchPad",
-         "phase" : 0,
-         "compress" : 0,
-         "label" : "Annotations",
-         "type" : "WebApollo/View/Track/AnnotTrack",
-         "subfeatures" : 1
+         "subfeatures" : 1,
+         "type" : "WebApollo/View/Track/AnnotTrack"
       },
       {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "augustus"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "augustus_masked",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/augustus_masked/{refseq}/trackData.json",
-         "compress" : 0,
          "category" : "OGS1.0/1. Gene Sets/Supplementary Gene Predictions",
+         "compress" : 0,
+         "key" : "augustus_masked",
+         "label" : "augustus_masked",
          "metadata" : {
+            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN",
             "Analysis description" : "Augustus results as part of the MAKER 2.22 pipeline",
             "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Track legend" : "Augustus gene models from the MAKER 2.22 pipeline",
-            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN"
+            "Track legend" : "Augustus gene models from the MAKER 2.22 pipeline"
          },
-         "label" : "augustus_masked",
-         "type" : "FeatureTrack"
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "augustus"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/augustus_masked/{refseq}/trackData.json"
       },
       {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastn"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastn",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/blastn/{refseq}/trackData.json",
-         "compress" : 0,
          "category" : "OGS1.0/3. Mapped DNA/Supplementary: Blastn",
+         "compress" : 0,
+         "key" : "blastn",
+         "label" : "blastn",
          "metadata" : {
+            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN",
             "Analysis description" : "Blastn results as part of the MAKER 2.22 pipeline",
             "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Track legend" : "Blastn results from the MAKER 2.22 pipeline",
-            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN"
+            "Track legend" : "Blastn results from the MAKER 2.22 pipeline"
          },
-         "label" : "blastn",
-         "type" : "FeatureTrack"
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "blastn"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/blastn/{refseq}/trackData.json"
       },
       {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "blastx"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "blastx",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/blastx/{refseq}/trackData.json",
-         "compress" : 0,
          "category" : "OGS1.0/3. Mapped Proteins/Supplementary: BlastX",
+         "compress" : 0,
+         "key" : "blastx",
+         "label" : "blastx",
          "metadata" : {
+            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN",
             "Analysis description" : "Blastx results as part of the MAKER 2.22 pipeline",
             "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Track legend" : "Blastx results from the MAKER 2.22 pipeline",
-            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN"
+            "Track legend" : "Blastx results from the MAKER 2.22 pipeline"
          },
-         "label" : "blastx",
-         "type" : "FeatureTrack"
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "blastx"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/blastx/{refseq}/trackData.json"
       },
       {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "est2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "est2genome",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/est2genome/{refseq}/trackData.json",
-         "compress" : 0,
          "category" : "OGS1.0/3. Mapped DNA/est2genome",
+         "compress" : 0,
+         "key" : "est2genome",
+         "label" : "est2genome",
          "metadata" : {
+            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN",
             "Analysis description" : "est2genome results as part of the MAKER 2.22 pipeline",
             "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Track legend" : "est2genome results from the MAKER 2.22 pipeline",
-            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN"
+            "Track legend" : "est2genome results from the MAKER 2.22 pipeline"
          },
-         "label" : "est2genome",
-         "type" : "FeatureTrack"
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "est2genome"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/est2genome/{refseq}/trackData.json"
       },
       {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "protein2genome"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "protein2genome",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/protein2genome/{refseq}/trackData.json",
-         "compress" : 0,
          "category" : "OGS1.0/3. Mapped Proteins/Protein2genome",
+         "compress" : 0,
+         "key" : "protein2genome",
+         "label" : "protein2genome",
          "metadata" : {
+            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN",
             "Analysis description" : "protein2genome results as part of the MAKER 2.22 pipeline",
             "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Track legend" : "protein2genome results from the MAKER 2.22 pipeline",
-            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN"
+            "Track legend" : "protein2genome results from the MAKER 2.22 pipeline"
          },
-         "label" : "protein2genome",
-         "type" : "FeatureTrack"
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "protein2genome"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/protein2genome/{refseq}/trackData.json"
       },
       {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "repeat"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "repeatmasker",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/repeatmasker/{refseq}/trackData.json",
-         "compress" : 0,
          "category" : "OGS1.0/2. Evidence/Repeats",
+         "compress" : 0,
+         "key" : "repeatmasker",
+         "label" : "repeatmasker",
          "metadata" : {
+            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN",
             "Analysis description" : "Repeatmasker results as part of the MAKER 2.22 pipeline",
             "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Track legend" : "Repeatmasker results from the MAKER 2.22 pipeline",
-            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN"
+            "Track legend" : "Repeatmasker results from the MAKER 2.22 pipeline"
          },
-         "label" : "repeatmasker",
-         "type" : "FeatureTrack"
-      },
-      {
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
-            "className" : "container-10px",
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "{type}",
             "subfeatureClasses" : {
                "match_part" : "repeat"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
+            }
          },
-         "key" : "repeatrunner",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "trackType" : null,
-         "urlTemplate" : "tracks/repeatrunner/{refseq}/trackData.json",
-         "compress" : 0,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/repeatmasker/{refseq}/trackData.json"
+      },
+      {
          "category" : "OGS1.0/2. Evidence/Repeats",
+         "compress" : 0,
+         "key" : "repeatrunner",
+         "label" : "repeatrunner",
          "metadata" : {
+            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN",
             "Analysis description" : "Repeatrunner results as part of the MAKER 2.22 pipeline",
             "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Track legend" : "Repeatrunner results from the MAKER 2.22 pipeline",
-            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN"
+            "Track legend" : "Repeatrunner results from the MAKER 2.22 pipeline"
          },
-         "label" : "repeatrunner",
-         "type" : "FeatureTrack"
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "repeat"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/repeatrunner/{refseq}/trackData.json"
       },
       {
-         "style" : {
-            "className" : "container-10px",
-            "subfeatureClasses" : {
-               "match_part" : "snap"
-            },
-            "arrowheadClass" : "webapollo-arrowhead"
-         },
-         "key" : "snap_masked",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/snap_masked/{refseq}/trackData.json",
-         "compress" : 0,
          "category" : "OGS1.0/1. Gene Sets/Supplementary Gene Predictions",
+         "compress" : 0,
+         "key" : "snap_masked",
+         "label" : "snap_masked",
          "metadata" : {
+            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN",
             "Analysis description" : "Snap results as part of the MAKER 2.22 pipeline",
             "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Track legend" : "Snap results from the MAKER 2.22 pipeline",
-            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN"
+            "Track legend" : "Snap results from the MAKER 2.22 pipeline"
          },
-         "label" : "snap_masked",
-         "type" : "FeatureTrack"
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "webapollo-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "match_part" : "snap"
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/snap_masked/{refseq}/trackData.json"
       },
       {
-         "style" : {
-            "pos_color" : "black",
-            "neg_color" : "white"
-         },
-         "bicolor_pivot" : "zero",
          "autoscale" : "local",
-         "key" : "Gaps in assembly",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/hf_scaffolds.fa.gaps.bigwig",
+         "bicolor_pivot" : "zero",
          "category" : "Reference Assembly",
+         "key" : "Gaps in assembly",
+         "label" : "Gaps in assembly",
          "metadata" : {
+            "Track contact" : "The i5k workspace@NAL",
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank",
-            "Track contact" : "The i5k workspace@NAL"
+            "Track legend" : "Visualization of gaps in the reference assembly.  Basecalls of N are colored black. All other regions are left blank"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "neg_color" : "white",
+            "pos_color" : "black"
          },
          "type" : "JBrowse/View/Track/Wiggle/Density",
-         "label" : "Gaps in assembly"
+         "urlTemplate" : "bigwig/hf_scaffolds.fa.gaps.bigwig"
       },
       {
+         "autoscale" : "local",
+         "bicolor_pivot" : "0.5",
+         "category" : "Reference Assembly",
+         "key" : "GC Content",
+         "label" : "GC Content",
+         "metadata" : {
+            "Track contact" : "The i5k workspace@NAL",
+            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
+            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
+         },
+         "scoreType" : "avgScore",
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "style" : {
             "neg_color" : "rgba(255,255,0,50)",
             "pos_color" : "rgba(0,0,255,50)"
          },
-         "bicolor_pivot" : "0.5",
-         "key" : "GC Content",
-         "scoreType": "avgScore",
-         "autoscale" : "local",
-         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
-         "urlTemplate" : "bigwig/hf_scaffolds.fa.gc.bigwig",
-         "metadata" : {
-            "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
-            "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track.",
-            "Track contact" : "The i5k workspace@NAL"
-         },
-         "category" : "Reference Assembly",
          "type" : "JBrowse/View/Track/Wiggle/Density",
-         "label" : "GC Content"
+         "urlTemplate" : "bigwig/hf_scaffolds.fa.gc.bigwig"
       },
       {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "alt_gene_set-cds",
-               "UTR" : "alt_gene_set-utr"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "maker",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/maker/{refseq}/trackData.json",
+         "category" : "OGS1.0/1. Gene Sets/Supplementary Gene Predictions",
          "compress" : 0,
+         "key" : "maker",
+         "label" : "maker",
          "metadata" : {
+            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN",
             "Analysis description" : "Results from the MAKER 2.22 pipeline",
             "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Track legend" : "Results from the MAKER 2.22 pipeline",
-            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN"
+            "Track legend" : "Results from the MAKER 2.22 pipeline"
          },
-         "category" : "OGS1.0/1. Gene Sets/Supplementary Gene Predictions",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "CDS" : "alt_gene_set-cds",
+               "UTR" : "alt_gene_set-utr",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : null,
          "type" : "FeatureTrack",
-         "label" : "maker"
+         "urlTemplate" : "tracks/maker/{refseq}/trackData.json"
       },
       {
-         "style" : {
-            "className" : "container-16px",
-            "subfeatureClasses" : {
-               "wholeCDS" : null,
-               "exon" : "container-100pct",
-               "CDS" : "ogs-cds",
-               "UTR" : "ogs-utr"
-            },
-            "arrowheadClass" : "trellis-arrowhead"
-         },
-         "key" : "OGS1.0",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "trackType" : null,
-         "urlTemplate" : "tracks/maydes_current_models/{refseq}/trackData.json",
-         "compress" : 0,
-         "type" : "FeatureTrack",
          "category" : "OGS1.0/1. Gene Sets/Primary Gene Sets: Protein Coding",
+         "compress" : 0,
+         "key" : "OGS1.0",
          "label" : "maydes_current_models",
          "metadata" : {
+            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN",
             "Analysis description" : "Maker version 2.22 was trained with the CEGMA gene set, M.des cufflinks output from Baylor, M. des ESTs from NCBI and protein homology from fruit fly, mosquito, honey bee and Tribolium from NCBI.  Maker output was used to train Augustus and SNAP in two interations. The resulting output was validated by blast comparison with a clade specific gene set from orthoDB.  92% of the clade specific gene set produced hits.  To produce an official gene set, the maker output was manually curated by the community using Apollo. The Official Gene Set was submitted to NCBI.",
             "Publication status" : "Unpublished - please follow Toronto/Ft. Lauderdale conditions of data re-use.",
-            "Track legend" : "Consensus gene models from the PASA2 program",
-            "Analysis contact" : "Jeff Stuart, Department of Entomology, Purdue University, West Lafayette, IN"
-         }
+            "Track legend" : "Consensus gene models from the PASA2 program"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "arrowheadClass" : "trellis-arrowhead",
+            "className" : "{type}",
+            "subfeatureClasses" : {
+               "CDS" : "ogs-cds",
+               "UTR" : "ogs-utr",
+               "exon" : "container-100pct",
+               "wholeCDS" : null
+            }
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/maydes_current_models/{refseq}/trackData.json"
+      },
+      {
+         "category" : "RNA-Seq/Mapped Reads",
+         "key" : "Maydes_Mdes_1.0_RNA-Seq-alignments_2021-06-16",
+         "label" : "Maydes_Mdes_1.0_RNA-Seq-alignments_2021-06-16",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479258'>SRR3479258</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1290321'>SRR1290321</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479251'>SRR3479251</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479246'>SRR3479246</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479248'>SRR3479248</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1239358'>SRR1239358</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1738672'>SRR1738672</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1290324'>SRR1290324</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479252'>SRR3479252</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479247'>SRR3479247</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Mayetiola-destructor-RNA-Seq_2021-06-16_v1.0/Maydes_Mdes_1.0_RNA-Seq-alignments_2021-06-16.bam"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "RNA-Seq/Coverage Plots",
+         "key" : "Maydes_Mdes_1.0_RNA-Seq-alignments_2021-06-16_coverage",
+         "label" : "Maydes_Mdes_1.0_RNA-Seq-alignments_2021-06-16_coverage",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479258'>SRR3479258</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1290321'>SRR1290321</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479251'>SRR3479251</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479246'>SRR3479246</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479248'>SRR3479248</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1239358'>SRR1239358</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1738672'>SRR1738672</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1290324'>SRR1290324</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479252'>SRR3479252</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479247'>SRR3479247</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Mayetiola-destructor-RNA-Seq_2021-06-16_v1.0/Maydes_Mdes_1.0_RNA-Seq-alignments_2021-06-16.bigwig"
+      },
+      {
+         "category" : "RNA-Seq/Splice junctions",
+         "compress" : 0,
+         "key" : "Maydes_Mdes_1.0_RNA-Seq-alignments_2021-06-16_junctions",
+         "label" : "Maydes_Mdes_1.0_RNA-Seq-alignments_2021-06-16_junctions",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479258'>SRR3479258</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1290321'>SRR1290321</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479251'>SRR3479251</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479246'>SRR3479246</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479248'>SRR3479248</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1239358'>SRR1239358</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1738672'>SRR1738672</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1290324'>SRR1290324</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479252'>SRR3479252</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR3479247'>SRR3479247</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "feature",
+            "description" : "score"
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "unsafePopup" : true,
+         "urlTemplate" : "tracks/Maydes_Mdes_1.0_RNA-Seq-alignments_2021-06-16_junctions/{refseq}/trackData.json"
       }
-   ],
-   "names" : {
-      "url" : "names/",
-      "type" : "Hash"
-   },
-   "favicon" : "./plugins/WebApollo/img/webapollo_favicon.ico",
-   "alwaysOnTracks" : "DNA,Annotations",
-   "formatVersion" : 1
+   ]
 }

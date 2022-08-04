@@ -45,6 +45,7 @@
             "Track description" : "This track was created as part of the data proccessing workflow used to create the Web Apollo instance.",
             "Track legend" : "Visualization of GC/AT content in the reference assembly.  Bases called as G or C are scored 1 and colored blue; A and T bases are scored 0 and colored yellow. Ambiguous bases (N) are left blank. At zoom levels in which individual bases can not be resolved, scores are averaged for visualization. The pivot point is 0.5, or 50% G+C or A+T. The score at any position may be seen by moving the cursor to that position in the track."
          },
+         "scoreType" : "avgScore",
          "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
          "style" : {
             "neg_color" : "rgba(255,255,0,50)",
@@ -402,17 +403,28 @@
          "compress" : 0,
          "key" : "OGSv1.2 Gene",
          "label" : "halhal_current_models",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-	 "menuTemplate" : [ { "label" : "View details", }, { "label": "function(track,feature){ return 'Find gene page for '+feature.get('id')}", "title": "function(track,feature){ return 'Find gene page for '+feature.get('id')}", "iconClass" : "dijitIconDatabase", "action": "newWindow", "url" : "function(track,feature){ return 'https://i5k.nal.usda.gov/search/site/'+feature.get('id')}", }, ],
+         "menuTemplate" : [
+            {
+               "label" : "View details"
+            },
+            {
+               "action" : "newWindow",
+               "iconClass" : "dijitIconDatabase",
+               "label" : "function(track,feature){ return 'Find NCBI record for '+feature.get('id')}",
+               "title" : "function(track,feature){ return 'Find NCBI record for '+feature.get('id')}",
+               "url" : "function(track,feature){ return 'https://www.ncbi.nlm.nih.gov/protein/'+feature.get('id')}"
+            }
+         ],
          "metadata" : {
-                    "Data source" : "https://data.nal.usda.gov/dataset/halyomorpha-halys-official-gene-set-v12",
-                    "Materials and Methods" : "Halyomorpha halys Official Gene Set halhal_OGSv1.2 is an integration of automatic gene predictions from NCBI's eukaryotic annotation pipeline, NCBI Halyomorpha halys Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Halyomorpha_halys/100/; ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/696/795/GCF_000696795.1_Hhal_1.0), with manual annotations by the research community (performed via the Apollo manual curation software, http://genomearchitect.org/). OGSv1.2 was updated from OGSv1.1 (https://doi.org/10.15482/USDA.ADC/1504240) to the coordinates of genome assembly GCA_000696795.3 (https://www.ncbi.nlm.nih.gov/assembly/GCA_000696795.3) using https://github.com/NAL-i5K/coordinates_conversion/.",
-                    "Publication status" : "In review",
-                    "Data provider" : "Michael Sparks, USDA-ARS"
+            "Data provider" : "Michael Sparks, USDA-ARS",
+            "Data source" : "https://data.nal.usda.gov/dataset/halyomorpha-halys-official-gene-set-v12",
+            "Materials and Methods" : "Halyomorpha halys Official Gene Set halhal_OGSv1.2 is an integration of automatic gene predictions from NCBI's eukaryotic annotation pipeline, NCBI Halyomorpha halys Annotation Release 100 (https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Halyomorpha_halys/100/; ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/696/795/GCF_000696795.1_Hhal_1.0), with manual annotations by the research community (performed via the Apollo manual curation software, http://genomearchitect.org/). OGSv1.2 was updated from OGSv1.1 (https://doi.org/10.15482/USDA.ADC/1504240) to the coordinates of genome assembly GCA_000696795.3 (https://www.ncbi.nlm.nih.gov/assembly/GCA_000696795.3) using https://github.com/NAL-i5K/coordinates_conversion/.",
+            "Publication status" : "In review"
          },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
          "style" : {
             "arrowheadClass" : "trellis-arrowhead",
-            "className" : "container-16px",
+            "className" : "{type}",
             "description" : "product, note, description",
             "subfeatureClasses" : {
                "CDS" : "gnomon_CDS",
@@ -421,9 +433,68 @@
                "wholeCDS" : null
             }
          },
-         "trackType" : "ColorByType/View/Track/ColorByTypeDraggable",
-         "type" : "ColorByType/View/Track/ColorByTypeDraggable",
+         "trackType" : "HTMLFeatures",
+         "type" : "HTMLFeatures",
          "urlTemplate" : "tracks/halhal_current_models/{refseq}/trackData.json"
+      },
+      {
+         "category" : "RNA-Seq/Mapped Reads",
+         "key" : "Halhal_Hhal_1.1_RNA-Seq-alignments_2021-06-15",
+         "label" : "Halhal_Hhal_1.1_RNA-Seq-alignments_2021-06-15",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1207183'>SRR1207183</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1207182'>SRR1207182</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12286915'>SRR12286915</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11747758'>SRR11747758</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1301985'>SRR1301985</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1207181'>SRR1207181</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969962'>SRR9969962</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1206311'>SRR1206311</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1611187'>SRR1611187</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12286914'>SRR12286914</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Dark red alignments: Mapped portion of read aligned to forward strand<br>Light red alignments: Spliced portion of read aligned to forward strand<br>Dark blue alignments: Mapped portion of read aligned to reverse strand<br>Light blue alignments: Spliced portion of read aligned to reverse strand<br>Red marking - deletion in the read relative to the reference<br>Green marking - insertion in the read relative to the reference<br>Yellow marking  - mismatch (hover over the mismatch to see what the snp is)"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "type" : "WebApollo/View/Track/DraggableAlignments",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Halyomorpha-halys-RNA-Seq_2021-06-15_v1.0/Halhal_Hhal_1.1_RNA-Seq-alignments_2021-06-15.bam"
+      },
+      {
+         "autoscale" : "local",
+         "bicolor_pivot" : "zero",
+         "category" : "RNA-Seq/Coverage Plots",
+         "key" : "Halhal_Hhal_1.1_RNA-Seq-alignments_2021-06-15_coverage",
+         "label" : "Halhal_Hhal_1.1_RNA-Seq-alignments_2021-06-15_coverage",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1207183'>SRR1207183</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1207182'>SRR1207182</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12286915'>SRR12286915</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11747758'>SRR11747758</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1301985'>SRR1301985</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1207181'>SRR1207181</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969962'>SRR9969962</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1206311'>SRR1206311</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1611187'>SRR1611187</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12286914'>SRR12286914</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "This track represents an X-Y plot of RNA-Seq coverage."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
+         "style" : {
+            "pos_color" : "#00BFFF"
+         },
+         "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+         "unsafePopup" : true,
+         "urlTemplate" : "analyses/Halyomorpha-halys-RNA-Seq_2021-06-15_v1.0/Halhal_Hhal_1.1_RNA-Seq-alignments_2021-06-15.bigwig"
+      },
+      {
+         "category" : "RNA-Seq/Splice junctions",
+         "compress" : 0,
+         "key" : "Halhal_Hhal_1.1_RNA-Seq-alignments_2021-06-15_junctions",
+         "label" : "Halhal_Hhal_1.1_RNA-Seq-alignments_2021-06-15_junctions",
+         "metadata" : {
+            "Analysis method" : "https://github.com/NAL-i5K/NAL_RNA_seq_annotation_pipeline/",
+            "Analysis provider" : "i5k Workspace@NAL",
+            "Data source" : "<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1207183'>SRR1207183</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1207182'>SRR1207182</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12286915'>SRR12286915</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR11747758'>SRR11747758</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1301985'>SRR1301985</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1207181'>SRR1207181</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR9969962'>SRR9969962</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1206311'>SRR1206311</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR1611187'>SRR1611187</a>,<a href='https://www.ncbi.nlm.nih.gov/sra/?term=SRR12286914'>SRR12286914</a>",
+            "Publication status" : "Analysis: NA; Source data: see individual SRA accessions",
+            "Track legend" : "Junction reads generated by Hisat2 aligner and regtools. The number of alignments supporting the junction read is listed in blue."
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "feature",
+            "description" : "score"
+         },
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "unsafePopup" : true,
+         "urlTemplate" : "tracks/Halhal_Hhal_1.1_RNA-Seq-alignments_2021-06-15_junctions/{refseq}/trackData.json"
       }
    ]
 }
